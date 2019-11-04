@@ -41,8 +41,8 @@ Notes:
 # Le template
 <br>
 Le template Vue va se placer directement dans la page HTML:
-<br>
-<img alt="center" src="assets/images/school/basics/template_exemple.png">
+<br><br>
+<img alt="center h-700" src="assets/images/school/basics/template_exemple.png">
 
 ##==##
 
@@ -60,8 +60,8 @@ Le template Vue peut se passer en option à l'instance de vue:
 <br>
 Le template peut se passer en utilisant une balise script de type <strong>x-template</strong>
 <p class="inline-flex">
-    <img src="assets/images/school/basics/x-template_script_exemple.png">
-    <img src="assets/images/school/basics/x-template_html_exemple.png">
+    <img alt="h-600" src="assets/images/school/basics/x-template_script_exemple.png">
+    <img alt="h-600" src="assets/images/school/basics/x-template_html_exemple.png">
 </p>
 
 

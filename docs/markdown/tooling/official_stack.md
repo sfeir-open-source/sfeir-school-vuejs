@@ -5,7 +5,7 @@
 ```bash
 npm run install -g @vue/cli@latest
 ```
-<img alt="center" src="assets/images/school/tool/vue_cli.png">
+<img alt="center h-700" src="assets/images/school/tool/vue_cli.png">
 
 ##==##
 
