@@ -1,0 +1,39 @@
+{
+  "name": "vuejs-people",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "server": "npm start",
+    "client": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "start": "node _server/server.js"
+  },
+  "authors": [
+    "Cyril Balit <balit.c@sfeir.com>",
+    "Nicolas Frizzarin <frizzarin.n.c@sfeir.com>"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vee-validate": "^3.0.11",
+    "vue": "^2.6.10",
+    "vue-material": "^0.8.0",
+    "vue-router": "^3.0.1",
+    "vuelidate": "^0.7.4",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-unit-mocha": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "chai": "^4.1.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "underscore": "^1.9.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

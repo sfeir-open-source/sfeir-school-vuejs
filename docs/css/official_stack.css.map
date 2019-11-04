@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "official_stack.css",
+	"sources": [
+		"../scss/official_stack.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAEI,OAFG,CAAC,OAAO,CAAC,OAAO,CACrB,eAAe,CACb,QAAQ,CAAC;EACP,MAAM,EAAE,KAAK,GACd"
+}
