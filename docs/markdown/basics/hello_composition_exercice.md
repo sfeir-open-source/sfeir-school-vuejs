@@ -3,13 +3,13 @@
 <br><br>
 <ul>
     <li>Dans le fichier <strong>main.js</strong><br>
-        - Créer votre première instance de Vue<br>
-        - Exposer une propriété name avec la valeur de SFEIR
+        - Créez votre première instance de Vue<br>
+        - Exposez une propriété name avec pour valeur SFEIR
     </li>
     <li>Dans le fichier <strong>index.html</strong><br>
-        - Utiliser cette propriété directement dans le HTML
+        - Utilisez cette propriété directement dans le HTML
     </li>
-    <li>Verifier votre travail: localhost:8080/step01</li>
+    <li>Vérifiez votre travail: localhost:8080/step01</li>
 </ul>
 
 ##==##

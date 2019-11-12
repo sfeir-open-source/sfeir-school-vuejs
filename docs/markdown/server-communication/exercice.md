@@ -2,9 +2,9 @@
 ## Exercice
 <span>Un squelette a été ajouté dans le fichier service/PeopleService.js</span><br><br>
 <ul>
-    <li>Implémenter la méthode fetch avec axios</li>
-    <li>Implémenter la méthode fetchRandom avec axios</li>
-    <li>Importer ce service dans le composant Home.vue</li>
+    <li>Implémentez la méthode fetch avec axios</li>
+    <li>Implémentez la méthode fetchRandom avec axios</li>
+    <li>Importez ce service dans le composant Home.vue</li>
 </ul>
 Notes: 
  -  http://localhost:9000/api/peoples (url fetch)

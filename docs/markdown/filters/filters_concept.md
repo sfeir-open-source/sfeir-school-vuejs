@@ -25,7 +25,7 @@
     <li>Possibilité de passer des paramètres: <strong>{{ expression |filter(param1, param2) }}</strong></li>
 </ul>
 Notes: 
- - le premier paramètre est toujours la valeur de l'expression c'est un paramètre implicite donc pas le besoin de le passer à notre filtre
+ - le premier paramètre est toujours la valeur de l'expression c'est un paramètre implicite donc pas besoin de le passer à notre filtre
 
  ##==##
 
@@ -40,3 +40,4 @@ Notes:
  <img alt="center" src="assets/images/school/filters/filters_create.png">
  Notes:
   - un filtre peut également être définie de manière globale: Vue.filter(name, () => ())
+  Il faudra penser à l'importer dans le main.js (fichier comportant l'instance principale de Vue JS)

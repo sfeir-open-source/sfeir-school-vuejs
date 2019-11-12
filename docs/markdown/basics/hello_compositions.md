@@ -8,15 +8,15 @@
     <li>Un script de démarrage</li>
 </ul>
 Notes:
- - le fichier source de Vue js peut provenir de différentes source Bower, CDN (google cloud storage source), npm (le plus commun)
+ - le fichier source de Vue js peut provenir de différentes sources Bower, CDN (google cloud storage source), npm (le plus commun)
  - Il existe deux types de sources (standalone = inclut le template compiler) et runtime (utilise uniquement les fonctions de render)
 
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les sources
-<br><br>
-<img alt="center" src="assets/images/school/basics/source_exemple.png">
+<br>
+<img alt="center h-800" src="assets/images/school/basics/source_exemple.png">
 
 ##==##
 

@@ -2,11 +2,13 @@
 # Le State
 <br><br>
 <ul>
-    <li>Objet de clé-valeur (clé étant le nom de la variable)</li>
-    <li>Cette Objet se trouve dans la propriété state du store</li>
-    <li>Récupérations dans le composant par <strong>this.$store.state</strong></li>
+    <li>Objet de clés-valeurs (clé étant le nom de la variable)</li>
+    <li>Cet objet se trouve dans la propriété state du store</li>
+    <li>Récupération dans le composant par <strong>this.$store.state</strong></li>
 </ul>
-<div>
+<div class="center">
     <img src="assets/images/school/state-management/state.png">
     <img src="assets/images/school/state-management/state_implementation.png">
 </div>
+Notes
+- Il est quand même préférable de passer par des getters 

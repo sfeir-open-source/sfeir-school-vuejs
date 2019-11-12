@@ -2,9 +2,9 @@
 ## Exercice
 <br>
 <ul>
-    <li>Créer un composant People qui affichera la liste des personnes</li><br>
-    <li>Créer une route /people qui permettra d'afficher cette vue de liste</li><br>
-    <li>Pour la liste: répéter le template + style du composant Home</li><br>
+    <li>Créez un composant People qui affichera la liste des personnes</li><br>
+    <li>Créez une route /people qui permettra d'afficher cette vue de liste</li><br>
+    <li>Pour la liste: répétez le template + style du composant Home</li><br>
 </ul>
 
 ##==##

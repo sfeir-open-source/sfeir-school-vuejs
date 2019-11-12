@@ -1,10 +1,10 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-<span>Un bouton random a été ajouter</span><br><br>
+<span>Un bouton random a été ajouté</span><br><br>
 <ul>
-    <li>Créer une action random sur le click du bouton</li>
-    <li>Exploiter le tableau du fichier people.js</li>
-    <li>Bonus: utiliser la fonction random de Math </li>
+    <li>Créez une action random sur le click du bouton</li>
+    <li>Exploitez le tableau du fichier people.js</li>
+    <li>Bonus: utilisez la fonction random de Math </li>
 </ul>
 
 ##==##

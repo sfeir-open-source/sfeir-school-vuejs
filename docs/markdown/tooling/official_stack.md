@@ -20,7 +20,7 @@ npm run install -g @vue/cli@latest
         </ul>
     </div>
     <div class="container-vue-ui">
-        <img src="assets/images/school/tool/vue_ui.png">
+        <img  alt="h-800" src="assets/images/school/tool/vue_ui.png">
     </div>
 </div>
 
@@ -32,6 +32,7 @@ npm run install -g @vue/cli@latest
 ```bash
 vue create <project-name>
 ```
+<br><br>
 <div class="flex-row">
     <div>
         <ul>
@@ -52,6 +53,7 @@ vue create <project-name>
 ```bash
 vue-cli-service
 ```
+<br><br>
 <div class="flex-row">
     <div>
         <ul>

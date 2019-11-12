@@ -42,7 +42,7 @@
 <div>
     <ul>
         <li>Le composant enfant envoie un event pour notifier le parent: this.$emit()</li>
-        <li>Le composant parent envoie écoute l'event grâce à <strong>v-on</strong> ou <strong>@</strong></li>
+        <li>Le composant parent écoute l'event grâce à <strong>v-on</strong> ou <strong>@</strong></li>
     </ul>
     <br><br><br>
     <div class="flex-row">
@@ -51,4 +51,4 @@
     </div>
 </div>
 Notes:
- - par convention il est préférable d'utiliser la syntac kebab case pour décrire son évènement
+ - par convention il est préférable d'utiliser la syntax kebab case pour décrire son évènement

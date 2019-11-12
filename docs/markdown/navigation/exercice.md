@@ -3,9 +3,9 @@
 <br>
 <div>
     <ul>
-        <li>Compléter le fichier router.js (src/view/router.js)</li><br>
-        <li>Importer ce fichier dans votre instance Vue</li><br>
-        <li>Importer les balises obligatoires dans le fichier App.vue</li><br>
+        <li>Complétez le fichier router.js (src/view/router.js)</li><br>
+        <li>Importez ce fichier dans votre instance Vue</li><br>
+        <li>Importez les balises obligatoires dans le fichier App.vue</li><br>
     </ul>
 </div>
 

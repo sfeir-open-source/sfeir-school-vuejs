@@ -1,6 +1,5 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # L'instance
-<br>
 <span>Une instance est composée de trois grandes composantes</span><br>
 <div class="flex-row">
     <div>
@@ -12,10 +11,10 @@
     </div>
     <div>
         <div>
-            <img src="assets/images/school/vue-instance/constructor.png">
+            <img alt="h-400" src="assets/images/school/vue-instance/constructor.png">
         </div>
         <div>
-            <img src="assets/images/school/vue-instance/extend.png">
+            <img alt="h-400" src="assets/images/school/vue-instance/extend.png">
         </div>
     </div>
 </div>
@@ -34,7 +33,7 @@ Le constructor peut prendre plusieurs options:
 <div class="flex-row">
   <div>
       <ul>
-          <li>Différentes méthode de cycle de vie<br>
+          <li>Différentes méthodes de cycle de vie<br>
               - created<br>
               - mounted<br>
               - beforeCreated<br>
@@ -101,8 +100,8 @@ Le constructor peut prendre plusieurs options:
 <div class="flex-row">
     <div>
         <ul>
-            <li>Exposé dans l'object method</li><br>
-            <li>Utilisable dans le template</li><br>
+            <li>Exposées dans l'object method</li><br>
+            <li>Utilisables dans le template</li><br>
             <li>Méthode d'instances<br>
               - render (creation v-node + createElement parameter)<br>
               - $on<br>
@@ -118,14 +117,14 @@ Le constructor peut prendre plusieurs options:
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# Les méthodes
+# Les watchers
 <span class="center"><strong>Qu'est ce que c'est? </strong></span>
 <div class="flex-row">
     <div>
         <ul>
             <li>S'implémente sur l'instance / dans une méthode</li><br>
             <li>Opérations Asynchrone</li><br>
-            <li>Priviligier un computed properties<br>
+            <li>Priviligier une computed properties<br>
             </li>
         </ul>
     </div>
@@ -140,6 +139,6 @@ Le constructor peut prendre plusieurs options:
 <br><br><br>
 <ul>
     <li>Une propriété computed est recalculée seulement quand ces dépendances changent</li><br>
-    <li>Une méthode est rappelé à chaque fois qu'un élement change</li><br>
+    <li>Une méthode est rappelée à chaque fois qu'un élement change</li><br>
     <li>Un watcher est priviligié pour des actions plus complex(asynchrone) => un call à une api</li><br>
 </ul>

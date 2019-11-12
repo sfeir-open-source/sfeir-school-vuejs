@@ -4,8 +4,8 @@
 <div class="inline-flex">
     <div>
         <ul>
-            <li>Une application Vue Js est une compositions de composants</li><br>
-            <li>Les enfants sont ajoutés au parents s'ils sont dans le template parent</li><br>
+            <li>Une application Vue Js est une composition de composants</li><br>
+            <li>Les enfants sont ajoutés au parent s'ils sont dans le template parent</li><br>
             <li>Tous composants doit être déclaré dans l'object componants</li><br>
         </ul>
     </div>
@@ -42,7 +42,7 @@
             <li>
                 Tous dans un même fichier
             </li><br>
-            <li>Plugin Webpacj déjà présent</li>
+            <li>Plugin Webpack déjà présent</li>
         <ul>
     </div>
     <div>

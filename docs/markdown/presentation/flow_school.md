@@ -10,7 +10,7 @@ Tour de table ...
 
 # Slide de la formation
 <p class="full-center">
-    Mettre le lien du github pages
+    https://sfeir-open-source.github.io/sfeir-school-vuejs/
 </p>
 
 ##==##

@@ -3,11 +3,11 @@
 <br>
 <span>Nous avons ajouté un composant SearchBar</span>
 <ul>
-    <li>Propager un event search au composant People.vue en tapant sur entrée dans la bar de recherche</li>
-    <li>Dans le composant People, à l'écoute de l'event search, filtrer la liste des peoples</li>
+    <li>Propagez un event search au composant People.vue en tapant sur la touche entrée dans la bar de recherche</li>
+    <li>Dans le composant People, à l'écoute de l'event search, filtrez la liste des peoples</li>
 </ul>
 Notes:
- - passer la valeur de l'input search lors de la propagation de l'event
+ - passez la valeur de l'input search lors de la propagation de l'event
 
 ##==##
 

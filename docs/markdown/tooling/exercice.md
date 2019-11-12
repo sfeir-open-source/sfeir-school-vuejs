@@ -2,10 +2,10 @@
 ## Exercice
 <ul>
     <li>Dans le fichier <strong>main.js</strong><br>
-        - Importer Vue<br>
-        - Importer Vue Material<br>
-        - Enregistrer un theme pour Vue Material<br>
-        - Indiquer à Vue que vous utiliser Material
+        - Importez Vue<br>
+        - Importez Vue Material<br>
+        - Enregistrez un theme pour Vue Material<br>
+        - Indiquez à Vue que vous utiliser Material
     </li>
     <li>Dans le fichier <strong>index.html</strong><br>
         - Supprimer l'import de vue<br>

@@ -2,7 +2,7 @@
 # Les modifiers: concepts et généralités
 <br>
 <ul>
-    <li>Permet de customiser une directives</li>
+    <li>Permet de customiser une directive</li>
     <li>Peuvent être chaînés</li>
     <li>Se place directement après un .</li>
 </ul>
@@ -14,7 +14,7 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les modifiers pour les events
 <br>
-<span>Les modifiers les plus courant pour les events sont les suivants</span>
+<span>Les modifiers les plus courants pour les events sont les suivants</span>
 <ul>
     <li>.stop</li>
     <li>.prevent</li>

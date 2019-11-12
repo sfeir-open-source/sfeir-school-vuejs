@@ -58,6 +58,6 @@ Notes:
 <br>
 <img alt="center" src="assets/images/school/data-binding-template/event_binding.png">
 Notes:
- - De préférences utiliser la convention kebab case pour créer nos event custom
- - $event permet de récupérer les data emises par le $emit
- - On peut utiliser les event native grace au .native => @focus.native
+ - De préférence utiliser la convention kebab case pour créer nos events custom
+ - $event permet de récupérer les datas emises par le mot clé $emit
+ - On peut utiliser les events natives grâce au .native => @focus.native

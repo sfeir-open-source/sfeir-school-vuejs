@@ -1,14 +1,14 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les différents type de communication
 <br><br>
-<span>Il existe <strong>deux</strong> grandes famille de communication</span><br><br>
+<span>Il existe <strong>deux</strong> grandes familles de communication</span><br><br>
 <ul>
     <li>Parents - enfants: (properties / event-custom)</li>
     <br>
     <li>Elements indépendants les uns des autres</li>
 </ul>
 Notes: 
- - Dans notre cas nous allons nous intéresser particulièrement à la communication entre des éléements indépendants les uns des autres
+ - Dans notre cas nous allons nous intéresser particulièrement à la communication entre des éléments indépendants les uns des autres
  Pour ce faire, il existe deux grandes solutions
   - mise en place d'un bus de communication (service, instance de Vue, observables)
   - mise en place d'une architecture flux (provenant du monde React => problème de notifications)
@@ -19,7 +19,7 @@ Notes:
 # Créer sa propre communication
 <br><br>
 <ul>
-    <li>Créer une instance de Vue dédié pour la communication</li>
+    <li>Créer une instance de Vue dédiée pour la communication</li>
     <li>Importer cette instance dans différents composants</li>
     <li>Utiliser les méthodes $emit et $on</li>
 </ul>
@@ -38,10 +38,9 @@ Notes:
 <!-- .slide: class="sfeir-basic-slide" -->
 # Utilisation de l'éxistant: VueX
 <br><br>
-
 <ul>
     <li>Permet de mettre en place une architecture dataflow first (similaire à redux)</li>
-    <li>Librairie tiers <strong>MAIS</strong> officiel</li>
+    <li>Librairie tiers <strong>MAIS</strong> officielle</li>
     <li>npm install --save vuex</li>
 </ul>
 <img alt="h-600 center"src="assets/images/school/state-management/dataflow_flux.png">

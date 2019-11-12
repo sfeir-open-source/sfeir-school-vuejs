@@ -14,4 +14,4 @@
     </div>
 </div>
 Notes: 
- - Attention il est préférable d'identifiant le template d'un élement de manière unique grâce :key
+ - Attention il est préférable d'identifier le template d'un élement de manière unique grâce :key
