@@ -3,7 +3,8 @@
 <br>
 <span class="center"><strong>Vue Cli (https://cli.vuejs.org)</strong></span>
 ```bash
-npm run install -g @vue/cli@latest
+npm i -g @vue/cli
+vue create <project-name>
 ```
 <img alt="center h-700" src="assets/images/school/tool/vue_cli.png">
 
