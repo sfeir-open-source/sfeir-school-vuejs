@@ -13,6 +13,19 @@
     </li>
 </ul>
 
+Notes
+- Vue material "Getting Started" : https://vuematerial.io/getting-started/
+- Vue material "Card" : https://vuematerial.io/components/card/
+- Code pour la configuration du thème :
+<pre>
+// Pour la configuration du thème
+Vue.material.registerTheme('default', {
+    primary: 'blue',
+    accent: 'grey',
+    warn: 'red'
+});
+</pre>
+
 ##==##
 
 <!-- .slide: class="sfeir-bg-blue exercice" -->
