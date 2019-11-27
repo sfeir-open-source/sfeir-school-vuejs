@@ -28,6 +28,8 @@ Tour de table ...
 
 ```bash
 npm install -g @vue/cli
+git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
+cd steps/ && npm i
 ```
 <br>
 ```bash
@@ -43,7 +45,7 @@ npm run server
 <span> http://localhost:8080/<span>
 <br>
 <span><strong>npm run server:</strong></span>
-<span> http://localhost:9000</span>
+<span> http://localhost:9000/</span>
 </p>
 
 ##==##
