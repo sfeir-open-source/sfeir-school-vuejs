@@ -10,6 +10,6 @@ Vue.use(VueMaterial);
 new Vue({
   el: '#app',
   data: {
-    name: "Cyril",
+    name: "Sfeir",
   },
 });
