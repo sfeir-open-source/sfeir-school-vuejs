@@ -64,5 +64,6 @@ Le template peut se passer en utilisant une balise script de type <strong>x-temp
     <img alt="h-600" src="assets/images/school/basics/x-template_html_exemple.png">
 </p>
 
-
-
+Notes:
+Correction de l'exemple :<br>
+Insérer la balse script x-template dans le body, à l'intérieur de la balise <div id="app"></div>
