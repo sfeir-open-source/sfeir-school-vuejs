@@ -28,7 +28,7 @@ Notes:
                 - npm run serve<br>
                 - npm run build<br>
                 - npm run test:unit<br>
-                - npm run e2e<br>
+                - npm run lint<br>
             </li><br>
             <li>
                 Configuration:<br>
