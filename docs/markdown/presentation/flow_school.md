@@ -8,9 +8,13 @@ Tour de table ...
 
 ##==##
 
-# Slide de la formation
+# Repositories
 <p class="full-center">
-    https://sfeir-open-source.github.io/sfeir-school-vuejs/
+    Slides de la formation<br>
+    https://sfeir-open-source.github.io/sfeir-school-vuejs/<br><br>
+
+    Sources des exercices<br>
+    https://github.com/sfeir-open-source/sfeir-school-vuejs
 </p>
 
 ##==##
