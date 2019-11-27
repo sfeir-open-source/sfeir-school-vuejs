@@ -42,6 +42,11 @@ Notes:
     </div>
 </div>
 
+Notes:
+Vue abstrait la conf webpack.<br>
+Pour voir la conf webpack en clair :<br>
+vue-cli-service inspect
+
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
