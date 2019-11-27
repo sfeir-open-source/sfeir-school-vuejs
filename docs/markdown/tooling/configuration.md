@@ -66,6 +66,10 @@ Notes:
     <li>Attention il existe bien d'autres Framework Css, (Vuetify en est un exemple)</li>
 </ul>
 
+Notes:
+Comparatif frameworks CSS pour vue :
+https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui-vs-buefy-vs-weui-vs-vulma
+
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
