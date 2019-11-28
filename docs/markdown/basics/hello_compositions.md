@@ -1,7 +1,7 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Composition d'un simple Hello World
 <br><br>
-<span> 3 composantes: <span>
+<span>3 composantes : <span>
 <ul>
     <li>Le fichier source de Vue js</li><br>
     <li>Un template</li><br>
@@ -24,10 +24,10 @@ Notes:
 # Le script
 <div>
 <br><br>
-    Permet d'instancer une Vue avec différents options:
+    Permet d'instancer une Vue avec différentes options :
     <br><br>
     <ul>
-        <li><strong>el</strong> pour cible l'élement ou doit être placé "la vue"<br>
+        <li><strong>el</strong> pour cible l'élément où doit être placé "la vue"<br>
         <li><strong>data</strong> pour exposer des datas
     <ul>
 </div>
@@ -40,7 +40,7 @@ Notes:
 <!-- .slide: class="sfeir-basic-slide" -->
 # Le template
 <br>
-Le template Vue va se placer directement dans la page HTML:
+Le template Vue va se placer directement dans la page HTML :
 <br><br>
 <img alt="center h-700" src="assets/images/school/basics/template_exemple.png">
 
@@ -49,7 +49,7 @@ Le template Vue va se placer directement dans la page HTML:
 <!-- .slide: class="sfeir-basic-slide" -->
 # Le template
 <br>
-Le template Vue peut se passer en option à l'instance de vue:
+Le template Vue peut se passer en option à l'instance de vue :
 <br><br>
 <img alt="center" src="assets/images/school/basics/template_option_instance_exemple.png">
 

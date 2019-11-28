@@ -4,7 +4,7 @@
 <ul>
     <li>Créez un composant People qui affichera la liste des personnes</li><br>
     <li>Créez une route /people qui permettra d'afficher cette vue de liste</li><br>
-    <li>Pour la liste: répétez le template + style du composant Home</li><br>
+    <li>Pour la liste : répétez le template + style du composant Home</li><br>
 </ul>
 
 ##==##

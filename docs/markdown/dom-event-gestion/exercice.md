@@ -4,7 +4,7 @@
 <ul>
     <li>Créez une action random sur le click du bouton</li>
     <li>Exploitez le tableau du fichier people.js</li>
-    <li>Bonus: utilisez la fonction random de Math </li>
+    <li>Bonus : utilisez la fonction random de Math </li>
 </ul>
 
 ##==##

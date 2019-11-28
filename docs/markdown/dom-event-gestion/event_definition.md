@@ -4,8 +4,8 @@
 <div>
     <ul>
         <li>Nom de l'event précédé par <strong>v:on</strong> ou <strong>@</strong>(notation simplifiée)</li>
-        <li>Event fait généralement référence à une fonction définie dans la propriété methods de l'instance de votre composant</li>
-        <li>Récupération des datas de l'event dans le paramètre<strong>$event</strong</li>
+        <li>Event fait généralement référence à une fonction définie dans la propriété "methods" de l'instance de votre composant</li>
+        <li>Récupération des datas de l'event dans le paramètre <strong>$event</strong</li>
     </ul>
 </div>
 <div class="flex-row">

@@ -27,7 +27,7 @@
 # Implémentation dans le composant
 <div>
     <ul>
-        <li>Dans l'object validations de l'instance de votre composant</li>
+        <li>Dans l'objet validations de l'instance de votre composant</li>
         <li>Description du model de formulaire</li>
         <li>Chaque champs est une clé avec ses contraintes</li>
     </ul>
@@ -123,5 +123,5 @@
 <!-- .slide: class="sfeir-bg-blue exercice" -->
 ## Solution
 <span class="full-center" >localhost:8080/step15</span>
-Notes: 
+Notes:
  - A partir de la version 3 de vee-validate on peut également créer ses propres règles

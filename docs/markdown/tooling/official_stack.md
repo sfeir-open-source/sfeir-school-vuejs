@@ -1,5 +1,5 @@
 <!-- .slide: class="sfeir-basic-slide with-code" -->
-# La Stack "offcielle"
+# La stack "officielle"
 <br>
 <span class="center"><strong>Vue Cli (https://cli.vuejs.org)</strong></span>
 ```bash
@@ -11,7 +11,7 @@ vue create <project-name>
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code" -->
-# La stack offcielle
+# La stack "officielle"
 <div class="flex-row">
     <div class="ecosystem">
         <ul>
@@ -28,7 +28,7 @@ vue create <project-name>
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code" -->
-# La Stack officielle
+# La stack "officielle"
 <br>
 ```bash
 vue create <project-name>
@@ -49,7 +49,7 @@ vue create <project-name>
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# La Stack offcielle
+# La stack "officielle"
 <br>
 ```bash
 vue-cli-service

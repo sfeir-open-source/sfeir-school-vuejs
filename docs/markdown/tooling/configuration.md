@@ -24,14 +24,14 @@ Notes:
 <div class="flex-row configuration">
     <div>
         <ul>
-            <li>Les commandes:<br>
+            <li>Les commandes :<br>
                 - npm run serve<br>
                 - npm run build<br>
                 - npm run test:unit<br>
                 - npm run lint<br>
             </li><br>
             <li>
-                Configuration:<br>
+                Configuration :<br>
                  - dev, prod, int ...<br>
                  - fichier env avec l'extension .env<br>
             </li>
@@ -68,7 +68,7 @@ Notes:
         - <span><strong>...</strong></span>
     </li><br>
     <li>Pour l'utiliser => Vue.use(VueMaterial)</li><br>
-    <li>Attention il existe bien d'autres Framework Css, (Vuetify en est un exemple)</li>
+    <li>Attention, il existe bien d'autres Framework Css, (Vuetify en est un exemple)</li>
 </ul>
 
 Notes:
@@ -83,10 +83,10 @@ https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui
 <span><strong>A tout moment vous pouvez utiliser vos instances de vue (et vos composants)</strong></span><br><br>
 <div>
     <ul>
-        <li>directement dans votre application:<br>
+        <li>directement dans votre application :<br>
             - inclure vos sources javascript dans votre page HTML
         </li><br>
-        <li>en mode single page application:<br>
+        <li>en mode single page application :<br>
             - toute votre application est en Vue JS<br>
             - on utilise les outils propres à l'écosysteme de Vue (webpack + CLI)<br>
             - utilisation des imports et exports (ES6)<br>

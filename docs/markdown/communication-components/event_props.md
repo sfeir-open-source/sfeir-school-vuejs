@@ -10,7 +10,7 @@
 <div>
     <ul>
         <li>Passées dans la propriété props</li>
-        <li>Tableau de chaînes de propriétes</li>
+        <li>Tableau de chaînes de propriétés</li>
     </ul>
     <br><br>
     <div class="flex-row">
@@ -25,11 +25,15 @@
 # Les props (complète)
 <div class="flex-row">
     <ul>
-        <li>Props peut également être un object pour plus de contrôle</li>
-        <li>Définition: nom de la prop: contraintes object: <br>
-            <div>- type</div>
-            <div>- required</div>
-            <div>- validator custom function</div>
+        <li>Props peut également être un objet pour plus de contrôle</li>
+        <li>Définition :<br>
+            - Nom de la prop<br>
+            - Objet avec comme propriétés :
+            <ul style="margin-left: 100px">
+                <li>type</li>
+                <li>required</li>
+                <li>validator (custom function)</li>
+            </ul>
         </li>
     </ul>
     <img alt="h-750" src="assets/images/school/communication-components/complete_props.png">
@@ -41,7 +45,7 @@
 # Les events
 <div>
     <ul>
-        <li>Le composant enfant envoie un event pour notifier le parent: this.$emit()</li>
+        <li>Le composant enfant envoie un event pour notifier le parent : this.$emit()</li>
         <li>Le composant parent écoute l'event grâce à <strong>v-on</strong> ou <strong>@</strong></li>
     </ul>
     <br><br><br>

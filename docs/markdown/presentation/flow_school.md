@@ -41,10 +41,10 @@ npm run server
 ```
 <br>
 <p class="center">
-<span><strong>npm run client:</strong></span>
+<span><strong>npm run client :</strong></span>
 <span> http://localhost:8080/<span>
 <br>
-<span><strong>npm run server:</strong></span>
+<span><strong>npm run server :</strong></span>
 <span> http://localhost:9000/</span>
 </p>
 
@@ -54,7 +54,7 @@ npm run server
 <br><br>
 <span><strong>Chaque concept clé de Vue Js est accompagné d'un TP.</strong></span>
 <br><br><br>
-Déroulement du TP:
- - <strong>une page d'excercice: steps/src/pages/`name_tp`</strong> (http://localhost:8080/name_tp)
+Déroulement du TP :
+ - <strong>une page d'excercice : steps/src/pages/`name_tp`</strong> (http://localhost:8080/name_tp)
 
- - <strong>une page de solution: steps/src/pages/`_solution_tp`</strong>  (http://localhost:8080/solution_tp)
+ - <strong>une page de solution : steps/src/pages/`_solution_tp`</strong>  (http://localhost:8080/solution_tp)

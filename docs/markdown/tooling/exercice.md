@@ -4,12 +4,12 @@
     <li>Dans le fichier <strong>main.js</strong><br>
         - Importez Vue<br>
         - Importez Vue Material<br>
-        - Enregistrez un theme pour Vue Material<br>
-        - Indiquez à Vue que vous utiliser Material
+        - Enregistrez un thème pour Vue Material<br>
+        - Indiquez à Vue que vous utilisez Material
     </li>
     <li>Dans le fichier <strong>index.html</strong><br>
-        - Supprimer l'import de vue<br>
-        - Afficher notre composant dans un composant md-card
+        - Supprimez l'import de vue<br>
+        - Affichez notre composant dans un composant md-card
     </li>
 </ul>
 

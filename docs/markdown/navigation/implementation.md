@@ -22,19 +22,19 @@
 # Navigation programmatique (routing static)
 <div>
     <ul>
-        <li>Récuperation du router configuré => import router from 'router.js'</li><br>
-        <li><strong>Push:</strong><br>
+        <li>Récupération du routeur configuré => import router from 'router.js'</li><br>
+        <li><strong>Push :</strong><br>
             <div>- router.push('home') (nom de la route)</div>
             <div>- router.push({ path: 'home' }) (path de la route)</div>
-            <div>- router.push({ path: 'home', params:{ id: '1234' }})(router avec paramètres)</div>
-            <div>- router.push({ path: 'home', query:{ id: '1234' }})(route avec query paramètres)</div>
+            <div>- router.push({ path: 'home', params:{ id: '1234' }}) (router avec paramètres)</div>
+            <div>- router.push({ path: 'home', query:{ id: '1234' }}) (route avec query paramètres)</div>
         </li><br>
-        <li><strong>Replace</strong> remplace l'url courant, ne change pas de vue, historique inchangé</li><br>
-        <li><strong>Go(n) navigue dans l'historique</strong></li>
+        <li><strong>Replace</strong> : remplace l'url courante, ne change pas de vue, historique inchangé</li><br>
+        <li><strong>Go(n)</strong> : navigue dans l'historique</li>
     </ul>
 </div>
 
-Notes: 
+Notes:
  - Dans une instance Vue, vous pouvez accéder à l'instance du routeur via $router. Vous pouvez donc appeler this.$router.push.
 
 ##==##
@@ -46,9 +46,9 @@ Notes:
         <ul>
             <li>Référence dans le template par $route.params</li><br>
             <li>guard</li><br>
-            <li>props au composant:<br>
+            <li>props au composant :<br>
                 <div>- <strong>Réutilisable</strong</div>
-                <div>- <strong>testable</strong></div>
+                <div>- <strong>Testable</strong></div>
             </li>
         </ul>
     </div>
