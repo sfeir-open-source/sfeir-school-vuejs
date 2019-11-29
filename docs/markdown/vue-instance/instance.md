@@ -1,6 +1,6 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # L'instance
-<span>Une instance est composée de trois grandes composantes</span><br>
+<span>Une instance est composée de 3 grandes composantes</span><br>
 <div class="flex-row">
     <div>
         <ul>
@@ -19,9 +19,9 @@
     </div>
 </div>
 Notes:
-Le constructor peut prendre plusieurs options:
+Le constructor peut prendre plusieurs options :
  - des sélecteurs
- - propriétes
+ - propriétés
  - method
  - computed
 
@@ -50,13 +50,13 @@ Le constructor peut prendre plusieurs options:
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# Les propriétes
+# Les propriétés
 <div class="flex-row">
     <div>
         <ul>
             <li>Exposées dans l'objet data</li><br>
             <li>Réactives</li><br>
-            <li>Propriétés d'instance:<br>
+            <li>Propriétés d'instance :<br>
                 - $el<br>
                 - $data<br>
             </li>
@@ -83,7 +83,7 @@ Le constructor peut prendre plusieurs options:
             <li>Exposées dans l'objet computed</li>
             <li>Masque la logique de traitement (filtre)</li>
             <li>Utilisable dans le template</li>
-            <li>Mise à jour quand les propriétes changent</li>
+            <li>Mise à jour quand les propriétés changent</li>
             <li>Logique Getter/Setter</li>
         </ul>
     </div>
@@ -100,9 +100,9 @@ Le constructor peut prendre plusieurs options:
 <div class="flex-row">
     <div>
         <ul>
-            <li>Exposées dans l'object method</li><br>
+            <li>Exposées dans l'objet "methods"</li><br>
             <li>Utilisables dans le template</li><br>
-            <li>Méthode d'instances<br>
+            <li>Méthodes d'instances<br>
               - render (creation v-node + createElement parameter)<br>
               - $on<br>
               - $emit<br>
@@ -124,7 +124,7 @@ Le constructor peut prendre plusieurs options:
         <ul>
             <li>S'implémente sur l'instance / dans une méthode</li><br>
             <li>Opérations Asynchrone</li><br>
-            <li>Priviligier une computed properties<br>
+            <li>Privilégier une computed properties<br>
             </li>
         </ul>
     </div>
@@ -135,10 +135,10 @@ Le constructor peut prendre plusieurs options:
 
 ##==##
 <!-- .slide: class="sfeir-basic-slide" -->
-# Combat entre computed watcher et method
+# Combat entre computed, watcher et method
 <br><br><br>
 <ul>
-    <li>Une propriété computed est recalculée seulement quand ces dépendances changent</li><br>
-    <li>Une méthode est rappelée à chaque fois qu'un élement change</li><br>
-    <li>Un watcher est priviligié pour des actions plus complex(asynchrone) => un call à une api</li><br>
+    <li>Une propriété computed est recalculée seulement quand ses dépendances changent</li><br>
+    <li>Une méthode est rappelée à chaque fois qu'un élément change</li><br>
+    <li>Un watcher est privilégié pour des actions plus complexes (asynchrone) => un call à une api</li><br>
 </ul>

@@ -2,7 +2,7 @@
 # Directive Custom, Pourquoi?
 <ul>
     <li><strong>Souvant le composant se suffit à lui même</strong></li>
-    <li>Enrichir le comportormant d'un élement natif</li>
+    <li>Enrichir le comportormant d'un élément natif</li>
     <li>Enrigistrement de manière local ou global</li>
     <li>Peut passer une simple fonction</li>
 </ul>

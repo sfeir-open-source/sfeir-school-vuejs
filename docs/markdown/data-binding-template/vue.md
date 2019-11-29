@@ -11,17 +11,17 @@
 
 <!-- .slide: class="sfeir-basic-slide with code -->
 # Explication syntaxique
-<span><strong>Syntax de l'Interpolation</strong></span><br><br>
+<span><strong>Syntaxe de l'interpolation</strong></span><br><br>
 ```html
 <span>{{ name }}</span>
 ```
 <br><br>
-<span><strong>Syntax d'une propriété</strong></span><br><br>
+<span><strong>Syntaxe d'une propriété</strong></span><br><br>
 ```html
 <button v-bind:disabled="!name">Sign-In</button>
 ```
 <br><br>
-<span><strong>Syntax de l'event</strong></span><br><br>
+<span><strong>Syntaxe de l'event</strong></span><br><br>
 ```html
 <button v-on:click="signIn()" type="submit">
 ```
@@ -32,11 +32,11 @@
 # Interpolation et Expression
 <br><br><br>
 <ul>
-    <li>Interpolation:<br>
+    <li>Interpolation :<br>
         - Se matérialise par les doubles accolades
     </li><br>
-    <li>Expression: <br>
-        - uniquement dans le composant courant<br>
+    <li>Expression : <br>
+        - Uniquement dans le composant courant<br>
         - Du JS => mais une seule expression
     </li>
 </ul>

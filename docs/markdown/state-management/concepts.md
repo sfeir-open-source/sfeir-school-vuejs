@@ -7,7 +7,7 @@
     <br>
     <li>Elements indépendants les uns des autres</li>
 </ul>
-Notes: 
+Notes:
  - Dans notre cas nous allons nous intéresser particulièrement à la communication entre des éléments indépendants les uns des autres
  Pour ce faire, il existe deux grandes solutions
   - mise en place d'un bus de communication (service, instance de Vue, observables)
@@ -28,7 +28,7 @@ Notes:
     <img src="assets/images/school/state-management/bus_implementation.png">
 </div>
 
-Notes: 
+Notes:
  - https://alligator.io/vuejs/global-event-bus/ permet de voir une implémentation complète
  - Il est judicieux de placer nos listener dans un hook Vue js (mounted est particulièrement indiqué)
  - $off permet de désouscrire à un event
@@ -59,9 +59,9 @@ Notes:
     </ul>
     <img alt="h-800" src="assets/images/school/state-management/achitecture_vuex.png">
 </div>
-Notes: 
-Vuex impose de mettre en place un store. Ce store est composé de 4 composantes: 
+Notes:
+Vuex impose de mettre en place un store. Ce store est composé de 4 composantes:
  - state (initialisation de nos données présentes dans notre vue)
- - getter (récuperation total ou partiel d'un state, si une partie du state est modifié automatiquement le getters qui en dépend est "rafraîchit")
+ - getter (récupération total ou partiel d'un state, si une partie du state est modifié automatiquement le getters qui en dépend est "rafraîchit")
  - mutation (c'est dans ce fichier que le changement d'état de nos variables présentes dans notre state sont modifiées => opération synchrone)
  - action (c'est dans ce fichier que les appels vers nos api se font, ici se place tout ce qui est asynchrone)

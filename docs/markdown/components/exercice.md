@@ -2,7 +2,7 @@
 ## Exercice
 <ul>
     <li>Créez un composant monofichier App</li><br>
-    <li>Importez ce composants dans le fichier main.js</li><br>
+    <li>Importez ce composant dans le fichier main.js</li><br>
     <li>Créez une instance de Vue en utilisant la méthode render (render: (h) => h(App))</li>
 </ul>
 

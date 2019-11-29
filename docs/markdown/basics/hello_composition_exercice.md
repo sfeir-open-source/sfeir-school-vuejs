@@ -9,7 +9,7 @@
     <li>Dans le fichier <strong>index.html</strong><br>
         - Utilisez cette propriété directement dans le HTML
     </li>
-    <li>Vérifiez votre travail: localhost:8080/step01</li>
+    <li>Vérifiez votre travail : localhost:8080/step01</li>
 </ul>
 
 ##==##

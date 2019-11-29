@@ -4,14 +4,27 @@
     <li>Dans le fichier <strong>main.js</strong><br>
         - Importez Vue<br>
         - Importez Vue Material<br>
-        - Enregistrez un theme pour Vue Material<br>
-        - Indiquez à Vue que vous utiliser Material
+        - Enregistrez un thème pour Vue Material<br>
+        - Indiquez à Vue que vous utilisez Material
     </li>
     <li>Dans le fichier <strong>index.html</strong><br>
-        - Supprimer l'import de vue<br>
-        - Afficher notre composant dans un composant md-card
+        - Supprimez l'import de vue<br>
+        - Affichez notre composant dans un composant md-card
     </li>
 </ul>
+
+Notes
+- Vue material "Getting Started" : https://vuematerial.io/getting-started/
+- Vue material "Card" : https://vuematerial.io/components/card/
+- Code pour la configuration du thème :
+<pre>
+// Pour la configuration du thème
+Vue.material.registerTheme('default', {
+    primary: 'blue',
+    accent: 'grey',
+    warn: 'red'
+});
+</pre>
 
 ##==##
 

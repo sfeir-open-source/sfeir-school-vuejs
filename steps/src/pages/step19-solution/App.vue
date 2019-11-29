@@ -19,7 +19,7 @@ import Home from "./views/Home";
 export default {
   data() {
     return {
-      name: "Cyril"
+      name: "Sfeir"
     };
   },
   components: {

@@ -14,6 +14,6 @@ Vue.material.registerTheme('default', {
 new Vue({
   el: '#app',
   data: {
-    name: "Cyril",
+    name: "Sfeir",
   },
 });
