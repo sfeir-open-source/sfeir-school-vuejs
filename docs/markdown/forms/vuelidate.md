@@ -15,7 +15,7 @@
 # Implémentation dans le template
 <br>
 <ul>
-    <li>Indiquez l'event qui déclanche les changements d'états ($touch: passe en dirty, $reset: passe en pristine)</li>
+    <li>Indiquez l'event qui déclenche les changements d'états ($touch: passe en dirty, $reset: passe en pristine)</li>
     <li>v-model pour le databinding</li>
 </ul>
 <br><br>
@@ -27,9 +27,9 @@
 # Implémentation dans le composant
 <div>
     <ul>
-        <li>Dans l'objet validations de l'instance de votre composant</li>
+        <li>Dans l'objet "validations" de l'instance de votre composant</li>
         <li>Description du model de formulaire</li>
-        <li>Chaque champs est une clé avec ses contraintes</li>
+        <li>Chaque champ est une clé avec ses contraintes</li>
     </ul>
 </div>
 <br>
@@ -41,9 +41,9 @@
 # Gestion des erreurs
 <br>
 <ul>
-    <li>Accès à la propriété $v dans le template pour avoir accès à chaque champs
-        <div> - object $error sur le champs pour savoir s'il y a ou non error</div>
-        <div> - object de contrainte sur un champs (required, minLength)</div>
+    <li>Accès à la propriété $v dans le template pour avoir accès à chaque champ
+        <div> - Objet $error sur le champ pour savoir s'il y a ou non erreur</div>
+        <div> - Objet de contraintes sur un champ (required, minLength)</div>
     </li>
 </ul><br><br>
 <img alt="center" src="assets/images/school/forms/vuelidate_error_display.png">
@@ -71,7 +71,7 @@
     <li>Transformez le composant Form.vue pour correspondre au model-driven</li>
     <li>Utilisez la librairie Vuelidate</li>
     <li>Pensez à prendre le mode création</li>
-    <li>Pas de pattern sur le champs phone</li>
+    <li>Pas de pattern sur le champ phone</li>
 </ul>
 
 ##==##
@@ -112,9 +112,9 @@
 ## Exercice
 <ul>
     <li>Créez une class customValidator (dossier components/forms/validators)</li>
-    <li>Créez un validator qui vérifie le format de téléphone</li>
-    <li>Créez un validator qui vérifie le format de l'addresse email (regex: /^\w+\.\w@sfeir\.com$/) </li>
-    <li>Associez ces validateurs aux controls phoneFormat et sfeirMail</li>
+    <li>Créez un validator qui vérifie le format du téléphone</li>
+    <li>Créez un validator qui vérifie le format de l'adresse e-mail (regex: /^\w+\.\w@sfeir\.com$/) </li>
+    <li>Associez ces validateurs aux contrôles phoneFormat et sfeirMail</li>
     <li>Affichez les messages d'erreurs correspondants</li>
 </ul>
 

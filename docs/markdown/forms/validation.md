@@ -4,7 +4,7 @@
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# Les deux approches 
+# Les deux approches
 <br><br>
 <ul>
     <li>Template driven form (la validation est pilotée par le template): <strong>vee-validate</strong></li><br>
@@ -21,10 +21,10 @@ Notes:
 # Les différents états d'un contôle
 <br>
 <ul>
-    <li><strong>pristine</strong>: l’utilisateur n’a pas interagit avec le contrôle</li>
-    <li><strong>dirty</strong>: l’utilisateur a déjà interagit avec le contrôle</li>
-    <li><strong>touched</strong>: le contrôle a perdu le focus</li>
-    <li><strong>untouched</strong>: le contrôle n'a pas perdu le focus</li>
-    <li><strong>valid</strong>: Le contôle est valide</li>
-    <li><strong>invalid</strong>: Le contôle n'est pas valide</li>
+    <li><strong>pristine</strong> : l’utilisateur n’a pas interagi avec le contrôle</li>
+    <li><strong>dirty</strong> : l’utilisateur a déjà interagi avec le contrôle</li>
+    <li><strong>touched</strong> : le contrôle a perdu le focus</li>
+    <li><strong>untouched</strong> : le contrôle n'a pas perdu le focus</li>
+    <li><strong>valid</strong> : Le contôle est valide</li>
+    <li><strong>invalid</strong> : Le contôle n'est pas valide</li>
 </ul>

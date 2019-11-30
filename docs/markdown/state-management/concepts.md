@@ -3,7 +3,7 @@
 <br><br>
 <span>Il existe <strong>deux</strong> grandes familles de communication</span><br><br>
 <ul>
-    <li>Parents - enfants: (properties / event-custom)</li>
+    <li>Parents - enfants : (properties / event-custom)</li>
     <br>
     <li>Elements indépendants les uns des autres</li>
 </ul>
@@ -36,7 +36,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# Utilisation de l'éxistant: VueX
+# Utilisation de l'existant : VueX
 <br><br>
 <ul>
     <li>Permet de mettre en place une architecture dataflow first (similaire à redux)</li>
