@@ -18,6 +18,8 @@ Notes
 - Vue material "Card" : https://vuematerial.io/components/card/
 - Code pour la configuration du thème :
 <pre>
+import 'vue-material/dist/vue-material.css';
+
 // Pour la configuration du thème
 Vue.material.registerTheme('default', {
     primary: 'blue',
