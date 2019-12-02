@@ -81,7 +81,7 @@ Notes:
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <ul style="font-size: 1.3em">
-    <li>Validez les champs suivant:
+    <li>Validez les champs suivants :
         <div> - firstname : requis, taille minimum de 2 lettres</div>
         <div> - lastname : requis, taille minimum de 2 lettres</div>
         <div> - email : requis et de type email</div>

@@ -122,6 +122,6 @@
 
 <!-- .slide: class="sfeir-bg-blue exercice" -->
 ## Solution
-<span class="full-center" >localhost:8080/step15</span>
+<span class="full-center" >localhost:8080/step15_solution</span>
 Notes:
  - A partir de la version 3 de vee-validate on peut également créer ses propres règles

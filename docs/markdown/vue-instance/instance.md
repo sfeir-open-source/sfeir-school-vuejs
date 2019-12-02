@@ -135,7 +135,7 @@ Le constructor peut prendre plusieurs options :
 
 ##==##
 <!-- .slide: class="sfeir-basic-slide" -->
-# Combat entre computed, watcher et method
+# Combat entre computed, watcher et methods
 <br><br><br>
 <ul>
     <li>Une propriété computed est recalculée seulement quand ses dépendances changent</li><br>
