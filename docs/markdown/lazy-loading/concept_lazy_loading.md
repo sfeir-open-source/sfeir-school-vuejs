@@ -26,14 +26,14 @@
 # Async component
 <br><br>
 <div class="flex-row">
-    <div>Définit en tant que fonction retournant une Promise</div>
+    <div>Définit en tant que fonction retournant le composant</div>
     <img alt="h-600 center" src="assets/images/school/lazy-loading/async_component.png">
 </div>
 
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
-# Async component
+# Import dynamique
 <br><br>
 <div class="flex-row">
     <img alt="h-600 center" src="assets/images/school/lazy-loading/dynamic_import.png">
