@@ -14,13 +14,7 @@
 </template>
 
 <script>
-import Home from "./views/Home";
-
-export default {
-  components: {
-    "sfeir-home": Home
-  }
-};
+export default {};
 </script>
 
 <style scoped>
