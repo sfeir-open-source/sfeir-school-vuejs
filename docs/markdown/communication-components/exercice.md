@@ -1,7 +1,7 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <ul>
-    <li>Dans un dossier composant, créez un monoficher CarPanel.vue qui prend en propriété "person"</li>
+    <li>Dans un dossier composant, créez un monoficher CardPanel.vue qui prend en propriété "person"</li>
     <li>Copier le html et css dupliqué dans Home.vue et People.vue</li>
     <li>Utilisez card panel dans Home.vue et People.vue en lui passant une personne</li>
 </ul>
