@@ -101,7 +101,8 @@ Notes:
 <ul>
     <li>Utilisez Form.vue dans Update.vue</li>
     <li>Passez la personne récupérée au composant Form.vue (props)</li>
-    <li>Créez une computed method editMode qui prend true comme valeur quand on est dans le cas d'un update</li>
+    <li>Créez une computed method editMode qui return true comme valeur quand on est dans le cas d'un update</li>
+    <li>Ajoutez un header à Form.vue qui ne s'affiche que si editMode est true</li>
     <li>Propagez l'event save dans Update.vue pour modifier une personne</li>
 </ul>
 Notes:
