@@ -126,6 +126,12 @@ module.exports = {
       step20_solution: {
         entry: 'src/pages/step20-solution/main.js',
       },
+      step21: {
+        entry: 'src/pages/step21/main.js'
+      },
+      step21_solution: {
+        entry: 'src/pages/step21-solution/main.js',
+      }
     },
     devServer: {
       historyApiFallback: {
@@ -170,6 +176,8 @@ module.exports = {
           { from: /\/step19$/, to: '/step19.html' },
           { from: /\/step20_solution/, to: '/step20_solution.html' },
           { from: /\/step20$/, to: '/step20.html' },
+          { from: /\/step21_solution/, to: '/step21_solution.html' },
+          { from: /\/step21$/, to: '/step21.html' },
         ]
       }
   }
