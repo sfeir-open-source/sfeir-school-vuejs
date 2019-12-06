@@ -121,6 +121,10 @@ Pour voir les erreurs, pensez à mettre : <pre>:class="{ 'md-input-invalid': $v.
     <li>Affichez les messages d'erreurs correspondants</li>
 </ul>
 
+Notes
+Créer une propriété sfeirmail en plus dans l'objet validations.person.email, car il y a déjà "email" en validator.<br/><br/>
+sfeirmail fait appel au customValidator qui effectue le test de la regexp
+
 ##==##
 
 <!-- .slide: class="sfeir-bg-blue exercice" -->
