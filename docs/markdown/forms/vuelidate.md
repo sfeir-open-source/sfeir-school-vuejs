@@ -74,6 +74,9 @@
     <li>Pas de pattern sur le champ phone</li>
 </ul>
 
+Notes
+Pour voir les erreurs, pensez à mettre : <pre>:class="{ 'md-input-invalid': $v.person.firstname.$error }"</pre> sur les md-input-container qui entourent les champs
+
 ##==##
 
 <!-- .slide: class="sfeir-bg-blue exercice" -->
