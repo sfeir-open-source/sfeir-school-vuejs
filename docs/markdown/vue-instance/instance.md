@@ -92,6 +92,9 @@ Le constructor peut prendre plusieurs options :
     </div>
 </div>
 
+Notes
+Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/computed.html#Computed-Setter
+
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
