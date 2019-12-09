@@ -49,7 +49,7 @@ Le template Vue va se placer directement dans la page HTML :
 <!-- .slide: class="sfeir-basic-slide" -->
 # Le template
 <br>
-Le template Vue peut se passer en option à l'instance de vue :
+Le template Vue peut se passer en option à l'instance de vue:
 <br><br>
 <img alt="center" src="assets/images/school/basics/template_option_instance_exemple.png">
 

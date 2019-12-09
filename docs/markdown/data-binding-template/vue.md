@@ -48,7 +48,7 @@
 <br>
 <img alt="center" src="assets/images/school/data-binding-template/properties_binding.png">
 Notes:
- - Le binding s'effectue sur une proprité
+ - Le binding s'effectue sur une propriété
  - La cible du properties binding s'effectue sur l'attribut d'un élément ou attribut d'un composant
 
 ##==##

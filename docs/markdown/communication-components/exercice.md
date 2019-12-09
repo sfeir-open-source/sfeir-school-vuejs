@@ -1,7 +1,7 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <ul>
-    <li>Dans un dossier composant, créez un monoficher CarPanel.vue qui prend en propriété "person"</li>
+    <li>Dans un dossier composant, créez un monoficher CardPanel.vue qui prend en propriété "person"</li>
     <li>Copier le html et css dupliqué dans Home.vue et People.vue</li>
     <li>Utilisez card panel dans Home.vue et People.vue en lui passant une personne</li>
 </ul>
@@ -19,13 +19,15 @@ Notes:
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <ul>
-    <li>Sur l'icône trash du composant card panel, créez un event click</li>
+    <li>Implémentez la méthode delete dans PeopleService.js</li>
+    <li>Sur l'icône trash du composant CardPanel, créez un event click</li>
     <li>Au click, propagez un event qui s'appelle person-delete</li>
     <li>A l'écoute de cet évènement, le composant People doit supprimer une personne</li>
     <li>A l'écoute de cet évènement, le composant Home doit changer de personne</li>
 </ul>
-Notes:
- - api à appeler pour le delete: http://localhost:9000/api/peoples/:id => renvoie une liste de personnes mise à jour
+Notes
+- Route de l'api à appeler pour le delete: http://localhost:9000/api/peoples/:id
+- Le delete de l'api renvoie la liste des personnes à jour
 
  ##==##
 

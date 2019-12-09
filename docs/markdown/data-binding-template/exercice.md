@@ -8,14 +8,14 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <ul>
-    <li>Créez un composant monofichier Home.vue</li>
-    <li>Mappez:<br>
+    <li>Mappez :<br>
         - src/_static/home.html avec le template<br>
         - src/_static/home.css avec le style (le scoper)<br>
-        - src/_static/people.js avec un fichier people.js
     </li>
     <li>Importez people.js dans Home.vue</li>
     <li>Importez Home.vue dans App.vue</li>
+    <li>Chargez le premier people dans une propriété du composant Home.vue (méthode "created")</li>
+    <li>Remplacer les données statiques du composant par les informations du people</li>
 </ul>
 
 ##==##

@@ -22,7 +22,7 @@
 <ul>
     <li>Utilisation de Vue.component(tagname, optionObject)</li><br>
     <li>Options identiques à celles de l'instance</li><br>
-    <li>Attention, l'option data doit être une fonction retournant un objet</li><br>
+    <li>Attention, l'option "data" doit être une fonction retournant un objet</li><br>
 </ul>
 
 ##==##

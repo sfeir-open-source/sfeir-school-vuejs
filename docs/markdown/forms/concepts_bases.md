@@ -22,7 +22,7 @@
     <div>Permet de réaliser un</strong> two-way databinding</strong></div><br><br>
     <img alt="center" src="assets/images/school/forms/v-model_basic.png">
 </div>
-Notes: 
+Notes:
  - un changement de détection two bbinding permet de rélaiser une liaison vue-controller controller-vue:
   - Si le template est modifié automatique le controlleur en est répercuté
   - Si le controlleur est modifié automatique le template en est répercuté
@@ -35,7 +35,7 @@ Notes:
 <div>
     <ul>
         <li>Placement de cette directive sur input, textarea, checkbox, radio, select et composants</li>
-        <li>Peut être combiner avec v-for pour lister les options (select box)</li>
+        <li>Peut être combiné avec v-for pour lister les options (select box)</li>
         <li>Utilisation de v-bind pour associer des valeurs dynamiques (radio / checkbox)</li>
     </ul><br><br>
     <div class="flex-row">
@@ -70,7 +70,7 @@ Notes:
 </ul>
 Notes:
  - Le composant People.vue a été aggrementé de deux méthodes showDiaolog et hideDialog
- - style, html du formulaire se trouvent dans le dossier src/_static 
+ - style, html du formulaire se trouvent dans le dossier src/_static
  - un bouton pour afficher la modal du formulaire a été ajouté
  - Api à utiliser pour sauvegarder une personne => http://localhost:9000/api/peoples/ (pensez à implémenter une méthode create dans le fichier service people)
 
@@ -87,10 +87,10 @@ Notes:
 <ul>
     <li>Créez un composant monofichier Update (dans le dossier views)</li>
     <li>Mettez à jour le ficher router.js (#/edit/:id)</li>
-    <li>Réalisez la navigation vers l'update au click sur l'icon pencil de CardPanel.vue</li>
-    <li>Dans le Hook beforeRouteEnter, pensez à récupérer l'id et récupérer le détail d'une personne (Update.vue)</li>
+    <li>Réalisez la navigation vers l'update au click sur l'icône pencil de CardPanel.vue</li>
+    <li>Dans le Hook beforeRouteEnter, pensez à récupérer l'id et récupérez le détail d'une personne (Update.vue)</li>
 </ul>
-Notes: 
+Notes:
  - Pensez à créer une methode fecthOne dans le people service
  - api à utiliser http://localhost:9000/api/peoples/:id (GET)
 
@@ -100,11 +100,12 @@ Notes:
  ## Exercice
 <ul>
     <li>Utilisez Form.vue dans Update.vue</li>
-    <li>Passez la personn récupéré au composant Form.vue (props)</li>
-    <li>Créez une computed method editMode qui prend true comme valeur quand on est dans le cas d'un update</li>
+    <li>Passez la personne récupérée au composant Form.vue (props)</li>
+    <li>Créez une computed method editMode qui return true comme valeur quand on est dans le cas d'un update</li>
+    <li>Ajoutez un header à Form.vue qui ne s'affiche que si editMode est true</li>
     <li>Propagez l'event save dans Update.vue pour modifier une personne</li>
 </ul>
-Notes: 
+Notes:
  - s'il y a une personne alors editMode true, si pas de personne editMode false (formulaire de création)
  - Pensez à créer une méthode update dans le fichier people service
  - api:  http://localhost:9000/api/peoples/:id (PUT)

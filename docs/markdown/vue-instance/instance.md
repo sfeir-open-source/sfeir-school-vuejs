@@ -92,6 +92,9 @@ Le constructor peut prendre plusieurs options :
     </div>
 </div>
 
+Notes
+Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/computed.html#Computed-Setter
+
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
@@ -135,7 +138,7 @@ Le constructor peut prendre plusieurs options :
 
 ##==##
 <!-- .slide: class="sfeir-basic-slide" -->
-# Combat entre computed, watcher et method
+# Combat entre computed, watcher et methods
 <br><br><br>
 <ul>
     <li>Une propriété computed est recalculée seulement quand ses dépendances changent</li><br>

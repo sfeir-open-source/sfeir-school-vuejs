@@ -2,9 +2,10 @@
 ## Exercice
 <span>Un bouton random a été ajouté</span><br><br>
 <ul>
-    <li>Créez une action random sur le click du bouton</li>
+    <li>Un bouton "cached" a été ajouté à Home.vue</li>
+    <li>Créez une action "random" sur le clic du bouton</li>
     <li>Exploitez le tableau du fichier people.js</li>
-    <li>Bonus : utilisez la fonction random de Math </li>
+    <li>Bonus : utilisez la fonction random de Math</li>
 </ul>
 
 ##==##

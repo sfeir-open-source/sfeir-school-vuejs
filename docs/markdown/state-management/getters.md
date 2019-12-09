@@ -2,10 +2,10 @@
 # Les Getters
 <br>
 <ul>
-    <li>Object de clé valeur, chaque clé est une fonction</li>
-    <li>Permet de travailler sur le state, traitement (ex: filtre)</li>
+    <li>Objet clé-valeur, chaque clé est une fonction</li>
+    <li>Permet de faire des traitements sur le state (ex: filtre)</li>
     <li>Cet objet se trouve dans la propriété getters du store</li>
-    <li>Les Getters se placent principalement dans la propriété computed du composant</li>
+    <li>Les getters se placent principalement dans la propriété computed du composant</li>
 </ul><br><br>
 <div class="center">
     <img alt="h-400" src="assets/images/school/state-management/getters.png">

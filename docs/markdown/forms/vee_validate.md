@@ -9,7 +9,7 @@
 </div>
 <br>
 <img alt="center" src="assets/images/school/forms/vee_validate_import.png">
-Notes: 
+Notes:
  - VeeValidate est en version 3 actuellement, à partir de cette version, les règles de validations, les validations, la validation sur plusieurs champs ont été séparés en plusieurs bundles.
  Afin de faciliter la compréhension de tous l'import de ces packages permet de récupérer la validations et les règles de validation en un seul import
  - ValidationProvider permet de faire un block contenant input + error
@@ -19,7 +19,7 @@ Notes:
 
 <!-- .slide: class="sfeir-basic-slide " -->
 # Configuration
-<span>La configuration <strong>n'est pas nécessaire</strong> pour lancer la validation / ou le bon fonctionnement du plugin</span><br><br>
+<span>La configuration <strong>n'est pas nécessaire</strong> pour lancer la validation ou le bon fonctionnement du plugin</span><br><br>
 <img class="center" src="assets/images/school/forms/vee_validate_config.png">
 
 ##==##
@@ -28,16 +28,16 @@ Notes:
 # Les Validateurs (ValidationProvider)
 <br>
 <ul>
-    <li>Composant wrapper <strong>ValidationProvider</strong>
-    <li>rules: règles de validation</li>
-    <li>v-slot: passe des propriétés au template transclude</li>
+    <li>Composant wrapper : <strong>ValidationProvider</strong>
+    <li>rules : règles de validation</li>
+    <li>v-slot : passe des propriétés au template transclude</li>
 </ul>
 <br><br>
 <div>
     <img class="center h-500" src="assets/images/school/forms/vee_validate_validation.png">
 </div>
 
-Notes: 
+Notes:
  - les règles peuvent être un template string comme de l'exemple ou un objet => :rules="{required: true, min:{ length: 3 }}"
 
 ##==##
@@ -67,11 +67,11 @@ Notes:
 </ul>
 <div>Pour plus d'informations sur ces règles de bases => https://logaretm.github.io/vee-validate/api/rules.html</div>
 <br>
-Notes: 
+Notes:
  - il est possible de créer ses propres règles de validation avec extends
 
  ##==##
- 
+
  <!-- .slide: class="sfeir-basic-slide" -->
 # Valider l'ensemble d'un formulaire grâce à ValidationObserver
 <br><br>
@@ -80,17 +80,16 @@ Notes:
 ##==##
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-
-<ul>
-    <li>Validez les champs suivant:
-        <div> - firstname: requis, taille minimum de 2 lettres</div>
-        <div> - lastname: requis, taille minimum de 2 lettres</div>
-        <div> - email requis et de type email</div>
-        <div> - phone requis et 10 chiffres, utiliser la rules regex</div>
+<ul style="font-size: 1.3em">
+    <li>Validez les champs suivants :
+        <div> - firstname : requis, taille minimum de 2 lettres</div>
+        <div> - lastname : requis, taille minimum de 2 lettres</div>
+        <div> - email : requis et de type email</div>
+        <div> - phone : requis et 10 chiffres, utiliser la rules regex</div>
     </li>
     <li>Affichez les erreurs 1 à 1 </li>
-    <li>Utilisez la class md-input-invalid sur la balise md-input-container lors d'une erreur</li>
-    <li>Désactivez le bouton de validation si le formulaire est invalid (wrappez la balise md-content avec ValidationObservser)</li>
+    <li>Utilisez la classe md-input-invalid sur la balise md-input-container lors d'une erreur</li>
+    <li>Désactivez le bouton de validation si le formulaire est invalide (wrappez la balise md-content avec ValidationObserver)</li>
 </ul>
 
 ##==##
