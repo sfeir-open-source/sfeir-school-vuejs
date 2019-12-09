@@ -26,7 +26,7 @@
         <li><strong>Push :</strong><br>
             <div>- router.push('home') (nom de la route)</div>
             <div>- router.push({ path: 'home' }) (path de la route)</div>
-            <div>- router.push({ path: 'home', params:{ id: '1234' }}) (router avec paramètres)</div>
+            <div>- router.push({ name: 'home', params:{ id: '1234' }}) (router avec paramètres)</div>
             <div>- router.push({ path: 'home', query:{ id: '1234' }}) (route avec query paramètres)</div>
         </li><br>
         <li><strong>Replace</strong> : remplace l'url courante, ne change pas de vue, historique inchangé</li><br>
