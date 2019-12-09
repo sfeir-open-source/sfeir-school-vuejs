@@ -33,16 +33,14 @@ export default {
     "sfeir-form": Form,
     "search-bar": SearchBar
   },
-  /*computed: mapState({
-            people: state => state.people,
-        }),*/
+
   computed: {
     people: function() {
-      return this.$store.getters.filteredPeople;
+        // ...
     }
   },
   mounted() {
-    this.$store.dispatch("fetch");
+    // ...
   },
   methods: {
     deletePerson: function(person) {
@@ -71,7 +69,7 @@ export default {
       this.showModal = false;
     },
     filterPeople(search) {
-      this.$store.commit(types.FILTER, search);
+      // ...
     }
   }
 };
