@@ -39,8 +39,8 @@ Notes:
     <li><strong>oldNode</strong> : noeud virtuel précédent (dispo uniquement dans update, et componentUpdated)</li>
 </ul>
 Notes:
- - name correspond au nom de la directive
- - value: valeur passée à la directive => v-directive = 'nicolas' ici value = nicolas
- - expression: expression lié en tant que chaîne de caractères: => v-directive="i > 1" ici expression = i > 1
- - arg: argument passé à la directive => v-directive:foo ici arg = foo
- - modifiers: un object contenant les modificateurs => v-directive.prevent.stop => modifiers = { prevent: true, stop: true }
+ - name : correspond au nom de la directive
+ - value : valeur passée à la directive => v-directive = 'nicolas' ici value = nicolas
+ - expression : expression lié en tant que chaîne de caractères: => v-directive="i > 1" ici expression = i > 1
+ - arg : argument passé à la directive => v-directive:foo ici arg = foo
+ - modifiers : un objet contenant les modificateurs => v-directive.prevent.stop => modifiers = { prevent: true, stop: true }

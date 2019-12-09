@@ -1,5 +1,5 @@
 <!-- .slide: class="sfeir-basic-slide" -->
-# Les modifiers: concepts et généralités
+# Les modifiers : concepts et généralités
 <br>
 <ul>
     <li>Permet de customiser une directive</li>
