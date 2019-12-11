@@ -23,9 +23,9 @@
     <img alt="center" src="assets/images/school/forms/v-model_basic.png">
 </div>
 Notes:
- - un changement de détection two bbinding permet de rélaiser une liaison vue-controller controller-vue:
-  - Si le template est modifié automatique le controlleur en est répercuté
-  - Si le controlleur est modifié automatique le template en est répercuté
+- un changement de détection two-way databinding permet de réaliser une liaison vue-controller controller-vue:
+- Si le template est modifié, la modification est répercutée sur le controlleur
+- Si le controlleur est modifié, la modification est répercutée sur le template
 
 ##==##
 
