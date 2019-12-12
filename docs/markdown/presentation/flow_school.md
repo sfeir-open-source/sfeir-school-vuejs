@@ -29,7 +29,7 @@ Tour de table ...
 ```bash
 npm install -g @vue/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
-cd steps/ && npm i
+cd sfeir-school-vuejs/steps/ && npm i
 ```
 <br>
 ```bash
