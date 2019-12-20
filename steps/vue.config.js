@@ -6,131 +6,131 @@ module.exports = {
         template: 'src/pages/step01/step1.html'
       },
       step01_solution: {
-        entry: 'src/pages/step01-solution/main.js',
-        template: 'src/pages/step01-solution/step1.html'
+        entry: 'src/pages/step01_solution/main.js',
+        template: 'src/pages/step01_solution/step1.html'
       },
       step02: {
         entry: 'src/pages/step02/main.js',
         template: 'src/pages/step02/step2.html'
       },
       step02_solution: {
-        entry: 'src/pages/step02-solution/main.js',
-        template: 'src/pages/step02-solution/step2.html'
+        entry: 'src/pages/step02_solution/main.js',
+        template: 'src/pages/step02_solution/step2.html'
       },
       step03: {
         entry: 'src/pages/step03/main.js',
         template: 'src/pages/step03/index.html'
       },
       step03_solution: {
-        entry: 'src/pages/step03-solution/main.js'
+        entry: 'src/pages/step03_solution/main.js'
       },
       step04: {
         entry: 'src/pages/step04/main.js'
       },
       step04_solution: {
-        entry: 'src/pages/step04-solution/main.js'
+        entry: 'src/pages/step04_solution/main.js'
       },
       step05: {
         entry: 'src/pages/step05/main.js'
       },
       step05_solution: {
-        entry: 'src/pages/step05-solution/main.js'
+        entry: 'src/pages/step05_solution/main.js'
       },
       step06: {
         entry: 'src/pages/step06/main.js'
       },
       step06_solution: {
-        entry: 'src/pages/step06-solution/main.js'
+        entry: 'src/pages/step06_solution/main.js'
       },
       step07: {
         entry: 'src/pages/step07/main.js'
       },
       step07_solution: {
-        entry: 'src/pages/step07-solution/main.js'
+        entry: 'src/pages/step07_solution/main.js'
       },
       step08: {
         entry: 'src/pages/step08/main.js'
       },
       step08_solution: {
-        entry: 'src/pages/step08-solution/main.js'
+        entry: 'src/pages/step08_solution/main.js'
       },
       step09: {
         entry: 'src/pages/step09/main.js'
       },
       step09_solution: {
-        entry: 'src/pages/step09-solution/main.js'
+        entry: 'src/pages/step09_solution/main.js'
       },
       step10: {
         entry: 'src/pages/step10/main.js'
       },
       step10_solution: {
-        entry: 'src/pages/step10-solution/main.js'
+        entry: 'src/pages/step10_solution/main.js'
       },
       step11: {
         entry: 'src/pages/step11/main.js'
       },
       step11_solution: {
-        entry: 'src/pages/step11-solution/main.js'
+        entry: 'src/pages/step11_solution/main.js'
       },
       step12: {
         entry: 'src/pages/step12/main.js'
       },
       step12_solution: {
-        entry: 'src/pages/step12-solution/main.js'
+        entry: 'src/pages/step12_solution/main.js'
       },
       step13: {
         entry: 'src/pages/step13/main.js'
       },
       step13_solution: {
-        entry: 'src/pages/step13-solution/main.js'
+        entry: 'src/pages/step13_solution/main.js'
       },
       step14: {
         entry: 'src/pages/step14/main.js'
       },
       step14_solution: {
-        entry: 'src/pages/step14-solution/main.js'
+        entry: 'src/pages/step14_solution/main.js'
       },
       step15: {
         entry: 'src/pages/step15/main.js'
       },
       step15_solution: {
-        entry: 'src/pages/step15-solution/main.js'
+        entry: 'src/pages/step15_solution/main.js'
       },
       step16: {
         entry: 'src/pages/step16/main.js'
       },
       step16_solution: {
-        entry: 'src/pages/step16-solution/main.js'
+        entry: 'src/pages/step16_solution/main.js'
       },
       step17: {
         entry: 'src/pages/step17/main.js'
       },
       step17_solution: {
-        entry: 'src/pages/step17-solution/main.js'
+        entry: 'src/pages/step17_solution/main.js'
       },
       step18: {
         entry: 'src/pages/step18/main.js'
       },
       step18_solution: {
-        entry: 'src/pages/step18-solution/main.js'
+        entry: 'src/pages/step18_solution/main.js'
       },
       step19: {
         entry: 'src/pages/step19/main.js'
       },
       step19_solution: {
-        entry: 'src/pages/step19-solution/main.js'
+        entry: 'src/pages/step19_solution/main.js'
       },
       step20: {
         entry: 'src/pages/step20/main.js',
       },
       step20_solution: {
-        entry: 'src/pages/step20-solution/main.js',
+        entry: 'src/pages/step20_solution/main.js',
       },
       step21: {
         entry: 'src/pages/step21/main.js'
       },
       step21_solution: {
-        entry: 'src/pages/step21-solution/main.js',
+        entry: 'src/pages/step21_solution/main.js',
       }
     },
     devServer: {
