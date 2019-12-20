@@ -1,6 +1,7 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Excercie
-<br><br>
+<h1>Step 16</h1>
+<br/>
 <ul>
     <li>Créez un filtre naFilter dans l'objet filter du composant CardPanel.vue</li>
     <li>Affichez "N/A" si la personne n'a pas de manager dans le composant CardPanel.vue</li>

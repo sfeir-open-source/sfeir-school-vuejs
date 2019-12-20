@@ -1,5 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 03</h1>
 <ul>
     <li>Créez un composant monofichier App</li><br>
     <li>Importez ce composant dans le fichier main.js</li><br>

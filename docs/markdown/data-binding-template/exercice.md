@@ -7,6 +7,7 @@
 
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 04</h1>
 <ul style="font-size: 120%">
     <li>Créez un composant Home.vue</li>
     <li>Mappez :<br>

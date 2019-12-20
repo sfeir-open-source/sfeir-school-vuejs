@@ -1,5 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 21</h1>
 <br>
 <ul>
     <li>Créez pour le composant People une fonction de Lazy-loading</li><br>

@@ -1,5 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 09</h1>
 <ul>
     <li>Dans un dossier "components", créez un monoficher CardPanel.vue qui prend en propriété "person"</li>
     <li>Copier le html et css dupliqué dans Home.vue et People.vue</li>
@@ -18,6 +19,7 @@ Notes:
 
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 10</h1>
 <ul>
     <li>Implémentez la méthode delete dans PeopleService.js</li>
     <li>Sur l'icône trash du composant CardPanel, créez un event click</li>

@@ -66,7 +66,7 @@
 
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-<br>
+<h1>Step 14</h1>
 <ul>
     <li>Transformez le composant Form.vue pour correspondre au model-driven</li>
     <li>Utilisez la librairie Vuelidate</li>
@@ -113,6 +113,7 @@ Pour voir les erreurs, pensez à mettre : <pre>:class="{ 'md-input-invalid': $v.
 
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 15</h1>
 <ul>
     <li>Créez une class customValidator (dossier components/forms/validators)</li>
     <li>Créez un validator qui vérifie le format du téléphone</li>
