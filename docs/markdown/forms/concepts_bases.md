@@ -98,7 +98,7 @@ Notes:
 
  <!-- .slide: class="sfeir-bg-pink exercice" -->
  ## Exercice
- <h1>Step 13</h1>
+ <h1>Step 12</h1>
 <ul>
     <li>Utilisez Form.vue dans Update.vue</li>
     <li>Passez la personne récupérée au composant Form.vue (props)</li>
