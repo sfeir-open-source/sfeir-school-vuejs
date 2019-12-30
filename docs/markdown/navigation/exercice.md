@@ -1,6 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-<br>
+<h1>Step 07</h1>
 <div>
     <ul>
         <li>Complétez le fichier router.js (src/view/router.js)</li><br>

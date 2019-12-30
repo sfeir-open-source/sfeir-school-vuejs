@@ -1,6 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-<br>
+<h1>Step 08</h1>
 <ul>
     <li>Copiez Home.vue pour créez un composant People qui affichera la liste des personnes</li><br>
     <li>Créez une route /people qui permettra d'afficher cette vue de liste</li><br>

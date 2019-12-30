@@ -1,9 +1,9 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Directive Custom, Pourquoi?
 <ul>
-    <li><strong>Souvant le composant se suffit à lui même</strong></li>
+    <li><strong>Souvent le composant se suffit à lui même</strong></li>
     <li>Enrichir le comportement d'un élément natif</li>
-    <li>Enregistrement de manière local ou global</li>
+    <li>Enregistrement de manière locale ou globale</li>
     <li>Peut passer une simple fonction</li>
 </ul>
 <div class="flex-row">
@@ -16,11 +16,11 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Le cycle de vie d'une directive
 <ul>
-    <li><strong>bind</strong> : appelée une foie quand la directive s'attache à l'élément</li>
-    <li><strong>inserted</strong> : appelée quand la directive est insérée dans le parent</li>
+    <li><strong>bind</strong> : appelée une seule fois quand la directive est attachée à l’élément</li>
+    <li><strong>inserted</strong> : appelée quand l’élément lié a été inséré dans son nœud parent</li>
     <li><strong>update</strong> : appelée quand le composant a été mis à jour </li>
     <li><strong>componentUpdated</strong> : appelée quand le composant et ses enfants ont été modifiés</li>
-    <li><strong>unbind</strong> : appelée quand la directive est détachée de l'élément</li>
+    <li><strong>unbind</strong> : appelée une seule fois quand la directive est détachée à l’élément</li>
 </ul>
 <br><br>
 <img class="center" src="assets/images/school/directive/directive_create.png">

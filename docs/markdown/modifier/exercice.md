@@ -1,8 +1,9 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 17</h1>
 <br>
-<span>Nous avons ajouté un composant SearchBar</span>
 <ul>
+    <li>Nous avons ajouté un composant SearchBar</li>
     <li>Propagez un event search au composant People.vue en tapant sur la touche entrée dans la bar de recherche</li>
     <li>Dans le composant People, à l'écoute de l'event search, filtrez la liste des peoples</li>
 </ul>

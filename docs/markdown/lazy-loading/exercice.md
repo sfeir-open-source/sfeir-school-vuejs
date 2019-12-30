@@ -1,9 +1,10 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 21</h1>
 <br>
 <ul>
-    <li>Créez pour le composant People une fonction de Lazy-loading</li><br>
-    <li>Créez pour le composant Update un import lazy-loading</li><br>
+    <li>Créez une fonction de lazy loading pour le composant People </li>
+    <li>Créez un import lazy loading pour le composant Update</li>
 </ul>
 
 ##==##

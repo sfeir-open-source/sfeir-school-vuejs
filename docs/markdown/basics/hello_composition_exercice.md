@@ -1,6 +1,7 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <br><br>
+<h1>Step 01</h1>
 <ul>
     <li>Dans le fichier <strong>main.js</strong><br>
         - Créez votre première instance de Vue<br>

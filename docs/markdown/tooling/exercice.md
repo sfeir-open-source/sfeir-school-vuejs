@@ -1,5 +1,6 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 02</h1>
 <ul>
     <li>Dans le fichier <strong>main.js</strong><br>
         - Importez Vue<br>

@@ -23,9 +23,9 @@
     <img alt="center" src="assets/images/school/forms/v-model_basic.png">
 </div>
 Notes:
- - un changement de détection two bbinding permet de rélaiser une liaison vue-controller controller-vue:
-  - Si le template est modifié automatique le controlleur en est répercuté
-  - Si le controlleur est modifié automatique le template en est répercuté
+- un changement de détection two-way databinding permet de réaliser une liaison vue-controller controller-vue:
+- Si le template est modifié, la modification est répercutée sur le controlleur
+- Si le controlleur est modifié, la modification est répercutée sur le template
 
 ##==##
 
@@ -62,17 +62,16 @@ Notes:
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
 <br>
-<ul>
-    <li>Créez un composant monofichier Form.vue</li>
-    <li>Appelez ce composant dans People.vue</li>
-    <li>Propagez les events cancel et save au People.vue</li>
-    <li>Implémentez la méthode add dans People.vue au moment de l'event save</li>
+<h1>Step 11</h1>
+<ul style="font-size: 1.2em">
+    <li>Un bouton "+" a été ajouté dans People.vue<br/>Il déclenche l'affichage d'une modal</li>
+    <li>Créez un composant monofichier Form.vue<br/>à partir des éléments du dossier src/_static</li>
+    <li>Inclure ce composant dans la modal de People.vue</li>
+    <li>Propagez les events "cancel" et "save"<br/>de Form.vue vers People.vue</li>
+    <li>Implémentez la méthode create de PeopleService et appelez-là<br/>au moment de l'event "save" reçu par People.vue</li>
 </ul>
 Notes:
- - Le composant People.vue a été aggrementé de deux méthodes showDiaolog et hideDialog
- - style, html du formulaire se trouvent dans le dossier src/_static
- - un bouton pour afficher la modal du formulaire a été ajouté
- - Api à utiliser pour sauvegarder une personne => http://localhost:9000/api/peoples/ (pensez à implémenter une méthode create dans le fichier service people)
+ - Api à utiliser pour sauvegarder une personne => POST http://localhost:9000/api/peoples/ (pensez à implémenter une méthode create dans le fichier service people)
 
  ##==##
 
@@ -84,6 +83,7 @@ Notes:
 
  <!-- .slide: class="sfeir-bg-pink exercice" -->
  ## Exercice
+ <h1>Step 12</h1>
 <ul>
     <li>Créez un composant monofichier Update (dans le dossier views)</li>
     <li>Mettez à jour le ficher router.js (#/edit/:id)</li>
@@ -98,6 +98,7 @@ Notes:
 
  <!-- .slide: class="sfeir-bg-pink exercice" -->
  ## Exercice
+ <h1>Step 12</h1>
 <ul>
     <li>Utilisez Form.vue dans Update.vue</li>
     <li>Passez la personne récupérée au composant Form.vue (props)</li>

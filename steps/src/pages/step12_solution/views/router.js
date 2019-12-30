@@ -1,5 +1,4 @@
 import VueRouter from 'vue-router';
-
 import Home from './Home.vue';
 import People from './People.vue';
 import Update from './Update.vue';
@@ -24,7 +23,7 @@ const routes = [
     path: '/',
     redirect: '/people'
   }
-]
+];
 
 export default new VueRouter({
   routes,

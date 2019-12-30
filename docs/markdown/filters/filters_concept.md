@@ -33,7 +33,7 @@ Notes:
  # Implémentation d'un filtre
  <br><br>
  <ul>
-    <li>Dans la propriété filter du composant</li>
+    <li>Dans la propriété "filters" du composant</li>
     <li>Le nom de la clé sera le nom du filtre dans le template</li>
     <li>Méthode qui prend des paramètres + paramètre implicite et retourne une nouvelle valeur</li>
  </ul>

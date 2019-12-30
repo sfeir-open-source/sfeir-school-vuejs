@@ -2,7 +2,7 @@
   <div>
     <div class="header row">
       <h1 class="col s12 flow-text">You have {{people.length}} contacts</h1>
-      <search-bar></search-bar>
+      <search-bar @search="filterPeople"></search-bar>
     </div>
     <section class="container">
       <sfeir-card v-for="person in people" :person="person" :key="person.id" @delete="deletePerson"></sfeir-card>

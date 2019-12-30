@@ -1,8 +1,8 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-Vous disposez d'un squelette de Store.<br>
-Mettre en place une architecture Vuex dans le composant People.vue
+<h1>Step 19</h1>
 <ul>
+    <li>Vous disposez d'un squelette de Store.<br/>Mettre en place une architecture Vuex dans le composant People.vue</li>
     <li>Récupérez la liste des utilisateurs : une action + une mutation pour setter les peoples</li>
     <li>Setter l'interation user-recherche dans le state : une mutation</li>
     <li>Filtrer les peoples : un getter</li>

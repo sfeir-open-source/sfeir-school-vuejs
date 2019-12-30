@@ -80,6 +80,7 @@ Notes:
 ##==##
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
+<h1>Step 13</h1>
 <ul style="font-size: 1.3em">
     <li>Validez les champs suivants :
         <div> - firstname : requis, taille minimum de 2 lettres</div>

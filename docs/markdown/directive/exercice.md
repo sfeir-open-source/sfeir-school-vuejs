@@ -1,11 +1,11 @@
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 ## Exercice
-<br><br>
+<h1>Step 18</h1>
+<br>
 <ul>
     <li>Créez une directive v-upper qui permet de modifier la valeur saisie dans le champ de rechercher du composant SearchBar pour la mettre en majuscule</li>
 </ul>
-
-Notes
+Notes:
 - Utiliser l'InputEvent sur el
 - addEventListener sur inserted
 - removeEventListener sur unbind
