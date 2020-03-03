@@ -134,6 +134,7 @@ module.exports = {
       }
     },
     devServer: {
+      disableHostCheck: true, //Allow to run on gitpod
       historyApiFallback: {
         rewrites: [
           { from: /\/step01_solution/, to: '/step01_solution.html' },
