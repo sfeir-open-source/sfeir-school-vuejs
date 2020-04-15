@@ -29,6 +29,7 @@ Le constructor peut prendre plusieurs options :
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les lifecycles
+<br><br>
 <span class="center"><strong>Cycle de vie d'une instance Vue</strong></span><br>
 <div class="flex-row">
   <div>
@@ -76,6 +77,7 @@ Le constructor peut prendre plusieurs options :
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les computed properties
+<br>
 <span class="center"><strong>Qu'est ce que c'est?</strong></span>
 <div class="flex-row">
     <div>
@@ -92,13 +94,14 @@ Le constructor peut prendre plusieurs options :
     </div>
 </div>
 
-Notes
+Notes:
 Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/computed.html#Computed-Setter
 
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les méthodes
+<br>
 <span class="center"><strong>Qu'est ce que c'est? </strong></span>
 <div class="flex-row">
     <div>
@@ -121,6 +124,7 @@ Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/compute
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les watchers
+<br>
 <span class="center"><strong>Qu'est ce que c'est? </strong></span>
 <div class="flex-row">
     <div>

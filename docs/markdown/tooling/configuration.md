@@ -18,29 +18,25 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Ecosystem Webpack pour Vue
-<br>
-<div class="flex-row configuration">
-    <div>
-        <ul>
-            <li>Les commandes :<br>
-                - npm run serve<br>
-                - npm run build<br>
-                - npm run test:unit<br>
-                - npm run lint<br>
-            </li><br>
-            <li>
-                Configuration :<br>
-                 - dev, prod, int ...<br>
-                 - fichier env avec l'extension .env<br>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <img src="assets/images/school/tool/vue_script_package.png">
-    </div>
-</div>
+
+##--##
+<br><br>
+
+- les commandes
+    - npm run serve
+    - npm run build
+    - npm run test:unit
+    - npm run lint<br><br>
+- Configuration
+    - dev, prod, int ...
+    - fichier env avec l'extension .env
+
+##--##
+<br><br>
+
+![](assets/images/school/tool/vue_script_package.png)
 
 Notes:
 Vue abstrait la conf webpack.<br>
@@ -49,7 +45,7 @@ vue-cli-service inspect
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Le Material Design
 <img alt="center h-900" src="assets/images/school/tool/material_design.png">
 Notes:
@@ -57,20 +53,17 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Material Design dans notre TP
 <br>
-<ul>
-    <li>Ce TP utilise des composants Material Design (ici vue-material)<br>
-        - <span><strong>md-dialog</strong></span><br>
-        - <span><strong>md-button</strong></span><br>
-        - <span><strong>card-panel</strong></span><br>
-        - <span><strong>...</strong></span>
-    </li><br>
-    <li>Pour l'utiliser => Vue.use(VueMaterial)</li><br>
-    <li>Attention, il existe bien d'autres Framework Css, (Vuetify en est un exemple)</li>
-</ul>
 
+- Ce TP utilise des composants Material Design (ici vue-material)
+    - <b>md-dialog</b>
+    - <b>md-button</b>
+    - <b>card-panel</b>
+    - <b>...</b><br><br>
+- Pour l'utiliser -> Vue.use(VueMaterial)<br><br>
+- Attention, il existe bien d'autres Framework Css, (Vuetify en est un exemple)
 Notes:
 Comparatif frameworks CSS pour vue :
 https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui-vs-buefy-vs-weui-vs-vulma
@@ -80,16 +73,12 @@ https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui
 <!-- .slide: class="sfeir-basic-slide" -->
 # Intégration simple vs single page application (spa)
 <br>
-<span><strong>A tout moment vous pouvez utiliser vos instances de vue (et vos composants)</strong></span><br><br>
-<div>
-    <ul>
-        <li>directement dans votre application :<br>
-            - inclure vos sources javascript dans votre page HTML
-        </li><br>
-        <li>en mode single page application :<br>
-            - toute votre application est en Vue JS<br>
-            - on utilise les outils propres à l'écosysteme de Vue (webpack + CLI)<br>
-            - utilisation des imports et exports (ES6)<br>
-        </li>
-    </ul>
-</div>
+<b>A tout moment vous pouvez utiliser vos instances de vue (et vos composants)</b>
+<br><br>
+
+- directement dans votre application
+    - inclure vos sources javascript dans votre page HTML<br><br>
+- en mode single page application
+    - toute votre application est en Vue JS
+    - on utilise les outils propres à l'écosysteme de Vue (webpack + CLI)
+    - utilisation des imports et exports (ES6)

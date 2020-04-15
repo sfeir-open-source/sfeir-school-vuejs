@@ -1,2 +1,2 @@
-<!-- .slide: class="transition-white sfeir-bg-red" -->
+<!-- .slide: class="transition underline" -->
 # QuickStart or the famous hello world

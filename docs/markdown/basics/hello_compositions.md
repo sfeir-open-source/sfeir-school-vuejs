@@ -58,7 +58,7 @@ Le template Vue peut se passer en option à l'instance de vue:
 <!-- .slide: class="sfeir-basic-slide" -->
 # Le template
 <br>
-Le template peut se passer en utilisant une balise script de type <strong>x-template</strong>
+Le template peut se passer en utilisant une balise script de type <strong>x-template</strong><br><br>
 <p class="inline-flex">
     <img alt="h-600" src="assets/images/school/basics/x-template_script_exemple.png">
     <img alt="h-600" src="assets/images/school/basics/x-template_html_exemple.png">
