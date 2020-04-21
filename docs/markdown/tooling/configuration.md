@@ -70,9 +70,9 @@ https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Intégration simple vs single page application (spa)
-<br>
+<br><br>
 <b>A tout moment vous pouvez utiliser vos instances de vue (et vos composants)</b>
 <br><br>
 

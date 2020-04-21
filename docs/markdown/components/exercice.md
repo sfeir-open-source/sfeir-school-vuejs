@@ -1,14 +1,16 @@
-<!-- .slide: class="sfeir-bg-pink exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 3
 ## Exercice
-<h1>Step 03</h1>
-<ul>
-    <li>Créez un composant monofichier App<br/>à partir des éléments du répertoire _static</li><br>
-    <li>Importez ce composant dans le fichier main.js</li><br>
-    <li>Créez une instance de Vue en utilisant la méthode render (render: (h) => h(App))</li>
-</ul>
+<br><br><br>
+
+ - Créez un composant monofichier App
+ - Importez ce composant dans le fichier main.js
+ - Créez une instance de Vue en utilisant la méthode render (render: (h) => h(App))
 
 ##==##
 
-<!-- .slide: class="sfeir-bg-blue exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 3
 ## Solution
-<span class="full-center">localhost:8080/step03_solution</span>
+<b>localhost:8080/step03_solution</b>
+<!-- .element: class="full-center" -->

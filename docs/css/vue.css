@@ -1,3 +1,6 @@
+.reveal .slides section.two-column-layout section:last-child .align-image {
+  padding-left: 20%; }
+
 /**
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/

@@ -12,8 +12,8 @@ function basicsSlides() {
     'basics/transition_slide.md',
     'basics/hello_compositions.md',
     'basics/hello_composition_exercice.md'
-  ]
-}
+  ];
+};
 
 function toolingSlides() {
   return [
@@ -21,16 +21,75 @@ function toolingSlides() {
     'tooling/official_stack.md',
     'tooling/configuration.md',
     'tooling/exercice.md',
-  ]
-}
+  ];
+};
 
-function instanceSlide() {
+function instanceSlides() {
   return [
     'vue-instance/transition_slide.md',
     'vue-instance/instance.md',
-  ]
-}
+  ];
+};
 
+function componentsSlides() {
+  return [
+    'components/transition_slide.md',
+    'components/components.md',
+    'components/exercice.md',
+  ];
+};
+
+function dataBindingSlides() {
+  return [
+    'data-binding-template/transition_slide.md',
+    'data-binding-template/plain_js.md',
+    'data-binding-template/jquery.md',
+    'data-binding-template/vue.md',
+    'data-binding-template/exercice.md',
+  ];
+};
+
+function domEventGestionSlides() {
+  return [
+    'dom-event-gestion/transition_slide.md',
+    'dom-event-gestion/event_definition.md',
+    'dom-event-gestion/exercice.md',
+  ];
+};
+
+function serverCommunicationSlides() {
+  return [
+    'server-communication/transition_slide.md',
+    'server-communication/axios_lib.md',
+    'server-communication/exercice.md',
+  ];
+};
+
+function navigationSlides() {
+  return [
+    'navigation/transition_slide.md',
+    'navigation/tp_navigation.md',
+    'navigation/configuration.md',
+    'navigation/implementation.md',
+    'navigation/exercice.md',
+  ];
+};
+
+function iteratorSlides() {
+  return [
+    'iterator/transition_slide.md',
+    'iterator/directive_v_for.md',
+    'iterator/exercice.md',
+  ];
+};
+
+function communicationComponent() {
+  return [
+    'communication-components/transition_slide.md',
+    'communication-components/event_props.md',
+    'communication-components/exercice.md',
+  ];
+};
 
 
 function formation() {
@@ -38,7 +97,14 @@ function formation() {
     ...schoolSlides(),
     ...basicsSlides(),
     ...toolingSlides(),
-    ...instanceSlide()
+    ...instanceSlides(),
+    ...componentsSlides(),
+    ...dataBindingSlides(),
+    ...domEventGestionSlides(),
+    ...serverCommunicationSlides(),
+    ...navigationSlides(),
+    ...iteratorSlides(),
+    ...communicationComponent(),
   ].map(slidePath => {
     return { path: slidePath };
   });

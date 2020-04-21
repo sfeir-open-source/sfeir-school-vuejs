@@ -1,62 +1,63 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="" -->
 # Data Binding with Vue
 <br><br>
-<div class="full-center">
-    <div>
-        <img alt="h-700"src="assets/images/school/data-binding-template/vue.png">
-    </div>
-</div>
+
+![h-700 full-center](assets/images/school/data-binding-template/vue.png)
+
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide with code -->
+<!-- .slide: class="with-code inconsolata " -->
 # Explication syntaxique
-<span><strong>Syntaxe de l'interpolation</strong></span><br><br>
+<br><br>
+<b>Syntaxe de l'interpolation</b><br>
 ```html
 <span>{{ name }}</span>
 ```
+<!-- .element: class="medium-code" -->
 <br><br>
-<span><strong>Syntaxe d'une propriété</strong></span><br><br>
+<b>Syntaxe d'une propriété</b><br>
 ```html
 <button v-bind:disabled="!name">Sign-In</button>
 ```
+<!-- .element: class="medium-code" -->
 <br><br>
-<span><strong>Syntaxe de l'event</strong></span><br><br>
+<b>Syntaxe de l'event</b><br>
 ```html
 <button v-on:click="signIn()" type="submit">
 ```
+<!-- .element: class="medium-code" -->
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Interpolation et Expression
 <br><br><br>
-<ul>
-    <li>Interpolation :<br>
-        - Se matérialise par les doubles accolades
-    </li><br>
-    <li>Expression : <br>
-        - Uniquement dans le composant courant<br>
-        - Du JS => mais une seule expression
-    </li>
-</ul>
+
+- Interpolation:
+    - Se matérialise par les doubles accolades <br><br>
+- Expression:
+    - Uniquement dans le composant courant
+    - Du JS => mais une seule expression
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Properties binding
-<br>
-<img alt="center" src="assets/images/school/data-binding-template/properties_binding.png">
+<br><br><br>
+
+![center](assets/images/school/data-binding-template/properties_binding.png)
 Notes:
  - Le binding s'effectue sur une propriété
  - La cible du properties binding s'effectue sur l'attribut d'un élément ou attribut d'un composant
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Event Binding
-<br>
-<img alt="center" src="assets/images/school/data-binding-template/event_binding.png">
+<br><br><br>
+
+![center](assets/images/school/data-binding-template/event_binding.png)
 Notes:
  - De préférence utiliser la convention kebab case pour créer nos events custom
  - $event permet de récupérer les datas emises par le mot clé $emit

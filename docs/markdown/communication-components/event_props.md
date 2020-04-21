@@ -1,58 +1,56 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Events and Props
 <br><br>
-<img alt="center" src="assets/images/school/communication-components/communication_schema.png">
+
+![center](assets/images/school/communication-components/communication_schema.png)
 
 ##==##
 
-<!--.slide: class="sfeir-basic-slide" -->
+<!--.slide -->
 # Les props (basique)
-<div>
-    <ul>
-        <li>Passées dans la propriété props</li>
-        <li>Tableau de chaînes de propriétés</li>
-    </ul>
-    <br><br>
-    <div class="flex-row">
-        <img src="assets/images/school/communication-components/template_child_props.png">
-        <img src="assets/images/school/communication-components/template_parent_props.png">
-    </div>
-</div>
+<br><br>
+
+- Passées dans la propriété props
+- Tableau de chaînes de propriétés
+
+<br><br>
+
+![](assets/images/school/communication-components/template_child_props.png)
+![](assets/images/school/communication-components/template_parent_props.png)
+
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Les props (complète)
-<div class="flex-row">
-    <ul>
-        <li>Props peut également être un objet pour plus de contrôle</li>
-        <li>Définition :<br>
-            - Nom de la prop<br>
-            - Objet avec comme propriétés :
-            <ul style="margin-left: 100px">
-                <li>type</li>
-                <li>required</li>
-                <li>validator (custom function)</li>
-            </ul>
-        </li>
-    </ul>
-    <img alt="h-750" src="assets/images/school/communication-components/complete_props.png">
-</div>
+##--##
+<br><br>
+
+- Props peut également être un objet pour plus de contrôle<br><br>
+- Définition :
+    - Nom de la prop
+    - Objet avec comme propriétés:
+        - type
+        - required
+        - validator (custom function)
+##--##
+<br><br>
+
+![h-750](assets/images/school/communication-components/complete_props.png)
+<!-- .element: class="align-image" -->
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Les events
-<div>
-    <ul>
-        <li>Le composant enfant envoie un event pour notifier le parent : this.$emit()</li>
-        <li>Le composant parent écoute l'event grâce à <strong>v-on</strong> ou <strong>@</strong></li>
-    </ul>
-    <br><br><br>
-    <div class="flex-row">
-        <img alt="h-400" src="assets/images/school/communication-components/child_event.png">
-        <img alt="h-400" src="assets/images/school/communication-components/parent_event.png">
-    </div>
-</div>
+<br><br>
+
+- Le composant enfant envoie un event pour notifier le parent : this.$emit()
+- Le composant parent écoute l'event grâce à <b>v-on</b> ou <b>@</b>
+
+<br><br>
+
+![h-500](assets/images/school/communication-components/child_event.png)
+![h-500](assets/images/school/communication-components/parent_event.png)
 Notes:
  - par convention il est préférable d'utiliser la syntax kebab case pour décrire son évènement
