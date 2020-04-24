@@ -1,7 +1,6 @@
 <!-- .slide: class="exercice" -->
 # Exercice 17
 ## Exercice
-<h1>Step 17</h1>
 <br>
 Nous avons ajouté un composant SearchBar<br><br>
 <br><br>

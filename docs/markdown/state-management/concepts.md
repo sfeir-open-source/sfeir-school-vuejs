@@ -37,7 +37,7 @@ Notes:
 <br>
 
 - Permet de mettre en place une architecture dataflow first (similaire à redux)
-- Librairie tiers <b>MAIS</> officielle
+- Librairie tiers <b>MAIS</b> officielle
 - npm install --save vuex
 <br><br>
 
