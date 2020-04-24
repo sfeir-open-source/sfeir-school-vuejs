@@ -1,2 +1,2 @@
-<!-- .slide: class="transition underline" -->
+<!-- .slide: class="transition" -->
 # Un peu de tooling (ecosystem)

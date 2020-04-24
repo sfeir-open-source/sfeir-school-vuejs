@@ -1,14 +1,12 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Template driven form avec Vee-Validate
-<br>
-<div>
-    <ul>
-        <li>Ajoutez la dépendance => <strong> npm install vee-validate --save</strong></li>
-        <li>Ajoutez vee-validate au projet (instance principale de vue)
-    </ul>
-</div>
-<br>
-<img alt="center" src="assets/images/school/forms/vee_validate_import.png">
+<br><br>
+
+- Ajoutez la dépendance => <b> npm install vee-validate --save</b>
+- Ajoutez vee-validate au projet (instance principale de vue)
+<br><br>
+
+![center](assets/images/school/forms/vee_validate_import.png)
 Notes:
  - VeeValidate est en version 3 actuellement, à partir de cette version, les règles de validations, les validations, la validation sur plusieurs champs ont été séparés en plusieurs bundles.
  Afin de faciliter la compréhension de tous l'import de ces packages permet de récupérer la validations et les règles de validation en un seul import
@@ -17,85 +15,86 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide " -->
+<!-- .slide -->
 # Configuration
-<span>La configuration <strong>n'est pas nécessaire</strong> pour lancer la validation ou le bon fonctionnement du plugin</span><br><br>
-<img class="center" src="assets/images/school/forms/vee_validate_config.png">
+<br><br>
+La configuration <strong>n'est pas nécessaire</strong> pour lancer la validation ou le bon fonctionnement du plugin<br>
+
+![center](assets/images/school/forms/vee_validate_config.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Les Validateurs (ValidationProvider)
-<br>
-<ul>
-    <li>Composant wrapper : <strong>ValidationProvider</strong>
-    <li>rules : règles de validation</li>
-    <li>v-slot : passe des propriétés au template transclude</li>
-</ul>
 <br><br>
-<div>
-    <img class="center h-500" src="assets/images/school/forms/vee_validate_validation.png">
-</div>
+
+- Composant wrapper : <b>ValidationProvider</b>
+- rules : règles de validation
+- v-slot : passe des propriétés au template transclude
+<br><br>
+
+![center h-500](assets/images/school/forms/vee_validate_validation.png)
 
 Notes:
  - les règles peuvent être un template string comme de l'exemple ou un objet => :rules="{required: true, min:{ length: 3 }}"
 
 ##==##
-<!-- .slide: class="sfeir-basic-slide" -->
-# La gestion des erreurs
-<br>
-<ul>
-    <li>Pour avoir l'erreur courante errors[0]</li>
-    <li>Pour avoir toutes les erreurs, composez avec v-for et la props :bails</li>
-</ul><br><br>
-<div>
-    <img alt="center" src="assets/images/school/forms/vee_validate_error_display.png">
-</div>
 
+<!-- .slide -->
+# La gestion des erreurs
+<br><br>
+
+- Pour avoir l'erreur courante errors[0]
+- Pour avoir toutes les erreurs, composez avec v-for et la props :bails
+<br><br>
+
+![center](assets/images/school/forms/vee_validate_error_display.png)
 
 ##==##
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les règles de validation classique
 <br><br>
-<span>Vee Validate fournit plusieurs règles de validation, pour les plus classiques:</span><br>
-<ul>
-    <li>required</li>
-    <li>email</li>
-    <li>regex</li>
-    <li>min</li>
-    <li>max</li>
-</ul>
-<div>Pour plus d'informations sur ces règles de bases => https://logaretm.github.io/vee-validate/api/rules.html</div>
-<br>
+
+- Vee Validate fournit plusieurs règles de validation, pour les plus classiques:
+    - required
+    - email
+    - regex
+    - min
+    - max<br><br>
+
+- Pour plus d'informations sur ces règles de bases => https://logaretm.github.io/vee-validate/api/rules.html
 Notes:
  - il est possible de créer ses propres règles de validation avec extends
 
  ##==##
 
- <!-- .slide: class="sfeir-basic-slide" -->
-# Valider l'ensemble d'un formulaire grâce à ValidationObserver
+ <!-- .slide -->
+# Valider l'ensemble d'un formulaire: ValidationObserver
 <br><br>
-<img class="center" src="assets/images/school/forms/vee_validate_validation_observer.png">
+
+![full-center](assets/images/school/forms/vee_validate_validation_observer.png)
 
 ##==##
-<!-- .slide: class="sfeir-bg-pink exercice" -->
+
+<!-- .slide: class="exercice" -->
+# Exercice 13
 ## Exercice
-<h1>Step 13</h1>
-<ul style="font-size: 1.3em">
-    <li>Validez les champs suivants :
-        <div> - firstname : requis, taille minimum de 2 lettres</div>
-        <div> - lastname : requis, taille minimum de 2 lettres</div>
-        <div> - email : requis et de type email</div>
-        <div> - phone : requis et 10 chiffres, utiliser la rules regex</div>
-    </li>
-    <li>Affichez les erreurs 1 à 1 </li>
-    <li>Utilisez la classe md-input-invalid sur la balise md-input-container lors d'une erreur</li>
-    <li>Désactivez le bouton de validation si le formulaire est invalide (wrappez la balise md-content avec ValidationObserver)</li>
-</ul>
+<br>
+
+- Validez les champs suivants:
+    - firstname : requis, taille minimum de 2 lettres
+    - lastname : requis, taille minimum de 2 lettres
+    - email : requis et de type email
+    - phone : requis et 10 chiffres, utiliser la rules regex
+- Affichez les erreurs 1 à 1
+- Utilisez la classe md-input-invalid sur la balise md-input-container lors d'une erreur
+- Désactivez le bouton de validation si le formulaire est invalide (wrappez la balise md-content avec ValidationObserver)
 
 ##==##
 
-<!-- .slide: class="sfeir-bg-blue exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 13
 ## Solution
-<span class="full-center">localhost:8080/step13_solution</span>
+<b>localhost:8080/step13_solution</b>
+<!-- .element: class="full-center" -->
 

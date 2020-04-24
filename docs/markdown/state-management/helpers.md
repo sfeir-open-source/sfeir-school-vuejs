@@ -1,11 +1,16 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Les Helpers
-<span>Les helpers permettent de mapper directement avec les propriétés du store</span>
-<div class="flex-row">
-    <ul>
-        <li>mapGetters</li>
-        <li>mapMutations</li>
-        <li>mapActions</li>
-    </ul>
-    <img alt="h-800" src="assets/images/school/state-management/helpers.png">
-</div>
+<br>
+Les helpers permettent de mapper directement avec les propriétés du store
+
+##--##
+<br><br><br><br><br>
+
+- mapGetters<br><br>
+- mapMutations<br><br>
+- mapActions
+
+##--##
+<br><br>
+
+![h-800](assets/images/school/state-management/helpers.png)

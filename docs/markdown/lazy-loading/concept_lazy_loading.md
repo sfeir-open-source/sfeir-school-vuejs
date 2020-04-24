@@ -1,50 +1,48 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # A quoi sert le lazy-loading
-<br><br>
-<div>
-    <ul>
-        <li>Permet de charger les composants à la demande</li>
-        <li>Réduction du bundle js</li>
-    </ul>
-</div>
+<br><br><br>
+
+- Permet de charger les composants à la demande<br><br>
+- Réduction du bundle js<br><br>
+
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Comment le mettre en place
-<br><br>
-<div>
-    <ul>
-        <li>Async component</li>
-        <li>Dynamic import</li>
-    </ul>
-</div>
+<br><br><br>
+
+- Async component <br><br>
+- Dynamic import
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Async component
+##--##
+<br><br><br>
+
+- Définit en tant que fonction retournant le composant
+##--##
 <br><br>
-<div class="flex-row">
-    <div>Définit en tant que fonction retournant le composant</div>
-    <img alt="h-600 center" src="assets/images/school/lazy-loading/async_component.png">
-</div>
+
+![h-600 center](assets/images/school/lazy-loading/async_component.png)
+
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Import dynamique
-<br><br>
-<div class="flex-row">
-    <img alt="h-600 center" src="assets/images/school/lazy-loading/dynamic_import.png">
-</div>
+<br><br><br>
+
+![h-600 center](assets/images/school/lazy-loading/dynamic_import.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Router vs Router avec lazy-loading
-<div class="flex-row">
-    <img alt="h-600 center" src="assets/images/school/lazy-loading/router_js.png">
-    <img alt="h-600 center" src="assets/images/school/lazy-loading/router_lazy_import.png">
-    <img alt="h-600 center" src="assets/images/school/lazy-loading/router_lazy_loading.png">
-</div>
+<br><br>
+
+![h-600](assets/images/school/lazy-loading/router_js.png)
+![h-600](assets/images/school/lazy-loading/router_lazy_import.png)
+![h-600](assets/images/school/lazy-loading/router_lazy_loading.png)

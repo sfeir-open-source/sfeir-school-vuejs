@@ -1,43 +1,44 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Directive Custom, Pourquoi?
-<ul>
-    <li><strong>Souvent le composant se suffit à lui même</strong></li>
-    <li>Enrichir le comportement d'un élément natif</li>
-    <li>Enregistrement de manière locale ou globale</li>
-    <li>Peut passer une simple fonction</li>
-</ul>
-<div class="flex-row">
-    <img alt="" src="assets/images/school/directive/directive_register.png">
-    <img alt="" src="assets/images/school/directive/directive_used.png">
-</div>
+<br><br>
+
+- <b>Souvant le composant se suffit à lui même</b>
+- Enrichir le comportement d'un élément natif
+- Enregistrement de manière local ou global
+- Peut passer une simple fonction
+<br><br>
+
+![](assets/images/school/directive/directive_register.png)
+![](assets/images/school/directive/directive_used.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Le cycle de vie d'une directive
-<ul>
-    <li><strong>bind</strong> : appelée une seule fois quand la directive est attachée à l’élément</li>
-    <li><strong>inserted</strong> : appelée quand l’élément lié a été inséré dans son nœud parent</li>
-    <li><strong>update</strong> : appelée quand le composant a été mis à jour </li>
-    <li><strong>componentUpdated</strong> : appelée quand le composant et ses enfants ont été modifiés</li>
-    <li><strong>unbind</strong> : appelée une seule fois quand la directive est détachée à l’élément</li>
-</ul>
+<br>
+
+- <b>bind</b> : appelée une foie quand la directive s'attache à l'élément
+- <b>inserted</b> : appelée quand la directive est insérée dans le parent
+- <b>update</b> : appelée quand le composant a été mis à jour
+- <b>componentUpdated</b> : appelée quand le composant et ses enfants ont été modifiés
+- <b>unbind</b> : appelée quand la directive est détachée de l'élément
 <br><br>
-<img class="center" src="assets/images/school/directive/directive_create.png">
+
+![center](assets/images/school/directive/directive_create.png)
+
 Notes:
  - Chaque cycle de vie est une fonction prenant plusieurs paramètres
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide" -->
 # Paramètres des fonctions de cycle de vie
-<br><br>
-<ul>
-    <li><strong>el</strong> : élément sur lequel la directive est attachée</li>
-    <li><strong>binding</strong> : objet avec les propriétés suivantes : name, value, expression, arg, modifiers</li>
-    <li><strong>vnode</strong> : noeud virtuel produit par le compilateur Vue</li>
-    <li><strong>oldNode</strong> : noeud virtuel précédent (dispo uniquement dans update, et componentUpdated)</li>
-</ul>
+<br><br><br>
+
+- <b>el</b> : élément sur lequel la directive est attachée<br><br>
+- <b>binding</b> : objet avec les propriétés suivantes : name, value, expression, arg, modifiers<br><br>
+- <b>vnode</b> : noeud virtuel produit par le compilateur Vue<br><br>
+- <b>oldNode</b> : noeud virtuel précédent (dispo uniquement dans update, et componentUpdated)<br><br>
 Notes:
  - name : correspond au nom de la directive
  - value : valeur passée à la directive => v-directive = 'nicolas' ici value = nicolas

@@ -1,13 +1,14 @@
-<!-- .slide: class="sfeir-bg-pink exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 17
 ## Exercice
 <h1>Step 17</h1>
 <br>
-<ul>
-    <li>Nous avons ajouté un composant SearchBar</li>
-    <li>Propagez un event search au composant People.vue en tapant sur la touche entrée dans la bar de recherche</li>
-    <li>Dans le composant People, à l'écoute de l'event search, filtrez la liste des peoples</li>
-</ul>
-Notes
+Nous avons ajouté un composant SearchBar<br><br>
+<br><br>
+
+- Propagez un event search au composant People.vue en tapant sur la touche entrée dans la bar de recherche <br><br>
+- Dans le composant People, à l'écoute de l'event search, filtrez la liste des peoples
+Notes:
  - passez la valeur de l'input search lors de la propagation de l'event
 
 Attirer l'attention sur la ligne 45 de People : vm._people = vm.people = people;
@@ -16,6 +17,8 @@ Attirer l'attention sur la ligne 45 de People : vm._people = vm.people = people;
 
 ##==##
 
-<!-- .slide: class="sfeir-bg-blue exercice"-->
+<!-- .slide: class="exercice"-->
+# Exercice 17
 ## Solution
-<span class="full-center">localhost:8080/step17_solution</span>
+<b>localhost:8080/step17_solution</b>
+<!-- .element: class="full-center" -->

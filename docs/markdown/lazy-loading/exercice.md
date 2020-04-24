@@ -1,14 +1,15 @@
-<!-- .slide: class="sfeir-bg-pink exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 21
 ## Exercice
-<h1>Step 21</h1>
-<br>
-<ul>
-    <li>Créez une fonction de lazy loading pour le composant People </li>
-    <li>Créez un import lazy loading pour le composant Update</li>
-</ul>
+<br><br><br>
+
+- Créez pour le composant People une fonction de Lazy-loading <br><br>
+- Créez pour le composant Update un import lazy-loading
 
 ##==##
 
-<!-- .slide: class="sfeir-bg-blue exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 21
 ## Solution
-<span class="full-center">localhost:8080/step21_solution</span>
+<b>localhost:8080/step21_solution</b>
+<!-- .element: class="full-center" -->

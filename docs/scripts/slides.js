@@ -83,7 +83,7 @@ function iteratorSlides() {
   ];
 };
 
-function communicationComponent() {
+function communicationComponentSlides() {
   return [
     'communication-components/transition_slide.md',
     'communication-components/event_props.md',
@@ -91,6 +91,62 @@ function communicationComponent() {
   ];
 };
 
+function formsSlides() {
+  return [
+    'forms/sfeir_school_day_2.md',
+    'forms/concepts_bases.md',
+    'forms/validation.md',
+    'forms/vee_validate.md',
+    'forms/vuelidate.md',
+  ];
+};
+
+function filterSlides() {
+  return [
+    'filters/transition_slide.md',
+    'filters/filters_concept.md',
+    'filters/exercice.md',
+  ];
+};
+
+function modifiersSlides() {
+  return [
+    'modifier/transition_slide.md',
+    'modifier/modifier.md',
+    'modifier/exercice.md',
+  ];
+};
+
+function directiveSlides() {
+  return [
+    'directive/transition_slide.md',
+    'directive/native_directive.md',
+    'directive/custom_directive.md',
+    'directive/exercice.md',
+  ]
+}
+
+function stateManagementSlides() {
+  return [
+    'state-management/transition_slide.md',
+    'state-management/concepts.md',
+    'state-management/store.md',
+    'state-management/state.md',
+    'state-management/getters.md',
+    'state-management/mutation.md',
+    'state-management/action.md',
+    'state-management/helpers.md',
+    'state-management/exercice.md',
+  ]
+}
+
+function lazyLoadingSlides() {
+  return [
+    'lazy-loading/transition_slide.md',
+    'lazy-loading/concept_lazy_loading.md',
+    'lazy-loading/exercice.md',
+  ]
+}
 
 function formation() {
   return [
@@ -104,7 +160,13 @@ function formation() {
     ...serverCommunicationSlides(),
     ...navigationSlides(),
     ...iteratorSlides(),
-    ...communicationComponent(),
+    ...communicationComponentSlides(),
+    ...formsSlides(),
+    ...filterSlides(),
+    ...modifiersSlides(),
+    ...directiveSlides(),
+    ...stateManagementSlides(),
+    ...lazyLoadingSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });

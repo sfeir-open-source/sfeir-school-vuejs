@@ -4,5 +4,5 @@
 
 ##==##
 
-<!-- .slide: class="transition-white sfeir-bg-pink" -->
+<!-- .slide: class="transition underline" -->
 # Formulaire et validation
