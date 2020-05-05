@@ -8,14 +8,13 @@ Tour de table ...
 
 ##==##
 
-# Repositories
-<p class="full-center">
-    Slides de la formation<br>
-    https://sfeir-open-source.github.io/sfeir-school-vuejs/<br><br>
 
-    Sources des exercices<br>
-    https://github.com/sfeir-open-source/sfeir-school-vuejs
-</p>
+# Repositories
+
+<strong>https://sfeir-open-source.github.io/sfeir-school-vuejs/</strong>
+<!-- .element: class="full-center" -->
+
+
 
 ##==##
 
@@ -23,30 +22,28 @@ Tour de table ...
 
 ##==##
 
+<!-- .slide: class="with-code inconsolata" -->
 # Bootstrapping de l'application
 <br><br>
 
-```bash
+```sh
 npm install -g @vue/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
 cd sfeir-school-vuejs/steps/ && npm i
 ```
+<!-- .element: class="medium-code" -->
 <br>
+
 ```bash
-npm run client
+npm run client -> http://localhost:8080/
 ```
+<!-- .element: class="medium-code" -->
 <br>
+
 ```bash
-npm run server
+npm run server -> http://localhost:9000
 ```
-<br>
-<p class="center">
-<span><strong>npm run client :</strong></span>
-<span> http://localhost:8080/<span>
-<br>
-<span><strong>npm run server :</strong></span>
-<span> http://localhost:9000/</span>
-</p>
+<!-- .element: class="medium-code" -->
 
 ##==##
 
@@ -55,6 +52,7 @@ npm run server
 <span><strong>Chaque concept clé de Vue Js est accompagné d'un TP.</strong></span>
 <br><br><br>
 Déroulement du TP :
+
  - <strong>une page d'excercice : steps/src/pages/`name_tp`</strong> (http://localhost:8080/name_tp)
 
  - <strong>une page de solution : steps/src/pages/`_solution_tp`</strong>  (http://localhost:8080/solution_tp)

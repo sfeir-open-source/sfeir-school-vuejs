@@ -1,16 +1,15 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide-->
 # Les Mutations
 <br>
-<ul>
-    <li><strong>Unique</strong> endroit ou l'on peut modifier le state</li>
-    <li>Objet clé-valeur avec pour clé une fonction</li>
-    <li>Cet object se trouve dans la propriété mutations du store</li>
-    <li>Mutation déclenchée grâce au mot clé <strong>commit</strong></li>
-    <li>Action toujours <strong>synchrone</strong</li>
-</ul><br><br>
-<div class="center">
-    <img alt="h-400" src="assets/images/school/state-management/mutation.png">
-    <img alt="h-400" src="assets/images/school/state-management/mutation_implementation.png">
-</div>
+
+- <b>Unique</b> endroit ou l'on peut modifier le state
+- Objet clé-valeur avec pour clé une fonction
+- Cet object se trouve dans la propriété mutations du store
+- Mutation déclenchée grâce au mot clé <b>commit</b>
+- Action toujours <b>synchrone</b>
+<br><br>
+
+![h-400](assets/images/school/state-management/mutation.png)
+![h-400](assets/images/school/state-management/mutation_implementation.png)
 Notes:
 Le payload d'une mutation peut etre de tout type (string, number, object, function)

@@ -1,23 +1,21 @@
-<!-- .slide: class="sfeir-bg-pink exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 1
 ## Exercice
 <br><br>
-<h1>Step 01</h1>
-<ul>
-    <li>Dans le fichier <strong>main.js</strong><br>
-        - Créez votre première instance de Vue<br>
-        - Exposez une propriété name avec pour valeur SFEIR
-    </li>
-    <li>Dans le fichier <strong>index.html</strong><br>
-        - Utilisez cette propriété directement dans le HTML
-    </li>
-    <li>Vérifiez votre travail : localhost:8080/step01</li>
-</ul>
+
+- Dans le fichier <b>main.js</b>
+    - Créez votre première instance de Vue
+    - Exposez une propriété name avec pour valeur SFEIR<br><br>
+- Dans le fichier <b>index.html</b>
+    - Utilisez cette propriété directement dans le HTML<br><br>
+- Vérifiez votre travail : localhost:8080/step01
 
 ##==##
 
-<!-- .slide: class="sfeir-bg-blue exercice" -->
+<!-- .slide: class="exercice" -->
+# Exercice 1
 ## Solution
-<br><br>
-<span class="full-center"><strong>localhost:8080/step01_solution</strong></span>
+<b>localhost:8080/step01_solution</b>
+<!-- .element: class="full-center" -->
 
 

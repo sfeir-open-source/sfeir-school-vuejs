@@ -1,4 +1,23 @@
-@import 'vue-colors';
+.reveal .slides section.two-column-layout section:last-child {
+  .align-image {
+    padding-left: 20%;
+  }
+}
+
+/**
+  - modify the top of icon to avoid the icon be just below the name of the speaker
+**/
+.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
+  top: 800px
+}
+
+/**
+  - add a new class to display code correctly when there is a lot of code on the diapo
+**/
+.reveal .slides section.with-code pre.medium-code:not(.literal) code {
+  font-size: 1.1em;
+  line-height: 2em;
+}
 
 .reveal .slides section {
   .center {
@@ -29,11 +48,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border:1px solid  #499D4A; 
+    border:1px solid  #499D4A;
   }
 
   .important {
-    color: $dark-pink;
+    color: #880e4f;
   }
 
   .justify-content-row {
@@ -48,7 +67,7 @@
       font-size: 2.5em;
       color: black;
     }
-  
+
     h1.center-big {
       font-size: 3em;
     }
@@ -74,7 +93,3 @@
     left: 0;
   }
 }
-
-/** Specific **/
-
-@import 'exercice';

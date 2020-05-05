@@ -4,143 +4,71 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Sfeir School - Vue Js</title>
-
-    <meta name="description" content="Content open source for Vue Js sfeir-school" />
-    <meta name="author" content="Nicolas FRIZZARIN aka Nicoss54" />
+    <title>Sfeir School - Vue JS</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+    <meta name="description" content="Content open source for Vue Js sfeir-school" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
     <!-- ----------------------------------------------------
-          ---------------- REVEAL STYLES  -------------------------
-          ------------------------------------------------------ -->
-    <link rel="stylesheet" type="text/css" href="./libs/revealjs/reveal.css" />
+        ---------------- REVEAL STYLES  -------------------------
+        ------------------------------------------------------ -->
+    <!--
+      <link rel="stylesheet" type="text/css" href="./libs/revealjs/reveal.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reveal.css" />
     <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" type="text/css" href="./libs/hightlightjs/tomorrow.css" />
+    <!-- For syntax highlighting - hightlightjs -->
+    <link rel="stylesheet" type="text/css" href="./web_modules/highlight.js/styles/tomorrow.css" />
 
-
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <!-- If the query includes 'print-pdf', use the PDF print sheet - from revealjs -->
     <script>
       document.write(
-        '<link rel="stylesheet" href="./libs/revealjs/print/' +
+        '<link rel="stylesheet" href="./web_modules/reveal.js/css/print/' +
         (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
         '.css" type="text/css" media="print">'
       );
     </script>
 
     <!--[if lt IE 9]>
-  <script src="libs/revealjs/js/html5shiv.js"></script>
-  <![endif]-->
+      <script src="reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
 
     <!-- ----------------------------------------------------
-        ---------------- PREZ STYLES  ---------------------------
-        ------------------------------------------------------ -->
+	    ---------------- PREZ STYLES  ---------------------------
+	    ------------------------------------------------------ -->
 
-    <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
+      <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
+    -->
+    <link rel="stylesheet" type="text/css" href="./web_modules/sfeir-school-theme/dist/css/sfeir-school-theme.css"
+      id="theme" />
+    <script type="module" src="./web_modules/sfeir-school-theme/dist/js/sfeir-theme.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./css/vue.css" id="theme-custo" />
-    <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
-
+    <script type="module" src="./scripts/dont-touch/reveal-config.js"></script>
   </head>
 
   <body>
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides" data-type-show="prez">
-        <section data-markdown="./markdown/presentation/welcome_school.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/speaker/nicolas_frizzarin.md" data-separator-vertical="##--##"
-          data-separator-notes="^Notes:"></section>
-        <section data-markdown="./markdown/speaker/justin_wilmet.md" data-separator-vertical="##--##"
-          data-separator-notes="^Notes:"></section>
-        <section data-markdown="./markdown/presentation/flow_school.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/basics/transition_slide.md"></section>
-        <section data-markdown="./markdown/basics/hello_compositions.md" data-separator="##==##"
-          data-separator-notes="^Notes:"></section>
-        <section data-markdown="./markdown/basics/hello_composition_exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/tooling/transition_slide.md"></section>
-        <section data-markdown="./markdown/tooling/official_stack.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/tooling/configuration.md" data-separator="##==##"
-          data-separator-notes="^Notes:"></section>
-        <section data-markdown="./markdown/tooling/exercice.md" data-separator="##==##" data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/vue-instance/transition_slide.md"></section>
-        <section data-markdown="./markdown/vue-instance/instance.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/components/transition_slide.md"></section>
-        <section data-markdown="./markdown/components/components.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/components/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/data-binding-template/transition_slide.md"></section>
-        <section data-markdown="./markdown/data-binding-template/plain_js.md"></section>
-        <section data-markdown="./markdown/data-binding-template/jquery.md"></section>
-        <section data-markdown="./markdown/data-binding-template/vue.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/data-binding-template/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/dom-event-gestion/transition_slide.md"></section>
-        <section data-markdown="./markdown/dom-event-gestion/event_definition.md"></section>
-        <section data-markdown="./markdown/dom-event-gestion/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/server-communication/transition_slide.md"></section>
-        <section data-markdown="./markdown/server-communication/axios_lib.md" data-separator="##==##" data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/server-communication/exercice.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/navigation/transition_slide.md"></section>
-        <section data-markdown="./markdown/navigation/tp_navigation.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/navigation/configuration.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/navigation/implementation.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/navigation/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/iterator/transition_slide.md"></section>
-        <section data-markdown="./markdown/iterator/directive_v_for.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/iterator/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/communication-components/transition_slide.md" data-separator="##==##">
-        </section>
-        <section data-markdown="./markdown/communication-components/event_props.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/communication-components/exercice.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/forms/sfeir_school_day_2.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/forms/concepts_bases.md" data-separator="##==##"
-          data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/forms/validation.md" data-separator="##==##" data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/forms/vee_validate.md" data-separator="##==##" data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/forms/vuelidate.md" data-separator="##==##" data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/filters/transition_slide.md"></section>
-        <section data-markdown="./markdown/filters/filters_concept.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/filters/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/modifier/transition_slide.md"></section>
-        <section data-markdown="./markdown/modifier/modifier.md" data-separator="##==##" data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/modifier/exercice.md" data-separator="##==##" data-separator-notes="^Notes">
-        </section>
-        <section data-markdown="./markdown/directive/transition_slide.md"></section>
-        <section data-markdown="./markdown/directive/native_directive.md" data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/directive/custom_directive.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/directive/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/state-management/transition_slide.md"></section>
-        <section data-markdown="./markdown/state-management/concepts.md" data-separator="##==##"
-          data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/state-management/store.md"></section>
-        <section data-markdown="./markdown/state-management/state.md" data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/state-management/getters.md"></section>
-        <section data-markdown="./markdown/state-management/mutation.md" data-separator-notes="^Notes"></section>
-        <section data-markdown="./markdown/state-management/action.md"></section>
-        <section data-markdown="./markdown/state-management/helpers.md"></section>
-        <section data-markdown="./markdown/state-management/exercice.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/lazy-loading/transition_slide.md"></section>
-        <section data-markdown="./markdown/lazy-loading/concept_lazy_loading.md" data-separator="##==##"></section>
-        <section data-markdown="./markdown/lazy-loading/exercice.md" data-separator="##==##"></section>
-      </div>
+      <div class="slides" data-type-show="prez"></div>
     </div>
-    <script src="./libs/revealjs/head.min.js"></script>
-    <script src="./libs/revealjs/reveal.js"></script>
-    <script src="reveal-config.js"></script>
+    <!--
+      <script src="./libs/revealjs/head.min.js"></script>
+      <script src="./libs/revealjs/reveal.js"></script>
+    -->
+    <script src="./web_modules/reveal.js/js/reveal.js"></script>
+
+    <!--
+      <script src="reveal-config.js"></script>
+    -->
   </body>
+
 </html>

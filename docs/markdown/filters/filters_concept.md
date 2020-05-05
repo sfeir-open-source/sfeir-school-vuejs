@@ -1,43 +1,48 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Concept d'utilisation
-<span class="full-center">Un filtre permet de <strong>transformer</strong> une donnée pour un affichage</span>
+Un filtre permet de <b>transformer</b> une donnée pour un affichage
+<!-- .element: class="full-center" -->
 
 ##==##
 
+<!-- .slide" -->
+# Exemple
+<br><br>
+
+![full-center full-height](assets/images/school/filters/exemple_filter_date.png)
+
+##==##
 <!-- .slide: class="sfeir-basic-slide" -->
 # Exemple
 <br><br>
-<img alt="full-center full-height" src="assets/images/school/filters/exemple_filter_date.png">
+
+![full-center full-height](assets/images/school/filters/exemple_filter_uppercase.png)
 
 ##==##
-<!-- .slide: class="sfeir-basic-slide" -->
-# Exemple
-<br><br>
-<img alt="full-center full-height" src="assets/images/school/filters/exemple_filter_uppercase.png">
 
-##==##
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Syntax
-<br><br>
-<ul>
-    <li>A la suite d'une expression : <strong>{{ expression | filter }}</strong></li>
-    <li>Possibilité de chaîner les filtres : <strong>{{ expression |filter1 |filter2 }}</strong></li>
-    <li>Possibilité de passer des paramètres : <strong>{{ expression |filter(param1, param2) }}</strong></li>
-</ul>
+<br><br><br>
+
+- A la suite d'une expression : <b>{{ expression | filter }}</b><br><br>
+- Possibilité de chaîner les filtres : <b>{{ expression |filter1 |filter2 }}</b><br><br>
+- Possibilité de passer des paramètres : <b>{{ expression |filter(param1, param2) }}</b><br><br>
 Notes:
  - le premier paramètre est toujours la valeur de l'expression c'est un paramètre implicite donc pas besoin de le passer à notre filtre
 
  ##==##
 
- <!-- .slide: class="sfeir-basic-slide" -->
+ <!-- .slide -->
  # Implémentation d'un filtre
+ <br>
+
+ - Dans la propriété filter du composant
+ - Le nom de la clé sera le nom du filtre dans le template
+ - Méthode qui prend des paramètres + paramètre implicite et retourne une nouvelle valeur
  <br><br>
- <ul>
-    <li>Dans la propriété "filters" du composant</li>
-    <li>Le nom de la clé sera le nom du filtre dans le template</li>
-    <li>Méthode qui prend des paramètres + paramètre implicite et retourne une nouvelle valeur</li>
- </ul>
- <img alt="center" src="assets/images/school/filters/filters_create.png">
+
+ ![center](assets/images/school/filters/filters_create.png)
+
  Notes:
   - un filtre peut également être définie de manière globale: Vue.filter(name, () => ())
   Il faudra penser à l'importer dans le main.js (fichier comportant l'instance principale de Vue JS)

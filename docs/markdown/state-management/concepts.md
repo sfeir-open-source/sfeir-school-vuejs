@@ -1,12 +1,10 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Les différents type de communication
-<br><br>
-<span>Il existe <strong>deux</strong> grandes familles de communication</span><br><br>
-<ul>
-    <li>Parents - enfants : (properties / event-custom)</li>
-    <br>
-    <li>Elements indépendants les uns des autres</li>
-</ul>
+<br><br><br>
+
+- Il existe <b>deux</b> grandes familles de communication: <br><br>
+    - Parents - enfants : (properties / event-custom)<br><br>
+    - Elements indépendants les uns des autres
 Notes:
  - Dans notre cas nous allons nous intéresser particulièrement à la communication entre des éléments indépendants les uns des autres
  Pour ce faire, il existe deux grandes solutions
@@ -15,18 +13,17 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Créer sa propre communication
 <br><br>
-<ul>
-    <li>Créer une instance de Vue dédiée pour la communication</li>
-    <li>Importer cette instance dans différents composants</li>
-    <li>Utiliser les méthodes $emit et $on</li>
-</ul>
-<div class="flex-row">
-    <img src="assets/images/school/state-management/bus_instance.png">
-    <img src="assets/images/school/state-management/bus_implementation.png">
-</div>
+
+- Créer une instance de Vue dédiée pour la communication
+- Importer cette instance dans différents composants
+- Utiliser les méthodes $emit et $on
+<br><br>
+
+![](assets/images/school/state-management/bus_instance.png)
+![](assets/images/school/state-management/bus_implementation.png)
 
 Notes:
  - https://alligator.io/vuejs/global-event-bus/ permet de voir une implémentation complète
@@ -35,30 +32,34 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Utilisation de l'existant : VueX
+<br>
+
+- Permet de mettre en place une architecture dataflow first (similaire à redux)
+- Librairie tiers <b>MAIS</b> officielle
+- npm install --save vuex
 <br><br>
-<ul>
-    <li>Permet de mettre en place une architecture dataflow first (similaire à redux)</li>
-    <li>Librairie tiers <strong>MAIS</strong> officielle</li>
-    <li>npm install --save vuex</li>
-</ul>
-<img alt="h-600 center"src="assets/images/school/state-management/dataflow_flux.png">
+
+![h-600 center](assets/images/school/state-management/dataflow_flux.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Les composantes de VueX
+##--##
 <br><br>
-<div class="flex-row">
-    <ul>
-        <li>State</li>
-        <li>Getters</li>
-        <li>Mutations</li>
-        <li>Action</li>
-    </ul>
-    <img alt="h-800" src="assets/images/school/state-management/achitecture_vuex.png">
-</div>
+
+- State<br><br>
+- Getters<br><br>
+- Mutations<br><br>
+- Action
+
+##--##
+<br>
+
+![h-800](assets/images/school/state-management/achitecture_vuex.png)
+
 Notes:
 Vuex impose de mettre en place un store. Ce store est composé de 4 composantes:
  - state (initialisation de nos données présentes dans notre vue)

@@ -1,39 +1,41 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Les modifiers : concepts et généralités
-<br>
-<ul>
-    <li>Permet de customiser une directive</li>
-    <li>Peuvent être chaînés</li>
-    <li>Se place directement après un .</li>
-</ul>
 <br><br>
-<img alt="center" src="assets/images/school/modifiers/modifiers_exemple.png">
+
+- Permet de customiser une directive
+- Peuvent être chaînés
+- Se place directement après un .
+<br><br>
+
+![center](assets/images/school/modifiers/modifiers_exemple.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Les modifiers pour les events
 <br>
-<span>Les modifiers les plus courants pour les events sont les suivants :</span>
-<ul>
-    <li>.stop</li>
-    <li>.prevent</li>
-    <li>.once</li>
-    <li>.left, .right</li>
-    <li>.middle</li>
-</ul><br><br>
-<span>Vous trouverez la liste complète des possibilités sur cette page : https://vuejs.org/v2/guide/events.html#Event-Modifiers</span>
+
+- Les modifiers les plus courants pour les events sont les suivants :
+    - .stop
+    - .prevent
+    - .left, .right
+    - .middle<br><br>
+
+- Vous trouverez la liste complète des possibilités sur cette page : <b>https://vuejs.org/v2/guide/events.html#Event-Modifiers</b>
+
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide -->
 # Les modifiers sur le clavier
-<br>
-<ul>
-    <li>S'implemente de la manière suivante : <strong>.(keyCode | keyAlias)</strong></li>
-    <li>On peut définir des alias avec la syntax suivante : <strong>Vue.config.keyCodes.f1 = 112</strong></li>
-</ul><br><br>
-<img alt="center" src="assets/images/school/modifiers/modifiers_clavier.png">
+<br><br>
+
+- S'implemente de la manière suivante : <b>.(keyCode | keyAlias)</b>
+- On peut définir des alias avec la syntax suivante : <b>Vue.config.keyCodes.f1 = 112</b>
+<br><br>
+
+![center](assets/images/school/modifiers/modifiers_clavier.png)
+
 Notes:
  - keyAlias peuvent être nombreux: .enter, .tab, .delete, .space, .up ....
  - Documentation suivant le lien suivant: https://vuejs.org/v2/guide/events.html#Key-Modifiers

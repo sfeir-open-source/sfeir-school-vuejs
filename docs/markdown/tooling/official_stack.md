@@ -1,16 +1,20 @@
-<!-- .slide: class="sfeir-basic-slide with-code" -->
+<!-- .slide: class="with-code inconsolata" -->
 # La stack "officielle"
 <br>
-<span class="center"><strong>Vue Cli (https://cli.vuejs.org)</strong></span>
-```bash
+<strong>Vue Cli (https://cli.vuejs.org)</strong>
+<!-- .element: class="center" -->
+
+```sh
 npm i -g @vue/cli
 vue create <project-name>
 ```
-<img alt="center h-700" src="assets/images/school/tool/vue_cli.png">
+<!-- .element class="medium-code" -->
+
+![center h-700](assets/images/school/tool/vue_cli.png)
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide with-code" -->
+<!-- .slide: class="with-code inconsolata" -->
 # La stack "officielle"
 <div class="flex-row">
     <div class="ecosystem">
@@ -27,12 +31,15 @@ vue create <project-name>
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide with-code" -->
+<!-- .slide: class="with-code inconsolata" -->
 # La stack "officielle"
 <br>
+
 ```bash
 vue create <project-name>
 ```
+<!-- .element: class="medium-code" -->
+
 <br><br>
 <div class="flex-row">
     <div>
@@ -48,12 +55,15 @@ vue create <project-name>
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="with-code inconsolata" -->
 # La stack "officielle"
 <br>
-```bash
+
+```sh
 vue-cli-service
 ```
+<!-- .element: class="medium-code" -->
+
 <br><br>
 <div class="flex-row">
     <div>
