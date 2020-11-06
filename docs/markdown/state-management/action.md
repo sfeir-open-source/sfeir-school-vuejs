@@ -1,6 +1,5 @@
 <!-- .slide -->
 # Les Actions
-<br>
 
 - Objet clé-valeur avec pour clé une fonction
 - Cet object se trouve dans la propriété <b>actions</b> du store

@@ -1,8 +1,6 @@
 <!-- .slide-->
 # Les Mutations
-<br>
-
-- <b>Unique</b> endroit ou l'on peut modifier le state
+- __Unique__ endroit ou l'on peut modifier le state
 - Objet clé-valeur avec pour clé une fonction
 - Cet object se trouve dans la propriété mutations du store
 - Mutation déclenchée grâce au mot clé <b>commit</b>

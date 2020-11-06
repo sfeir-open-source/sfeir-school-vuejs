@@ -1,6 +1,6 @@
 <!-- .slide -->
 # Le Store
-<br><br>
+<br>
 
 - "Magasin" comportant le state, getters, mutation, action
 - S'enregistre dans l'instance principale de Vue

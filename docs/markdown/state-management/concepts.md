@@ -1,8 +1,8 @@
 <!-- .slide -->
 # Les différents type de communication
-<br><br><br>
+<br><br>
 
-- Il existe <b>deux</b> grandes familles de communication: <br><br>
+- Il existe __deux__ grandes familles de communication: <br><br>
     - Parents - enfants : (properties / event-custom)<br><br>
     - Elements indépendants les uns des autres
 Notes:
@@ -15,7 +15,7 @@ Notes:
 
 <!-- .slide -->
 # Créer sa propre communication
-<br><br>
+<br>
 
 - Créer une instance de Vue dédiée pour la communication
 - Importer cette instance dans différents composants
@@ -34,7 +34,7 @@ Notes:
 
 <!-- .slide -->
 # Utilisation de l'existant : VueX
-<br>
+
 
 - Permet de mettre en place une architecture dataflow first (similaire à redux)
 - Librairie tiers <b>MAIS</b> officielle
