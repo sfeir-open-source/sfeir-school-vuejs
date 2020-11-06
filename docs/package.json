@@ -1,6 +1,6 @@
 {
   "name": "sfeirschoolvue",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sfeir School Vue with revealJS",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/jefBinomed/SfeirSchoolTheme.git"
   },
   "keywords": [
-    "typescript",
+    "vue",
     "sfeir"
   ],
   "authors": [
@@ -35,14 +35,14 @@
     "highlight.js": "^9.15.6",
     "lit-html": "^1.1.2",
     "live-server": "^1.2.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.0",
     "parallelshell": "3.0.1",
     "reveal.js": "^3.9.2",
-    "snowpack": "^1.6.0",
-    "sfeir-school-theme": "2.0.1"
+    "snowpack": "^2.16.1",
+    "sfeir-school-theme": "2.1.1"
   },
   "snowpack": {
-    "webDependencies": [
+    "install": [
       "sfeir-school-theme/dist/**/*",
       "lit-html"
     ]
