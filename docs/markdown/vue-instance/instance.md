@@ -1,7 +1,7 @@
 <!-- .slide: class="two-column-layout" -->
 # L'instance
-<br><br>
-<span>Une instance est composée de 3 grandes composantes</span><br>
+Une instance est composée de 3 grandes composantes
+<!-- .element: class="center" -->
 
 ##--##
 <br><br><br><br>
@@ -71,7 +71,9 @@ Le constructor peut prendre plusieurs options :
 <!-- .slide: class="two-column-layout" -->
 # Les computed properties
 <br>
-<span class="center"><strong>Qu'est ce que c'est?</strong></span>
+
+__Qu'est ce que c'est?__
+<!-- .element: class="center" -->
 
 ##--##
 <br><br><br><br>
@@ -95,7 +97,9 @@ Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/compute
 <!-- .slide: class="two-column-layout" -->
 # Les méthodes
 <br>
-<span class="center"><strong>Qu'est ce que c'est? </strong></span>
+
+__Qu'est ce que c'est ?__
+<!-- .element: class="center" -->
 
 ##--##
 <br><br><br><br>
@@ -118,7 +122,9 @@ Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/compute
 <!-- .slide: class="two-column-layout" -->
 # Les watchers
 <br>
-<span class="center"><strong>Qu'est ce que c'est? </strong></span>
+
+__Qu'est ce que c'est ?__
+<!-- .element: class="center" -->
 
 ##--##
 <br><br><br><br>
@@ -137,7 +143,7 @@ Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/compute
 
 <!-- .slide -->
 # Combat entre computed, watcher et methods
-<br><br><br>
+<br><br>
 
 - Une propriété computed est recalculée seulement quand ses dépendances changent<br><br>
 - Une méthode est rappelée à chaque fois qu'un élément change<br><br>
