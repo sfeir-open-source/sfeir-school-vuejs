@@ -1,17 +1,13 @@
-<!-- .slide: class="sfeir-basic-slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Webpack
-<br>
-<div class="flex-row configuration">
-    <div>
-        <ul>
-            <li>Bundle en JavaScript</li><br>
-            <li>Hot Reload</li><br>
-        </ul>
-    </div>
-    <div>
-        <img alt="h-700"  src="assets/images/school/tool/webpack.png">
-    </div>
-</div>
+##--##
+<br><br>
+
+- Bundle en Javascript<br><br>
+- Hot reload
+##--##
+![h-700](assets/images/school/tool/webpack.png)
+
 Notes:
 - Au moment du build, webpack va pourvoir minifier le css, js et réaliser des bundles pour avoir une application la plus légère possible
 - Hot Reload est une fonctionnalité présente grâce à la dépendance webpack dev server, il permet de rafraichir automatiquement les sources présentes dans le navigateur quand une mofification est faîte dans votre projet.
@@ -73,7 +69,7 @@ https://www.npmtrends.com/vue-material-vs-vuetify-vs-bootstrap-vue-vs-element-ui
 <!-- .slide" -->
 # Intégration simple vs single page application (spa)
 <br><br>
-<b>A tout moment vous pouvez utiliser vos instances de vue (et vos composants)</b>
+__A tout moment vous pouvez utiliser vos instances de vue (et vos composants)__
 <br><br>
 
 - directement dans votre application
