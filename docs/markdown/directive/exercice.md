@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Exercice 18
 ## Exercice
-<br><br><br>
+<br>
 
 - Créez une directive v-upper qui permet de modifier la valeur saisie dans le champ de rechercher du composant SearchBar pour la mettre en majuscule
 Notes:
@@ -14,5 +14,5 @@ Notes:
 <!-- .slide: class="exercice" -->
 # Exercice 18
 ## Solution
-<b>localhost:8080/step18_solution</b>
+__localhost:8080/step18_solution__
 <!-- .element: class="full-center" -->
