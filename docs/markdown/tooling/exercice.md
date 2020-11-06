@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Exercice 2
 ## Exercice
-<br><br>
+<br>
 
 - Dans le fichier <b>main.js</b>
     - Importez Vue
