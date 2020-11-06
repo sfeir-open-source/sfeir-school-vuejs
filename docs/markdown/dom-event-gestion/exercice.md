@@ -1,7 +1,8 @@
 <!-- .slide: class="exercice" -->
 # Exercice 5
 ## Exercice
-<br><br>
+<br>
+
 - Un bouton random a été ajouté
 - Un bouton "cached" a été ajouté à Home.vue<br><br>
 
@@ -14,5 +15,5 @@
 <!-- .slide: class="exercice" -->
 # Exercice 5
 ## Solution
-<b>localhost:8080/step05_solution</b>
+__localhost:8080/step05_solution__
 <!-- .element: class="full-center" -->
