@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Exercice 16
 ## Excercie
-<br><br>
+<br>
 
 - Créez un filtre naFilter dans l'objet filter du composant CardPanel.vue <br><br>
 - Affichez "N/A" si la personne n'a pas de manager dans le composant CardPanel.vue<br><br>
@@ -12,5 +12,5 @@
 <!-- .slide: class="exercice" -->
 # Exercice 16
 ## Solution
-<b>localhost:8080/step16_solution</b>
+__localhost:8080/step16_solution__
 <!-- .element: class="full-center" -->
