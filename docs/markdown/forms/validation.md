@@ -5,11 +5,11 @@
 
 <!-- .slide -->
 # Les deux approches
-<br><br><br>
+<br><br>
 
-- Template driven form (la validation est pilotée par le template): <b>vee-validate</b><br><br>
-- Model driven form (la validation est pilotée par le controlleur): <b>vuelidate</b><br><br>
-- <b>Attention</b> ces solutions ne sont officiellement pas supportées par la core Team Vue JS
+- Template driven form (la validation est pilotée par le template): __vee-validate__<br><br>
+- Model driven form (la validation est pilotée par le controlleur): __vuelidate__<br><br>
+- __Attention__ ces solutions ne sont officiellement pas supportées par la core Team Vue JS
 Notes:
  - documentation officiel de vee-validate: https://baianat.github.io/vee-validate/
  - documentation officiel de vuelidate: https://vuelidate.netlify.com
@@ -18,7 +18,7 @@ Notes:
 
 <!-- .slide -->
 # Les différents états d'un contôle
-<br><br>
+<br>
 
 - <b>pristine</b> : l’utilisateur n’a pas interagi avec le contrôle<br><br>
 - <b>dirty</b> : l’utilisateur a déjà interagi avec le contrôle<br><br>

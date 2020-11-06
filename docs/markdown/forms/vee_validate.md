@@ -1,6 +1,5 @@
 <!-- .slide -->
 # Template driven form avec Vee-Validate
-<br><br>
 
 - Ajoutez la dépendance => <b> npm install vee-validate --save</b>
 - Ajoutez vee-validate au projet (instance principale de vue)
@@ -17,8 +16,8 @@ Notes:
 
 <!-- .slide -->
 # Configuration
-<br><br>
-La configuration <strong>n'est pas nécessaire</strong> pour lancer la validation ou le bon fonctionnement du plugin<br>
+
+La configuration __n'est pas nécessaire__ pour lancer la validation ou le bon fonctionnement du plugin<br>
 
 ![center](assets/images/school/forms/vee_validate_config.png)
 
@@ -26,9 +25,9 @@ La configuration <strong>n'est pas nécessaire</strong> pour lancer la validatio
 
 <!-- .slide" -->
 # Les Validateurs (ValidationProvider)
-<br><br>
 
-- Composant wrapper : <b>ValidationProvider</b>
+
+- Composant wrapper : __ValidationProvider__
 - rules : règles de validation
 - v-slot : passe des propriétés au template transclude
 <br><br>
@@ -42,7 +41,6 @@ Notes:
 
 <!-- .slide -->
 # La gestion des erreurs
-<br><br>
 
 - Pour avoir l'erreur courante errors[0]
 - Pour avoir toutes les erreurs, composez avec v-for et la props :bails
@@ -52,8 +50,7 @@ Notes:
 
 ##==##
 <!-- .slide: class="sfeir-basic-slide" -->
-# Les règles de validation classique
-<br><br>
+# Les règles de validations classiques
 
 - Vee Validate fournit plusieurs règles de validation, pour les plus classiques:
     - required
@@ -70,7 +67,7 @@ Notes:
 
  <!-- .slide -->
 # Valider l'ensemble d'un formulaire: ValidationObserver
-<br><br>
+<br>
 
 ![full-center](assets/images/school/forms/vee_validate_validation_observer.png)
 
@@ -95,6 +92,6 @@ Notes:
 <!-- .slide: class="exercice" -->
 # Exercice 13
 ## Solution
-<b>localhost:8080/step13_solution</b>
+__localhost:8080/step13_solution__
 <!-- .element: class="full-center" -->
 

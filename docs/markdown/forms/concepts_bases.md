@@ -21,9 +21,9 @@
 
 <!-- .slide -->
 # Un directive magique: v-model
-<br><br>
+<br>
 
-- Permet de réaliser un<b> two-way databinding</b>
+- Permet de réaliser un __two-way databinding__
 <br><br>
 
 ![center](assets/images/school/forms/v-model_basic.png)
@@ -36,7 +36,7 @@ Notes:
 
 <!-- .slide -->
 # L'utilisation de v-model
-<br><br>
+
 
 - Placement de cette directive sur input, textarea, checkbox, radio, select et composants
 - Peut être combiné avec v-for pour lister les options (select box)
@@ -50,7 +50,6 @@ Notes:
 
 <!-- .slide -->
 # Les modifiers de v-model
-<br><br>
 
 - lazy => changement de stratégie de synchronisation
 - number => caster obligatoirement en number
@@ -64,7 +63,7 @@ Notes:
 <!-- .slide: class="exercice" -->
 # Exercice 11
 ## Exercice
-<br><br>
+<br>
 
 - Créez un composant monofichier Form.vue<br><br>
 - Appelez ce composant dans People.vue<br><br>
@@ -78,7 +77,7 @@ Notes:
  <!-- .slide: class="exercice" -->
  # Exercice 11
  ## Solution
- <b>localhost:8080/step11_solution</b>
+ __localhost:8080/step11_solution__
  <!-- .element: class="full-center" -->
 
  ##==##
@@ -86,7 +85,7 @@ Notes:
  <!-- .slide: class="exercice" -->
  # Exercice 12
  ## Exercice
- <br><br>
+ <br>
 
  - Créez un composant monofichier Update (dans le dossier views)<br><br>
  - Mettez à jour le ficher router.js (#/edit/:id)<br><br>
@@ -101,7 +100,7 @@ Notes:
  <!-- .slide: class="exercice" -->
  # Exercice 12 (suite)
  ## Exercice
- <br><br>
+ <br>
 
  - Utilisez Form.vue dans Update.vue<br><br>
  - Passez la personne récupérée au composant Form.vue (props)<br><br>
@@ -118,5 +117,5 @@ Notes:
  <!-- .slide: class="exercice" -->
  # Exercice 12
  ## Solution
- <b>localhost:8080/step12_solution</b>
+ __localhost:8080/step12_solution__
  <!-- .element: class="full-center" -->
