@@ -1,6 +1,6 @@
 <!-- .slide -->
 # Events and Props
-<br><br>
+<br>
 
 ![center](assets/images/school/communication-components/communication_schema.png)
 
@@ -8,7 +8,7 @@
 
 <!--.slide -->
 # Les props (basique)
-<br><br>
+<br>
 
 - Passées dans la propriété props
 - Tableau de chaînes de propriétés
@@ -34,7 +34,7 @@
         - required
         - validator (custom function)
 ##--##
-<br><br>
+<br>
 
 ![h-750](assets/images/school/communication-components/complete_props.png)
 <!-- .element: class="align-image" -->
@@ -43,10 +43,10 @@
 
 <!-- .slide" -->
 # Les events
-<br><br>
+<br>
 
 - Le composant enfant envoie un event pour notifier le parent : this.$emit()
-- Le composant parent écoute l'event grâce à <b>v-on</b> ou <b>@</b>
+- Le composant parent écoute l'event grâce à __v-on__ ou __@__
 
 <br><br>
 

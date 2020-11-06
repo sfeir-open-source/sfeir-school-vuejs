@@ -12,9 +12,9 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 10
+# Exercice 9
 ## Solution
-<b>localhost:8080/step09_solution</b>
+__localhost:8080/step09_solution__
 <!-- .element: class="full-center" -->
 
 ##==##
@@ -39,5 +39,5 @@ Notes:
  <!-- .slide: class="exercice" -->
  # Exercice 10
  ## Solution
-<b>localhost:8080/step10_solution</b>
+__localhost:8080/step10_solution__
 <!-- .element: class="full-center" -->
