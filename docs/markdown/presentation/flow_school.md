@@ -11,20 +11,20 @@ Tour de table ...
 
 # Repositories
 
-<strong>https://sfeir-open-source.github.io/sfeir-school-vuejs/</strong>
+__https://sfeir-open-source.github.io/sfeir-school-vuejs/__
 <!-- .element: class="full-center" -->
 
 
 
 ##==##
+![center](assets/images/school/basics/sfeir_people.png)
 
-<img alt="center" src="assets/images/school/basics/sfeir_people.png">
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 # Bootstrapping de l'application
-<br><br>
+
 
 ```sh
 npm install -g @vue/cli
@@ -48,11 +48,11 @@ npm run server -> http://localhost:9000
 ##==##
 
 # Déroulement des exercices
-<br><br>
-<span><strong>Chaque concept clé de Vue Js est accompagné d'un TP.</strong></span>
+
+__Chaque concept clé de Vue Js est accompagné d'un TP.__
 <br><br><br>
-Déroulement du TP :
 
- - <strong>une page d'excercice : steps/src/pages/`name_tp`</strong> (http://localhost:8080/name_tp)
+Déroulement du TP : <br><br>
 
- - <strong>une page de solution : steps/src/pages/`_solution_tp`</strong>  (http://localhost:8080/solution_tp)
+ - __une page d'excercice : steps/src/pages/`name_tp`__ (http://localhost:8080/name_tp) <br><br>
+ - __une page de solution : steps/src/pages/`_solution_tp`__  (http://localhost:8080/solution_tp)<br><br>
