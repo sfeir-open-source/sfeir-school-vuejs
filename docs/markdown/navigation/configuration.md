@@ -1,6 +1,6 @@
 <!-- .slide -->
 # Configuration de base du routing
-<br><br><br>
+<br>
 
 - <b>Path</b>: l'url de la route, peut contenir des segments dynamiques : /people/:id<br><br>
 - <b>Name</b>: le nom de la route<br><br>
@@ -12,7 +12,7 @@
 
 <!-- .slide: class="sfeir-basic-slide -->
 # Configuration avancée du routing
-<br><br><br>
+<br>
 
 - <b>components</b>: objet avec le nom de l’emplacement dans lequel le composant doit s’afficher<br><br>
 - <b>meta</b>: données associées à la route<br><br>
@@ -24,7 +24,7 @@ Notes:
 
  <!-- .slide: class="sfeir-basic-slide -->
 # Guards
-<br><br>
+
 
 - Intervenir avant ou après un changement de route<br><br>
 - Global sur le router (beforeEach / afterEach)<br><br>
@@ -48,7 +48,7 @@ Notes:
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # Stratégies de Navigation
-<br><br>
+<br>
 <b>2 stratégies de navigation :</b>
 <br><br>
 
