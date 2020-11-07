@@ -1,30 +1,30 @@
-import VueRouter from 'vue-router'
+import VueRouter from "vue-router";
 
-import Home from './Home.vue'
-import People from './People.vue'
-import Update from './Update.vue'
+import Home from "./Home.vue";
+import People from "./People.vue";
+import Update from "./Update.vue";
 
 const routes = [
   {
-    name: 'home',
-    path: '/home',
+    name: "home",
+    path: "/home",
     component: Home,
   },
   {
-    name: 'people',
-    path: '/people',
+    name: "people",
+    path: "/people",
     component: People,
   },
   {
-    name: 'edit',
-    path: '/edit/:id',
+    name: "edit",
+    path: "/edit/:id",
     component: Update,
   },
   {
-    path: '/',
-    redirect: '/people',
-  }
-]
+    path: "/",
+    redirect: "/people",
+  },
+];
 
 export default new VueRouter({
   routes,

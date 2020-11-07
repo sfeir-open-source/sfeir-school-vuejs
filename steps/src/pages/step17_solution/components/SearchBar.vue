@@ -17,8 +17,8 @@ export default {
   methods: {
     onInput(event) {
       this.$emit("search", event.target.value);
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -5,7 +5,12 @@
         <md-input-container>
           <md-icon>search</md-icon>
           <label>Search</label>
-          <md-input :value="search" required @input="onInput" v-upper></md-input>
+          <md-input
+            :value="search"
+            required
+            @input="onInput"
+            v-upper
+          ></md-input>
         </md-input-container>
       </div>
     </form>
@@ -19,16 +24,16 @@ export default {
   methods: {
     onInput(event) {
       this.$emit("search", event);
-    }
+    },
   },
   computed: {
-    search: function() {
+    search: function () {
       return this.$store.state.search.toUpperCase();
-    }
+    },
   },
   directives: {
-    upper
-  }
+    upper,
+  },
 };
 </script>
 

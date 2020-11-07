@@ -5,20 +5,20 @@
         <md-card-header-text>
           <div class="md-title">
             <a href="#" class="card-title username">
-              <span>{{person.firstname}}</span>
-              <span class="lastname">{{person.lastname}}</span>
+              <span>{{ person.firstname }}</span>
+              <span class="lastname">{{ person.lastname }}</span>
             </a>
           </div>
           <div class="md-subhead">
-            <div class="subtitle">{{person.entity}}</div>
+            <div class="subtitle">{{ person.entity }}</div>
             <div class="people-data">
               <div class>
                 <md-icon class="md-accent">email</md-icon>
-                <span class="item">{{person.email}}</span>
+                <span class="item">{{ person.email }}</span>
               </div>
               <div class>
                 <md-icon class="md-accent">phone</md-icon>
-                <span class="item">{{person.phone}}</span>
+                <span class="item">{{ person.phone }}</span>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
           <md-layout md-flex="33">
             <div>
               <span class="label">Manager:</span>
-              <span class="item">{{person.manager}}</span>
+              <span class="item">{{ person.manager }}</span>
             </div>
             <div>
               <span class="label">Location:</span>
@@ -59,19 +59,19 @@ import peopleService from "../services/PeopleService.js";
 export default {
   data() {
     return {
-      people: []
+      people: [],
     };
   },
   beforeRouteEnter(route, redirect, next) {
     peopleService
       .fetch()
-      .then(people =>
-        next(vm => {
+      .then((people) =>
+        next((vm) => {
           vm.people = people;
         })
       )
       .catch(console.error);
-  }
+  },
 };
 </script>
 

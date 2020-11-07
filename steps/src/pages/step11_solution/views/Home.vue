@@ -15,27 +15,27 @@ import CardPanel from "../components/CardPanel.vue";
 
 export default {
   components: {
-    "sfeir-card": CardPanel
+    "sfeir-card": CardPanel,
   },
   data() {
     return {
-      person: {}
+      person: {},
     };
   },
-  created: function() {
+  created: function () {
     peopleService
       .fetch()
-      .then(people => (this.person = people[0]))
+      .then((people) => (this.person = people[0]))
       .catch(console.error);
   },
   methods: {
-    random: function() {
+    random: function () {
       peopleService
         .fetchRandom()
-        .then(person => (this.person = person))
+        .then((person) => (this.person = person))
         .catch(console.error);
-    }
-  }
+    },
+  },
 };
 </script>
 

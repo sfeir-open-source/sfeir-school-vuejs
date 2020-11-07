@@ -1,6 +1,11 @@
 <template>
   <section class="container">
-    <sfeir-card v-for="person in people" :person="person" :key="person.id" @delete="deletePerson"></sfeir-card>
+    <sfeir-card
+      v-for="person in people"
+      :person="person"
+      :key="person.id"
+      @delete="deletePerson"
+    ></sfeir-card>
   </section>
 </template>
 
@@ -10,33 +15,33 @@ import CardPanel from "../components/CardPanel.vue";
 
 export default {
   components: {
-    "sfeir-card": CardPanel
+    "sfeir-card": CardPanel,
   },
   data() {
     return {
-      people: []
+      people: [],
     };
   },
   beforeRouteEnter(route, redirect, next) {
     peopleService
       .fetch()
-      .then(people =>
-        next(vm => {
+      .then((people) =>
+        next((vm) => {
           vm.people = people;
         })
       )
       .catch(console.error);
   },
   methods: {
-    deletePerson: function(person) {
+    deletePerson: function (person) {
       peopleService
         .delete(person.id)
-        .then(people => {
+        .then((people) => {
           this.people = people;
         })
         .catch(console.error);
-    }
-  }
+    },
+  },
 };
 </script>
 

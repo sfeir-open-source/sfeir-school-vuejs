@@ -13,31 +13,31 @@ import peopleService from "../services/PeopleService.js";
 
 export default {
   components: {
-    "sfeir-card": CardPanel
+    "sfeir-card": CardPanel,
   },
   data() {
     return {
-      person: {}
+      person: {},
     };
   },
   beforeRouteEnter(route, redirect, next) {
     peopleService
       .fetchRandom()
-      .then(person =>
-        next(vm => {
+      .then((person) =>
+        next((vm) => {
           vm.person = person;
         })
       )
       .catch(console.log.bind(console));
   },
   methods: {
-    random: function() {
+    random: function () {
       peopleService
         .fetchRandom()
-        .then(person => (this.person = person))
+        .then((person) => (this.person = person))
         .catch(console.log);
-    }
-  }
+    },
+  },
 };
 </script>
 

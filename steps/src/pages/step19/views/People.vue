@@ -1,11 +1,16 @@
 <template>
   <div>
     <div class="header row">
-      <h1 class="col s12 flow-text">You have {{people.length}} contacts</h1>
+      <h1 class="col s12 flow-text">You have {{ people.length }} contacts</h1>
       <search-bar @search="filterPeople"></search-bar>
     </div>
     <section class="container">
-      <sfeir-card :key="person.id" v-for="person in people" :person="person" @delete="deletePerson"></sfeir-card>
+      <sfeir-card
+        :key="person.id"
+        v-for="person in people"
+        :person="person"
+        @delete="deletePerson"
+      ></sfeir-card>
     </section>
     <md-dialog ref="dialog">
       <md-dialog-title>Contact informations</md-dialog-title>
@@ -14,7 +19,10 @@
       </md-dialog-content>
     </md-dialog>
 
-    <md-button class="md-fab md-fab-bottom-right md-primary" @click="showDialog">
+    <md-button
+      class="md-fab md-fab-bottom-right md-primary"
+      @click="showDialog"
+    >
       <md-icon>add</md-icon>
     </md-button>
   </div>
@@ -31,30 +39,30 @@ export default {
   components: {
     "sfeir-card": CardPanel,
     "sfeir-form": Form,
-    "search-bar": SearchBar
+    "search-bar": SearchBar,
   },
 
   computed: {
-    people: function() {
-        // ...
-    }
+    people: function () {
+      // ...
+    },
   },
   mounted() {
     // ...
   },
   methods: {
-    deletePerson: function(person) {
+    deletePerson: function (person) {
       peopleService
         .delete(person.id)
-        .then(people => {
+        .then((people) => {
           this._people = this.people = people;
         })
         .catch(console.error);
     },
-    addPerson: function(person) {
+    addPerson: function (person) {
       peopleService
         .create(person)
-        .then(person => {
+        .then((person) => {
           this._people.push(person);
           this.hideDialog();
         })
@@ -70,8 +78,8 @@ export default {
     },
     filterPeople(search) {
       // ...
-    }
-  }
+    },
+  },
 };
 </script>
 

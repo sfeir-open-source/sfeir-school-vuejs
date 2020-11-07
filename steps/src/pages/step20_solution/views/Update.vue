@@ -1,6 +1,10 @@
 <template>
   <section class="container">
-    <sfeir-form v-bind:person="person" v-on:save="updatePerson" v-on:cancel="goBack"></sfeir-form>
+    <sfeir-form
+      v-bind:person="person"
+      v-on:save="updatePerson"
+      v-on:cancel="goBack"
+    ></sfeir-form>
   </section>
 </template>
 <script>
@@ -11,32 +15,32 @@ export default {
   name: "edit",
   data() {
     return {
-      person: {}
+      person: {},
     };
   },
   components: {
-    "sfeir-form": Form
+    "sfeir-form": Form,
   },
   beforeRouteEnter(route, redirect, next) {
     peopleService
       .fetchOne(route.params.id)
-      .then(person =>
-        next(vm => {
+      .then((person) =>
+        next((vm) => {
           vm.person = person;
         })
       )
       .catch(console.error);
   },
   methods: {
-    updatePerson: function(p) {
+    updatePerson: function (p) {
       peopleService.update(p).then(() => {
         this.goBack();
       });
     },
-    goBack: function() {
+    goBack: function () {
       this.$router.go(-1);
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped></style>

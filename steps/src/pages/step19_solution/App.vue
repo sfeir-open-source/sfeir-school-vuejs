@@ -19,12 +19,12 @@ import Home from "./views/Home";
 export default {
   data() {
     return {
-      name: "Sfeir"
+      name: "Sfeir",
     };
   },
   components: {
-    "sfeir-home": Home
-  }
+    "sfeir-home": Home,
+  },
 };
 </script>
 
