@@ -246,3 +246,4 @@ modules.xml
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/node,vscode,yarn,webstorm+all,git
+/.vscode/
