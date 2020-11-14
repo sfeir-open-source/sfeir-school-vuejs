@@ -1,22 +1,22 @@
-import VueRouter from 'vue-router';
-import Home from './Home.vue';
-import People from './People.vue';
+import VueRouter from "vue-router";
+import Home from "./Home.vue";
+import People from "./People.vue";
 
 const routes = [
   {
-    name: 'home',
-    path: '/home',
+    name: "home",
+    path: "/home",
     component: Home,
   },
   {
-    name: 'people',
-    path: '/people',
+    name: "people",
+    path: "/people",
     component: People,
   },
   {
-    path: '/',
-    redirect: '/people',
-  }
+    path: "/",
+    redirect: "/people",
+  },
 ];
 
 export default new VueRouter({

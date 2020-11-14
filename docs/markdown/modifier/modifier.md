@@ -1,7 +1,5 @@
 <!-- .slide -->
 # Les modifiers : concepts et généralités
-<br><br>
-
 - Permet de customiser une directive
 - Peuvent être chaînés
 - Se place directement après un .
@@ -21,17 +19,17 @@
     - .left, .right
     - .middle<br><br>
 
-- Vous trouverez la liste complète des possibilités sur cette page : <b>https://vuejs.org/v2/guide/events.html#Event-Modifiers</b>
+- Vous trouverez la liste complète des possibilités sur cette page : __https://vuejs.org/v2/guide/events.html#Event-Modifiers__
 
 
 ##==##
 
 <!-- .slide -->
 # Les modifiers sur le clavier
-<br><br>
+<br>
 
-- S'implemente de la manière suivante : <b>.(keyCode | keyAlias)</b>
-- On peut définir des alias avec la syntax suivante : <b>Vue.config.keyCodes.f1 = 112</b>
+- S'implemente de la manière suivante : __.(keyCode | keyAlias)__
+- On peut définir des alias avec la syntax suivante : __Vue.config.keyCodes.f1 = 112__
 <br><br>
 
 ![center](assets/images/school/modifiers/modifiers_clavier.png)

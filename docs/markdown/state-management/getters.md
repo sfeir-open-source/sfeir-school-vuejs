@@ -1,6 +1,5 @@
 <!-- .slide -->
 # Les Getters
-<br>
 
 - Objet clé-valeur, chaque clé est une fonction
 - Permet de faire des traitements sur le state (ex: filtre)

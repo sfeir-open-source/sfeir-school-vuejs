@@ -22,11 +22,11 @@ Un filtre permet de <b>transformer</b> une donnée pour un affichage
 
 <!-- .slide -->
 # Syntax
-<br><br><br>
+<br><br>
 
-- A la suite d'une expression : <b>{{ expression | filter }}</b><br><br>
-- Possibilité de chaîner les filtres : <b>{{ expression |filter1 |filter2 }}</b><br><br>
-- Possibilité de passer des paramètres : <b>{{ expression |filter(param1, param2) }}</b><br><br>
+- A la suite d'une expression : __{{ expression | filter }}__<br><br>
+- Possibilité de chaîner les filtres : __{{ expression |filter1 |filter2 }}__<br><br>
+- Possibilité de passer des paramètres : __{{ expression |filter(param1, param2) }}__<br><br>
 Notes:
  - le premier paramètre est toujours la valeur de l'expression c'est un paramètre implicite donc pas besoin de le passer à notre filtre
 
@@ -34,8 +34,6 @@ Notes:
 
  <!-- .slide -->
  # Implémentation d'un filtre
- <br>
-
  - Dans la propriété filter du composant
  - Le nom de la clé sera le nom du filtre dans le template
  - Méthode qui prend des paramètres + paramètre implicite et retourne une nouvelle valeur

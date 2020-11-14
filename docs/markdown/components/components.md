@@ -1,14 +1,14 @@
 <!-- .slide: class="two-column-layout" -->
 # Un arbre de composants
 ##--##
-<br><br><br>
+<br><br>
 
 - Une application Vue Js est une composition de composants<br><br>
 - Les enfants sont ajoutés au parent s'ils sont dans le template parent<br><br>
 - Tout composant doit être déclaré dans l'objet "components"<br>
 
 ##--##
-<br><br><br>
+<br><br>
 
 ![h-400](assets/images/school/components/child_component.png)
 <!-- .element: class="align-image" -->

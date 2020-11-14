@@ -1,7 +1,6 @@
 <!-- .slide: class="with-code inconsolata" -->
 # La stack "officielle"
-<br>
-<strong>Vue Cli (https://cli.vuejs.org)</strong>
+__Vue Cli (https://cli.vuejs.org)__
 <!-- .element: class="center" -->
 
 ```sh
@@ -14,26 +13,23 @@ vue create <project-name>
 
 ##==##
 
-<!-- .slide: class="with-code inconsolata" -->
+<!-- .slide: class="two-column-layout" -->
 # La stack "officielle"
-<div class="flex-row">
-    <div class="ecosystem">
-        <ul>
-            <li>vue</li> <br>
-            <li>vue-cli-service</li><br>
-            <li>vue ui</li><br>
-        </ul>
-    </div>
-    <div class="container-vue-ui">
-        <img  alt="h-800" src="assets/images/school/tool/vue_ui.png">
-    </div>
-</div>
+##--##
+<br>
+
+- vue <br><br>
+- vue-cli-service<br><br>
+- vue ui
+##--##
+![h-800](assets/images/school/tool/vue_ui.png)
 
 ##==##
 
-<!-- .slide: class="with-code inconsolata" -->
+<!-- .slide: class="two-column-layout" -->
 # La stack "officielle"
-<br>
+##--##
+<br><br>
 
 ```bash
 vue create <project-name>
@@ -41,39 +37,35 @@ vue create <project-name>
 <!-- .element: class="medium-code" -->
 
 <br><br>
-<div class="flex-row">
-    <div>
-        <ul>
-            <li>plugins</li><br>
-            <li>preset</li><br>
-        </ul>
-    </div>
-    <div>
-        <img  alt="h-400" src="assets/images/school/tool/vue_create.png">
-    </div>
-</div>
+- plugins <br><br>
+- preset
+##--##
+<br><br>
+
+![h-400](assets/images/school/tool/vue_create.png)
+
 
 ##==##
 
-<!-- .slide: class="with-code inconsolata" -->
+<!-- .slide: class="two-column-layout" -->
 # La stack "officielle"
-<br>
+##--##
+
+<br><br>
 
 ```sh
 vue-cli-service
 ```
 <!-- .element: class="medium-code" -->
+<br>
+
+- serve<br><br>
+- build<br><br>
+- inspect<br><br>
+
+##--##
 
 <br><br>
-<div class="flex-row">
-    <div>
-        <ul>
-            <li>serve</li><br>
-            <li>build</li><br>
-            <li>inspect</li><br>
-        </ul>
-    </div>
-    <div>
-        <img alt="h-400" src="assets/images/school/tool/vue_service.png">
-    </div>
-</div>
+
+![h-400](assets/images/school/tool/vue_service.png)
+

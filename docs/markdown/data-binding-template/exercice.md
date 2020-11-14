@@ -1,6 +1,6 @@
 <!-- .slide: class="sfeir-basic-slide" -->
 # Aperçu d'une personne
-<br><br>
+<br>
 
 ![center](assets/images/school/data-binding-template/display_one_person.png)
 
@@ -9,7 +9,7 @@
 <!-- .slide: class="exercice" -->
 # Exercice 4
 ## Exercice
-<br><br>
+<br>
 
 - Mappez: 
     - src/_static/home.html avec le template
@@ -25,5 +25,5 @@
 <!-- .slide: class="exercice" -->
 # Exercice 4
 ## Solution
-<b>localhost:8080/step04_solution</b>
+__localhost:8080/step04_solution__
 <!-- .element: class="full-center" -->

@@ -1,7 +1,10 @@
 <template>
   <md-card class="card-panel">
     <md-card-content>
-      <img class="picture" src="https://randomuser.me/api/portraits/lego/6.jpg" />
+      <img
+        class="picture"
+        src="https://randomuser.me/api/portraits/lego/6.jpg"
+      />
       <form @submit="submit">
         <md-input-container>
           <label>Firstname</label>
@@ -31,17 +34,17 @@
 export default {
   data() {
     return {
-      person: {}
+      person: {},
     };
   },
   methods: {
-    submit: function() {
+    submit: function () {
       this.$emit("save", this.person);
     },
-    cancel: function() {
+    cancel: function () {
       this.$emit("cancel");
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

@@ -11,7 +11,7 @@
     </md-toolbar>
     <md-card>
       <md-card-header>
-        <div class="md-title">Hello {{name}}</div>
+        <div class="md-title">Hello {{ name }}</div>
       </md-card-header>
     </md-card>
   </section>
@@ -21,9 +21,9 @@
 export default {
   data() {
     return {
-      name: "Sfeir"
+      name: "Sfeir",
     };
-  }
+  },
 };
 </script>
 

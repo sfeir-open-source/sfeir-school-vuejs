@@ -18,8 +18,8 @@ import Home from "./views/Home";
 
 export default {
   components: {
-    "sfeir-home": Home
-  }
+    "sfeir-home": Home,
+  },
 };
 </script>
 

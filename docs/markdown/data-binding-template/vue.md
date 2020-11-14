@@ -1,6 +1,6 @@
 <!-- .slide: class="" -->
 # Data Binding with Vue
-<br><br>
+<br>
 
 ![h-700 full-center](assets/images/school/data-binding-template/vue.png)
 
@@ -9,20 +9,23 @@
 
 <!-- .slide: class="with-code inconsolata " -->
 # Explication syntaxique
-<br><br>
-<b>Syntaxe de l'interpolation</b><br>
+
+
+__Syntaxe de l'interpolation__<br>
 ```html
 <span>{{ name }}</span>
 ```
 <!-- .element: class="medium-code" -->
 <br><br>
-<b>Syntaxe d'une propriété</b><br>
+
+__Syntaxe d'une propriété__<br>
 ```html
 <button v-bind:disabled="!name">Sign-In</button>
 ```
 <!-- .element: class="medium-code" -->
 <br><br>
-<b>Syntaxe de l'event</b><br>
+
+__Syntaxe de l'event__<br>
 ```html
 <button v-on:click="signIn()" type="submit">
 ```
@@ -32,7 +35,7 @@
 
 <!-- .slide -->
 # Interpolation et Expression
-<br><br><br>
+<br>
 
 - Interpolation:
     - Se matérialise par les doubles accolades <br><br>
@@ -44,7 +47,7 @@
 
 <!-- .slide" -->
 # Properties binding
-<br><br><br>
+<br>
 
 ![center](assets/images/school/data-binding-template/properties_binding.png)
 Notes:
@@ -55,7 +58,7 @@ Notes:
 
 <!-- .slide" -->
 # Event Binding
-<br><br><br>
+<br>
 
 ![center](assets/images/school/data-binding-template/event_binding.png)
 Notes:

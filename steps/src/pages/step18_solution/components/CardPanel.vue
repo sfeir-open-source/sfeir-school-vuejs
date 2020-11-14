@@ -5,20 +5,20 @@
         <md-card-header-text>
           <div class="md-title">
             <a href="#" class="card-title username">
-              <span>{{person.firstname}}</span>
-              <span class="lastname">{{person.lastname}}</span>
+              <span>{{ person.firstname }}</span>
+              <span class="lastname">{{ person.lastname }}</span>
             </a>
           </div>
           <div class="md-subhead">
-            <div class="subtitle">{{person.entity}}</div>
+            <div class="subtitle">{{ person.entity }}</div>
             <div class="people-data">
               <div class>
                 <md-icon class="md-accent">email</md-icon>
-                <span class="item">{{person.email}}</span>
+                <span class="item">{{ person.email }}</span>
               </div>
               <div class>
                 <md-icon class="md-accent">phone</md-icon>
-                <span class="item">{{person.phone}}</span>
+                <span class="item">{{ person.phone }}</span>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
           <md-layout md-flex="33">
             <div>
               <span class="label">Manager:</span>
-              <span class="item">{{person.manager | na}}</span>
+              <span class="item">{{ person.manager | na }}</span>
             </div>
             <div>
               <span class="label">Location:</span>
@@ -40,7 +40,7 @@
             </div>
           </md-layout>
           <md-layout md-flex-offset="45">
-            <router-link :to="{ name: 'edit', params: { id: person.id }}">
+            <router-link :to="{ name: 'edit', params: { id: person.id } }">
               <md-icon class="md-accent">mode_edit</md-icon>
             </router-link>
             <a @click="onDelete">
@@ -58,20 +58,20 @@ import NaFilter from "../filters/NaFilter.js";
 export default {
   props: ["person"],
   computed: {
-    photoUrl: function() {
+    photoUrl: function () {
       return (
         this.person.photo || "https://randomuser.me/api/portraits/lego/6.jpg"
       );
-    }
+    },
   },
   methods: {
-    onDelete: function() {
+    onDelete: function () {
       this.$emit("delete", this.person);
-    }
+    },
   },
   filters: {
-    na: NaFilter
-  }
+    na: NaFilter,
+  },
 };
 </script>
 <style>

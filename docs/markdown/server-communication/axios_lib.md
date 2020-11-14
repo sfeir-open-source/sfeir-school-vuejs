@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code inconsolata" -->
 # Usage de la librairie Axios
-<br><br><br>
+<br>
 
 ```javascript
 axios.get(url, optionsObject)
@@ -20,7 +20,7 @@ Notes:
 
 <!-- .slide" -->
 # Gestion des retours (méthode classique)
-<br><br><br>
+<br><br>
 
 ![center](assets/images/school/server-communication/classic_gestion.png)
 
@@ -28,6 +28,6 @@ Notes:
 
 <!-- .slide: class="" -->
 # Gestion des retours (méthode async/await)
-<br><br><br>
+<br>
 
 ![center](assets/images/school/server-communication/async_await_gestion.png)

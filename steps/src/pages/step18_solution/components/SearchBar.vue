@@ -19,11 +19,11 @@ export default {
   methods: {
     onInput(event) {
       this.$emit("search", event);
-    }
+    },
   },
   directives: {
-    upper
-  }
+    upper,
+  },
 };
 </script>
 

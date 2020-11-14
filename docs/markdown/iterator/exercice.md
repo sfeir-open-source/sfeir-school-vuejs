@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Exercice 8
 ## Exercice
-<br><br><br>
+<br>
 
 - Copiez Home.vue pour créez un composant People qui affichera la liste des personnes <br><br>
 - Créez une route /people qui permettra d'afficher cette vue de liste <br><br>

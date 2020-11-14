@@ -5,7 +5,7 @@ function schoolSlides() {
     'speaker/justin_wilmet.md',
     'presentation/flow_school.md',
   ];
-};
+}
 
 function basicsSlides() {
   return [
@@ -13,7 +13,7 @@ function basicsSlides() {
     'basics/hello_compositions.md',
     'basics/hello_composition_exercice.md'
   ];
-};
+}
 
 function toolingSlides() {
   return [

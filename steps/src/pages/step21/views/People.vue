@@ -1,20 +1,31 @@
 <template>
   <div>
     <div class="header row">
-      <h1 class="col s12 flow-text">You have {{people.length}} contacts</h1>
+      <h1 class="col s12 flow-text">You have {{ people.length }} contacts</h1>
       <search-bar @search="setSearchValue"></search-bar>
     </div>
     <section class="container">
-      <sfeir-card v-for="person in people" :person="person" :key="person.id" @delete="deletePerson"></sfeir-card>
+      <sfeir-card
+        v-for="person in people"
+        :person="person"
+        :key="person.id"
+        @delete="deletePerson"
+      ></sfeir-card>
     </section>
     <md-dialog ref="dialog">
       <md-dialog-title>Contact informations</md-dialog-title>
       <md-dialog-content>
-        <sfeir-form @save="addPerson({person: $event, callback: hideDialog})" @cancel="hideDialog"></sfeir-form>
+        <sfeir-form
+          @save="addPerson({ person: $event, callback: hideDialog })"
+          @cancel="hideDialog"
+        ></sfeir-form>
       </md-dialog-content>
     </md-dialog>
 
-    <md-button class="md-fab md-fab-bottom-right md-primary" @click="showDialog">
+    <md-button
+      class="md-fab md-fab-bottom-right md-primary"
+      @click="showDialog"
+    >
       <md-icon>add</md-icon>
     </md-button>
   </div>
@@ -29,15 +40,15 @@ export default {
   components: {
     "sfeir-card": CardPanel,
     "sfeir-form": Form,
-    "search-bar": SearchBar
+    "search-bar": SearchBar,
   },
   beforeRouteEnter(route, redirect, next) {
-    next(vm => vm.$store.dispatch("people/fetchPeople"));
+    next((vm) => vm.$store.dispatch("people/fetchPeople"));
   },
   computed: {
     ...mapGetters("people", {
-      people: "filterPeople"
-    })
+      people: "filterPeople",
+    }),
   },
   methods: {
     ...mapActions("people", ["deletePerson"]),
@@ -49,8 +60,8 @@ export default {
     hideDialog() {
       this.$refs["dialog"].close();
       this.showModal = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
