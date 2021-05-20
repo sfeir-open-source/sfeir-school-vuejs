@@ -112,6 +112,118 @@
           }
         }
       }
+    },
+    "02-vue-material-bootstraping": {
+      "projectType": "application",
+      "root": "apps/02-vue-material-bootstraping",
+      "sourceRoot": "apps/02-vue-material-bootstraping/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/02-vue-material-bootstraping",
+            "index": "apps/02-vue-material-bootstraping/public/index.html",
+            "main": "apps/02-vue-material-bootstraping/src/main.ts",
+            "tsConfig": "apps/02-vue-material-bootstraping/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "02-vue-material-bootstraping:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "02-vue-material-bootstraping:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/02-vue-material-bootstraping/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/02-vue-material-bootstraping"
+          ],
+          "options": {
+            "jestConfig": "apps/02-vue-material-bootstraping/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "02-vue-material-bootstraping-solution": {
+      "projectType": "application",
+      "root": "apps/02-vue-material-bootstraping-solution",
+      "sourceRoot": "apps/02-vue-material-bootstraping-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/02-vue-material-bootstraping-solution",
+            "index": "apps/02-vue-material-bootstraping-solution/public/index.html",
+            "main": "apps/02-vue-material-bootstraping-solution/src/main.ts",
+            "tsConfig": "apps/02-vue-material-bootstraping-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "02-vue-material-bootstraping-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "02-vue-material-bootstraping-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/02-vue-material-bootstraping-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/02-vue-material-bootstraping-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/02-vue-material-bootstraping-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

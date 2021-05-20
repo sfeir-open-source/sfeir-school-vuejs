@@ -14,5 +14,15 @@ module.exports = {
       package: '../../package.json',
       tsconfig: './tscondig.json',
     },
+    {
+      root: './steps/apps/02-vue-material-bootstraping',
+      package: '../../package.json',
+      tsconfig: './tscondig.json',
+    },
+    {
+      root: './steps/apps/02-vue-material-bootstraping-solution',
+      package: '../../package.json',
+      tsconfig: './tscondig.json',
+    },
   ],
 };

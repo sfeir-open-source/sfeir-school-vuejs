@@ -239,6 +239,3 @@ modules.xml
 
 # and uncomment the following lines
 # .pnp.*
-
-# End of https://www.toptal.com/developers/gitignore/api/node,vscode,yarn,webstorm+all,git
-/.vscode/
