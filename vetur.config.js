@@ -7,22 +7,32 @@ module.exports = {
     {
       root: './steps/apps/01-bootstraping',
       package: '../../package.json',
-      tsconfig: './tscondig.json',
+      tsconfig: './tsconfig.json',
     },
     {
       root: './steps/apps/01-bootstraping-solution',
       package: '../../package.json',
-      tsconfig: './tscondig.json',
+      tsconfig: './tsconfig.json',
     },
     {
       root: './steps/apps/02-vue-material-bootstraping',
       package: '../../package.json',
-      tsconfig: './tscondig.json',
+      tsconfig: './tsconfig.json',
     },
     {
       root: './steps/apps/02-vue-material-bootstraping-solution',
       package: '../../package.json',
-      tsconfig: './tscondig.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './steps/apps/03-first-components',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './steps/apps/03-first-components-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
     },
   ],
 };

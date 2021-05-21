@@ -1,6 +1,6 @@
 {
   "eslint.workingDirectories": [
-    "steps"
+    "steps",
   ],
   "prettier.configPath": "steps/.prettierrc",
   "prettier.prettierPath": "steps/node_modules/prettier",

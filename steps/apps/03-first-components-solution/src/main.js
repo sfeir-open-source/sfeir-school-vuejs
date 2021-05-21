@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.css';
+import App from './App.vue';
 
 Vue.use(VueMaterial);
 
-(Vue as any).material = {
-  ...(Vue as any),
+Vue.material = {
+  ...Vue,
   theming: {
     primary: 'blue',
     accent: 'grey',
@@ -14,6 +15,5 @@ Vue.use(VueMaterial);
 };
 
 new Vue({
-  el: '#app',
-  data: { name: 'Sfeir' },
-});
+  render: h => h(App),
+}).$mount('#app');
