@@ -347,7 +347,7 @@
           "options": {
             "dest": "dist/apps/04-binding",
             "index": "apps/04-binding/public/index.html",
-            "main": "apps/04-binding/src/main.ts",
+            "main": "apps/04-binding/src/main.js",
             "tsConfig": "apps/04-binding/tsconfig.app.json"
           },
           "configurations": {
@@ -388,6 +388,62 @@
           ],
           "options": {
             "jestConfig": "apps/04-binding/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "04-binding-solution": {
+      "projectType": "application",
+      "root": "apps/04-binding-solution",
+      "sourceRoot": "apps/04-binding-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/04-binding-solution",
+            "index": "apps/04-binding-solution/public/index.html",
+            "main": "apps/04-binding-solution/src/main.js",
+            "tsConfig": "apps/04-binding-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "04-binding-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "04-binding-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/04-binding-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/04-binding-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/04-binding-solution/jest.config.js",
             "passWithNoTests": true
           }
         }
