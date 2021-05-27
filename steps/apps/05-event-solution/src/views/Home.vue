@@ -50,6 +50,14 @@
         </div>
       </md-card-content>
     </md-card>
+    <section>
+      <md-button
+        class="md-fab md-fab-bottom-right md-primary"
+        @click="randomPeople"
+      >
+        <md-icon>cached</md-icon>
+      </md-button>
+    </section>
   </section>
 </template>
 <script type="text/javascript">
@@ -63,6 +71,11 @@ export default {
   created() {
     const [firstPeople] = Peoples;
     this.person = firstPeople;
+  },
+  methods: {
+    randomPeople() {
+      this.person = Peoples[Math.floor(Math.random() * Peoples.length)];
+    },
   },
 };
 </script>

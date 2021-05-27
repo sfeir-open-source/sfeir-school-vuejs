@@ -8,5 +8,7 @@ module.exports = {
     '<rootDir>/apps/03-first-components-solution',
     '<rootDir>/apps/04-binding',
     '<rootDir>/apps/04-binding-solution',
+    '<rootDir>/apps/05-event',
+    '<rootDir>/apps/05-event-solution',
   ],
 };

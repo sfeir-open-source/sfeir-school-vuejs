@@ -448,6 +448,118 @@
           }
         }
       }
+    },
+    "05-event": {
+      "projectType": "application",
+      "root": "apps/05-event",
+      "sourceRoot": "apps/05-event/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-event",
+            "index": "apps/05-event/public/index.html",
+            "main": "apps/05-event/src/main.js",
+            "tsConfig": "apps/05-event/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-event:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-event:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-event/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-event"
+          ],
+          "options": {
+            "jestConfig": "apps/05-event/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "05-event-solution": {
+      "projectType": "application",
+      "root": "apps/05-event-solution",
+      "sourceRoot": "apps/05-event-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-event-solution",
+            "index": "apps/05-event-solution/public/index.html",
+            "main": "apps/05-event-solution/src/main.js",
+            "tsConfig": "apps/05-event-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-event-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-event-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-event-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-event-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/05-event-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

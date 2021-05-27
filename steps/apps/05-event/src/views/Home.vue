@@ -50,6 +50,11 @@
         </div>
       </md-card-content>
     </md-card>
+    <section>
+      <md-button class="md-fab md-fab-bottom-right md-primary">
+        <md-icon>cached</md-icon>
+      </md-button>
+    </section>
   </section>
 </template>
 <script type="text/javascript">
