@@ -28,7 +28,8 @@
     "core-js": "^3.6.5",
     "tslib": "^2.0.0",
     "vue": "^2.6.11",
-    "vue-material": "^1.0.0-beta-15"
+    "vue-material": "^1.0.0-beta-15",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@nrwl/cli": "11.6.3",

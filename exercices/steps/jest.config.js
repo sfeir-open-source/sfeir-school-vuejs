@@ -12,5 +12,7 @@ module.exports = {
     '<rootDir>/apps/05-event-solution',
     '<rootDir>/apps/06-axios',
     '<rootDir>/apps/06-axios-solution',
+    '<rootDir>/apps/07-routing',
+    '<rootDir>/apps/07-routing-solution',
   ],
 };

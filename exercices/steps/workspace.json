@@ -672,6 +672,118 @@
           }
         }
       }
+    },
+    "07-routing": {
+      "projectType": "application",
+      "root": "apps/07-routing",
+      "sourceRoot": "apps/07-routing/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/07-routing",
+            "index": "apps/07-routing/public/index.html",
+            "main": "apps/07-routing/src/main.js",
+            "tsConfig": "apps/07-routing/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "07-routing:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "07-routing:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/07-routing/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/07-routing"
+          ],
+          "options": {
+            "jestConfig": "apps/07-routing/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "07-routing-solution": {
+      "projectType": "application",
+      "root": "apps/07-routing-solution",
+      "sourceRoot": "apps/07-routing-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/07-routing-solution",
+            "index": "apps/07-routing-solution/public/index.html",
+            "main": "apps/07-routing-solution/src/main.js",
+            "tsConfig": "apps/07-routing-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "07-routing-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "07-routing-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/07-routing-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/07-routing-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/07-routing-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
