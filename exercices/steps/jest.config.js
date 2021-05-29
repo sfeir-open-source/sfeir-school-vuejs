@@ -14,5 +14,7 @@ module.exports = {
     '<rootDir>/apps/06-axios-solution',
     '<rootDir>/apps/07-routing',
     '<rootDir>/apps/07-routing-solution',
+    '<rootDir>/apps/08-loop',
+    '<rootDir>/apps/08-loop-solution',
   ],
 };

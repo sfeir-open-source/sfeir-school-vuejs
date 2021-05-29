@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <md-card class="card-panel">
+    <md-card class="card-panel" v-for="person of people" :key="person.id">
       <md-card-header>
         <md-card-header-text>
           <div class="md-title">
@@ -50,14 +50,6 @@
         </div>
       </md-card-content>
     </md-card>
-    <section>
-      <md-button
-        class="md-fab md-fab-bottom-right md-primary"
-        @click="randomPeople()"
-      >
-        <md-icon>cached</md-icon>
-      </md-button>
-    </section>
   </section>
 </template>
 <script type="text/javascript">
@@ -65,24 +57,18 @@ import PeopleService from '../services/people.service';
 export default {
   data() {
     return {
-      person: {},
+      people: [],
     };
   },
   async created() {
-    const [firstPerson] = await PeopleService.fetch();
-    this.person = firstPerson;
-  },
-  methods: {
-    async randomPeople() {
-      this.person = await PeopleService.fetchRandom();
-    },
+    this.people = await PeopleService.fetch();
   },
 };
 </script>
 <style scoped>
 .container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

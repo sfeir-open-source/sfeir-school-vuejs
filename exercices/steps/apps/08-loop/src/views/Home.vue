@@ -82,8 +82,8 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-panel {
