@@ -1,0 +1,68 @@
+{
+  "npmScope": "steps",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "01-bootstraping": {
+      "tags": []
+    },
+    "01-bootstraping-solution": {
+      "tags": []
+    },
+    "02-vue-material-bootstraping": {
+      "tags": []
+    },
+    "02-vue-material-bootstraping-solution": {
+      "tags": []
+    },
+    "03-first-components": {
+      "tags": []
+    },
+    "03-first-components-solution": {
+      "tags": []
+    },
+    "04-binding": {
+      "tags": []
+    },
+    "04-binding-solution": {
+      "tags": []
+    },
+    "05-event": {
+      "tags": []
+    },
+    "05-event-solution": {
+      "tags": []
+    },
+    "06-axios": {
+      "tags": []
+    },
+    "06-axios-solution": {
+      "tags": []
+    }
+  }
+}

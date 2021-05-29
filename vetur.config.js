@@ -5,52 +5,62 @@ module.exports = {
   },
   projects: [
     {
-      root: './steps/apps/01-bootstraping',
+      root: './exercices/steps/apps/01-bootstraping',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/01-bootstraping-solution',
+      root: './exercices/steps/apps/01-bootstraping-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/02-vue-material-bootstraping',
+      root: './exercices/steps/apps/02-vue-material-bootstraping',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/02-vue-material-bootstraping-solution',
+      root: './exercices/steps/apps/02-vue-material-bootstraping-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/03-first-components',
+      root: './exercices/steps/apps/03-first-components',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/03-first-components-solution',
+      root: './exercices/steps/apps/03-first-components-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/04-binding',
+      root: './exercices/steps/apps/04-binding',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/04-binding-solution',
+      root: './exercices/steps/apps/04-binding-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/05-event',
+      root: './exercices/steps/apps/05-event',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './steps/apps/05-event-solution',
+      root: './exercices/steps/apps/05-event-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/06-axios',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/06-axios-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },

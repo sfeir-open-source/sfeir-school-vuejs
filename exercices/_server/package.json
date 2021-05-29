@@ -1,0 +1,14 @@
+{
+  "name": "server-rest",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "underscore": "^1.9.1"
+  }
+}
