@@ -4,5 +4,9 @@
   ],
   "prettier.configPath": "exercices/steps/.prettierrc",
   "prettier.prettierPath": "exercices/steps/node_modules/prettier",
-  "prettier.ignorePath": "exercices/steps/.prettierignore"
+  "prettier.ignorePath": "exercices/steps/.prettierignore",
+  "cSpell.words": [
+    "sfeir",
+    "vuelidate"
+  ]
 }

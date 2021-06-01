@@ -16,5 +16,7 @@ module.exports = {
     '<rootDir>/apps/07-routing-solution',
     '<rootDir>/apps/08-loop',
     '<rootDir>/apps/08-loop-solution',
+    '<rootDir>/apps/09-props',
+    '<rootDir>/apps/09-props-solution',
   ],
 };

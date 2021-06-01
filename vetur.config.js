@@ -84,5 +84,15 @@ module.exports = {
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
+    {
+      root: './exercices/steps/apps/09-props',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/09-props-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
   ],
 };
