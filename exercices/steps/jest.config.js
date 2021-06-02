@@ -18,5 +18,7 @@ module.exports = {
     '<rootDir>/apps/08-loop-solution',
     '<rootDir>/apps/09-props',
     '<rootDir>/apps/09-props-solution',
+    '<rootDir>/apps/10-events',
+    '<rootDir>/apps/10-events-solution',
   ],
 };
