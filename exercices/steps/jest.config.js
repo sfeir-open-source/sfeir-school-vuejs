@@ -24,5 +24,7 @@ module.exports = {
     '<rootDir>/apps/11-form-solution',
     '<rootDir>/apps/12-update',
     '<rootDir>/apps/12-update-solution',
+    '<rootDir>/apps/13-vee-validate',
+    '<rootDir>/apps/13-vee-validate-solution',
   ],
 };

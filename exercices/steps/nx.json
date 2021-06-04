@@ -99,6 +99,12 @@
     },
     "12-update-solution": {
       "tags": []
+    },
+    "13-vee-validate": {
+      "tags": []
+    },
+    "13-vee-validate-solution": {
+      "tags": []
     }
   }
 }

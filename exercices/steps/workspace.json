@@ -1344,6 +1344,118 @@
           }
         }
       }
+    },
+    "13-vee-validate": {
+      "projectType": "application",
+      "root": "apps/13-vee-validate",
+      "sourceRoot": "apps/13-vee-validate/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/13-vee-validate",
+            "index": "apps/13-vee-validate/public/index.html",
+            "main": "apps/13-vee-validate/src/main.js",
+            "tsConfig": "apps/13-vee-validate/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "13-vee-validate:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "13-vee-validate:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/13-vee-validate/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/13-vee-validate"
+          ],
+          "options": {
+            "jestConfig": "apps/13-vee-validate/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "13-vee-validate-solution": {
+      "projectType": "application",
+      "root": "apps/13-vee-validate-solution",
+      "sourceRoot": "apps/13-vee-validate-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/13-vee-validate-solution",
+            "index": "apps/13-vee-validate-solution/public/index.html",
+            "main": "apps/13-vee-validate-solution/src/main.js",
+            "tsConfig": "apps/13-vee-validate-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "13-vee-validate-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "13-vee-validate-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/13-vee-validate-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/13-vee-validate-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/13-vee-validate-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

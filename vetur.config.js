@@ -125,5 +125,15 @@ module.exports = {
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
+    {
+      root: './exercices/steps/apps/13-vee-validate',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/13-vee-validate-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
   ],
 };
