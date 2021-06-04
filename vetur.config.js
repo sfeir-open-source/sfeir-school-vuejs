@@ -2,6 +2,7 @@ module.exports = {
   settings: {
     'vetur.useWorkspaceDependencies': true,
     'vetur.experimental.templateInterpolationService': true,
+    'vetur.validation.interpolation': false,
   },
   projects: [
     {
@@ -111,6 +112,16 @@ module.exports = {
     },
     {
       root: './exercices/steps/apps/11-form-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/12-update',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/12-update-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },

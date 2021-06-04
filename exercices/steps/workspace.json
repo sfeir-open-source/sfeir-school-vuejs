@@ -1232,6 +1232,118 @@
           }
         }
       }
+    },
+    "12-update": {
+      "projectType": "application",
+      "root": "apps/12-update",
+      "sourceRoot": "apps/12-update/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12-update",
+            "index": "apps/12-update/public/index.html",
+            "main": "apps/12-update/src/main.js",
+            "tsConfig": "apps/12-update/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12-update:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12-update:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12-update/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12-update"
+          ],
+          "options": {
+            "jestConfig": "apps/12-update/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "12-update-solution": {
+      "projectType": "application",
+      "root": "apps/12-update-solution",
+      "sourceRoot": "apps/12-update-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12-update-solution",
+            "index": "apps/12-update-solution/public/index.html",
+            "main": "apps/12-update-solution/src/main.js",
+            "tsConfig": "apps/12-update-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12-update-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12-update-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12-update-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12-update-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/12-update-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

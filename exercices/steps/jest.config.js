@@ -22,5 +22,7 @@ module.exports = {
     '<rootDir>/apps/10-events-solution',
     '<rootDir>/apps/11-form',
     '<rootDir>/apps/11-form-solution',
+    '<rootDir>/apps/12-update',
+    '<rootDir>/apps/12-update-solution',
   ],
 };
