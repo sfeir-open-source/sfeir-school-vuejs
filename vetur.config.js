@@ -104,5 +104,15 @@ module.exports = {
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
+    {
+      root: './exercices/steps/apps/11-form',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/11-form-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
   ],
 };

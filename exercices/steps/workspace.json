@@ -1120,6 +1120,118 @@
           }
         }
       }
+    },
+    "11-form": {
+      "projectType": "application",
+      "root": "apps/11-form",
+      "sourceRoot": "apps/11-form/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-form",
+            "index": "apps/11-form/public/index.html",
+            "main": "apps/11-form/src/main.js",
+            "tsConfig": "apps/11-form/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-form:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-form:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-form/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-form"
+          ],
+          "options": {
+            "jestConfig": "apps/11-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "11-form-solution": {
+      "projectType": "application",
+      "root": "apps/11-form-solution",
+      "sourceRoot": "apps/11-form-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-form-solution",
+            "index": "apps/11-form-solution/public/index.html",
+            "main": "apps/11-form-solution/src/main.js",
+            "tsConfig": "apps/11-form-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-form-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-form-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-form-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-form-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/11-form-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

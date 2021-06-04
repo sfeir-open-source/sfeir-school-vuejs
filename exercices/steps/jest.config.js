@@ -20,5 +20,7 @@ module.exports = {
     '<rootDir>/apps/09-props-solution',
     '<rootDir>/apps/10-events',
     '<rootDir>/apps/10-events-solution',
+    '<rootDir>/apps/11-form',
+    '<rootDir>/apps/11-form-solution',
   ],
 };

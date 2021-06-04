@@ -7,6 +7,10 @@
   "prettier.ignorePath": "exercices/steps/.prettierignore",
   "cSpell.words": [
     "sfeir",
-    "vuelidate"
+    "vuelidate",
+    "Firstname",
+    "Lastname",
+    "firstname",
+    "lastname",
   ]
 }
