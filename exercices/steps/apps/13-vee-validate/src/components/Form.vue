@@ -74,6 +74,7 @@ section {
   padding: 10px;
   margin: 10px !important;
   width: 50%;
+  min-width: 500px;
   align-self: center;
   justify-self: center;
 }

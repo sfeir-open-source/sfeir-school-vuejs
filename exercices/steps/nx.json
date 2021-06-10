@@ -105,6 +105,12 @@
     },
     "13-vee-validate-solution": {
       "tags": []
+    },
+    "14-vuelidate": {
+      "tags": []
+    },
+    "14-vuelidate-solution": {
+      "tags": []
     }
   }
 }

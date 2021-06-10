@@ -1456,6 +1456,118 @@
           }
         }
       }
+    },
+    "14-vuelidate": {
+      "projectType": "application",
+      "root": "apps/14-vuelidate",
+      "sourceRoot": "apps/14-vuelidate/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/14-vuelidate",
+            "index": "apps/14-vuelidate/public/index.html",
+            "main": "apps/14-vuelidate/src/main.js",
+            "tsConfig": "apps/14-vuelidate/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "14-vuelidate:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "14-vuelidate:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/14-vuelidate/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/14-vuelidate"
+          ],
+          "options": {
+            "jestConfig": "apps/14-vuelidate/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "14-vuelidate-solution": {
+      "projectType": "application",
+      "root": "apps/14-vuelidate-solution",
+      "sourceRoot": "apps/14-vuelidate-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/14-vuelidate-solution",
+            "index": "apps/14-vuelidate-solution/public/index.html",
+            "main": "apps/14-vuelidate-solution/src/main.js",
+            "tsConfig": "apps/14-vuelidate-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "14-vuelidate-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "14-vuelidate-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/14-vuelidate-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/14-vuelidate-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/14-vuelidate-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

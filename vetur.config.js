@@ -135,5 +135,15 @@ module.exports = {
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
+    {
+      root: './exercices/steps/apps/14-vuelidate',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/14-vuelidate-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
   ],
 };
