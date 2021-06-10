@@ -1680,6 +1680,118 @@
           }
         }
       }
+    },
+    "16-pipe": {
+      "projectType": "application",
+      "root": "apps/16-pipe",
+      "sourceRoot": "apps/16-pipe/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/16-pipe",
+            "index": "apps/16-pipe/public/index.html",
+            "main": "apps/16-pipe/src/main.js",
+            "tsConfig": "apps/16-pipe/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "16-pipe:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "16-pipe:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/16-pipe/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/16-pipe"
+          ],
+          "options": {
+            "jestConfig": "apps/16-pipe/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "16-pipe-solution": {
+      "projectType": "application",
+      "root": "apps/16-pipe-solution",
+      "sourceRoot": "apps/16-pipe-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/16-pipe-solution",
+            "index": "apps/16-pipe-solution/public/index.html",
+            "main": "apps/16-pipe-solution/src/main.js",
+            "tsConfig": "apps/16-pipe-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "16-pipe-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "16-pipe-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/16-pipe-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/16-pipe-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/16-pipe-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -30,5 +30,7 @@ module.exports = {
     '<rootDir>/apps/14-vuelidate-solution',
     '<rootDir>/apps/15-custom-validation',
     '<rootDir>/apps/15-custom-validation-solution',
+    '<rootDir>/apps/16-pipe',
+    '<rootDir>/apps/16-pipe-solution',
   ],
 };

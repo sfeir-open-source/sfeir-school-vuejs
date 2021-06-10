@@ -117,6 +117,12 @@
     },
     "15-custom-validation-solution": {
       "tags": []
+    },
+    "16-pipe": {
+      "tags": []
+    },
+    "16-pipe-solution": {
+      "tags": []
     }
   }
 }
