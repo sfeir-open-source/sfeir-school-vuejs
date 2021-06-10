@@ -1568,6 +1568,118 @@
           }
         }
       }
+    },
+    "15-custom-validation": {
+      "projectType": "application",
+      "root": "apps/15-custom-validation",
+      "sourceRoot": "apps/15-custom-validation/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/15-custom-validation",
+            "index": "apps/15-custom-validation/public/index.html",
+            "main": "apps/15-custom-validation/src/main.js",
+            "tsConfig": "apps/15-custom-validation/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "15-custom-validation:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "15-custom-validation:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/15-custom-validation/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/15-custom-validation"
+          ],
+          "options": {
+            "jestConfig": "apps/15-custom-validation/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "15-custom-validation-solution": {
+      "projectType": "application",
+      "root": "apps/15-custom-validation-solution",
+      "sourceRoot": "apps/15-custom-validation-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/15-custom-validation-solution",
+            "index": "apps/15-custom-validation-solution/public/index.html",
+            "main": "apps/15-custom-validation-solution/src/main.js",
+            "tsConfig": "apps/15-custom-validation-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "15-custom-validation-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "15-custom-validation-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/15-custom-validation-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/15-custom-validation-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/15-custom-validation-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

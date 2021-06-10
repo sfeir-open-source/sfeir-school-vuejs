@@ -111,6 +111,12 @@
     },
     "14-vuelidate-solution": {
       "tags": []
+    },
+    "15-custom-validation": {
+      "tags": []
+    },
+    "15-custom-validation-solution": {
+      "tags": []
     }
   }
 }

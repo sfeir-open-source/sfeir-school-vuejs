@@ -28,5 +28,7 @@ module.exports = {
     '<rootDir>/apps/13-vee-validate-solution',
     '<rootDir>/apps/14-vuelidate',
     '<rootDir>/apps/14-vuelidate-solution',
+    '<rootDir>/apps/15-custom-validation',
+    '<rootDir>/apps/15-custom-validation-solution',
   ],
 };
