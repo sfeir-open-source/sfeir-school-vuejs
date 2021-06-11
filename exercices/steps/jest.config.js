@@ -36,5 +36,7 @@ module.exports = {
     '<rootDir>/apps/17-modifiers-solution',
     '<rootDir>/apps/18-directive',
     '<rootDir>/apps/18-directive-solution',
+    '<rootDir>/apps/19-state-management',
+    '<rootDir>/apps/19-state-management-solution',
   ],
 };

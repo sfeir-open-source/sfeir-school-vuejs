@@ -2016,6 +2016,118 @@
           }
         }
       }
+    },
+    "19-state-management": {
+      "projectType": "application",
+      "root": "apps/19-state-management",
+      "sourceRoot": "apps/19-state-management/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management",
+            "index": "apps/19-state-management/public/index.html",
+            "main": "apps/19-state-management/src/main.js",
+            "tsConfig": "apps/19-state-management/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management-solution": {
+      "projectType": "application",
+      "root": "apps/19-state-management-solution",
+      "sourceRoot": "apps/19-state-management-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management-solution",
+            "index": "apps/19-state-management-solution/public/index.html",
+            "main": "apps/19-state-management-solution/src/main.js",
+            "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

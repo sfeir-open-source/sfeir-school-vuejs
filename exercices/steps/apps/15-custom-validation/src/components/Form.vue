@@ -9,7 +9,8 @@
             <label>Firstname</label>
             <md-input
               name="firstname"
-              v-model="$v.person.firstname.$model"
+              v-model="person.firstname"
+              @input="$v.person.firstname.$touch()"
             ></md-input>
             <div
               class="md-error"
@@ -30,7 +31,8 @@
             <label>Lastname</label>
             <md-input
               name="lastname"
-              v-model="$v.person.lastname.$model"
+              v-model="person.lastname"
+              @input="$v.person.lastname.$touch()"
             ></md-input>
             <div
               class="md-error"
@@ -49,7 +51,11 @@
           </md-field>
           <md-field :class="{ 'md-invalid': $v.person.email.$error }">
             <label>Email</label>
-            <md-input name="email" v-model="$v.person.email.$model"></md-input>
+            <md-input
+              name="email"
+              v-model="person.email"
+              @input="$v.person.email.$touch()"
+            ></md-input>
             <div
               class="md-error"
               v-if="$v.person.email.$error && $v.person.email.$dirty"
@@ -60,9 +66,13 @@
               </span>
             </div>
           </md-field>
-          <md-field>
+          <md-field :class="{ 'md-invalid': $v.person.phone.$error }">
             <label>Phone</label>
-            <md-input name="phone" v-model="$v.person.phone.$model"></md-input>
+            <md-input
+              name="phone"
+              v-model="person.phone"
+              @input="$v.person.phone.$touch()"
+            ></md-input>
           </md-field>
         </form>
       </md-card-content>

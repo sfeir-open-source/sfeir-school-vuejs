@@ -31,7 +31,8 @@
     "vue": "^2.6.11",
     "vue-material": "^1.0.0-beta-15",
     "vue-router": "^3.5.1",
-    "vuelidate": "^0.7.6"
+    "vuelidate": "^0.7.6",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@nrwl/cli": "11.6.3",
