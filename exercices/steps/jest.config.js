@@ -34,5 +34,7 @@ module.exports = {
     '<rootDir>/apps/16-pipe-solution',
     '<rootDir>/apps/17-modifiers',
     '<rootDir>/apps/17-modifiers-solution',
+    '<rootDir>/apps/18-directive',
+    '<rootDir>/apps/18-directive-solution',
   ],
 };

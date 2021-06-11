@@ -1904,6 +1904,118 @@
           }
         }
       }
+    },
+    "18-directive": {
+      "projectType": "application",
+      "root": "apps/18-directive",
+      "sourceRoot": "apps/18-directive/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-directive",
+            "index": "apps/18-directive/public/index.html",
+            "main": "apps/18-directive/src/main.js",
+            "tsConfig": "apps/18-directive/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-directive:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-directive:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-directive/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-directive"
+          ],
+          "options": {
+            "jestConfig": "apps/18-directive/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "18-directive-solution": {
+      "projectType": "application",
+      "root": "apps/18-directive-solution",
+      "sourceRoot": "apps/18-directive-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-directive-solution",
+            "index": "apps/18-directive-solution/public/index.html",
+            "main": "apps/18-directive-solution/src/main.js",
+            "tsConfig": "apps/18-directive-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-directive-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-directive-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-directive-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-directive-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/18-directive-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
