@@ -32,5 +32,7 @@ module.exports = {
     '<rootDir>/apps/15-custom-validation-solution',
     '<rootDir>/apps/16-pipe',
     '<rootDir>/apps/16-pipe-solution',
+    '<rootDir>/apps/17-modifiers',
+    '<rootDir>/apps/17-modifiers-solution',
   ],
 };

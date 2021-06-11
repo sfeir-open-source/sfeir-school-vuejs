@@ -1792,6 +1792,118 @@
           }
         }
       }
+    },
+    "17-modifiers": {
+      "projectType": "application",
+      "root": "apps/17-modifiers",
+      "sourceRoot": "apps/17-modifiers/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-modifiers",
+            "index": "apps/17-modifiers/public/index.html",
+            "main": "apps/17-modifiers/src/main.js",
+            "tsConfig": "apps/17-modifiers/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-modifiers:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-modifiers:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-modifiers/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-modifiers"
+          ],
+          "options": {
+            "jestConfig": "apps/17-modifiers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "17-modifiers-solution": {
+      "projectType": "application",
+      "root": "apps/17-modifiers-solution",
+      "sourceRoot": "apps/17-modifiers-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-modifiers-solution",
+            "index": "apps/17-modifiers-solution/public/index.html",
+            "main": "apps/17-modifiers-solution/src/main.js",
+            "tsConfig": "apps/17-modifiers-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-modifiers-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-modifiers-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-modifiers-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-modifiers-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/17-modifiers-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
