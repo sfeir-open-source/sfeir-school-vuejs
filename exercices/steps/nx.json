@@ -147,6 +147,12 @@
     },
     "19-state-management-module-solution": {
       "tags": []
+    },
+    "20-lazyloading": {
+      "tags": []
+    },
+    "20-lazyloading-solution": {
+      "tags": []
     }
   }
 }

@@ -40,5 +40,7 @@ module.exports = {
     '<rootDir>/apps/19-state-management-solution',
     '<rootDir>/apps/19-state-management-module',
     '<rootDir>/apps/19-state-management-module-solution',
+    '<rootDir>/apps/20-lazyloading',
+    '<rootDir>/apps/20-lazyloading-solution',
   ],
 };

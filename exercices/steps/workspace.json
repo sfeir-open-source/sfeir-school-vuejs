@@ -2240,6 +2240,118 @@
           }
         }
       }
+    },
+    "20-lazyloading": {
+      "projectType": "application",
+      "root": "apps/20-lazyloading",
+      "sourceRoot": "apps/20-lazyloading/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/20-lazyloading",
+            "index": "apps/20-lazyloading/public/index.html",
+            "main": "apps/20-lazyloading/src/main.js",
+            "tsConfig": "apps/20-lazyloading/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "20-lazyloading:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "20-lazyloading:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/20-lazyloading/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/20-lazyloading"
+          ],
+          "options": {
+            "jestConfig": "apps/20-lazyloading/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "20-lazyloading-solution": {
+      "projectType": "application",
+      "root": "apps/20-lazyloading-solution",
+      "sourceRoot": "apps/20-lazyloading-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/20-lazyloading-solution",
+            "index": "apps/20-lazyloading-solution/public/index.html",
+            "main": "apps/20-lazyloading-solution/src/main.js",
+            "tsConfig": "apps/20-lazyloading-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "20-lazyloading-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "20-lazyloading-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/20-lazyloading-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/20-lazyloading-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/20-lazyloading-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
