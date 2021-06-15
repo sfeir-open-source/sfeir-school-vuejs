@@ -191,7 +191,17 @@ module.exports = {
       tsconfig: './tsconfig.json',
     },
     {
-      root: './exercices/steps/apps/19-state-management=solution',
+      root: './exercices/steps/apps/19-state-management-solution',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/19-state-management-module',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
+      root: './exercices/steps/apps/19-state-management-module-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },

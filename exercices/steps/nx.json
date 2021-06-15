@@ -141,6 +141,12 @@
     },
     "19-state-management-solution": {
       "tags": []
+    },
+    "19-state-management-module": {
+      "tags": []
+    },
+    "19-state-management-module-solution": {
+      "tags": []
     }
   }
 }

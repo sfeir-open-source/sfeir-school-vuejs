@@ -7,7 +7,7 @@ import Vuelidate from 'vuelidate';
 import Vuex from 'vuex';
 import App from './App.vue';
 import UpperDirective from './directives/upper.directive';
-import store from './store/index';
+import store from './store';
 import router from './views/router';
 
 Vue.use(VueMaterial);

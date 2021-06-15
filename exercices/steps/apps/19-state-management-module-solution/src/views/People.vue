@@ -4,7 +4,7 @@
       <h1 class="col s12 flow-text">
         You have {{ filteredPeople.length }} contacts
       </h1>
-      <SearchBar @search="filterPeople($event)"/>
+      <SearchBar @search="filterPeople($event)" />
     </div>
     <section class="container">
       <CardPanel
@@ -17,7 +17,7 @@
     <md-dialog :md-active.sync="showDialog">
       <md-dialog-title>Contact informations</md-dialog-title>
       <md-dialog-content>
-        <Form @cancel="showDialog = false" @save="addPerson($event)"/>
+        <Form @cancel="showDialog = false" @save="addPerson($event)" />
       </md-dialog-content>
     </md-dialog>
     <md-button
@@ -46,27 +46,27 @@ export default {
     };
   },
   async created() {
-    await this.$store.dispatch('getPeople');
+    await this.$store.dispatch('people/getPeople');
   },
   computed: {
-    ...mapGetters({
+    ...mapGetters('people', {
       filteredPeople: 'filterPeople',
     }),
   },
   methods: {
     deletePerson(id) {
-      this.$store.dispatch('deletePeople', id);
+      this.$store.dispatch('people/deletePeople', id);
     },
     async addPerson(person) {
       try {
-        await this.$store.dispatch('addPeople', person);
+        await this.$store.dispatch('people/addPeople', person);
         this.showDialog = false;
       } catch (error) {
         console.error(error);
       }
     },
     filterPeople(searchFilter) {
-      this.$store.commit('people/FILTER', searchFilter);
+      this.$store.commit('people/setSearch', searchFilter);
     },
   },
 };
