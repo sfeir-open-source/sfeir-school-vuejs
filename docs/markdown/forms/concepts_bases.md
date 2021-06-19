@@ -61,7 +61,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 11
+# Exercice 11-form
 ## Exercice
 <br>
 
@@ -75,15 +75,15 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 11
+ # Exercice 11-form
  ## Solution
- __localhost:8080/step11_solution__
+ **11-form-solution**
  <!-- .element: class="full-center" -->
 
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12
+ # Exercice 12-update
  ## Exercice
  <br>
 
@@ -98,7 +98,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12 (suite)
+ # Exercice 12-update (suite)
  ## Exercice
  <br>
 
@@ -115,7 +115,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12
+ # Exercice 12-update
  ## Solution
- __localhost:8080/step12_solution__
+ **12-update-solution**
  <!-- .element: class="full-center" -->

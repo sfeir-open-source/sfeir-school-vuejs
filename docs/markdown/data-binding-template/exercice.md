@@ -7,7 +7,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 4
+# Exercice 04-binding
 ## Exercice
 <br>
 
@@ -23,7 +23,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 4
+# Exercice 04-binding
 ## Solution
-__localhost:8080/step04_solution__
+**04-binding-solution**
 <!-- .element: class="full-center" -->

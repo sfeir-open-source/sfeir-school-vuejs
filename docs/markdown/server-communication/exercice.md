@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 6
+# Exercice 06-axios
 ## Exercice
 <br>
 
@@ -14,7 +14,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 6
+ # Exercice 06-axios
  ## Solution
- __localhost:8080/step06_solution__
+**06=axios-solution**
  <!-- .element: class="full-center" -->

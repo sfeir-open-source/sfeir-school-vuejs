@@ -67,7 +67,7 @@ Pour plus d'information sur les règles de validation proposées par vuelidate: 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 14
+# Exercice 14-vuelidate
 ## Exercice
 <br>
 
@@ -81,9 +81,9 @@ Pour voir les erreurs, pensez à mettre : <pre>:class="{ 'md-input-invalid': $v.
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 14
+# Exercice 14-vuelidate
 ## Solution
-__localhost:8080/step14_solution__
+**14-vuelidate-solution**
 <!-- .element: class="full-center" -->
 
 ##==##
@@ -118,7 +118,7 @@ L'import se fait dans les règles de __validation__
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 15
+# Exercice 15-custom-validation
 ## Exercice
 <br>
 
@@ -134,9 +134,9 @@ sfeirmail fait appel au customValidator qui effectue le test de la regexp
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 15
+# Exercice 15-custom-validation
 ## Solution
-__localhost:8080/step15_solution__
+**15-custom-validation-solution**
 <!-- .element: class="full-center" -->
 Notes:
  - A partir de la version 3 de vee-validate on peut également créer ses propres règles

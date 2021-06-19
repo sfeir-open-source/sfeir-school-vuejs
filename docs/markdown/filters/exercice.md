@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 16
+# Exercice 16-pipe
 ## Excercie
 <br>
 
@@ -10,7 +10,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 16
+# Exercice 16-pipe
 ## Solution
-__localhost:8080/step16_solution__
+**16-pipe-solution**
 <!-- .element: class="full-center" -->
