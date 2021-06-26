@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 8
+# Exercice 08-loop
 ## Exercice
 <br>
 
@@ -13,7 +13,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 8
+# Exercice 08-loop
 ## Solution
-<b>localhost:8080/step08_solution</b>
+**08-loop-solution**
 <!-- .element: class="full-center" -->

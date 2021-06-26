@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 9
+# Exercice 09-props
 ## Exercice
 <br>
 
@@ -12,15 +12,15 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 9
+# Exercice 09-props
 ## Solution
-__localhost:8080/step09_solution__
+**09-props-solution**
 <!-- .element: class="full-center" -->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 10
+# Exercice 10-events
 ## Exercice
 <br>
 
@@ -37,7 +37,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 10
+ # Exercice 10-events-solution
  ## Solution
-__localhost:8080/step10_solution__
+**10=events-solution**
 <!-- .element: class="full-center" -->

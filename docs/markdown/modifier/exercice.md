@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 17
+# Exercice 17-modifiers
 ## Exercice
 <br>
 Nous avons ajouté un composant SearchBar<br><br>
@@ -17,7 +17,7 @@ Attirer l'attention sur la ligne 45 de People : vm._people = vm.people = people;
 ##==##
 
 <!-- .slide: class="exercice"-->
-# Exercice 17
+# Exercice 17-modifiers
 ## Solution
-__localhost:8080/step17_solution__
+**17-modifiers-solution**
 <!-- .element: class="full-center" -->

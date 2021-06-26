@@ -1,4 +1,5 @@
 # Déroulement de la formation
+
 <p class="full-center">
 A quand la pause ? <br>
 A quelle heure mange t-on ? <br>
@@ -8,51 +9,54 @@ Tour de table ...
 
 ##==##
 
-
 # Repositories
 
-__https://sfeir-open-source.github.io/sfeir-school-vuejs/__
+**https://sfeir-open-source.github.io/sfeir-school-vuejs/**
+
 <!-- .element: class="full-center" -->
-
-
 
 ##==##
 ![center](assets/images/school/basics/sfeir_people.png)
 
-
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Bootstrapping de l'application
 
+# Bootstrapping des applications
+
+**Installation du CLI VUE JS en global + Clone du repo**
 
 ```sh
 npm install -g @vue/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
-cd sfeir-school-vuejs/steps/ && npm i
 ```
+
 <!-- .element: class="medium-code" -->
 <br>
 
+**Installation des dépendances du Front (dossier exercices/steps)**
+
 ```bash
-npm run client -> http://localhost:8080/
+npm install || npm ci
 ```
+
 <!-- .element: class="medium-code" -->
 <br>
 
+**Installation des dépendances du Back (dossier exercices/\_server)**
+
 ```bash
-npm run server -> http://localhost:9000
+npm install || npm ci
 ```
-<!-- .element: class="medium-code" -->
 
 ##==##
 
 # Déroulement des exercices
 
-__Chaque concept clé de Vue Js est accompagné d'un TP.__
+**Chaque concept clé de Vue Js est accompagné d'un TP.**
 <br><br><br>
 
 Déroulement du TP : <br><br>
 
- - __une page d'excercice : steps/src/pages/`name_tp`__ (http://localhost:8080/name_tp) <br><br>
- - __une page de solution : steps/src/pages/`_solution_tp`__  (http://localhost:8080/solution_tp)<br><br>
+- **une application d'exercice : exercice/steps/apps/name_tp** (npm start -- name_tp) <br><br>
+- **Une application de solution : exercice/steps/apps/name_tp-solution** (npm start -- name_tp-solution)

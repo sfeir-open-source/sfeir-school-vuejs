@@ -1,0 +1,2360 @@
+{
+  "version": 2,
+  "projects": {
+    "01-bootstraping": {
+      "projectType": "application",
+      "root": "apps/01-bootstraping",
+      "sourceRoot": "apps/01-bootstraping/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/01-bootstraping",
+            "index": "apps/01-bootstraping/public/index.html",
+            "main": "apps/01-bootstraping/src/main.js",
+            "tsConfig": "apps/01-bootstraping/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "01-bootstraping:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "01-bootstraping:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/01-bootstraping/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/01-bootstraping"
+          ],
+          "options": {
+            "jestConfig": "apps/01-bootstraping/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "01-bootstraping-solution": {
+      "projectType": "application",
+      "root": "apps/01-bootstraping-solution",
+      "sourceRoot": "apps/01-bootstraping-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/01-bootstraping-solution",
+            "index": "apps/01-bootstraping-solution/public/index.html",
+            "main": "apps/01-bootstraping-solution/src/main.js",
+            "tsConfig": "apps/01-bootstraping-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "01-bootstraping-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "01-bootstraping-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/01-bootstraping-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/01-bootstraping-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/01-bootstraping-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "02-vue-material-bootstraping": {
+      "projectType": "application",
+      "root": "apps/02-vue-material-bootstraping",
+      "sourceRoot": "apps/02-vue-material-bootstraping/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/02-vue-material-bootstraping",
+            "index": "apps/02-vue-material-bootstraping/public/index.html",
+            "main": "apps/02-vue-material-bootstraping/src/main.js",
+            "tsConfig": "apps/02-vue-material-bootstraping/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "02-vue-material-bootstraping:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "02-vue-material-bootstraping:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/02-vue-material-bootstraping/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/02-vue-material-bootstraping"
+          ],
+          "options": {
+            "jestConfig": "apps/02-vue-material-bootstraping/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "02-vue-material-bootstraping-solution": {
+      "projectType": "application",
+      "root": "apps/02-vue-material-bootstraping-solution",
+      "sourceRoot": "apps/02-vue-material-bootstraping-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/02-vue-material-bootstraping-solution",
+            "index": "apps/02-vue-material-bootstraping-solution/public/index.html",
+            "main": "apps/02-vue-material-bootstraping-solution/src/main.js",
+            "tsConfig": "apps/02-vue-material-bootstraping-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "02-vue-material-bootstraping-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "02-vue-material-bootstraping-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/02-vue-material-bootstraping-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/02-vue-material-bootstraping-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/02-vue-material-bootstraping-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "03-first-components": {
+      "projectType": "application",
+      "root": "apps/03-first-components",
+      "sourceRoot": "apps/03-first-components/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/03-first-components",
+            "index": "apps/03-first-components/public/index.html",
+            "main": "apps/03-first-components/src/main.js",
+            "tsConfig": "apps/03-first-components/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "03-first-components:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "03-first-components:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/03-first-components/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/03-first-components"
+          ],
+          "options": {
+            "jestConfig": "apps/03-first-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "03-first-components-solution": {
+      "projectType": "application",
+      "root": "apps/03-first-components-solution",
+      "sourceRoot": "apps/03-first-components-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/03-first-components-solution",
+            "index": "apps/03-first-components-solution/public/index.html",
+            "main": "apps/03-first-components-solution/src/main.js",
+            "tsConfig": "apps/03-first-components-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "03-first-components-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "03-first-components-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/03-first-components-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/03-first-components-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/03-first-components-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "04-binding": {
+      "projectType": "application",
+      "root": "apps/04-binding",
+      "sourceRoot": "apps/04-binding/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/04-binding",
+            "index": "apps/04-binding/public/index.html",
+            "main": "apps/04-binding/src/main.js",
+            "tsConfig": "apps/04-binding/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "04-binding:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "04-binding:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/04-binding/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/04-binding"
+          ],
+          "options": {
+            "jestConfig": "apps/04-binding/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "04-binding-solution": {
+      "projectType": "application",
+      "root": "apps/04-binding-solution",
+      "sourceRoot": "apps/04-binding-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/04-binding-solution",
+            "index": "apps/04-binding-solution/public/index.html",
+            "main": "apps/04-binding-solution/src/main.js",
+            "tsConfig": "apps/04-binding-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "04-binding-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "04-binding-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/04-binding-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/04-binding-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/04-binding-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "05-event": {
+      "projectType": "application",
+      "root": "apps/05-event",
+      "sourceRoot": "apps/05-event/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-event",
+            "index": "apps/05-event/public/index.html",
+            "main": "apps/05-event/src/main.js",
+            "tsConfig": "apps/05-event/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-event:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-event:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-event/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-event"
+          ],
+          "options": {
+            "jestConfig": "apps/05-event/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "05-event-solution": {
+      "projectType": "application",
+      "root": "apps/05-event-solution",
+      "sourceRoot": "apps/05-event-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-event-solution",
+            "index": "apps/05-event-solution/public/index.html",
+            "main": "apps/05-event-solution/src/main.js",
+            "tsConfig": "apps/05-event-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-event-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-event-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-event-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-event-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/05-event-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "06-axios": {
+      "projectType": "application",
+      "root": "apps/06-axios",
+      "sourceRoot": "apps/06-axios/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/06-axios",
+            "index": "apps/06-axios/public/index.html",
+            "main": "apps/06-axios/src/main.js",
+            "tsConfig": "apps/06-axios/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "06-axios:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "06-axios:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/06-axios/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/06-axios"
+          ],
+          "options": {
+            "jestConfig": "apps/06-axios/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "06-axios-solution": {
+      "projectType": "application",
+      "root": "apps/06-axios-solution",
+      "sourceRoot": "apps/06-axios-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/06-axios-solution",
+            "index": "apps/06-axios-solution/public/index.html",
+            "main": "apps/06-axios-solution/src/main.js",
+            "tsConfig": "apps/06-axios-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "06-axios-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "06-axios-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/06-axios-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/06-axios-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/06-axios-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "07-routing": {
+      "projectType": "application",
+      "root": "apps/07-routing",
+      "sourceRoot": "apps/07-routing/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/07-routing",
+            "index": "apps/07-routing/public/index.html",
+            "main": "apps/07-routing/src/main.js",
+            "tsConfig": "apps/07-routing/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "07-routing:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "07-routing:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/07-routing/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/07-routing"
+          ],
+          "options": {
+            "jestConfig": "apps/07-routing/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "07-routing-solution": {
+      "projectType": "application",
+      "root": "apps/07-routing-solution",
+      "sourceRoot": "apps/07-routing-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/07-routing-solution",
+            "index": "apps/07-routing-solution/public/index.html",
+            "main": "apps/07-routing-solution/src/main.js",
+            "tsConfig": "apps/07-routing-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "07-routing-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "07-routing-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/07-routing-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/07-routing-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/07-routing-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "08-loop": {
+      "projectType": "application",
+      "root": "apps/08-loop",
+      "sourceRoot": "apps/08-loop/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/08-loop",
+            "index": "apps/08-loop/public/index.html",
+            "main": "apps/08-loop/src/main.js",
+            "tsConfig": "apps/08-loop/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "08-loop:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "08-loop:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/08-loop/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/08-loop"
+          ],
+          "options": {
+            "jestConfig": "apps/08-loop/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "08-loop-solution": {
+      "projectType": "application",
+      "root": "apps/08-loop-solution",
+      "sourceRoot": "apps/08-loop-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/08-loop-solution",
+            "index": "apps/08-loop-solution/public/index.html",
+            "main": "apps/08-loop-solution/src/main.js",
+            "tsConfig": "apps/08-loop-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "08-loop-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "08-loop-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/08-loop-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/08-loop-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/08-loop-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "09-props": {
+      "projectType": "application",
+      "root": "apps/09-props",
+      "sourceRoot": "apps/09-props/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/09-props",
+            "index": "apps/09-props/public/index.html",
+            "main": "apps/09-props/src/main.js",
+            "tsConfig": "apps/09-props/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "09-props:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "09-props:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/09-props/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/09-props"
+          ],
+          "options": {
+            "jestConfig": "apps/09-props/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "09-props-solution": {
+      "projectType": "application",
+      "root": "apps/09-props-solution",
+      "sourceRoot": "apps/09-props-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/09-props-solution",
+            "index": "apps/09-props-solution/public/index.html",
+            "main": "apps/09-props-solution/src/main.js",
+            "tsConfig": "apps/09-props-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "09-props-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "09-props-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/09-props-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/09-props-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/09-props-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "10-events": {
+      "projectType": "application",
+      "root": "apps/10-events",
+      "sourceRoot": "apps/10-events/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/10-events",
+            "index": "apps/10-events/public/index.html",
+            "main": "apps/10-events/src/main.js",
+            "tsConfig": "apps/10-events/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "10-events:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "10-events:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/10-events/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/10-events"
+          ],
+          "options": {
+            "jestConfig": "apps/10-events/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "10-events-solution": {
+      "projectType": "application",
+      "root": "apps/10-events-solution",
+      "sourceRoot": "apps/10-events-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/10-events-solution",
+            "index": "apps/10-events-solution/public/index.html",
+            "main": "apps/10-events-solution/src/main.js",
+            "tsConfig": "apps/10-events-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "10-events-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "10-events-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/10-events-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/10-events-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/10-events-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "11-form": {
+      "projectType": "application",
+      "root": "apps/11-form",
+      "sourceRoot": "apps/11-form/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-form",
+            "index": "apps/11-form/public/index.html",
+            "main": "apps/11-form/src/main.js",
+            "tsConfig": "apps/11-form/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-form:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-form:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-form/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-form"
+          ],
+          "options": {
+            "jestConfig": "apps/11-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "11-form-solution": {
+      "projectType": "application",
+      "root": "apps/11-form-solution",
+      "sourceRoot": "apps/11-form-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-form-solution",
+            "index": "apps/11-form-solution/public/index.html",
+            "main": "apps/11-form-solution/src/main.js",
+            "tsConfig": "apps/11-form-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-form-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-form-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-form-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-form-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/11-form-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "12-update": {
+      "projectType": "application",
+      "root": "apps/12-update",
+      "sourceRoot": "apps/12-update/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12-update",
+            "index": "apps/12-update/public/index.html",
+            "main": "apps/12-update/src/main.js",
+            "tsConfig": "apps/12-update/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12-update:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12-update:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12-update/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12-update"
+          ],
+          "options": {
+            "jestConfig": "apps/12-update/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "12-update-solution": {
+      "projectType": "application",
+      "root": "apps/12-update-solution",
+      "sourceRoot": "apps/12-update-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12-update-solution",
+            "index": "apps/12-update-solution/public/index.html",
+            "main": "apps/12-update-solution/src/main.js",
+            "tsConfig": "apps/12-update-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12-update-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12-update-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12-update-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12-update-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/12-update-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "13-vee-validate": {
+      "projectType": "application",
+      "root": "apps/13-vee-validate",
+      "sourceRoot": "apps/13-vee-validate/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/13-vee-validate",
+            "index": "apps/13-vee-validate/public/index.html",
+            "main": "apps/13-vee-validate/src/main.js",
+            "tsConfig": "apps/13-vee-validate/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "13-vee-validate:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "13-vee-validate:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/13-vee-validate/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/13-vee-validate"
+          ],
+          "options": {
+            "jestConfig": "apps/13-vee-validate/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "13-vee-validate-solution": {
+      "projectType": "application",
+      "root": "apps/13-vee-validate-solution",
+      "sourceRoot": "apps/13-vee-validate-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/13-vee-validate-solution",
+            "index": "apps/13-vee-validate-solution/public/index.html",
+            "main": "apps/13-vee-validate-solution/src/main.js",
+            "tsConfig": "apps/13-vee-validate-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "13-vee-validate-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "13-vee-validate-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/13-vee-validate-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/13-vee-validate-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/13-vee-validate-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "14-vuelidate": {
+      "projectType": "application",
+      "root": "apps/14-vuelidate",
+      "sourceRoot": "apps/14-vuelidate/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/14-vuelidate",
+            "index": "apps/14-vuelidate/public/index.html",
+            "main": "apps/14-vuelidate/src/main.js",
+            "tsConfig": "apps/14-vuelidate/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "14-vuelidate:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "14-vuelidate:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/14-vuelidate/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/14-vuelidate"
+          ],
+          "options": {
+            "jestConfig": "apps/14-vuelidate/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "14-vuelidate-solution": {
+      "projectType": "application",
+      "root": "apps/14-vuelidate-solution",
+      "sourceRoot": "apps/14-vuelidate-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/14-vuelidate-solution",
+            "index": "apps/14-vuelidate-solution/public/index.html",
+            "main": "apps/14-vuelidate-solution/src/main.js",
+            "tsConfig": "apps/14-vuelidate-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "14-vuelidate-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "14-vuelidate-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/14-vuelidate-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/14-vuelidate-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/14-vuelidate-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "15-custom-validation": {
+      "projectType": "application",
+      "root": "apps/15-custom-validation",
+      "sourceRoot": "apps/15-custom-validation/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/15-custom-validation",
+            "index": "apps/15-custom-validation/public/index.html",
+            "main": "apps/15-custom-validation/src/main.js",
+            "tsConfig": "apps/15-custom-validation/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "15-custom-validation:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "15-custom-validation:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/15-custom-validation/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/15-custom-validation"
+          ],
+          "options": {
+            "jestConfig": "apps/15-custom-validation/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "15-custom-validation-solution": {
+      "projectType": "application",
+      "root": "apps/15-custom-validation-solution",
+      "sourceRoot": "apps/15-custom-validation-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/15-custom-validation-solution",
+            "index": "apps/15-custom-validation-solution/public/index.html",
+            "main": "apps/15-custom-validation-solution/src/main.js",
+            "tsConfig": "apps/15-custom-validation-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "15-custom-validation-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "15-custom-validation-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/15-custom-validation-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/15-custom-validation-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/15-custom-validation-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "16-pipe": {
+      "projectType": "application",
+      "root": "apps/16-pipe",
+      "sourceRoot": "apps/16-pipe/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/16-pipe",
+            "index": "apps/16-pipe/public/index.html",
+            "main": "apps/16-pipe/src/main.js",
+            "tsConfig": "apps/16-pipe/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "16-pipe:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "16-pipe:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/16-pipe/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/16-pipe"
+          ],
+          "options": {
+            "jestConfig": "apps/16-pipe/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "16-pipe-solution": {
+      "projectType": "application",
+      "root": "apps/16-pipe-solution",
+      "sourceRoot": "apps/16-pipe-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/16-pipe-solution",
+            "index": "apps/16-pipe-solution/public/index.html",
+            "main": "apps/16-pipe-solution/src/main.js",
+            "tsConfig": "apps/16-pipe-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "16-pipe-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "16-pipe-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/16-pipe-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/16-pipe-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/16-pipe-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "17-modifiers": {
+      "projectType": "application",
+      "root": "apps/17-modifiers",
+      "sourceRoot": "apps/17-modifiers/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-modifiers",
+            "index": "apps/17-modifiers/public/index.html",
+            "main": "apps/17-modifiers/src/main.js",
+            "tsConfig": "apps/17-modifiers/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-modifiers:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-modifiers:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-modifiers/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-modifiers"
+          ],
+          "options": {
+            "jestConfig": "apps/17-modifiers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "17-modifiers-solution": {
+      "projectType": "application",
+      "root": "apps/17-modifiers-solution",
+      "sourceRoot": "apps/17-modifiers-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-modifiers-solution",
+            "index": "apps/17-modifiers-solution/public/index.html",
+            "main": "apps/17-modifiers-solution/src/main.js",
+            "tsConfig": "apps/17-modifiers-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-modifiers-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-modifiers-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-modifiers-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-modifiers-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/17-modifiers-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "18-directive": {
+      "projectType": "application",
+      "root": "apps/18-directive",
+      "sourceRoot": "apps/18-directive/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-directive",
+            "index": "apps/18-directive/public/index.html",
+            "main": "apps/18-directive/src/main.js",
+            "tsConfig": "apps/18-directive/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-directive:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-directive:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-directive/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-directive"
+          ],
+          "options": {
+            "jestConfig": "apps/18-directive/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "18-directive-solution": {
+      "projectType": "application",
+      "root": "apps/18-directive-solution",
+      "sourceRoot": "apps/18-directive-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-directive-solution",
+            "index": "apps/18-directive-solution/public/index.html",
+            "main": "apps/18-directive-solution/src/main.js",
+            "tsConfig": "apps/18-directive-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-directive-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-directive-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-directive-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-directive-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/18-directive-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management": {
+      "projectType": "application",
+      "root": "apps/19-state-management",
+      "sourceRoot": "apps/19-state-management/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management",
+            "index": "apps/19-state-management/public/index.html",
+            "main": "apps/19-state-management/src/main.js",
+            "tsConfig": "apps/19-state-management/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management-solution": {
+      "projectType": "application",
+      "root": "apps/19-state-management-solution",
+      "sourceRoot": "apps/19-state-management-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management-solution",
+            "index": "apps/19-state-management-solution/public/index.html",
+            "main": "apps/19-state-management-solution/src/main.js",
+            "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management-module": {
+      "projectType": "application",
+      "root": "apps/19-state-management-module",
+      "sourceRoot": "apps/19-state-management-module/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management-module",
+            "index": "apps/19-state-management-module/public/index.html",
+            "main": "apps/19-state-management-module/src/main.js",
+            "tsConfig": "apps/19-state-management-module/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management-module:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management-module:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management-module/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management-module"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management-module/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management-module-solution": {
+      "projectType": "application",
+      "root": "apps/19-state-management-module-solution",
+      "sourceRoot": "apps/19-state-management-module-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management-module-solution",
+            "index": "apps/19-state-management-module-solution/public/index.html",
+            "main": "apps/19-state-management-module-solution/src/main.js",
+            "tsConfig": "apps/19-state-management-module-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management-module-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management-module-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management-module-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/19-state-management-module-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/19-state-management-module-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "20-lazyloading": {
+      "projectType": "application",
+      "root": "apps/20-lazyloading",
+      "sourceRoot": "apps/20-lazyloading/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/20-lazyloading",
+            "index": "apps/20-lazyloading/public/index.html",
+            "main": "apps/20-lazyloading/src/main.js",
+            "tsConfig": "apps/20-lazyloading/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "20-lazyloading:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "20-lazyloading:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/20-lazyloading/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/20-lazyloading"
+          ],
+          "options": {
+            "jestConfig": "apps/20-lazyloading/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "20-lazyloading-solution": {
+      "projectType": "application",
+      "root": "apps/20-lazyloading-solution",
+      "sourceRoot": "apps/20-lazyloading-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/20-lazyloading-solution",
+            "index": "apps/20-lazyloading-solution/public/index.html",
+            "main": "apps/20-lazyloading-solution/src/main.js",
+            "tsConfig": "apps/20-lazyloading-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "20-lazyloading-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "20-lazyloading-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/20-lazyloading-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/20-lazyloading-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/20-lazyloading-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  }
+}

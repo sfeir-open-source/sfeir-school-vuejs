@@ -88,11 +88,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-.env*.local
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
@@ -129,11 +124,6 @@ dist
 .vscode-test
 
 ### vscode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 ### WebStorm+all ###
@@ -244,6 +234,3 @@ modules.xml
 
 # and uncomment the following lines
 # .pnp.*
-
-# End of https://www.toptal.com/developers/gitignore/api/node,vscode,yarn,webstorm+all,git
-/.vscode/

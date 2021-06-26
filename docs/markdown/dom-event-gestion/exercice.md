@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 5
+# 05-event
 ## Exercice
 <br>
 
@@ -13,7 +13,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 5
+# Exercice 05-event
 ## Solution
-__localhost:8080/step05_solution__
+**05-event-solution**
 <!-- .element: class="full-center" -->

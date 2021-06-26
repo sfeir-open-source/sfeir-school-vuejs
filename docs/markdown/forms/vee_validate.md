@@ -74,7 +74,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 13
+# Exercice 13-vee-validate
 ## Exercice
 <br>
 
@@ -90,8 +90,8 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 13
+# Exercice 13-vee-validate
 ## Solution
-__localhost:8080/step13_solution__
+**13-vee-validate-solution**
 <!-- .element: class="full-center" -->
 

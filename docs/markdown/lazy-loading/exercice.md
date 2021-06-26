@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 21
+# Exercice 20-lazyloading
 ## Exercice
 <br>
 
@@ -9,7 +9,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 21
+# Exercice 20-lazyloading
 ## Solution
-__localhost:8080/step21_solution__
+**20-lazyloading-solution**
 <!-- .element: class="full-center" -->

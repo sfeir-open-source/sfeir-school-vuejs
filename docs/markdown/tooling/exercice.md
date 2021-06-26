@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 2
+# Exercice : 02-vue-material-bootstraping
 ## Exercice
 <br>
 
@@ -15,23 +15,12 @@
 Notes:
 - Vue material "Getting Started" : https://vuematerial.io/getting-started/
 - Vue material "Card" : https://vuematerial.io/components/card/
-- Code pour la configuration du thème :
-<pre>
-import 'vue-material/dist/vue-material.css';
-
-// Pour la configuration du thème
-Vue.material.registerTheme('default', {
-    primary: 'blue',
-    accent: 'grey',
-    warn: 'red'
-});
-</pre>
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 2
+# Exercice : 02-vue-material-bootstraping
 ## Solution
-<b>localhost:8080/step02_solution</b>
+**02-vue-material-bootstraping-solution**
 <!-- .element: class="full-center" -->
 

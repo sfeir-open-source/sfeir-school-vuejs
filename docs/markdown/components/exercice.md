@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 3
+# Exercice : 03-first-components
 ## Exercice
 <br>
 
@@ -10,7 +10,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 3
+# Exercice : 03-first-components
 ## Solution
-<b>localhost:8080/step03_solution</b>
+**03-first-components-solution**
 <!-- .element: class="full-center" -->

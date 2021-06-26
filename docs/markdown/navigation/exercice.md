@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 7
+# Exercice 07-routing
 ## Exercice
 <br>
 
@@ -10,7 +10,7 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 7
+# Exercice 07-routing
 ## Solution
-__localhost:8080/step07_solution__
+**07-routing-solution**
 <!-- .element: class="full-center" -->
