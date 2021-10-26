@@ -1,9 +1,18 @@
 function schoolSlides() {
   return [
     'presentation/welcome_school.md',
-    'speaker/nicolas_frizzarin.md',
-    'speaker/justin_wilmet.md',
-    'presentation/flow_school.md',
+    'speaker/pauline_goblot.md',
+    'speaker/bertrand_mondolot.md',
+    'presentation/formation_flow.md',
+  ];
+}
+
+function vueIntroductionSlides() {
+  return [
+    'vue-introduction/transition_slide.md',
+    'vue-introduction/vue_creation.md',
+    'vue-introduction/vue_principles.md',
+    'vue-introduction/other_frameworks.md',
   ];
 }
 
@@ -22,14 +31,14 @@ function toolingSlides() {
     'tooling/configuration.md',
     'tooling/exercice.md',
   ];
-};
+}
 
 function instanceSlides() {
   return [
     'vue-instance/transition_slide.md',
     'vue-instance/instance.md',
   ];
-};
+}
 
 function componentsSlides() {
   return [
@@ -37,7 +46,7 @@ function componentsSlides() {
     'components/components.md',
     'components/exercice.md',
   ];
-};
+}
 
 function dataBindingSlides() {
   return [
@@ -47,7 +56,7 @@ function dataBindingSlides() {
     'data-binding-template/vue.md',
     'data-binding-template/exercice.md',
   ];
-};
+}
 
 function domEventGestionSlides() {
   return [
@@ -55,7 +64,7 @@ function domEventGestionSlides() {
     'dom-event-gestion/event_definition.md',
     'dom-event-gestion/exercice.md',
   ];
-};
+}
 
 function serverCommunicationSlides() {
   return [
@@ -63,7 +72,7 @@ function serverCommunicationSlides() {
     'server-communication/axios_lib.md',
     'server-communication/exercice.md',
   ];
-};
+}
 
 function navigationSlides() {
   return [
@@ -73,7 +82,7 @@ function navigationSlides() {
     'navigation/implementation.md',
     'navigation/exercice.md',
   ];
-};
+}
 
 function iteratorSlides() {
   return [
@@ -81,7 +90,7 @@ function iteratorSlides() {
     'iterator/directive_v_for.md',
     'iterator/exercice.md',
   ];
-};
+}
 
 function communicationComponentSlides() {
   return [
@@ -89,7 +98,7 @@ function communicationComponentSlides() {
     'communication-components/event_props.md',
     'communication-components/exercice.md',
   ];
-};
+}
 
 function formsSlides() {
   return [
@@ -99,7 +108,7 @@ function formsSlides() {
     'forms/vee_validate.md',
     'forms/vuelidate.md',
   ];
-};
+}
 
 function filterSlides() {
   return [
@@ -107,7 +116,7 @@ function filterSlides() {
     'filters/filters_concept.md',
     'filters/exercice.md',
   ];
-};
+}
 
 function modifiersSlides() {
   return [
@@ -115,7 +124,7 @@ function modifiersSlides() {
     'modifier/modifier.md',
     'modifier/exercice.md',
   ];
-};
+}
 
 function directiveSlides() {
   return [
@@ -151,6 +160,7 @@ function lazyLoadingSlides() {
 function formation() {
   return [
     ...schoolSlides(),
+    ...vueIntroductionSlides(),
     ...basicsSlides(),
     ...toolingSlides(),
     ...instanceSlides(),

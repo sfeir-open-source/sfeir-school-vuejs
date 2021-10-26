@@ -1,3 +1,3 @@
-<!-- .slide: class="first-slide" sfeir-level="1" sfeir-techno="Vue JS" -->
-# **Welcome to Sfeir School**
+<!-- .slide: class="institute-slide" -->
+# **Welcome to Sfeir Institute**
 # **Vue JS 100**
