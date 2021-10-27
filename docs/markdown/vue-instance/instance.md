@@ -13,10 +13,10 @@ Une instance est composée de 3 grandes composantes
 ##--##
 <br><br>
 
-![h-400](assets/images/school/vue-instance/constructor.png)
+![h-300](assets/images/school/vue-instance/constructor.png)
 <!-- .element: class="align-image" -->
 
-![h-400](assets/images/school/vue-instance/extend.png)
+![h-300](assets/images/school/vue-instance/extend.png)
 <!-- .element: class="align-image" -->
 
 Notes:

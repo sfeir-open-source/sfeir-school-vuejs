@@ -29,6 +29,9 @@ function toolingSlides() {
     'tooling/transition_slide.md',
     'tooling/official_stack.md',
     'tooling/configuration.md',
+    'tooling/ide.md',
+    'tooling/browser_plugin.md',
+    'tooling/material.md',
     'tooling/exercice.md',
   ];
 }
