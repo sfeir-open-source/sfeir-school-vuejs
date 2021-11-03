@@ -34,11 +34,14 @@ Le constructor peut prendre plusieurs options :
 ##--##
 <br><br><br>
 
-- Différentes méthodes de cycle de vie
+- Chaque instance de composant a un cycle de vie bien défini
     - created
     - mounted
-    - beforeCreated<br><br>
+    - updated
+    - unmounted
 - S'implémente directement dans les options de l'instance de vue
+
+Notes: diagramme https://v3.vuejs.org/guide/instance.html#lifecycle-diagram
 
 ##--##
 <br><br><br>
@@ -55,15 +58,14 @@ Le constructor peut prendre plusieurs options :
 <br><br><br>
 - Exposées dans l'objet data
 - Réactives
-- Propriétés d'instance: 
-    - $el
+- Propriétés d'instance :
     - $data
 
 ##--##
-![](assets/images/school/vue-instance/properties.png)
+![h-400](assets/images/school/vue-instance/properties.png)
 <!-- .element: class="align-image" -->
 
-![](assets/images/school/vue-instance/access_properties.png)
+![h-400](assets/images/school/vue-instance/access_properties.png)
 <!-- .element: class="align-image" -->
 
 ##==##
@@ -107,9 +109,10 @@ __Qu'est ce que c'est ?__
 - Exposées dans l'object "methods"
 - Utilisables dans le template
 - Méthodes d'instances
-    - render (creation v-node + createElement parameter)
-    - $on
+    - render (creation de template en javascript)
     - $emit
+    - $watch
+    - $forceUpdate / $nextTick
 
 ##--##
 <br><br>
@@ -129,9 +132,8 @@ __Qu'est ce que c'est ?__
 ##--##
 <br><br><br><br>
 
-- S'implémente sur l'instance / dans une méthode
+- S'implémente dans la définition du composant ou dans une méthode
 - Opérations Asynchrone
-- Privilégier une computed properties
 
 ##--##
 <br><br>
@@ -147,4 +149,4 @@ __Qu'est ce que c'est ?__
 
 - Une propriété computed est recalculée seulement quand ses dépendances changent<br><br>
 - Une méthode est rappelée à chaque fois qu'un élément change<br><br>
-- Un watcher est privilégié pour des actions plus complexes (asynchrone) => un call à une api
+- Un watcher est privilégié pour des actions plus complexes (effet de bord ou appel asynchrone)

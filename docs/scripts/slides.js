@@ -95,6 +95,22 @@ function iteratorSlides() {
   ];
 }
 
+function fragmentsSlides() {
+  return [
+    'fragments/transition_slide.md',
+    'fragments/single_node.md',
+    'fragments/multiple_nodes.md'
+  ]
+}
+
+function teleportSlides() {
+  return [
+    'teleport/transition_slide.md',
+    'teleport/principle.md',
+    'teleport/exercice.md',
+  ]
+}
+
 function communicationComponentSlides() {
   return [
     'communication-components/transition_slide.md',
@@ -160,6 +176,16 @@ function lazyLoadingSlides() {
   ]
 }
 
+function compositionApiSlides() {
+  return [
+    'composition-api/transition_slide.md',
+    'composition-api/problem.md',
+    'composition-api/basics.md',
+    'composition-api/reactivity_api.md',
+    'composition-api/separate_files.md',
+  ]
+}
+
 function formation() {
   return [
     ...schoolSlides(),
@@ -173,6 +199,8 @@ function formation() {
     ...serverCommunicationSlides(),
     ...navigationSlides(),
     ...iteratorSlides(),
+    ...fragmentsSlides(),
+    ...teleportSlides(),
     ...communicationComponentSlides(),
     ...formsSlides(),
     ...filterSlides(),
@@ -180,6 +208,7 @@ function formation() {
     ...directiveSlides(),
     ...stateManagementSlides(),
     ...lazyLoadingSlides(),
+    ...compositionApiSlides(),
   ].map(slidePath => {
     return { path: slidePath };
   });
