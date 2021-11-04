@@ -61,13 +61,42 @@ function dataBindingSlides() {
   ];
 }
 
-function domEventGestionSlides() {
+function templatingSlides() {
   return [
-    'dom-event-gestion/transition_slide.md',
-    'dom-event-gestion/event_definition.md',
-    'dom-event-gestion/exercice.md',
+    'templating/transition_slide.md',
+    'templating/template.md',
+    'templating/exercice.md',
   ];
 }
+
+function slotsSlides() {
+  return [
+    'slots/transition_slide.md',
+    'slots/slots.md'
+  ]
+}
+
+function classStyleSlides() {
+  return [
+    'class-styles/transition_slide.md',
+    'class-styles/class_styles.md'
+  ]
+}
+
+function communicationComponentSlides() {
+  return [
+    'communication-components/transition_slide.md',
+    'communication-components/event_props.md',
+    'communication-components/provide_inject.md',
+    'communication-components/exercice.md',
+  ];
+};
+
+function reactivitySystemSlides() {
+  return [
+    'reactivity-system/transition_slide.md',
+  ];
+};
 
 function serverCommunicationSlides() {
   return [
@@ -75,7 +104,13 @@ function serverCommunicationSlides() {
     'server-communication/axios_lib.md',
     'server-communication/exercice.md',
   ];
-}
+};
+
+function transitionAnimateSlides() {
+  return [
+    'transition-animation/transition_slide.md',
+  ];
+};
 
 function navigationSlides() {
   return [
@@ -84,14 +119,6 @@ function navigationSlides() {
     'navigation/configuration.md',
     'navigation/implementation.md',
     'navigation/exercice.md',
-  ];
-}
-
-function iteratorSlides() {
-  return [
-    'iterator/transition_slide.md',
-    'iterator/directive_v_for.md',
-    'iterator/exercice.md',
   ];
 }
 
@@ -111,14 +138,6 @@ function teleportSlides() {
   ]
 }
 
-function communicationComponentSlides() {
-  return [
-    'communication-components/transition_slide.md',
-    'communication-components/event_props.md',
-    'communication-components/exercice.md',
-  ];
-}
-
 function formsSlides() {
   return [
     'forms/sfeir_school_day_2.md',
@@ -126,31 +145,18 @@ function formsSlides() {
     'forms/validation.md',
     'forms/vee_validate.md',
     'forms/vuelidate.md',
-  ];
-}
-
-function filterSlides() {
-  return [
-    'filters/transition_slide.md',
-    'filters/filters_concept.md',
-    'filters/exercice.md',
-  ];
-}
-
-function modifiersSlides() {
-  return [
-    'modifier/transition_slide.md',
     'modifier/modifier.md',
     'modifier/exercice.md',
   ];
 }
 
-function directiveSlides() {
+function componentReusabilitySlides() {
   return [
-    'directive/transition_slide.md',
-    'directive/native_directive.md',
-    'directive/custom_directive.md',
-    'directive/exercice.md',
+    'component-reusability/transition_slide.md',
+    'component-reusability/native_directive.md',
+    'component-reusability/custom_directive.md',
+    'component-reusability/mixins.md',
+    'component-reusability/exercice.md',
   ]
 }
 
@@ -195,17 +201,18 @@ function formation() {
     ...instanceSlides(),
     ...componentsSlides(),
     ...dataBindingSlides(),
-    ...domEventGestionSlides(),
+    ...templatingSlides(),
+    ...slotsSlides(),
+    ...classStyleSlides(),
+    ...communicationComponentSlides(),
+    ...reactivitySystemSlides(),
     ...serverCommunicationSlides(),
-    ...navigationSlides(),
-    ...iteratorSlides(),
+    ...transitionAnimateSlides(),
+    ...formsSlides(),
+    ...componentReusabilitySlides(),
     ...fragmentsSlides(),
     ...teleportSlides(),
-    ...communicationComponentSlides(),
-    ...formsSlides(),
-    ...filterSlides(),
-    ...modifiersSlides(),
-    ...directiveSlides(),
+    ...navigationSlides(),
     ...stateManagementSlides(),
     ...lazyLoadingSlides(),
     ...compositionApiSlides(),

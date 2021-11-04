@@ -5,10 +5,10 @@
 
 <h2>Pauline <span>Goblot</span></h2>
 
-### TODO
+### Developer Front-end
 <!-- .element: class="icon-rule icon-first"-->
 
-### @TODO
+### @goby_elfe
 <!-- .element: class="icon-twitter icon-second" -->
 
 ### goblot.p@sfeir.com

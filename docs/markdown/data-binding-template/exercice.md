@@ -1,5 +1,6 @@
-<!-- .slide: class="sfeir-basic-slide" -->
-# Aperçu d'une personne
+<!-- .slide: class="exercice" -->
+# Exercice 04-binding
+## Objectif
 <br>
 
 ![center](assets/images/school/data-binding-template/display_one_person.png)

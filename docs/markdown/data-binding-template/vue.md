@@ -1,4 +1,4 @@
-<!-- .slide: class="" -->
+<!-- .slide" -->
 # Data Binding with Vue
 <br>
 
@@ -16,20 +16,21 @@ __Syntaxe de l'interpolation__<br>
 <span>{{ name }}</span>
 ```
 <!-- .element: class="medium-code" -->
-<br><br>
+<br>
 
 __Syntaxe d'une propriété__<br>
 ```html
-<button v-bind:disabled="!name">Sign-In</button>
+<button v-bind:disabled="!name">Connexion</button>
 ```
 <!-- .element: class="medium-code" -->
-<br><br>
+<br>
 
 __Syntaxe de l'event__<br>
 ```html
 <button v-on:click="signIn()" type="submit">
 ```
 <!-- .element: class="medium-code" -->
+<br>
 
 ##==##
 
@@ -38,10 +39,21 @@ __Syntaxe de l'event__<br>
 <br>
 
 - Interpolation:
-    - Se matérialise par les doubles accolades <br><br>
+    - Se matérialise par les doubles accolades 
+    
+    ```html
+    <span>{{ name }}</span>
+    ```
+
+    <br>
 - Expression:
     - Uniquement dans le composant courant
     - Du JS => mais une seule expression
+
+    ```html
+    <button>{{ connected ? 'Se déconnecter' : 'Connexion' }}</button>
+    ```
+<br>
 
 ##==##
 

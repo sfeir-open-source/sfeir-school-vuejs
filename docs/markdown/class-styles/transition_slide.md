@@ -1,2 +1,2 @@
 <!-- .slide: class="transition" -->
-# Composants
+# Liaisons de classes et de styles
