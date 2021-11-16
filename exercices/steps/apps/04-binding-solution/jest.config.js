@@ -9,13 +9,12 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'vue', 'js', 'json'],
   coverageDirectory: '../../coverage/apps/04-binding-solution',
-  snapshotSerializers: ['jest-serializer-vue'],
+
   globals: {
-    'ts-jest': {
-      tsConfig: '<rootDir>/tsconfig.spec.json',
-    },
+    'ts-jest': { tsconfig: '<rootDir>/tsconfig.spec.json' },
     'vue-jest': {
       tsConfig: `${__dirname}/tsconfig.spec.json`,
     },
   },
+  snapshotSerializers: ['jest-serializer-vue'],
 };

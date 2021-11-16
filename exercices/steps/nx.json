@@ -18,12 +18,7 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
@@ -139,13 +134,13 @@
     "19-state-management": {
       "tags": []
     },
-    "19-state-management-solution": {
-      "tags": []
-    },
     "19-state-management-module": {
       "tags": []
     },
     "19-state-management-module-solution": {
+      "tags": []
+    },
+    "19-state-management-solution": {
       "tags": []
     },
     "20-lazyloading": {
@@ -154,5 +149,13 @@
     "20-lazyloading-solution": {
       "tags": []
     }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
   }
 }
