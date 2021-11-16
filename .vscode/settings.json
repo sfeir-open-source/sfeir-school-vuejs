@@ -1,10 +1,10 @@
 {
   "eslint.workingDirectories": [
-    "exercices/steps",
+    "workshop",
   ],
-  "prettier.configPath": "exercices/steps/.prettierrc",
-  "prettier.prettierPath": "exercices/steps/node_modules/prettier",
-  "prettier.ignorePath": "exercices/steps/.prettierignore",
+  "prettier.configPath": "workshop/.prettierrc",
+  "prettier.prettierPath": "workshop/node_modules/prettier",
+  "prettier.ignorePath": "workshop/.prettierignore",
   "cSpell.words": [
     "sfeir",
     "vuelidate",

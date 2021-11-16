@@ -148,6 +148,9 @@
     },
     "20-lazyloading-solution": {
       "tags": []
+    },
+    "server": {
+      "tags": []
     }
   },
   "targetDependencies": {
