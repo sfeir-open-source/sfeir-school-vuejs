@@ -40,16 +40,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/01-bootstraping/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/01-bootstraping/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/01-bootstraping"
-          ],
+          "outputs": ["coverage/apps/01-bootstraping"],
           "options": {
             "jestConfig": "apps/01-bootstraping/jest.config.js",
             "passWithNoTests": true
@@ -99,13 +96,12 @@
             "lintFilePatterns": [
               "apps/01-bootstraping-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/01-bootstraping-solution"
-          ],
+          "outputs": ["coverage/apps/01-bootstraping-solution"],
           "options": {
             "jestConfig": "apps/01-bootstraping-solution/jest.config.js",
             "passWithNoTests": true
@@ -155,13 +151,12 @@
             "lintFilePatterns": [
               "apps/02-vue-material-bootstraping/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/02-vue-material-bootstraping"
-          ],
+          "outputs": ["coverage/apps/02-vue-material-bootstraping"],
           "options": {
             "jestConfig": "apps/02-vue-material-bootstraping/jest.config.js",
             "passWithNoTests": true
@@ -211,13 +206,12 @@
             "lintFilePatterns": [
               "apps/02-vue-material-bootstraping-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/02-vue-material-bootstraping-solution"
-          ],
+          "outputs": ["coverage/apps/02-vue-material-bootstraping-solution"],
           "options": {
             "jestConfig": "apps/02-vue-material-bootstraping-solution/jest.config.js",
             "passWithNoTests": true
@@ -264,16 +258,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/03-first-components/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/03-first-components/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/03-first-components"
-          ],
+          "outputs": ["coverage/apps/03-first-components"],
           "options": {
             "jestConfig": "apps/03-first-components/jest.config.js",
             "passWithNoTests": true
@@ -323,13 +314,12 @@
             "lintFilePatterns": [
               "apps/03-first-components-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/03-first-components-solution"
-          ],
+          "outputs": ["coverage/apps/03-first-components-solution"],
           "options": {
             "jestConfig": "apps/03-first-components-solution/jest.config.js",
             "passWithNoTests": true
@@ -376,16 +366,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/04-binding/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/04-binding/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/04-binding"
-          ],
+          "outputs": ["coverage/apps/04-binding"],
           "options": {
             "jestConfig": "apps/04-binding/jest.config.js",
             "passWithNoTests": true
@@ -432,16 +419,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/04-binding-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/04-binding-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/04-binding-solution"
-          ],
+          "outputs": ["coverage/apps/04-binding-solution"],
           "options": {
             "jestConfig": "apps/04-binding-solution/jest.config.js",
             "passWithNoTests": true
@@ -488,16 +472,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/05-event/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/05-event/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/05-event"
-          ],
+          "outputs": ["coverage/apps/05-event"],
           "options": {
             "jestConfig": "apps/05-event/jest.config.js",
             "passWithNoTests": true
@@ -544,16 +525,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/05-event-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/05-event-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/05-event-solution"
-          ],
+          "outputs": ["coverage/apps/05-event-solution"],
           "options": {
             "jestConfig": "apps/05-event-solution/jest.config.js",
             "passWithNoTests": true
@@ -600,16 +578,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/06-axios/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/06-axios/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/06-axios"
-          ],
+          "outputs": ["coverage/apps/06-axios"],
           "options": {
             "jestConfig": "apps/06-axios/jest.config.js",
             "passWithNoTests": true
@@ -656,16 +631,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/06-axios-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/06-axios-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/06-axios-solution"
-          ],
+          "outputs": ["coverage/apps/06-axios-solution"],
           "options": {
             "jestConfig": "apps/06-axios-solution/jest.config.js",
             "passWithNoTests": true
@@ -712,16 +684,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/07-routing/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/07-routing/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/07-routing"
-          ],
+          "outputs": ["coverage/apps/07-routing"],
           "options": {
             "jestConfig": "apps/07-routing/jest.config.js",
             "passWithNoTests": true
@@ -768,16 +737,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/07-routing-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/07-routing-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/07-routing-solution"
-          ],
+          "outputs": ["coverage/apps/07-routing-solution"],
           "options": {
             "jestConfig": "apps/07-routing-solution/jest.config.js",
             "passWithNoTests": true
@@ -824,16 +790,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/08-loop/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/08-loop/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/08-loop"
-          ],
+          "outputs": ["coverage/apps/08-loop"],
           "options": {
             "jestConfig": "apps/08-loop/jest.config.js",
             "passWithNoTests": true
@@ -880,16 +843,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/08-loop-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/08-loop-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/08-loop-solution"
-          ],
+          "outputs": ["coverage/apps/08-loop-solution"],
           "options": {
             "jestConfig": "apps/08-loop-solution/jest.config.js",
             "passWithNoTests": true
@@ -936,16 +896,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/09-props/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/09-props/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/09-props"
-          ],
+          "outputs": ["coverage/apps/09-props"],
           "options": {
             "jestConfig": "apps/09-props/jest.config.js",
             "passWithNoTests": true
@@ -992,16 +949,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/09-props-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/09-props-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/09-props-solution"
-          ],
+          "outputs": ["coverage/apps/09-props-solution"],
           "options": {
             "jestConfig": "apps/09-props-solution/jest.config.js",
             "passWithNoTests": true
@@ -1048,16 +1002,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/10-events/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/10-events/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/10-events"
-          ],
+          "outputs": ["coverage/apps/10-events"],
           "options": {
             "jestConfig": "apps/10-events/jest.config.js",
             "passWithNoTests": true
@@ -1104,16 +1055,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/10-events-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/10-events-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/10-events-solution"
-          ],
+          "outputs": ["coverage/apps/10-events-solution"],
           "options": {
             "jestConfig": "apps/10-events-solution/jest.config.js",
             "passWithNoTests": true
@@ -1160,16 +1108,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/11-form/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/11-form/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/11-form"
-          ],
+          "outputs": ["coverage/apps/11-form"],
           "options": {
             "jestConfig": "apps/11-form/jest.config.js",
             "passWithNoTests": true
@@ -1216,16 +1161,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/11-form-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/11-form-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/11-form-solution"
-          ],
+          "outputs": ["coverage/apps/11-form-solution"],
           "options": {
             "jestConfig": "apps/11-form-solution/jest.config.js",
             "passWithNoTests": true
@@ -1272,16 +1214,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/12-update/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/12-update/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/12-update"
-          ],
+          "outputs": ["coverage/apps/12-update"],
           "options": {
             "jestConfig": "apps/12-update/jest.config.js",
             "passWithNoTests": true
@@ -1328,16 +1267,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/12-update-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/12-update-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/12-update-solution"
-          ],
+          "outputs": ["coverage/apps/12-update-solution"],
           "options": {
             "jestConfig": "apps/12-update-solution/jest.config.js",
             "passWithNoTests": true
@@ -1384,16 +1320,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/13-vee-validate/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/13-vee-validate/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/13-vee-validate"
-          ],
+          "outputs": ["coverage/apps/13-vee-validate"],
           "options": {
             "jestConfig": "apps/13-vee-validate/jest.config.js",
             "passWithNoTests": true
@@ -1443,13 +1376,12 @@
             "lintFilePatterns": [
               "apps/13-vee-validate-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/13-vee-validate-solution"
-          ],
+          "outputs": ["coverage/apps/13-vee-validate-solution"],
           "options": {
             "jestConfig": "apps/13-vee-validate-solution/jest.config.js",
             "passWithNoTests": true
@@ -1496,16 +1428,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/14-vuelidate/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/14-vuelidate/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/14-vuelidate"
-          ],
+          "outputs": ["coverage/apps/14-vuelidate"],
           "options": {
             "jestConfig": "apps/14-vuelidate/jest.config.js",
             "passWithNoTests": true
@@ -1552,16 +1481,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/14-vuelidate-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/14-vuelidate-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/14-vuelidate-solution"
-          ],
+          "outputs": ["coverage/apps/14-vuelidate-solution"],
           "options": {
             "jestConfig": "apps/14-vuelidate-solution/jest.config.js",
             "passWithNoTests": true
@@ -1608,16 +1534,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/15-custom-validation/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/15-custom-validation/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/15-custom-validation"
-          ],
+          "outputs": ["coverage/apps/15-custom-validation"],
           "options": {
             "jestConfig": "apps/15-custom-validation/jest.config.js",
             "passWithNoTests": true
@@ -1667,13 +1590,12 @@
             "lintFilePatterns": [
               "apps/15-custom-validation-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/15-custom-validation-solution"
-          ],
+          "outputs": ["coverage/apps/15-custom-validation-solution"],
           "options": {
             "jestConfig": "apps/15-custom-validation-solution/jest.config.js",
             "passWithNoTests": true
@@ -1720,16 +1642,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/16-pipe/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/16-pipe/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/16-pipe"
-          ],
+          "outputs": ["coverage/apps/16-pipe"],
           "options": {
             "jestConfig": "apps/16-pipe/jest.config.js",
             "passWithNoTests": true
@@ -1776,16 +1695,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/16-pipe-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/16-pipe-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/16-pipe-solution"
-          ],
+          "outputs": ["coverage/apps/16-pipe-solution"],
           "options": {
             "jestConfig": "apps/16-pipe-solution/jest.config.js",
             "passWithNoTests": true
@@ -1832,16 +1748,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/17-modifiers/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/17-modifiers/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/17-modifiers"
-          ],
+          "outputs": ["coverage/apps/17-modifiers"],
           "options": {
             "jestConfig": "apps/17-modifiers/jest.config.js",
             "passWithNoTests": true
@@ -1888,16 +1801,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/17-modifiers-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/17-modifiers-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/17-modifiers-solution"
-          ],
+          "outputs": ["coverage/apps/17-modifiers-solution"],
           "options": {
             "jestConfig": "apps/17-modifiers-solution/jest.config.js",
             "passWithNoTests": true
@@ -1944,16 +1854,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/18-directive/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/18-directive/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/18-directive"
-          ],
+          "outputs": ["coverage/apps/18-directive"],
           "options": {
             "jestConfig": "apps/18-directive/jest.config.js",
             "passWithNoTests": true
@@ -2000,16 +1907,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/18-directive-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/18-directive-solution/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/18-directive-solution"
-          ],
+          "outputs": ["coverage/apps/18-directive-solution"],
           "options": {
             "jestConfig": "apps/18-directive-solution/jest.config.js",
             "passWithNoTests": true
@@ -2056,74 +1960,15 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/19-state-management/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/19-state-management/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/19-state-management"
-          ],
+          "outputs": ["coverage/apps/19-state-management"],
           "options": {
             "jestConfig": "apps/19-state-management/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "19-state-management-solution": {
-      "projectType": "application",
-      "root": "apps/19-state-management-solution",
-      "sourceRoot": "apps/19-state-management-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/19-state-management-solution",
-            "index": "apps/19-state-management-solution/public/index.html",
-            "main": "apps/19-state-management-solution/src/main.js",
-            "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "19-state-management-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "19-state-management-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/19-state-management-solution/**/*.{ts,tsx,vue}"
-            ]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/19-state-management-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/19-state-management-solution/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -2171,13 +2016,12 @@
             "lintFilePatterns": [
               "apps/19-state-management-module/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/19-state-management-module"
-          ],
+          "outputs": ["coverage/apps/19-state-management-module"],
           "options": {
             "jestConfig": "apps/19-state-management-module/jest.config.js",
             "passWithNoTests": true
@@ -2227,15 +2071,69 @@
             "lintFilePatterns": [
               "apps/19-state-management-module-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/19-state-management-module-solution"
-          ],
+          "outputs": ["coverage/apps/19-state-management-module-solution"],
           "options": {
             "jestConfig": "apps/19-state-management-module-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "19-state-management-solution": {
+      "projectType": "application",
+      "root": "apps/19-state-management-solution",
+      "sourceRoot": "apps/19-state-management-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/19-state-management-solution",
+            "index": "apps/19-state-management-solution/public/index.html",
+            "main": "apps/19-state-management-solution/src/main.js",
+            "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "19-state-management-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "19-state-management-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/19-state-management-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": ["{options.outputFile}"]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/19-state-management-solution"],
+          "options": {
+            "jestConfig": "apps/19-state-management-solution/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -2280,16 +2178,13 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/20-lazyloading/**/*.{ts,tsx,vue}"
-            ]
-          }
+            "lintFilePatterns": ["apps/20-lazyloading/**/*.{ts,tsx,vue}"]
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/20-lazyloading"
-          ],
+          "outputs": ["coverage/apps/20-lazyloading"],
           "options": {
             "jestConfig": "apps/20-lazyloading/jest.config.js",
             "passWithNoTests": true
@@ -2339,13 +2234,12 @@
             "lintFilePatterns": [
               "apps/20-lazyloading-solution/**/*.{ts,tsx,vue}"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/20-lazyloading-solution"
-          ],
+          "outputs": ["coverage/apps/20-lazyloading-solution"],
           "options": {
             "jestConfig": "apps/20-lazyloading-solution/jest.config.js",
             "passWithNoTests": true
