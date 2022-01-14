@@ -2479,6 +2479,98 @@
         }
       }
     },
+    "21-state-pinia": {
+      "projectType": "application",
+      "root": "apps/21-state-pinia",
+      "sourceRoot": "apps/21-state-pinia/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/21-state-pinia",
+            "index": "apps/21-state-pinia/public/index.html",
+            "main": "apps/21-state-pinia/src/main.js",
+            "tsConfig": "apps/21-state-pinia/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "21-state-pinia:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "21-state-pinia:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/21-state-pinia/**/*.{ts,tsx,vue}"
+            ]
+          }
+        }
+      }
+    },
+    "21-state-pinia-solution": {
+      "projectType": "application",
+      "root": "apps/21-state-pinia-solution",
+      "sourceRoot": "apps/21-state-pinia-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/21-state-pinia-solution",
+            "index": "apps/21-state-pinia-solution/public/index.html",
+            "main": "apps/21-state-pinia-solution/src/main.js",
+            "tsConfig": "apps/21-state-pinia-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "21-state-pinia-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "21-state-pinia-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/21-state-pinia-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        }
+      }
+    },
     "server": {
       "root": "apps/server",
       "sourceRoot": "apps/server/src",

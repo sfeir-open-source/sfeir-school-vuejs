@@ -25,19 +25,21 @@
     "Nicolas Frizzarin -- frizzarin.n@sfeir.com"
   ],
   "dependencies": {
+    "@vue/composition-api": "^1.4.3",
     "axios": "^0.21.1",
+    "chai": "^4.1.2",
     "core-js": "^3.6.5",
+    "cors": "^2.8.4",
     "express": "4.17.1",
+    "pinia": "^2.0.9",
     "tslib": "^2.0.0",
+    "underscore": "^1.9.1",
     "vee-validate": "^3.4.8",
     "vue": "^2.6.11",
     "vue-material": "^1.0.0-beta-15",
     "vue-router": "^3.5.1",
     "vuelidate": "^0.7.6",
-    "vuex": "^3.6.2",
-    "chai": "^4.1.2",
-    "cors": "^2.8.4",
-    "underscore": "^1.9.1"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@nrwl/cli": "12.10.0",

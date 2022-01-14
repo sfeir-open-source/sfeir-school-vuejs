@@ -6,13 +6,15 @@
   "prettier.prettierPath": "workshop/node_modules/prettier",
   "prettier.ignorePath": "workshop/.prettierignore",
   "cSpell.words": [
+    "firstname",
+    "Firstname",
+    "lastname",
+    "Lastname",
+    "lazyloading",
+    "pinia",
     "sfeir",
     "vuelidate",
-    "Firstname",
-    "Lastname",
-    "firstname",
-    "lastname",
-    "Vuex",
-    "vuex"
+    "vuex",
+    "Vuex"
   ]
 }
