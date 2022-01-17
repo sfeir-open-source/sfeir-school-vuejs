@@ -115,9 +115,10 @@ function transitionAnimateSlides() {
 function navigationSlides() {
   return [
     'navigation/transition_slide.md',
-    'navigation/tp_navigation.md',
+    'navigation/get_started.md',
     'navigation/configuration.md',
     'navigation/implementation.md',
+    'navigation/tp_navigation.md',
     'navigation/exercice.md',
   ];
 }

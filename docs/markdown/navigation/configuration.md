@@ -28,7 +28,7 @@ Notes:
 
 - Intervenir avant ou après un changement de route<br><br>
 - Global sur le router (beforeEach / afterEach)<br><br>
-- Au niveau d'une route  (beforeEnter)<br><br>
+- Au niveau d'une route (beforeEnter)<br><br>
 - Au niveau d'un composant (beforeRouteEnter, beforeRouteUpdate, beforeRouteLeave)<br><br>
 - Prend 3 arguments
  - to (route cible)
@@ -37,7 +37,7 @@ Notes:
 
 Notes:
  - https://router.vuejs.org/guide/advanced/navigation-guards.html#in-component-guards
- - next peut prendre plusieurs paramètres:
+ - next peut prendre plusieurs paramètres :
     - false
     - path (string)
     - redirectionObject
@@ -52,10 +52,11 @@ Notes:
 <b>2 stratégies de navigation :</b>
 <br><br>
 
-- Hash:
-    - stratégie par défaut (localhost/#/people) <br><br>
-
-- Path et push state:
+- Web Hash history:
+    - localhost/#/people
+    - `createWebHashHistory()` dans la config du router
+<br><br>
+- Web history (HTML5):
     - localhost/people
-    - mode : history dans la config du router
+    - `createWebHistory()` dans la config du router
     - implique une règle côté serveur
