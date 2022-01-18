@@ -1,36 +1,39 @@
 .reveal .slides section.two-column-layout section:last-child .align-image {
-  padding-left: 20%; }
+  padding-left: 20%;
+}
 
 /**
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/
 .reveal .slides section[data-background].speaker-slide img[alt*=badge] {
-  top: 800px; }
+  top: 800px;
+}
 
 /**
   - add a new class to display code correctly when there is a lot of code on the diapo
 **/
 .reveal .slides section.with-code pre.medium-code:not(.literal) code {
   font-size: 1.1em;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
 .reveal .slides section .center {
-  text-align: center; }
-
+  text-align: center;
+}
 .reveal .slides section .big-text {
-  font-size: 3em; }
-
+  font-size: 3em;
+}
 .reveal .slides section .bold {
-  font-weight: 600; }
-
+  font-weight: 600;
+}
 .reveal .slides section .half {
-  width: 50%; }
-
+  width: 50%;
+}
 .reveal .slides section .inline-flex {
   display: flex;
   flex-flow: row;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .reveal .slides section .circle {
   height: 300px;
   width: 300px;
@@ -38,36 +41,40 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid  #499D4A; }
-
+  border: 1px solid #499d4a;
+}
 .reveal .slides section .important {
-  color: #880e4f; }
-
+  color: #880e4f;
+}
 .reveal .slides section .justify-content-row {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .reveal .slides section.sfeir-basic-slide .center-big {
   text-align: center;
   font-size: 2.5em;
-  color: black; }
-
+  color: black;
+}
 .reveal .slides section.sfeir-basic-slide h1.center-big {
-  font-size: 3em; }
-
+  font-size: 3em;
+}
 .reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
   position: relative;
-  top: 0; }
-
-.reveal .slides section img[alt*='full-width-screen'] {
+  top: 0;
+}
+.reveal .slides section.with-code code, .reveal .slides section.with-code-dark code {
+  max-height: 900px;
+}
+.reveal .slides section img[alt*=full-width-screen] {
   width: 100%;
   max-width: 100%;
-  max-height: 100%; }
-
-.reveal .slides section img[alt*='bottom'] {
+  max-height: 100%;
+}
+.reveal .slides section img[alt*=bottom] {
   position: absolute;
   bottom: 0;
-  left: 0; }
+  left: 0;
+}
 
 /*# sourceMappingURL=vue.css.map */
