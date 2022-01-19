@@ -17,6 +17,8 @@
 *_LOCAL_*.txt
 *_REMOTE_*.txt
 
+!tsconfig.base.json
+
 ### Node ###
 # Logs
 logs
