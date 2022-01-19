@@ -7,8 +7,8 @@
 /**
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/
-.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
-  top: 800px
+.reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
+  top: 800px;
 }
 
 /**
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border:1px solid  #499D4A;
+    border: 1px solid #499d4a;
   }
 
   .important {
@@ -78,6 +78,9 @@
     pre.big-code:not(.literal) {
       position: relative;
       top: 0;
+    }
+    code {
+      max-height: 900px;
     }
   }
 

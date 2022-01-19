@@ -2,4 +2,4 @@
 
 /dist
 /coverage
-../../docs/**/*.md
+../docs/**/*.md

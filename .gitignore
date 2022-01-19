@@ -234,3 +234,6 @@ modules.xml
 
 # and uncomment the following lines
 # .pnp.*
+
+
+.DS_Store
