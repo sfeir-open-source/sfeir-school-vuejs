@@ -137,6 +137,7 @@ function stateManagementSlides() {
     'state-management/pinia-introduction.md',
     'state-management/pinia-use-vue2.md',
     'state-management/pinia-use-vue3.md',
+    'state-management/pinia-exercice.md',
   ];
 }
 
