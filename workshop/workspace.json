@@ -2571,6 +2571,62 @@
         }
       }
     },
+    "22-vuelidate-composition": {
+      "projectType": "application",
+      "root": "apps/22-vuelidate-composition",
+      "sourceRoot": "apps/22-vuelidate-composition/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/22-vuelidate-composition",
+            "index": "apps/22-vuelidate-composition/public/index.html",
+            "main": "apps/22-vuelidate-composition/src/main.js",
+            "tsConfig": "apps/22-vuelidate-composition/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "22-vuelidate-composition:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "22-vuelidate-composition:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/22-vuelidate-composition/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/22-vuelidate-composition"
+          ],
+          "options": {
+            "jestConfig": "apps/22-vuelidate-composition/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "22-vuelidate-composition-solution": {
       "projectType": "application",
       "root": "apps/22-vuelidate-composition-solution",

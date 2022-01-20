@@ -3,64 +3,60 @@
     <div v-if="editMode" class="title">Update form</div>
     <md-card class="card-panel">
       <md-card-content>
-        <img class="picture" :src="person.photo" />
+        <img class="picture" :src="state.photo" />
         <form>
-          <md-field
-            :class="{ 'md-invalid': v$.person.firstname.$errors.length }"
-          >
+          <md-field :class="{ 'md-invalid': v$.firstname.$errors.length }">
             <label>Firstname</label>
             <md-input
               name="firstname"
-              v-model="person.firstname"
-              @input="v$.person.firstname.$touch"
+              v-model="state.firstname"
+              @input="v$.firstname.$touch"
             ></md-input>
             <span
               class="md-error"
-              v-for="{ $message, $uid } in v$.person.firstname.$errors"
+              v-for="{ $message, $uid } in v$.firstname.$errors"
               :key="$uid"
               >{{ $message }}</span
             >
           </md-field>
-          <md-field
-            :class="{ 'md-invalid': v$.person.lastname.$errors.length }"
-          >
+          <md-field :class="{ 'md-invalid': v$.lastname.$errors.length }">
             <label>Lastname</label>
             <md-input
               name="lastname"
-              v-model="person.lastname"
-              @input="v$.person.lastname.$touch"
+              v-model="state.lastname"
+              @input="v$.lastname.$touch"
             ></md-input>
             <span
               class="md-error"
-              v-for="{ $message, $uid } in v$.person.lastname.$errors"
+              v-for="{ $message, $uid } in v$.lastname.$errors"
               :key="$uid"
               >{{ $message }}</span
             >
           </md-field>
-          <md-field :class="{ 'md-invalid': v$.person.email.$errors.length }">
+          <md-field :class="{ 'md-invalid': v$.email.$errors.length }">
             <label>Email</label>
             <md-input
               name="email"
-              v-model="person.email"
-              @input="v$.person.email.$touch"
+              v-model="state.email"
+              @input="v$.email.$touch"
             ></md-input>
             <span
               class="md-error"
-              v-for="{ $message, $uid } in v$.person.email.$errors"
+              v-for="{ $message, $uid } in v$.email.$errors"
               :key="$uid"
               >{{ $message }}</span
             >
           </md-field>
-          <md-field :class="{ 'md-invalid': v$.person.phone.$errors.length }">
+          <md-field :class="{ 'md-invalid': v$.phone.$errors.length }">
             <label>Phone</label>
             <md-input
               name="phone"
-              v-model="person.phone"
-              @input="v$.person.phone.$touch"
+              v-model="state.phone"
+              @input="v$.phone.$touch"
             ></md-input>
             <span
               class="md-error"
-              v-for="{ $message, $uid } in v$.person.phone.$errors"
+              v-for="{ $message, $uid } in v$.phone.$errors"
               :key="$uid"
               >{{ $message }}</span
             >
@@ -76,45 +72,47 @@
 </template>
 
 <script type="text/javascript">
-import { computed } from '@vue/composition-api';
+import { computed, reactive, toRaw, watch } from '@vue/composition-api';
 import useVuelidate from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
 export default {
   props: {
     person: {
       type: Object,
-      default() {
-        return {
-          photo: 'https://randomuser.me/api/portraits/lego/6.jpg',
-        };
-      },
-    },
-  },
-  validations: {
-    person: {
-      firstname: {
-        required,
-        minLength: minLength(2),
-      },
-      lastname: {
-        required,
-        minLength: minLength(2),
-      },
-      email: {
-        required,
-        email,
-      },
-      phone: {
-        required,
-      },
     },
   },
   setup(props, { emit }) {
-    const editMode = computed(() => !!props.person.id);
-    const v$ = useVuelidate();
+    const rules = {
+      firstname: { required, minlength: minLength(2) },
+      lastname: { required, minlength: minLength(2) },
+      email: { required, email },
+      phone: { required },
+    };
+    const state = reactive({
+      id: '',
+      firstname: '',
+      lastname: '',
+      email: '',
+      phone: '',
+      photo: 'https://randomuser.me/api/portraits/lego/6.jpg',
+    });
+    const v$ = useVuelidate(rules, state);
+    const editMode = computed(() => !!state.id);
+
+    watch(
+      () => props.person,
+      person => {
+        state.id = person.id;
+        state.photo = person.photo;
+        state.firstname = person.firstname;
+        state.lastname = person.lastname;
+        state.email = person.email;
+        state.phone = person.phone;
+      }
+    );
 
     function save() {
-      emit('save', props.person);
+      emit('save', toRaw(state));
     }
 
     function cancel() {
@@ -123,6 +121,7 @@ export default {
 
     return {
       v$,
+      state,
       editMode,
       save,
       cancel,
