@@ -95,6 +95,7 @@ function formsSlides() {
     'forms/validation.md',
     'forms/vee_validate.md',
     'forms/vuelidate.md',
+    'forms/vuelidate_v2.md',
   ];
 }
 
@@ -137,6 +138,7 @@ function stateManagementSlides() {
     'state-management/pinia-introduction.md',
     'state-management/pinia-use-vue2.md',
     'state-management/pinia-use-vue3.md',
+    'state-management/pinia-exercice.md',
   ];
 }
 

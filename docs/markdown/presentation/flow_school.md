@@ -26,28 +26,26 @@ Tour de table ...
 
 **Installation du CLI VUE JS en global + Clone du repo**
 
+<br>
+
 ```sh
 npm install -g @vue/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
 ```
 
-<!-- .element: class="medium-code" -->
+<!-- .element: class="big-code" -->
 <br>
 
-**Installation des dépendances du Front (dossier exercices/steps)**
+**Installation des dépendances du Front (dossier workshop)**
+
+<br>
 
 ```bash
 npm install || npm ci
 ```
 
-<!-- .element: class="medium-code" -->
-<br>
+<!-- .element: class="big-code" -->
 
-**Installation des dépendances du Back (dossier exercices/\_server)**
-
-```bash
-npm install || npm ci
-```
 
 ##==##
 
@@ -58,5 +56,5 @@ npm install || npm ci
 
 Déroulement du TP : <br><br>
 
-- **une application d'exercice : exercice/steps/apps/name_tp** (npm start -- name_tp) <br><br>
-- **Une application de solution : exercice/steps/apps/name_tp-solution** (npm start -- name_tp-solution)
+- **une application d'exercice : workshop/apps/name_tp** (npm start -- name_tp à la racine du dossier workshop) <br><br>
+- **Une application de solution : workshop/apps/name_tp-solution** (npm start -- name_tp-solution à la racine du dossier workshop)
