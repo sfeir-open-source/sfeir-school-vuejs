@@ -95,6 +95,7 @@ function formsSlides() {
     'forms/validation.md',
     'forms/vee_validate.md',
     'forms/vuelidate.md',
+    'forms/vuelidate_v2.md',
   ];
 }
 

@@ -226,6 +226,11 @@ module.exports = {
       tsconfig: './tsconfig.json',
     },
     {
+      root: './workshop/apps/22-vuelidate-composition',
+      package: '../../package.json',
+      tsconfig: './tsconfig.json',
+    },
+    {
       root: './workshop/apps/22-vuelidate-composition-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
