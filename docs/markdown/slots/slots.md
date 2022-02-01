@@ -34,6 +34,7 @@
 <br>
 
 ![h-700](assets/images/school/slots/slot-default-usage.png)
+<!-- .element: class="align-image" -->
 
 ##==##
 
@@ -54,6 +55,7 @@
 <br>
 
 ![h-800](assets/images/school/slots/slot-named-usage.png)
+<!-- .element: class="align-image" -->
 
 ##==##
 
@@ -73,6 +75,7 @@
 <br>
 
 ![h-800](assets/images/school/slots/slot-scope-ok.png)
+<!-- .element: class="align-image" -->
 
 ##==##
 
@@ -93,3 +96,4 @@
 <br>
 
 ![h-900](assets/images/school/slots/slot-props-usage-complete.png)
+<!-- .element: class="align-image" -->
