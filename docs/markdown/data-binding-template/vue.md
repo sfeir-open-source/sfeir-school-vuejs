@@ -34,27 +34,29 @@ __Syntaxe de l'event__<br>
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="with-code inconsolata " -->
 # Interpolation et Expression
 <br>
 
 - Interpolation:
-    - Se matérialise par les doubles accolades 
+    - Se matérialise par les doubles accolades <br>
     
     ```html
     <span>{{ name }}</span>
     ```
+    <!-- .element: class="medium-code" -->
 
     <br>
 - Expression:
     - Uniquement dans le composant courant
-    - Du JS => mais une seule expression
+    - Du JS => mais une seule expression <br>
 
     ```html
     <button>
         {{ connected ? 'Se déconnecter' : 'Connexion' }}
     </button>
     ```
+    <!-- .element: class="medium-code" -->
 <br>
 
 ##==##

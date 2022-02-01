@@ -92,12 +92,6 @@ function communicationComponentSlides() {
   ];
 };
 
-function reactivitySystemSlides() {
-  return [
-    'reactivity-system/transition_slide.md',
-  ];
-};
-
 function serverCommunicationSlides() {
   return [
     'server-communication/transition_slide.md',
@@ -205,7 +199,6 @@ function formation() {
     ...slotsSlides(),
     ...classStyleSlides(),
     ...communicationComponentSlides(),
-    ...reactivitySystemSlides(),
     ...serverCommunicationSlides(),
     ...transitionAnimateSlides(),
     ...formsSlides(),

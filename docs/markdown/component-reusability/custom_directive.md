@@ -1,31 +1,40 @@
-<!-- .slide" -->
+<!-- .slide: class="two-column-layout" -->
 # Directive Custom, Pourquoi?
+##--##
+<br><br>
 
 - __Souvant le composant se suffit à lui même__
 - Enrichir le comportement d'un élément natif
-- Enregistrement de manière local ou global
+- Enregistrement de manière local ou globals
 - Peut passer une simple fonction
-<br><br>
+<br>
 
-![](assets/images/school/directive/directive_register.png)
-![](assets/images/school/directive/directive_used.png)
+##--##
+<br>
+
+![h-900](assets/images/school/component-reusability/custom-directive.png)
+<!-- .element: class="align-image" -->
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="two-column-layout" -->
 # Le cycle de vie d'une directive
+##--##
+<br><br>
 
-- __created__ : appelé avant que les attributs ou les écouteurs d'événements du composant ne soient appliqués
-- __beforeMount__ : appelé avant que le composant parent soit monté
-- __mounted__ : appelé avant que le composant parent de l'élément lié ne soit monté
-- __beforeUpdate__ : appelée avant que le composant ait été mis à jour
-- __updated__ : appelée quand le composant et ses enfants ont été modifiés
-- __beforeUnmount__ : appelé avant que le composant parent ne soit démonté
-- __unmounted__ : appelé quand la directive est détachée et que le composant parent est démonté
+- __created__ 
+- __beforeMount__ 
+- __mounted__ 
+- __beforeUpdate__ 
+- __updated__ 
+- __beforeUnmount__ 
+- __unmounted__ 
 <br>
 
+##--##
+<br>
 
-![center](assets/images/school/directive/directive_create.png)
+![](assets/images/school/component-reusability/custom-directive-create.png)
 
 Notes:
  - Chaque cycle de vie est une fonction prenant plusieurs paramètres
