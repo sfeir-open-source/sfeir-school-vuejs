@@ -2,7 +2,3 @@
 # **Welcome to Sfeir School**
 # **Vue JS 200**
 
-##==##
-
-<!-- .slide: class="transition underline" -->
-# Formulaire et validation

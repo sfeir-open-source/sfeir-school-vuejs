@@ -51,7 +51,9 @@ __Syntaxe de l'event__<br>
     - Du JS => mais une seule expression
 
     ```html
-    <button>{{ connected ? 'Se déconnecter' : 'Connexion' }}</button>
+    <button>
+        {{ connected ? 'Se déconnecter' : 'Connexion' }}
+    </button>
     ```
 <br>
 

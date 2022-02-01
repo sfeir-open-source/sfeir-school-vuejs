@@ -15,12 +15,15 @@
 <!-- .slide -->
 # Le cycle de vie d'une directive
 
-- __bind__ : appelée une foie quand la directive s'attache à l'élément
-- __inserted__ : appelée quand la directive est insérée dans le parent
-- __update__ : appelée quand le composant a été mis à jour
-- __componentUpdated__ : appelée quand le composant et ses enfants ont été modifiés
-- __unbind__ : appelée quand la directive est détachée de l'élément
-<br><br>
+- __created__ : appelé avant que les attributs ou les écouteurs d'événements du composant ne soient appliqués
+- __beforeMount__ : appelé avant que le composant parent soit monté
+- __mounted__ : appelé avant que le composant parent de l'élément lié ne soit monté
+- __beforeUpdate__ : appelée avant que le composant ait été mis à jour
+- __updated__ : appelée quand le composant et ses enfants ont été modifiés
+- __beforeUnmount__ : appelé avant que le composant parent ne soit démonté
+- __unmounted__ : appelé quand la directive est détachée et que le composant parent est démonté
+<br>
+
 
 ![center](assets/images/school/directive/directive_create.png)
 
@@ -36,7 +39,7 @@ Notes:
 - __el__ : élément sur lequel la directive est attachée<br><br>
 - __binding__ : objet avec les propriétés suivantes : name, value, expression, arg, modifiers<br><br>
 - __vnode__ : noeud virtuel produit par le compilateur Vue<br><br>
-- __oldNode__ : noeud virtuel précédent (dispo uniquement dans update, et componentUpdated)<br><br>
+- __prevNode__ : noeud virtuel précédent (dispo uniquement dans beforeUpdate, et updated)<br><br>
 Notes:
  - name : correspond au nom de la directive
  - value : valeur passée à la directive => v-directive = 'nicolas' ici value = nicolas

@@ -143,11 +143,10 @@ function formsSlides() {
   return [
     'forms/sfeir_school_day_2.md',
     'forms/concepts_bases.md',
-    'forms/validation.md',
-    'forms/vee_validate.md',
-    'forms/vuelidate.md',
+    'forms/exercice.md',
+    'modifier/transition_slide.md',
     'modifier/modifier.md',
-    'modifier/exercice.md',
+    'modifier/exercice.md'
   ];
 }
 
