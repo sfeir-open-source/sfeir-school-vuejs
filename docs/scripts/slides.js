@@ -103,6 +103,7 @@ function serverCommunicationSlides() {
 function transitionAnimateSlides() {
   return [
     'transition-animation/transition_slide.md',
+    'transition-animation/transition.md',
   ];
 };
 
