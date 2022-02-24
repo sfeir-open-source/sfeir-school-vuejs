@@ -51,15 +51,17 @@
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="with-code inconsolata" -->
 # Les règles de validation
 <br>
 
 Avec le plugin Vuelidate, les validateurs doivent être __importés__ <br><br>
 
-- required
-- maxLength, minLength
-- between
+```javascript
+import { required } from 'vuelidate/lib/validators';
+```
+<!-- .element: class="big-code" -->
+
 <br><br>
 
 Pour plus d'information sur les règles de validation proposées par vuelidate: https://vuelidate.netlify.com/#sub-builtin-validators

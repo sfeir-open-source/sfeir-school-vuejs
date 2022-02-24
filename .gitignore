@@ -17,6 +17,8 @@
 *_LOCAL_*.txt
 *_REMOTE_*.txt
 
+!tsconfig.base.json
+
 ### Node ###
 # Logs
 logs
@@ -234,4 +236,6 @@ modules.xml
 
 # and uncomment the following lines
 # .pnp.*
+
+
 .DS_Store
