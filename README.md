@@ -30,7 +30,7 @@ To launch your code, use script
 npm run start -- <step-dir>
 ```
 
-in the exercice/steps directory
+in the workshop/apps directory
 
 ## Contributing
 
