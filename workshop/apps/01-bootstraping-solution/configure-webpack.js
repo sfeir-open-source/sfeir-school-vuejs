@@ -10,4 +10,10 @@
  *
  * https://cli.vuejs.org/config/#configurewebpack
  */
-module.exports = config => {};
+module.exports = config => ({
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm-bundler.js',
+    },
+  },
+});

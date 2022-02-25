@@ -1,13 +1,13 @@
 module.exports = {
   extends: [
     '../../.eslintrc.json',
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
     '@vue/typescript/recommended',
     'prettier',
   ],
   ignorePatterns: ['!**/*'],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
+    semi: ['error', 'always'],
   },
   env: {
     node: true,

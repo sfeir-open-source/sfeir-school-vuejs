@@ -129,7 +129,7 @@
           "options": {
             "dest": "dist/apps/02-vue-material-bootstraping",
             "index": "apps/02-vue-material-bootstraping/public/index.html",
-            "main": "apps/02-vue-material-bootstraping/src/main.js",
+            "main": "apps/02-vue-material-bootstraping/src/main.ts",
             "tsConfig": "apps/02-vue-material-bootstraping/tsconfig.app.json"
           },
           "configurations": {
@@ -188,7 +188,7 @@
           "options": {
             "dest": "dist/apps/02-vue-material-bootstraping-solution",
             "index": "apps/02-vue-material-bootstraping-solution/public/index.html",
-            "main": "apps/02-vue-material-bootstraping-solution/src/main.js",
+            "main": "apps/02-vue-material-bootstraping-solution/src/main.ts",
             "tsConfig": "apps/02-vue-material-bootstraping-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -247,7 +247,7 @@
           "options": {
             "dest": "dist/apps/03-first-components",
             "index": "apps/03-first-components/public/index.html",
-            "main": "apps/03-first-components/src/main.js",
+            "main": "apps/03-first-components/src/main.ts",
             "tsConfig": "apps/03-first-components/tsconfig.app.json"
           },
           "configurations": {
@@ -306,7 +306,7 @@
           "options": {
             "dest": "dist/apps/03-first-components-solution",
             "index": "apps/03-first-components-solution/public/index.html",
-            "main": "apps/03-first-components-solution/src/main.js",
+            "main": "apps/03-first-components-solution/src/main.ts",
             "tsConfig": "apps/03-first-components-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -365,7 +365,7 @@
           "options": {
             "dest": "dist/apps/04-binding",
             "index": "apps/04-binding/public/index.html",
-            "main": "apps/04-binding/src/main.js",
+            "main": "apps/04-binding/src/main.ts",
             "tsConfig": "apps/04-binding/tsconfig.app.json"
           },
           "configurations": {
@@ -424,7 +424,7 @@
           "options": {
             "dest": "dist/apps/04-binding-solution",
             "index": "apps/04-binding-solution/public/index.html",
-            "main": "apps/04-binding-solution/src/main.js",
+            "main": "apps/04-binding-solution/src/main.ts",
             "tsConfig": "apps/04-binding-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -483,7 +483,7 @@
           "options": {
             "dest": "dist/apps/05-event",
             "index": "apps/05-event/public/index.html",
-            "main": "apps/05-event/src/main.js",
+            "main": "apps/05-event/src/main.ts",
             "tsConfig": "apps/05-event/tsconfig.app.json"
           },
           "configurations": {
@@ -542,7 +542,7 @@
           "options": {
             "dest": "dist/apps/05-event-solution",
             "index": "apps/05-event-solution/public/index.html",
-            "main": "apps/05-event-solution/src/main.js",
+            "main": "apps/05-event-solution/src/main.ts",
             "tsConfig": "apps/05-event-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -601,7 +601,7 @@
           "options": {
             "dest": "dist/apps/06-axios",
             "index": "apps/06-axios/public/index.html",
-            "main": "apps/06-axios/src/main.js",
+            "main": "apps/06-axios/src/main.ts",
             "tsConfig": "apps/06-axios/tsconfig.app.json"
           },
           "configurations": {
@@ -660,7 +660,7 @@
           "options": {
             "dest": "dist/apps/06-axios-solution",
             "index": "apps/06-axios-solution/public/index.html",
-            "main": "apps/06-axios-solution/src/main.js",
+            "main": "apps/06-axios-solution/src/main.ts",
             "tsConfig": "apps/06-axios-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -719,7 +719,7 @@
           "options": {
             "dest": "dist/apps/07-routing",
             "index": "apps/07-routing/public/index.html",
-            "main": "apps/07-routing/src/main.js",
+            "main": "apps/07-routing/src/main.ts",
             "tsConfig": "apps/07-routing/tsconfig.app.json"
           },
           "configurations": {
@@ -778,7 +778,7 @@
           "options": {
             "dest": "dist/apps/07-routing-solution",
             "index": "apps/07-routing-solution/public/index.html",
-            "main": "apps/07-routing-solution/src/main.js",
+            "main": "apps/07-routing-solution/src/main.ts",
             "tsConfig": "apps/07-routing-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -837,7 +837,7 @@
           "options": {
             "dest": "dist/apps/08-loop",
             "index": "apps/08-loop/public/index.html",
-            "main": "apps/08-loop/src/main.js",
+            "main": "apps/08-loop/src/main.ts",
             "tsConfig": "apps/08-loop/tsconfig.app.json"
           },
           "configurations": {
@@ -896,7 +896,7 @@
           "options": {
             "dest": "dist/apps/08-loop-solution",
             "index": "apps/08-loop-solution/public/index.html",
-            "main": "apps/08-loop-solution/src/main.js",
+            "main": "apps/08-loop-solution/src/main.ts",
             "tsConfig": "apps/08-loop-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -955,7 +955,7 @@
           "options": {
             "dest": "dist/apps/09-props",
             "index": "apps/09-props/public/index.html",
-            "main": "apps/09-props/src/main.js",
+            "main": "apps/09-props/src/main.ts",
             "tsConfig": "apps/09-props/tsconfig.app.json"
           },
           "configurations": {
@@ -1014,7 +1014,7 @@
           "options": {
             "dest": "dist/apps/09-props-solution",
             "index": "apps/09-props-solution/public/index.html",
-            "main": "apps/09-props-solution/src/main.js",
+            "main": "apps/09-props-solution/src/main.ts",
             "tsConfig": "apps/09-props-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1073,7 +1073,7 @@
           "options": {
             "dest": "dist/apps/10-events",
             "index": "apps/10-events/public/index.html",
-            "main": "apps/10-events/src/main.js",
+            "main": "apps/10-events/src/main.ts",
             "tsConfig": "apps/10-events/tsconfig.app.json"
           },
           "configurations": {
@@ -1132,7 +1132,7 @@
           "options": {
             "dest": "dist/apps/10-events-solution",
             "index": "apps/10-events-solution/public/index.html",
-            "main": "apps/10-events-solution/src/main.js",
+            "main": "apps/10-events-solution/src/main.ts",
             "tsConfig": "apps/10-events-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1191,7 +1191,7 @@
           "options": {
             "dest": "dist/apps/11-form",
             "index": "apps/11-form/public/index.html",
-            "main": "apps/11-form/src/main.js",
+            "main": "apps/11-form/src/main.ts",
             "tsConfig": "apps/11-form/tsconfig.app.json"
           },
           "configurations": {
@@ -1250,7 +1250,7 @@
           "options": {
             "dest": "dist/apps/11-form-solution",
             "index": "apps/11-form-solution/public/index.html",
-            "main": "apps/11-form-solution/src/main.js",
+            "main": "apps/11-form-solution/src/main.ts",
             "tsConfig": "apps/11-form-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1309,7 +1309,7 @@
           "options": {
             "dest": "dist/apps/12-update",
             "index": "apps/12-update/public/index.html",
-            "main": "apps/12-update/src/main.js",
+            "main": "apps/12-update/src/main.ts",
             "tsConfig": "apps/12-update/tsconfig.app.json"
           },
           "configurations": {
@@ -1368,7 +1368,7 @@
           "options": {
             "dest": "dist/apps/12-update-solution",
             "index": "apps/12-update-solution/public/index.html",
-            "main": "apps/12-update-solution/src/main.js",
+            "main": "apps/12-update-solution/src/main.ts",
             "tsConfig": "apps/12-update-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1427,7 +1427,7 @@
           "options": {
             "dest": "dist/apps/13-vee-validate",
             "index": "apps/13-vee-validate/public/index.html",
-            "main": "apps/13-vee-validate/src/main.js",
+            "main": "apps/13-vee-validate/src/main.ts",
             "tsConfig": "apps/13-vee-validate/tsconfig.app.json"
           },
           "configurations": {
@@ -1486,7 +1486,7 @@
           "options": {
             "dest": "dist/apps/13-vee-validate-solution",
             "index": "apps/13-vee-validate-solution/public/index.html",
-            "main": "apps/13-vee-validate-solution/src/main.js",
+            "main": "apps/13-vee-validate-solution/src/main.ts",
             "tsConfig": "apps/13-vee-validate-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1545,7 +1545,7 @@
           "options": {
             "dest": "dist/apps/14-vuelidate",
             "index": "apps/14-vuelidate/public/index.html",
-            "main": "apps/14-vuelidate/src/main.js",
+            "main": "apps/14-vuelidate/src/main.ts",
             "tsConfig": "apps/14-vuelidate/tsconfig.app.json"
           },
           "configurations": {
@@ -1604,7 +1604,7 @@
           "options": {
             "dest": "dist/apps/14-vuelidate-solution",
             "index": "apps/14-vuelidate-solution/public/index.html",
-            "main": "apps/14-vuelidate-solution/src/main.js",
+            "main": "apps/14-vuelidate-solution/src/main.ts",
             "tsConfig": "apps/14-vuelidate-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1663,7 +1663,7 @@
           "options": {
             "dest": "dist/apps/15-custom-validation",
             "index": "apps/15-custom-validation/public/index.html",
-            "main": "apps/15-custom-validation/src/main.js",
+            "main": "apps/15-custom-validation/src/main.ts",
             "tsConfig": "apps/15-custom-validation/tsconfig.app.json"
           },
           "configurations": {
@@ -1722,7 +1722,7 @@
           "options": {
             "dest": "dist/apps/15-custom-validation-solution",
             "index": "apps/15-custom-validation-solution/public/index.html",
-            "main": "apps/15-custom-validation-solution/src/main.js",
+            "main": "apps/15-custom-validation-solution/src/main.ts",
             "tsConfig": "apps/15-custom-validation-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1781,7 +1781,7 @@
           "options": {
             "dest": "dist/apps/16-pipe",
             "index": "apps/16-pipe/public/index.html",
-            "main": "apps/16-pipe/src/main.js",
+            "main": "apps/16-pipe/src/main.ts",
             "tsConfig": "apps/16-pipe/tsconfig.app.json"
           },
           "configurations": {
@@ -1840,7 +1840,7 @@
           "options": {
             "dest": "dist/apps/16-pipe-solution",
             "index": "apps/16-pipe-solution/public/index.html",
-            "main": "apps/16-pipe-solution/src/main.js",
+            "main": "apps/16-pipe-solution/src/main.ts",
             "tsConfig": "apps/16-pipe-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -1899,7 +1899,7 @@
           "options": {
             "dest": "dist/apps/17-modifiers",
             "index": "apps/17-modifiers/public/index.html",
-            "main": "apps/17-modifiers/src/main.js",
+            "main": "apps/17-modifiers/src/main.ts",
             "tsConfig": "apps/17-modifiers/tsconfig.app.json"
           },
           "configurations": {
@@ -1958,7 +1958,7 @@
           "options": {
             "dest": "dist/apps/17-modifiers-solution",
             "index": "apps/17-modifiers-solution/public/index.html",
-            "main": "apps/17-modifiers-solution/src/main.js",
+            "main": "apps/17-modifiers-solution/src/main.ts",
             "tsConfig": "apps/17-modifiers-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2017,7 +2017,7 @@
           "options": {
             "dest": "dist/apps/18-directive",
             "index": "apps/18-directive/public/index.html",
-            "main": "apps/18-directive/src/main.js",
+            "main": "apps/18-directive/src/main.ts",
             "tsConfig": "apps/18-directive/tsconfig.app.json"
           },
           "configurations": {
@@ -2076,7 +2076,7 @@
           "options": {
             "dest": "dist/apps/18-directive-solution",
             "index": "apps/18-directive-solution/public/index.html",
-            "main": "apps/18-directive-solution/src/main.js",
+            "main": "apps/18-directive-solution/src/main.ts",
             "tsConfig": "apps/18-directive-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2135,7 +2135,7 @@
           "options": {
             "dest": "dist/apps/19-state-management",
             "index": "apps/19-state-management/public/index.html",
-            "main": "apps/19-state-management/src/main.js",
+            "main": "apps/19-state-management/src/main.ts",
             "tsConfig": "apps/19-state-management/tsconfig.app.json"
           },
           "configurations": {
@@ -2194,7 +2194,7 @@
           "options": {
             "dest": "dist/apps/19-state-management-module",
             "index": "apps/19-state-management-module/public/index.html",
-            "main": "apps/19-state-management-module/src/main.js",
+            "main": "apps/19-state-management-module/src/main.ts",
             "tsConfig": "apps/19-state-management-module/tsconfig.app.json"
           },
           "configurations": {
@@ -2253,7 +2253,7 @@
           "options": {
             "dest": "dist/apps/19-state-management-module-solution",
             "index": "apps/19-state-management-module-solution/public/index.html",
-            "main": "apps/19-state-management-module-solution/src/main.js",
+            "main": "apps/19-state-management-module-solution/src/main.ts",
             "tsConfig": "apps/19-state-management-module-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2312,7 +2312,7 @@
           "options": {
             "dest": "dist/apps/19-state-management-solution",
             "index": "apps/19-state-management-solution/public/index.html",
-            "main": "apps/19-state-management-solution/src/main.js",
+            "main": "apps/19-state-management-solution/src/main.ts",
             "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2371,7 +2371,7 @@
           "options": {
             "dest": "dist/apps/20-lazyloading",
             "index": "apps/20-lazyloading/public/index.html",
-            "main": "apps/20-lazyloading/src/main.js",
+            "main": "apps/20-lazyloading/src/main.ts",
             "tsConfig": "apps/20-lazyloading/tsconfig.app.json"
           },
           "configurations": {
@@ -2430,7 +2430,7 @@
           "options": {
             "dest": "dist/apps/20-lazyloading-solution",
             "index": "apps/20-lazyloading-solution/public/index.html",
-            "main": "apps/20-lazyloading-solution/src/main.js",
+            "main": "apps/20-lazyloading-solution/src/main.ts",
             "tsConfig": "apps/20-lazyloading-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2489,7 +2489,7 @@
           "options": {
             "dest": "dist/apps/21-state-pinia",
             "index": "apps/21-state-pinia/public/index.html",
-            "main": "apps/21-state-pinia/src/main.js",
+            "main": "apps/21-state-pinia/src/main.ts",
             "tsConfig": "apps/21-state-pinia/tsconfig.app.json"
           },
           "configurations": {
@@ -2535,7 +2535,7 @@
           "options": {
             "dest": "dist/apps/21-state-pinia-solution",
             "index": "apps/21-state-pinia-solution/public/index.html",
-            "main": "apps/21-state-pinia-solution/src/main.js",
+            "main": "apps/21-state-pinia-solution/src/main.ts",
             "tsConfig": "apps/21-state-pinia-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2581,7 +2581,7 @@
           "options": {
             "dest": "dist/apps/22-vuelidate-composition",
             "index": "apps/22-vuelidate-composition/public/index.html",
-            "main": "apps/22-vuelidate-composition/src/main.js",
+            "main": "apps/22-vuelidate-composition/src/main.ts",
             "tsConfig": "apps/22-vuelidate-composition/tsconfig.app.json"
           },
           "configurations": {
@@ -2637,7 +2637,7 @@
           "options": {
             "dest": "dist/apps/22-vuelidate-composition-solution",
             "index": "apps/22-vuelidate-composition-solution/public/index.html",
-            "main": "apps/22-vuelidate-composition-solution/src/main.js",
+            "main": "apps/22-vuelidate-composition-solution/src/main.ts",
             "tsConfig": "apps/22-vuelidate-composition-solution/tsconfig.app.json"
           },
           "configurations": {
@@ -2695,7 +2695,7 @@
           ],
           "options": {
             "outputPath": "dist/apps/server",
-            "main": "apps/server/src/main.js",
+            "main": "apps/server/src/main.ts",
             "tsConfig": "apps/server/tsconfig.app.json"
           },
           "configurations": {

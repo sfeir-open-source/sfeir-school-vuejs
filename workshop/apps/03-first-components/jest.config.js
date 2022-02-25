@@ -2,7 +2,7 @@ module.exports = {
   displayName: '03-first-components',
   preset: '../../jest.preset.js',
   transform: {
-    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.vue$': 'vue3-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
       'jest-transform-stub',
     '^.+\\.tsx?$': 'ts-jest',
