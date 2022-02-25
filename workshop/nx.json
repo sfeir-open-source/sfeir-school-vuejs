@@ -163,13 +163,6 @@
     },
     "server": {
       "tags": []
-    },
-    "test": {
-      "tags": []
-    },
-    "test-e2e": {
-      "tags": [],
-      "implicitDependencies": ["test"]
     }
   },
   "targetDependencies": {

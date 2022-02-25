@@ -11,7 +11,7 @@
           "options": {
             "dest": "dist/apps/01-bootstraping",
             "index": "apps/01-bootstraping/public/index.html",
-            "main": "apps/01-bootstraping/src/main.js",
+            "main": "apps/01-bootstraping/src/main.ts",
             "tsConfig": "apps/01-bootstraping/tsconfig.app.json"
           },
           "configurations": {
