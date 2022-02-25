@@ -70,7 +70,7 @@
           "options": {
             "dest": "dist/apps/01-bootstraping-solution",
             "index": "apps/01-bootstraping-solution/public/index.html",
-            "main": "apps/01-bootstraping-solution/src/main.js",
+            "main": "apps/01-bootstraping-solution/src/main.ts",
             "tsConfig": "apps/01-bootstraping-solution/tsconfig.app.json"
           },
           "configurations": {

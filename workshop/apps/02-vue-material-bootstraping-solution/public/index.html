@@ -19,11 +19,11 @@
           continue.</strong>
     </noscript>
     <div id="app">
-      <md-card>
-        <md-card-header>
-          <div class="md-title">Hello {{ name }}</div>
-        </md-card-header>
-      </md-card>
+      <el-card>
+        <template #header>
+          <div class="card-header">Hello {{ name }}</div>
+        </template>
+      </el-card>
     </div>
     <!-- built files will be auto injected -->
   </body>

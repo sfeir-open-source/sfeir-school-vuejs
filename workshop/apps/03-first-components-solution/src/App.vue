@@ -1,14 +1,15 @@
 <template>
   <section>
-    <md-toolbar class="navBar">
-      <a href="#/home">
-        <img class="logo" src="/assets/images/logo-people.svg" />
-      </a>
-      <h2 class="md-title" style="flex: 1"></h2>
-      <span class="link">
+    <el-menu mode="horizontal">
+      <el-menu-item>
+        <a href="#/home">
+          <img class="logo" src="/assets/images/logo-people.svg" />
+        </a>
+      </el-menu-item>
+      <el-menu-item>
         <a href="#/people">Peoples</a>
-      </span>
-    </md-toolbar>
+      </el-menu-item>
+    </el-menu>
   </section>
 </template>
 
