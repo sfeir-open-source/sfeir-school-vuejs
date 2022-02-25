@@ -3,7 +3,7 @@ import { createApp } from 'vue';
 createApp({
   data() {
     return {
-      name: 'Sfeir'
-    }
-  }
+      name: 'Sfeir',
+    };
+  },
 }).mount('#app');
