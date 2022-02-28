@@ -1,20 +1,22 @@
 <template>
   <section>
-    <el-menu mode="horizontal">
+    <el-menu mode="horizontal" class="navBar">
       <el-menu-item>
         <a href="#/home">
           <img class="logo" src="/assets/images/logo-people.svg" />
         </a>
       </el-menu-item>
       <el-menu-item>
-        <a href="#/people">Peoples</a>
+        <a href="#/people" class="link">Peoples</a>
       </el-menu-item>
     </el-menu>
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts">
+import {defineComponent} from 'vue';
+
+export default defineComponent({});
 </script>
 
 <style scoped>
@@ -37,7 +39,7 @@ export default {};
 }
 
 .link {
-  color: white;
+  color: white !important;
 }
 
 a {

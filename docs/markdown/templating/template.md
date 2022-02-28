@@ -7,10 +7,10 @@
 - <b>template</b> permet de permuter plusieurs éléments
 - <b>v-if, v-else, else-if</b>
 
-<br><br>
+<br>
 
-![h-400](assets/images/school/iterator/conditional_if.png)
-![h-400](assets/images/school/iterator/conditional_if-else.png)
+![h-500](assets/images/school/iterator/conditional_if.png)
+![h-500](assets/images/school/iterator/conditional_if-else.png)
 
 ##==##
 
@@ -37,8 +37,8 @@
 - <b>index, key, value</b>
 - Attention, il est préférable d'identifier le template d'un élément de manière unique grâce :key
 
-<br><br>
+<br>
 
-![h-400](assets/images/school/iterator/iterator_array.png)
-![h-400](assets/images/school/iterator/iterator_object.png)
+![h-500](assets/images/school/iterator/iterator_array.png)
+![h-500](assets/images/school/iterator/iterator_object.png)
  

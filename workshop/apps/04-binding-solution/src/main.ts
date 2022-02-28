@@ -1,10 +1,9 @@
-import Vue from 'vue';
-import VueMaterial from 'vue-material';
-import 'vue-material/dist/vue-material.css';
+import { createApp } from 'vue';
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css';
 import App from './App.vue';
 
-Vue.use(VueMaterial);
+const app = createApp(App);
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app');
+app.use(ElementPlus);
+app.mount('#app');

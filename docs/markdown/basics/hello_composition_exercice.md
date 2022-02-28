@@ -3,7 +3,7 @@
 ## Exercice
 <br>
 
-- Dans le fichier <b>main.js</b>
+- Dans le fichier <b>main.ts</b>
     - Créez votre première instance de Vue
     - Exposez une propriété name avec pour valeur SFEIR<br><br>
 - Dans le fichier <b>index.html</b>

@@ -17,7 +17,7 @@
 }
 
 .link {
-  color: white;
+  color: white !important;
 }
 
 a {

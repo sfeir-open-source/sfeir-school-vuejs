@@ -3,18 +3,18 @@
 ## Exercice
 <br>
 
-- Dans le fichier <b>main.js</b>
+- Dans le fichier <b>main.ts</b>
     - Importez Vue
-    - Importez Vue Material
-    - Enregistrez un thème pour Vue Material
-    - Indiquez à Vue que vous utilisez Material<br><br>
+    - Importez Element Plus
+    - Importez le CSS d'Element Plus
+    - Indiquez à Vue que vous utilisez Element Plus<br><br>
 - Dans le fichier <b>index.html</b>
     - Supprimez l'import de vue
-    - Affichez notre composant dans un composant md-card
+    - Affichez notre composant dans un composant el-card
 
 Notes:
-- Vue material "Getting Started" : https://vuematerial.io/getting-started/
-- Vue material "Card" : https://vuematerial.io/components/card/
+- Vue material "Getting Started" : https://element-plus.org/en-US/guide/quickstart.html#full-import
+- Vue material "Card" : https://element-plus.org/en-US/component/card.html
 
 ##==##
 

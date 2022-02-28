@@ -1,52 +1,48 @@
 <section class="container">
-  <md-card class="card-panel">
-    <md-card-header>
-      <md-card-header-text>
+  <el-card class="card-panel">
+    <template #header>
+      <div class="card-header">
         <div class="md-title">
           <a href="#" class="card-title username">
-            <span>Castaneda</span>
-            <span class="lastname">Salinas</span>
+            <span>{{ person.firstname }}</span>
+            <span class="lastname">{{ person.lastname }}</span>
           </a>
-        </div>
-        <div class="md-subhead">
-          <div class="subtitle">METROZ</div>
-          <div class="people-data">
-            <div class="">
-              <md-icon class="md-accent">email</md-icon>
-              <span class="item">Castaneda.Salinas@METROZ.com</span>
+          <div class="md-subhead">
+            <div class="subtitle">{{ person.entity }}</div>
+            <div class="people-data">
+              <div>
+                <el-icon><Message /></el-icon>
+                <span class="item">{{ person.email }}</span>
+              </div>
+              <div>
+                <el-icon><PhoneFilled /></el-icon>
+                <span class="item">{{ person.phone }}</span>
+              </div>
             </div>
-            <div class="">
-              <md-icon class="md-accent">phone</md-icon>
-              <span class="item">0145652522</span>
-            </div>
           </div>
         </div>
-      </md-card-header-text>
-      <md-card-media md-big>
-        <img class="picture" src="https://randomuser.me/portraits/men/65.jpg" />
-      </md-card-media>
-    </md-card-header>
-    <md-card-content>
-      <div class="md-layout">
-        <div class="md-layout-item">
-          <div>
-            <span class="label">Manager: </span>
-            <span class="item">Erika</span>
-          </div>
-          <div>
-            <span class="label">Location: </span>
-            <span class="item">SFEIR</span>
-          </div>
-        </div>
-        <div class="md-layout-item">
-          <a href="#">
-            <md-icon class="md-accent">mode_edit</md-icon>
-          </a>
-          <a href="#">
-            <md-icon class="md-accent">delete</md-icon>
-          </a>
-        </div>
+        <el-avatar :size="100" :src="person.photo"></el-avatar>
       </div>
-    </md-card-content>
-  </md-card>
+    </template>
+    <el-row justify="space-between">
+      <el-col :span="12">
+        <div>
+          <span class="label">Manager:</span>
+          <span class="item">{{ person.manager }}</span>
+        </div>
+        <div>
+          <span class="label">Location:</span>
+          <span class="item">SFEIR</span>
+        </div>
+      </el-col>
+      <el-col :span="4" class="actions">
+        <a href="#">
+          <el-icon><EditPen /></el-icon>
+        </a>
+        <a href="#">
+          <el-icon><Delete /></el-icon>
+        </a>
+      </el-col>
+    </el-row>
+  </el-card>
 </section>

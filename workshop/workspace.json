@@ -591,6 +591,118 @@
         }
       }
     },
+    "05-loop": {
+      "projectType": "application",
+      "root": "apps/05-loop",
+      "sourceRoot": "apps/05-loop/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-loop",
+            "index": "apps/05-loop/public/index.html",
+            "main": "apps/05-loop/src/main.ts",
+            "tsConfig": "apps/05-loop/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-loop:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-loop:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-loop/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-loop"
+          ],
+          "options": {
+            "jestConfig": "apps/05-loop/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "05-loop-solution": {
+      "projectType": "application",
+      "root": "apps/05-loop-solution",
+      "sourceRoot": "apps/05-loop-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/05-loop-solution",
+            "index": "apps/05-loop-solution/public/index.html",
+            "main": "apps/05-loop-solution/src/main.ts",
+            "tsConfig": "apps/05-loop-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "05-loop-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "05-loop-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/05-loop-solution/**/*.{ts,tsx,vue}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/05-loop-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/05-loop-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "06-axios": {
       "projectType": "application",
       "root": "apps/06-axios",

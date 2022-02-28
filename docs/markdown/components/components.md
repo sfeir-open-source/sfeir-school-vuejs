@@ -35,7 +35,7 @@
     - template sous forme de chaîne de caractères
     - absence de support css
     - pas de système de build<br><br>
-- Tous dans un même fichier<br><br>
+- Tout dans un même fichier<br><br>
 - Plugin Webpack déjà présent
 
 ##--##
