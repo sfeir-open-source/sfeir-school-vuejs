@@ -30,7 +30,7 @@ Notes:
  ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 08-events
+# Exercice 08-events (suite)
 ## Exercice
 <br>
 
@@ -40,7 +40,7 @@ Notes:
 - A l'écoute de cet évènement, le composant Home doit changer de personne
 
  ##==##
-vue
+
  <!-- .slide: class="exercice" -->
  # Exercice 08-events-solution
  ## Solution

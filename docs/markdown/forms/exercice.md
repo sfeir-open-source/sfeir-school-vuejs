@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 11-form
+# Exercice 10-form
 ## Exercice
 <br>
 
@@ -13,15 +13,15 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 11-form
+ # Exercice 10-form
  ## Solution
- **11-form-solution**
+ **10-form-solution**
  <!-- .element: class="full-center" -->
 
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12-update
+ # Exercice 11-update
  ## Exercice
  <br>
 
@@ -36,7 +36,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12-update (suite)
+ # Exercice 11-update (suite)
  ## Exercice
  <br>
 
@@ -53,7 +53,7 @@ Notes:
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 12-update
+ # Exercice 11-update
  ## Solution
- **12-update-solution**
+ **11-update-solution**
  <!-- .element: class="full-center" -->

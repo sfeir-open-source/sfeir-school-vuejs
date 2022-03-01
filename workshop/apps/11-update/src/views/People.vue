@@ -20,18 +20,19 @@
     v-model="dialogVisible"
     title="Contact informations"
   >
-    <span>your form goes here</span>
+    <Form @cancel="dialogVisible = false" @save="addPerson($event)"/>
   </el-dialog>
 </template>
 
 <script lang="ts">
 import PeopleService from '../services/people.service';
 import CardPanel from '../components/CardPanel.vue';
+import Form from '../components/Form.vue';
 import {Plus} from '@element-plus/icons-vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  components: {CardPanel, Plus},
+  components: {CardPanel, Form, Plus},
   data() {
     return {
       people: {},
@@ -44,6 +45,12 @@ export default defineComponent({
   methods: {
     async deletePerson(id) {
       this.people = await PeopleService.delete(id);
+    },
+    async addPerson(person) {
+      this.dialogVisible = false;
+      this.people = await PeopleService.create(person).then(
+        PeopleService.fetch
+      );
     },
   },
 });

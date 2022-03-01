@@ -1039,834 +1039,247 @@
         }
       }
     },
+    "10-form": {
+      "projectType": "application",
+      "root": "apps/10-form",
+      "sourceRoot": "apps/10-form/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/10-form",
+            "index": "apps/10-form/public/index.html",
+            "main": "apps/10-form/src/main.ts",
+            "tsConfig": "apps/10-form/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "10-form:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "10-form:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/10-form/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/10-form"
+          ],
+          "options": {
+            "jestConfig": "apps/10-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "10-form-solution": {
+      "projectType": "application",
+      "root": "apps/10-form-solution",
+      "sourceRoot": "apps/10-form-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/10-form-solution",
+            "index": "apps/10-form-solution/public/index.html",
+            "main": "apps/10-form-solution/src/main.ts",
+            "tsConfig": "apps/10-form-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "10-form-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "10-form-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/10-form-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/10-form-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/10-form-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "11-update": {
+      "projectType": "application",
+      "root": "apps/11-update",
+      "sourceRoot": "apps/11-update/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-update",
+            "index": "apps/11-update/public/index.html",
+            "main": "apps/11-update/src/main.ts",
+            "tsConfig": "apps/11-update/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-update:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-update:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-update/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-update"
+          ],
+          "options": {
+            "jestConfig": "apps/11-update/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "11-update-solution": {
+      "projectType": "application",
+      "root": "apps/11-update-solution",
+      "sourceRoot": "apps/11-update-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/11-update-solution",
+            "index": "apps/11-update-solution/public/index.html",
+            "main": "apps/11-update-solution/src/main.ts",
+            "tsConfig": "apps/11-update-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "11-update-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "11-update-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/11-update-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/11-update-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/11-update-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+
 
     
-    "06-axios": {
-      "projectType": "application",
-      "root": "apps/06-axios",
-      "sourceRoot": "apps/06-axios/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/06-axios",
-            "index": "apps/06-axios/public/index.html",
-            "main": "apps/06-axios/src/main.ts",
-            "tsConfig": "apps/06-axios/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "06-axios:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "06-axios:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/06-axios/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/06-axios"
-          ],
-          "options": {
-            "jestConfig": "apps/06-axios/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "06-axios-solution": {
-      "projectType": "application",
-      "root": "apps/06-axios-solution",
-      "sourceRoot": "apps/06-axios-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/06-axios-solution",
-            "index": "apps/06-axios-solution/public/index.html",
-            "main": "apps/06-axios-solution/src/main.ts",
-            "tsConfig": "apps/06-axios-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "06-axios-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "06-axios-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/06-axios-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/06-axios-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/06-axios-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "07-routing": {
-      "projectType": "application",
-      "root": "apps/07-routing",
-      "sourceRoot": "apps/07-routing/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/07-routing",
-            "index": "apps/07-routing/public/index.html",
-            "main": "apps/07-routing/src/main.ts",
-            "tsConfig": "apps/07-routing/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "07-routing:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "07-routing:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/07-routing/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/07-routing"
-          ],
-          "options": {
-            "jestConfig": "apps/07-routing/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "07-routing-solution": {
-      "projectType": "application",
-      "root": "apps/07-routing-solution",
-      "sourceRoot": "apps/07-routing-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/07-routing-solution",
-            "index": "apps/07-routing-solution/public/index.html",
-            "main": "apps/07-routing-solution/src/main.ts",
-            "tsConfig": "apps/07-routing-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "07-routing-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "07-routing-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/07-routing-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/07-routing-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/07-routing-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "08-loop": {
-      "projectType": "application",
-      "root": "apps/08-loop",
-      "sourceRoot": "apps/08-loop/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/08-loop",
-            "index": "apps/08-loop/public/index.html",
-            "main": "apps/08-loop/src/main.ts",
-            "tsConfig": "apps/08-loop/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "08-loop:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "08-loop:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/08-loop/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/08-loop"
-          ],
-          "options": {
-            "jestConfig": "apps/08-loop/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "08-loop-solution": {
-      "projectType": "application",
-      "root": "apps/08-loop-solution",
-      "sourceRoot": "apps/08-loop-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/08-loop-solution",
-            "index": "apps/08-loop-solution/public/index.html",
-            "main": "apps/08-loop-solution/src/main.ts",
-            "tsConfig": "apps/08-loop-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "08-loop-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "08-loop-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/08-loop-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/08-loop-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/08-loop-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "09-props": {
-      "projectType": "application",
-      "root": "apps/09-props",
-      "sourceRoot": "apps/09-props/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/09-props",
-            "index": "apps/09-props/public/index.html",
-            "main": "apps/09-props/src/main.ts",
-            "tsConfig": "apps/09-props/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "09-props:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "09-props:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/09-props/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/09-props"
-          ],
-          "options": {
-            "jestConfig": "apps/09-props/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "09-props-solution": {
-      "projectType": "application",
-      "root": "apps/09-props-solution",
-      "sourceRoot": "apps/09-props-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/09-props-solution",
-            "index": "apps/09-props-solution/public/index.html",
-            "main": "apps/09-props-solution/src/main.ts",
-            "tsConfig": "apps/09-props-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "09-props-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "09-props-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/09-props-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/09-props-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/09-props-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "10-events": {
-      "projectType": "application",
-      "root": "apps/10-events",
-      "sourceRoot": "apps/10-events/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/10-events",
-            "index": "apps/10-events/public/index.html",
-            "main": "apps/10-events/src/main.ts",
-            "tsConfig": "apps/10-events/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "10-events:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "10-events:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/10-events/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/10-events"
-          ],
-          "options": {
-            "jestConfig": "apps/10-events/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "10-events-solution": {
-      "projectType": "application",
-      "root": "apps/10-events-solution",
-      "sourceRoot": "apps/10-events-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/10-events-solution",
-            "index": "apps/10-events-solution/public/index.html",
-            "main": "apps/10-events-solution/src/main.ts",
-            "tsConfig": "apps/10-events-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "10-events-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "10-events-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/10-events-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/10-events-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/10-events-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "11-form": {
-      "projectType": "application",
-      "root": "apps/11-form",
-      "sourceRoot": "apps/11-form/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/11-form",
-            "index": "apps/11-form/public/index.html",
-            "main": "apps/11-form/src/main.ts",
-            "tsConfig": "apps/11-form/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "11-form:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "11-form:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/11-form/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/11-form"
-          ],
-          "options": {
-            "jestConfig": "apps/11-form/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "11-form-solution": {
-      "projectType": "application",
-      "root": "apps/11-form-solution",
-      "sourceRoot": "apps/11-form-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/11-form-solution",
-            "index": "apps/11-form-solution/public/index.html",
-            "main": "apps/11-form-solution/src/main.ts",
-            "tsConfig": "apps/11-form-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "11-form-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "11-form-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/11-form-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/11-form-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/11-form-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "12-update": {
-      "projectType": "application",
-      "root": "apps/12-update",
-      "sourceRoot": "apps/12-update/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/12-update",
-            "index": "apps/12-update/public/index.html",
-            "main": "apps/12-update/src/main.ts",
-            "tsConfig": "apps/12-update/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "12-update:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "12-update:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/12-update/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/12-update"
-          ],
-          "options": {
-            "jestConfig": "apps/12-update/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "12-update-solution": {
-      "projectType": "application",
-      "root": "apps/12-update-solution",
-      "sourceRoot": "apps/12-update-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/12-update-solution",
-            "index": "apps/12-update-solution/public/index.html",
-            "main": "apps/12-update-solution/src/main.ts",
-            "tsConfig": "apps/12-update-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "12-update-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "12-update-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/12-update-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/12-update-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/12-update-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
+    
+    
     "13-vee-validate": {
       "projectType": "application",
       "root": "apps/13-vee-validate",
