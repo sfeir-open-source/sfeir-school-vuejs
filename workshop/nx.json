@@ -47,16 +47,35 @@
     "04-binding-solution": {
       "tags": []
     },
-    "05-event": {
+    "05-routing": {
       "tags": []
     },
-    "05-event-solution": {
+    "05-routing-solution": {
       "tags": []
     },
-    "05-loop": {
+    "06-loop": {
       "tags": []
     },
-    "05-loop-solution": {
+    "06-loop-solution": {
+      "tags": []
+    },
+    "07-props": {
+      "tags": []
+    },
+    "07-props-solution": {
+      "tags": []
+    },
+    "08-events": {
+      "tags": []
+    },
+    "08-events-solution": {
+      "tags": []
+    },
+    
+    "_05-event": {
+      "tags": []
+    },
+    "_05-event-solution": {
       "tags": []
     },
     "06-axios": {

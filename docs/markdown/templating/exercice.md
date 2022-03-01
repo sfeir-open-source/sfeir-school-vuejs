@@ -1,10 +1,10 @@
 <!-- .slide: class="exercice" -->
-# Exercice 05-loop
+# Exercice 06-loop
 ## Exercice
 <br>
 
 - Copiez Home.vue pour créer un composant People qui affichera la liste des personnes <br><br>
-- Remplacez l'utilisation de Home.vue par People.vue dans le App.vue <br><br>
+- Créez une route /people qui permettra d'afficher cette vue de liste <br><br>
 - Pour la liste : mettre en place une boucle sur la balise el-card
 
 Notes:
@@ -13,7 +13,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 05-loop
+# Exercice 06-loop
 ## Solution
-**05-loop-solution**
+**06-loop-solution**
 <!-- .element: class="full-center" -->

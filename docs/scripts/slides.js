@@ -1,7 +1,6 @@
 function schoolSlides() {
   return [
     'presentation/welcome_school.md',
-    'speaker/pauline_goblot.md',
     'speaker/bertrand_mondolot.md',
     'presentation/formation_flow.md',
   ];
@@ -40,6 +39,7 @@ function instanceSlides() {
   return [
     'vue-instance/transition_slide.md',
     'vue-instance/instance.md',
+    'vue-instance/exercice.md',
   ];
 }
 
@@ -72,7 +72,8 @@ function templatingSlides() {
 function slotsSlides() {
   return [
     'slots/transition_slide.md',
-    'slots/slots.md'
+    'slots/slots.md',
+    'slots/exercice.md'
   ]
 }
 
@@ -196,6 +197,7 @@ function formation() {
     ...instanceSlides(),
     ...componentsSlides(),
     ...dataBindingSlides(),
+    ...navigationSlides(),
     ...templatingSlides(),
     ...slotsSlides(),
     ...classStyleSlides(),
@@ -206,7 +208,6 @@ function formation() {
     ...componentReusabilitySlides(),
     ...fragmentsSlides(),
     ...teleportSlides(),
-    ...navigationSlides(),
     ...stateManagementSlides(),
     ...lazyLoadingSlides(),
     ...compositionApiSlides(),

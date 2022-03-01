@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# Formulaire et validation
+# Formulaires
 
 ##==##
 
