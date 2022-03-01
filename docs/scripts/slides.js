@@ -3,6 +3,7 @@ function schoolSlides() {
     'presentation/welcome_school.md',
     'speaker/bertrand_mondolot.md',
     'presentation/formation_flow.md',
+    /* 'presentation/sfeir_school_day_2.md', */
   ];
 }
 
@@ -137,7 +138,6 @@ function teleportSlides() {
 
 function formsSlides() {
   return [
-    'forms/sfeir_school_day_2.md',
     'forms/concepts_bases.md',
     'forms/exercice.md',
     'modifier/transition_slide.md',
