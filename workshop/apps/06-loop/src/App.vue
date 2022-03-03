@@ -2,7 +2,7 @@
   <section>
     <el-menu mode="horizontal" class="navBar">
       <el-menu-item>
-        <router-link to="home">
+        <router-link :to="{name: 'home'}">
           <img class="logo" src="/assets/images/logo-people.svg" />
         </router-link>
       </el-menu-item>

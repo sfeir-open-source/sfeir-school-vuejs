@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 18-directive
+# Exercice 13-directive
 ## Exercice
 <br>
 
@@ -12,7 +12,7 @@ Notes:
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 18-directive
+# Exercice 13-directive
 ## Solution
-**18-directive-solution**
+**13-directive-solution**
 <!-- .element: class="full-center" -->

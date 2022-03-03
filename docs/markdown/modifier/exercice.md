@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 17-modifiers
+# Exercice 12-modifiers
 ## Exercice
 <br>
 Nous avons ajouté un composant SearchBar<br><br>
@@ -11,13 +11,13 @@ Notes:
  - passez la valeur de l'input search lors de la propagation de l'event
 
 Attirer l'attention sur la ligne 45 de People : vm._people = vm.people = people;
- - this._people est la liste complète des peoples (la sauvegarde que l'on ne modifie pas)
- - this.people est la liste à modifier qui est utilisée pour l'affichage des sfeir-card
+ - this.people est la liste complète des peoples (la sauvegarde que l'on ne modifie pas)
+ - this.filteredPeople est la liste à modifier qui est utilisée pour l'affichage des sfeir-card
 
 ##==##
 
 <!-- .slide: class="exercice"-->
-# Exercice 17-modifiers
+# Exercice 12-modifiers
 ## Solution
-**17-modifiers-solution**
+**12-modifiers-solution**
 <!-- .element: class="full-center" -->

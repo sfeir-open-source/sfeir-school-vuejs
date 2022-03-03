@@ -23,7 +23,7 @@
 <br><br>
 
 - Provide / inject créé une liaison __non réactive__ par défaut
-- utiliser une __computed__ de la Composition API pour rendre la liasion __réactive__
+- utiliser une __computed__ de la Composition API pour rendre la liaison __réactive__
 
 
 

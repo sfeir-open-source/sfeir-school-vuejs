@@ -1,11 +1,11 @@
 <template>
   <section class="container">
-    <card-panel :person="person" @click="randomPeople"></card-panel>
-    <el-button 
+    <card-panel :person="person" @person-delete="randomPeople" v-if="person.id"></card-panel>
+    <el-button
       class="fab-bottom"
-      type="primary" 
-      size="large" 
-      circle 
+      type="primary"
+      size="large"
+      circle
       @click ="randomPeople"
     >
       <el-icon><Refresh /></el-icon>

@@ -24,7 +24,7 @@ Notes:
 ## Exercice
 <br>
 
-- Un bouton random a été ajouté <br><br>
+- Un bouton random a été ajouté dans Home.vue<br><br>
 - Créez une action "random" sur le clic du bouton pour afficher une personne au hasard <br><br>
 
  ##==##

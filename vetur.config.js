@@ -176,12 +176,12 @@ module.exports = {
       tsconfig: './tsconfig.json',
     },
     {
-      root: './workshop/apps/18-directive',
+      root: './workshop/apps/13-directive',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },
     {
-      root: './workshop/apps/18-directive-solution',
+      root: './workshop/apps/13-directive-solution',
       package: '../../package.json',
       tsconfig: './tsconfig.json',
     },

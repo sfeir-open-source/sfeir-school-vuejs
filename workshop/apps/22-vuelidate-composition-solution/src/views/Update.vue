@@ -1,5 +1,5 @@
 <template>
-  <Form :person="person" @save="updatePerson($event)" />
+  <Form v-if="person.id" :person="person" @save="updatePerson($event)" />
 </template>
 
 <script type="text/javascript">

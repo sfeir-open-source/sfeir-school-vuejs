@@ -44,7 +44,7 @@
           </a>
         </el-col>
       </el-row>
-  </el-card>  
+  </el-card>
 </template>
 
 <script lang="ts">
@@ -53,7 +53,12 @@ import {Message, Delete, PhoneFilled, EditPen} from '@element-plus/icons-vue';
 
 export default defineComponent({
   components: {Delete, EditPen, Message, PhoneFilled},
-  props: ['person']
+  props: ['person'],
+  methods: {
+    deletePerson(id) {
+      this.$emit('person-delete', id);
+    },
+  },
 });
 </script>
 

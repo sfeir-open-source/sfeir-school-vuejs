@@ -11,10 +11,11 @@ const APP_ROUTES = [
     path: '/people/:id',
     component: Update,
     name: 'people-details',
+    strict: true
   },
 ];
 
-export default createRouter({ 
+export default createRouter({
   history: createWebHashHistory(),
-  routes: APP_ROUTES 
+  routes: APP_ROUTES
 });
