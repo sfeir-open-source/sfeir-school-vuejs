@@ -95,55 +95,37 @@
     "12-modifiers-solution": {
       "tags": []
     },
-
-    "13-vee-validate": {
-      "tags": []
-    },
-    "13-vee-validate-solution": {
-      "tags": []
-    },
-    "14-vuelidate": {
-      "tags": []
-    },
-    "14-vuelidate-solution": {
-      "tags": []
-    },
-    "15-custom-validation": {
-      "tags": []
-    },
-    "15-custom-validation-solution": {
-      "tags": []
-    },
-    "16-pipe": {
-      "tags": []
-    },
-    "16-pipe-solution": {
-      "tags": []
-    },
     "13-directive": {
       "tags": []
     },
     "13-directive-solution": {
       "tags": []
     },
-    "19-state-management": {
+    "14-teleport": {
       "tags": []
     },
-    "19-state-management-module": {
+    "14-teleport-solution": {
       "tags": []
     },
-    "19-state-management-module-solution": {
+    "15-state-management": {
       "tags": []
     },
-    "19-state-management-solution": {
+    "15-state-management-solution": {
       "tags": []
     },
-    "20-lazyloading": {
+    "16-state-management-module": {
       "tags": []
     },
-    "20-lazyloading-solution": {
+    "16-state-management-module-solution": {
       "tags": []
     },
+    "17-lazyloading": {
+      "tags": []
+    },
+    "17-lazyloading-solution": {
+      "tags": []
+    },
+
     "21-state-pinia": {
       "tags": []
     },

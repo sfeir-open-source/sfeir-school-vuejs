@@ -1393,482 +1393,6 @@
         }
       }
     },
-
-
-
-
-    "13-vee-validate": {
-      "projectType": "application",
-      "root": "apps/13-vee-validate",
-      "sourceRoot": "apps/13-vee-validate/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/13-vee-validate",
-            "index": "apps/13-vee-validate/public/index.html",
-            "main": "apps/13-vee-validate/src/main.ts",
-            "tsConfig": "apps/13-vee-validate/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "13-vee-validate:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "13-vee-validate:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/13-vee-validate/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/13-vee-validate"
-          ],
-          "options": {
-            "jestConfig": "apps/13-vee-validate/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "13-vee-validate-solution": {
-      "projectType": "application",
-      "root": "apps/13-vee-validate-solution",
-      "sourceRoot": "apps/13-vee-validate-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/13-vee-validate-solution",
-            "index": "apps/13-vee-validate-solution/public/index.html",
-            "main": "apps/13-vee-validate-solution/src/main.ts",
-            "tsConfig": "apps/13-vee-validate-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "13-vee-validate-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "13-vee-validate-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/13-vee-validate-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/13-vee-validate-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/13-vee-validate-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "14-vuelidate": {
-      "projectType": "application",
-      "root": "apps/14-vuelidate",
-      "sourceRoot": "apps/14-vuelidate/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/14-vuelidate",
-            "index": "apps/14-vuelidate/public/index.html",
-            "main": "apps/14-vuelidate/src/main.ts",
-            "tsConfig": "apps/14-vuelidate/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "14-vuelidate:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "14-vuelidate:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/14-vuelidate/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/14-vuelidate"
-          ],
-          "options": {
-            "jestConfig": "apps/14-vuelidate/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "14-vuelidate-solution": {
-      "projectType": "application",
-      "root": "apps/14-vuelidate-solution",
-      "sourceRoot": "apps/14-vuelidate-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/14-vuelidate-solution",
-            "index": "apps/14-vuelidate-solution/public/index.html",
-            "main": "apps/14-vuelidate-solution/src/main.ts",
-            "tsConfig": "apps/14-vuelidate-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "14-vuelidate-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "14-vuelidate-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/14-vuelidate-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/14-vuelidate-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/14-vuelidate-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "15-custom-validation": {
-      "projectType": "application",
-      "root": "apps/15-custom-validation",
-      "sourceRoot": "apps/15-custom-validation/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/15-custom-validation",
-            "index": "apps/15-custom-validation/public/index.html",
-            "main": "apps/15-custom-validation/src/main.ts",
-            "tsConfig": "apps/15-custom-validation/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "15-custom-validation:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "15-custom-validation:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/15-custom-validation/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/15-custom-validation"
-          ],
-          "options": {
-            "jestConfig": "apps/15-custom-validation/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "15-custom-validation-solution": {
-      "projectType": "application",
-      "root": "apps/15-custom-validation-solution",
-      "sourceRoot": "apps/15-custom-validation-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/15-custom-validation-solution",
-            "index": "apps/15-custom-validation-solution/public/index.html",
-            "main": "apps/15-custom-validation-solution/src/main.ts",
-            "tsConfig": "apps/15-custom-validation-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "15-custom-validation-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "15-custom-validation-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/15-custom-validation-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/15-custom-validation-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/15-custom-validation-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "16-pipe": {
-      "projectType": "application",
-      "root": "apps/16-pipe",
-      "sourceRoot": "apps/16-pipe/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/16-pipe",
-            "index": "apps/16-pipe/public/index.html",
-            "main": "apps/16-pipe/src/main.ts",
-            "tsConfig": "apps/16-pipe/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "16-pipe:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "16-pipe:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/16-pipe/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/16-pipe"
-          ],
-          "options": {
-            "jestConfig": "apps/16-pipe/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "16-pipe-solution": {
-      "projectType": "application",
-      "root": "apps/16-pipe-solution",
-      "sourceRoot": "apps/16-pipe-solution/src",
-      "targets": {
-        "build": {
-          "executor": "@nx-plus/vue:browser",
-          "options": {
-            "dest": "dist/apps/16-pipe-solution",
-            "index": "apps/16-pipe-solution/public/index.html",
-            "main": "apps/16-pipe-solution/src/main.ts",
-            "tsConfig": "apps/16-pipe-solution/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "mode": "production",
-              "filenameHashing": true,
-              "productionSourceMap": true,
-              "css": {
-                "extract": true,
-                "sourceMap": false
-              }
-            }
-          }
-        },
-        "serve": {
-          "executor": "@nx-plus/vue:dev-server",
-          "options": {
-            "browserTarget": "16-pipe-solution:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "16-pipe-solution:build:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/16-pipe-solution/**/*.{ts,tsx,vue}"
-            ]
-          },
-          "outputs": [
-            "{options.outputFile}"
-          ]
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/16-pipe-solution"
-          ],
-          "options": {
-            "jestConfig": "apps/16-pipe-solution/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "13-directive": {
       "projectType": "application",
       "root": "apps/13-directive",
@@ -1987,18 +1511,18 @@
         }
       }
     },
-    "19-state-management": {
+    "14-teleport": {
       "projectType": "application",
-      "root": "apps/19-state-management",
-      "sourceRoot": "apps/19-state-management/src",
+      "root": "apps/14-teleport",
+      "sourceRoot": "apps/14-teleport/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/19-state-management",
-            "index": "apps/19-state-management/public/index.html",
-            "main": "apps/19-state-management/src/main.ts",
-            "tsConfig": "apps/19-state-management/tsconfig.app.json"
+            "dest": "dist/apps/14-teleport",
+            "index": "apps/14-teleport/public/index.html",
+            "main": "apps/14-teleport/src/main.ts",
+            "tsConfig": "apps/14-teleport/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2015,11 +1539,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "19-state-management:build"
+            "browserTarget": "14-teleport:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "19-state-management:build:production"
+              "browserTarget": "14-teleport:build:production"
             }
           }
         },
@@ -2027,7 +1551,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/19-state-management/**/*.{ts,tsx,vue}"
+              "apps/14-teleport/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2037,27 +1561,27 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/19-state-management"
+            "coverage/apps/14-teleport"
           ],
           "options": {
-            "jestConfig": "apps/19-state-management/jest.config.js",
+            "jestConfig": "apps/14-teleport/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "19-state-management-module": {
+    "14-teleport-solution": {
       "projectType": "application",
-      "root": "apps/19-state-management-module",
-      "sourceRoot": "apps/19-state-management-module/src",
+      "root": "apps/14-teleport-solution",
+      "sourceRoot": "apps/14-teleport-solution/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/19-state-management-module",
-            "index": "apps/19-state-management-module/public/index.html",
-            "main": "apps/19-state-management-module/src/main.ts",
-            "tsConfig": "apps/19-state-management-module/tsconfig.app.json"
+            "dest": "dist/apps/14-teleport-solution",
+            "index": "apps/14-teleport-solution/public/index.html",
+            "main": "apps/14-teleport-solution/src/main.ts",
+            "tsConfig": "apps/14-teleport-solution/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2074,11 +1598,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "19-state-management-module:build"
+            "browserTarget": "14-teleport-solution:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "19-state-management-module:build:production"
+              "browserTarget": "14-teleport-solution:build:production"
             }
           }
         },
@@ -2086,7 +1610,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/19-state-management-module/**/*.{ts,tsx,vue}"
+              "apps/14-teleport-solution/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2096,27 +1620,27 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/19-state-management-module"
+            "coverage/apps/14-teleport-solution"
           ],
           "options": {
-            "jestConfig": "apps/19-state-management-module/jest.config.js",
+            "jestConfig": "apps/14-teleport-solution/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "19-state-management-module-solution": {
+    "15-state-management": {
       "projectType": "application",
-      "root": "apps/19-state-management-module-solution",
-      "sourceRoot": "apps/19-state-management-module-solution/src",
+      "root": "apps/15-state-management",
+      "sourceRoot": "apps/15-state-management/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/19-state-management-module-solution",
-            "index": "apps/19-state-management-module-solution/public/index.html",
-            "main": "apps/19-state-management-module-solution/src/main.ts",
-            "tsConfig": "apps/19-state-management-module-solution/tsconfig.app.json"
+            "dest": "dist/apps/15-state-management",
+            "index": "apps/15-state-management/public/index.html",
+            "main": "apps/15-state-management/src/main.ts",
+            "tsConfig": "apps/15-state-management/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2133,11 +1657,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "19-state-management-module-solution:build"
+            "browserTarget": "15-state-management:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "19-state-management-module-solution:build:production"
+              "browserTarget": "15-state-management:build:production"
             }
           }
         },
@@ -2145,7 +1669,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/19-state-management-module-solution/**/*.{ts,tsx,vue}"
+              "apps/15-state-management/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2155,27 +1679,27 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/19-state-management-module-solution"
+            "coverage/apps/15-state-management"
           ],
           "options": {
-            "jestConfig": "apps/19-state-management-module-solution/jest.config.js",
+            "jestConfig": "apps/15-state-management/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "19-state-management-solution": {
+    "15-state-management-solution": {
       "projectType": "application",
-      "root": "apps/19-state-management-solution",
-      "sourceRoot": "apps/19-state-management-solution/src",
+      "root": "apps/15-state-management-solution",
+      "sourceRoot": "apps/15-state-management-solution/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/19-state-management-solution",
-            "index": "apps/19-state-management-solution/public/index.html",
-            "main": "apps/19-state-management-solution/src/main.ts",
-            "tsConfig": "apps/19-state-management-solution/tsconfig.app.json"
+            "dest": "dist/apps/15-state-management-solution",
+            "index": "apps/15-state-management-solution/public/index.html",
+            "main": "apps/15-state-management-solution/src/main.ts",
+            "tsConfig": "apps/15-state-management-solution/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2192,11 +1716,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "19-state-management-solution:build"
+            "browserTarget": "15-state-management-solution:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "19-state-management-solution:build:production"
+              "browserTarget": "15-state-management-solution:build:production"
             }
           }
         },
@@ -2204,7 +1728,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/19-state-management-solution/**/*.{ts,tsx,vue}"
+              "apps/15-state-management-solution/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2214,27 +1738,27 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/19-state-management-solution"
+            "coverage/apps/15-state-management-solution"
           ],
           "options": {
-            "jestConfig": "apps/19-state-management-solution/jest.config.js",
+            "jestConfig": "apps/15-state-management-solution/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "20-lazyloading": {
+    "16-state-management-module": {
       "projectType": "application",
-      "root": "apps/20-lazyloading",
-      "sourceRoot": "apps/20-lazyloading/src",
+      "root": "apps/16-state-management-module",
+      "sourceRoot": "apps/16-state-management-module/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/20-lazyloading",
-            "index": "apps/20-lazyloading/public/index.html",
-            "main": "apps/20-lazyloading/src/main.ts",
-            "tsConfig": "apps/20-lazyloading/tsconfig.app.json"
+            "dest": "dist/apps/16-state-management-module",
+            "index": "apps/16-state-management-module/public/index.html",
+            "main": "apps/16-state-management-module/src/main.ts",
+            "tsConfig": "apps/16-state-management-module/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2251,11 +1775,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "20-lazyloading:build"
+            "browserTarget": "16-state-management-module:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "20-lazyloading:build:production"
+              "browserTarget": "16-state-management-module:build:production"
             }
           }
         },
@@ -2263,7 +1787,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/20-lazyloading/**/*.{ts,tsx,vue}"
+              "apps/16-state-management-module/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2273,27 +1797,27 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/20-lazyloading"
+            "coverage/apps/16-state-management-module"
           ],
           "options": {
-            "jestConfig": "apps/20-lazyloading/jest.config.js",
+            "jestConfig": "apps/16-state-management-module/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "20-lazyloading-solution": {
+    "16-state-management-module-solution": {
       "projectType": "application",
-      "root": "apps/20-lazyloading-solution",
-      "sourceRoot": "apps/20-lazyloading-solution/src",
+      "root": "apps/16-state-management-module-solution",
+      "sourceRoot": "apps/16-state-management-module-solution/src",
       "targets": {
         "build": {
           "executor": "@nx-plus/vue:browser",
           "options": {
-            "dest": "dist/apps/20-lazyloading-solution",
-            "index": "apps/20-lazyloading-solution/public/index.html",
-            "main": "apps/20-lazyloading-solution/src/main.ts",
-            "tsConfig": "apps/20-lazyloading-solution/tsconfig.app.json"
+            "dest": "dist/apps/16-state-management-module-solution",
+            "index": "apps/16-state-management-module-solution/public/index.html",
+            "main": "apps/16-state-management-module-solution/src/main.ts",
+            "tsConfig": "apps/16-state-management-module-solution/tsconfig.app.json"
           },
           "configurations": {
             "production": {
@@ -2310,11 +1834,11 @@
         "serve": {
           "executor": "@nx-plus/vue:dev-server",
           "options": {
-            "browserTarget": "20-lazyloading-solution:build"
+            "browserTarget": "16-state-management-module-solution:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "20-lazyloading-solution:build:production"
+              "browserTarget": "16-state-management-module-solution:build:production"
             }
           }
         },
@@ -2322,7 +1846,7 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/20-lazyloading-solution/**/*.{ts,tsx,vue}"
+              "apps/16-state-management-module-solution/**/*.{ts,tsx,vue}"
             ]
           },
           "outputs": [
@@ -2332,10 +1856,128 @@
         "test": {
           "executor": "@nrwl/jest:jest",
           "outputs": [
-            "coverage/apps/20-lazyloading-solution"
+            "coverage/apps/16-state-management-module-solution"
           ],
           "options": {
-            "jestConfig": "apps/20-lazyloading-solution/jest.config.js",
+            "jestConfig": "apps/16-state-management-module-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "17-lazyloading": {
+      "projectType": "application",
+      "root": "apps/17-lazyloading",
+      "sourceRoot": "apps/17-lazyloading/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-lazyloading",
+            "index": "apps/17-lazyloading/public/index.html",
+            "main": "apps/17-lazyloading/src/main.ts",
+            "tsConfig": "apps/17-lazyloading/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-lazyloading:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-lazyloading:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-lazyloading/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-lazyloading"
+          ],
+          "options": {
+            "jestConfig": "apps/17-lazyloading/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "17-lazyloading-solution": {
+      "projectType": "application",
+      "root": "apps/17-lazyloading-solution",
+      "sourceRoot": "apps/17-lazyloading-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/17-lazyloading-solution",
+            "index": "apps/17-lazyloading-solution/public/index.html",
+            "main": "apps/17-lazyloading-solution/src/main.ts",
+            "tsConfig": "apps/17-lazyloading-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "17-lazyloading-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "17-lazyloading-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/17-lazyloading-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/17-lazyloading-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/17-lazyloading-solution/jest.config.js",
             "passWithNoTests": true
           }
         }

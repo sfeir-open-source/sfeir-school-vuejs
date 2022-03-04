@@ -166,6 +166,7 @@ function stateManagementSlides() {
     'state-management/mutation.md',
     'state-management/action.md',
     'state-management/helpers.md',
+    'state-management/modules.md',
     'state-management/exercice.md',
   ]
 }

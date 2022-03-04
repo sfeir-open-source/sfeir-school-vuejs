@@ -3,12 +3,11 @@
 ## Exercice
 <br>
 
-- Copiez Home.vue pour créer un composant People qui affichera la liste des personnes <br><br>
-- Créez une route /people qui permettra d'afficher cette vue de liste <br><br>
-- Pour la liste : mettre en place une boucle sur la balise el-card
+- Modifier Home.vue pour y ajouter un element el-alert dans un Teleport <br><br>
+- Au clic sur le bouton de refresh, afficher cette notification sous le menu <br><br>
+- Faire en sorte que la notification disparaisse au bout de 2s
 
 Notes:
-- Ajouter flex-wrap: wrap; sur le style .container pour régler l'affichage de la liste
 
 ##==##
 

@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 19-state-management
+# Exercice 15-state-management
 ## Exercice
 <br>
 Vous disposez d'un squelette de Store.<br>
@@ -13,15 +13,15 @@ Mettre en place une architecture Vuex dans le composant People.vue
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 19-state-management
+# Exercice 15-state-management
 ## Solution
-19-state-management-solution
+15-state-management-solution
 <!-- .element: class="full-center" -->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 19-state-management-module
+# Exercice 16-state-management-module
 ## Exercice 
 <br><br><br>
 
@@ -30,8 +30,8 @@ Mettre en place une architecture Vuex dans le composant People.vue
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 19-state-management-module
+# Exercice 16-state-management-module
 ## Solution
-19-state-management-module-solution
+16-state-management-module-solution
 <!-- .element: class="full-center" -->
 
