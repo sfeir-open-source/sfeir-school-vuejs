@@ -3,9 +3,8 @@
 
 ##--##
 - méthode d'instance nommée **setup**
-- appelée AVANT la création du composant (mais après la résolution des propriétés)
+- appelée AVANT la création du composant (mais après la résolution des propriétés)<br><br>
 
-_
 
 
 - prend en paramètre `props` et `context`

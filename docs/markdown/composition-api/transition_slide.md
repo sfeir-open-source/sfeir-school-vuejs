@@ -1,3 +1,3 @@
-<!-- .slide: class="transition underline" -->
+<!-- .slide: class="transition" -->
 # L'API de composition
 

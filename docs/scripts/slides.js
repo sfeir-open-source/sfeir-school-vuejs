@@ -3,7 +3,7 @@ function schoolSlides() {
     'presentation/welcome_school.md',
     'speaker/bertrand_mondolot.md',
     'presentation/formation_flow.md',
-    /* 'presentation/sfeir_school_day_2.md', */
+    /*'presentation/sfeir_school_day_2.md',*/
   ];
 }
 
@@ -40,7 +40,7 @@ function instanceSlides() {
   return [
     'vue-instance/transition_slide.md',
     'vue-instance/instance.md',
-    'vue-instance/exercice.md',
+    /*'vue-instance/exercice.md',*/
   ];
 }
 
@@ -74,7 +74,7 @@ function slotsSlides() {
   return [
     'slots/transition_slide.md',
     'slots/slots.md',
-    'slots/exercice.md'
+    /*'slots/exercice.md'*/
   ]
 }
 

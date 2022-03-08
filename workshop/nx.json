@@ -125,19 +125,6 @@
     "17-lazyloading-solution": {
       "tags": []
     },
-
-    "21-state-pinia": {
-      "tags": []
-    },
-    "21-state-pinia-solution": {
-      "tags": []
-    },
-    "22-vuelidate-composition": {
-      "tags": []
-    },
-    "22-vuelidate-composition-solution": {
-      "tags": []
-    },
     "server": {
       "tags": []
     }
