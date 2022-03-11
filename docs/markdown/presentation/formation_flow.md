@@ -31,7 +31,8 @@ Tour de table ...
 ```sh
 npm install -g @vue/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-vuejs
-git checkout tags/vuejs3
+git fetch
+git checkout feat/vuejs3-institute
 ```
 
 <!-- .element: class="big-code" -->
