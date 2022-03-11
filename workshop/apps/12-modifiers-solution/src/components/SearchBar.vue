@@ -9,7 +9,9 @@
   </div>
 </template>
 <script lang="ts">
-export default {
+import {defineComponent} from 'vue';
+
+export default defineComponent({
   data() {
     return {
       searchInput: '',
@@ -20,7 +22,7 @@ export default {
       this.$emit('search', searchValue);
     },
   },
-};
+});
 </script>
 <style scoped>
 form {

@@ -1983,6 +1983,124 @@
         }
       }
     },
+    "18-composition-api": {
+      "projectType": "application",
+      "root": "apps/18-composition-api",
+      "sourceRoot": "apps/18-composition-api/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-composition-api",
+            "index": "apps/18-composition-api/public/index.html",
+            "main": "apps/18-composition-api/src/main.ts",
+            "tsConfig": "apps/18-composition-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-composition-api:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-composition-api:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-composition-api/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-composition-api"
+          ],
+          "options": {
+            "jestConfig": "apps/18-composition-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "18-composition-api-solution": {
+      "projectType": "application",
+      "root": "apps/18-composition-api-solution",
+      "sourceRoot": "apps/18-composition-api-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/18-composition-api-solution",
+            "index": "apps/18-composition-api-solution/public/index.html",
+            "main": "apps/18-composition-api-solution/src/main.ts",
+            "tsConfig": "apps/18-composition-api-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "18-composition-api-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "18-composition-api-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/18-composition-api-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/18-composition-api-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/18-composition-api-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "server": {
       "root": "apps/server",
       "sourceRoot": "apps/server/src",

@@ -186,6 +186,7 @@ function compositionApiSlides() {
     'composition-api/basics.md',
     'composition-api/reactivity_api.md',
     'composition-api/separate_files.md',
+    'composition-api/exercice.md',
   ]
 }
 

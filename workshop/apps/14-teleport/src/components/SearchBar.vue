@@ -11,7 +11,8 @@
 </template>
 <script lang="ts">
 import UpperDirective from '../directives/upper.directive';
-export default {
+import {defineComponent} from 'vue';
+export default defineComponent({
   directives: {
     upper: UpperDirective
   },
@@ -25,7 +26,7 @@ export default {
       this.$emit('search', searchValue);
     },
   },
-};
+});
 </script>
 <style scoped>
 form {

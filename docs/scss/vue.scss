@@ -1,5 +1,6 @@
-.reveal .slides section.institute-slide h1:first-of-type {
+.reveal .slides section.institute-slide, .reveal .slides section.institute-slide h1  {
   text-align: center !important;
+  color: white !important;
 }
 
 .reveal .slides section.two-column-layout section:last-child {

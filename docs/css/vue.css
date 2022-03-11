@@ -1,3 +1,8 @@
+.reveal .slides section.institute-slide, .reveal .slides section.institute-slide h1 {
+  text-align: center !important;
+  color: white !important;
+}
+
 .reveal .slides section.two-column-layout section:last-child .align-image {
   padding-left: 20%;
 }
