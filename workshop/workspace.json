@@ -1275,6 +1275,124 @@
         }
       }
     },
+    "12b-transition": {
+      "projectType": "application",
+      "root": "apps/12b-transition",
+      "sourceRoot": "apps/12b-transition/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12b-transition",
+            "index": "apps/12b-transition/public/index.html",
+            "main": "apps/12b-transition/src/main.ts",
+            "tsConfig": "apps/12b-transition/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12b-transition:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12b-transition:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12b-transition/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12b-transition"
+          ],
+          "options": {
+            "jestConfig": "apps/12b-transition/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "12b-transition-solution": {
+      "projectType": "application",
+      "root": "apps/12b-transition-solution",
+      "sourceRoot": "apps/12b-transition-solution/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/12b-transition-solution",
+            "index": "apps/12b-transition-solution/public/index.html",
+            "main": "apps/12b-transition-solution/src/main.ts",
+            "tsConfig": "apps/12b-transition-solution/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "12b-transition-solution:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "12b-transition-solution:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/12b-transition-solution/**/*.{ts,tsx,vue}"
+            ]
+          },
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/12b-transition-solution"
+          ],
+          "options": {
+            "jestConfig": "apps/12b-transition-solution/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "12-modifiers": {
       "projectType": "application",
       "root": "apps/12-modifiers",

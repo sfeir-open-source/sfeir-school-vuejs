@@ -3,7 +3,8 @@
 ## Exercice
 <br>
 
-- Complétez le fichier router.js (src/view/router.js)<br><br>
+- Complétez le fichier router.js (src/view/router.js)
+  - /home et / affichent le composant Home
 - Importez ce fichier dans votre instance Vue<br><br>
 - Importez les balises obligatoires dans le fichier App.vue
 

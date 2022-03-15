@@ -1,0 +1,131 @@
+<template>
+  <div class="header row">
+    <h1 class="col s12 flow-text">You have {{ filteredPeople.length }} contacts</h1>
+    <SearchBar @search="filterPeople($event)" />
+  </div>
+  <TransitionGroup name="list" tag="section" class="container">
+    <card-panel
+      v-for="person in filteredPeople"
+      :key="person.id"
+      :person="person"
+      @person-delete="deletePerson($event)"
+    />
+  </TransitionGroup>
+  <el-button
+    class="fab-bottom"
+    type="primary"
+    size="large"
+    circle
+    @click="dialogVisible = true"
+  >
+    <el-icon><Plus /></el-icon>
+  </el-button>
+  <el-button
+    class="fab-bottom-left"
+    type="primary"
+    size="large"
+    circle
+    @click="randomize()"
+  >
+    <el-icon><Refresh /></el-icon>
+  </el-button>
+  <el-dialog
+    v-model="dialogVisible"
+    title="Contact informations"
+  >
+    <Form @cancel="dialogVisible = false" @save="addPerson($event)"/>
+  </el-dialog>
+</template>
+
+<script lang="ts">
+import PeopleService from '../services/people.service';
+import CardPanel from '../components/CardPanel.vue';
+import Form from '../components/Form.vue';
+import SearchBar from '../components/SearchBar.vue';
+import {Plus, Refresh} from '@element-plus/icons-vue';
+import {defineComponent} from 'vue';
+
+export default defineComponent({
+  components: {Refresh, CardPanel, Form, Plus, SearchBar},
+  data() {
+    return {
+      people: {},
+      filteredPeople: [],
+      dialogVisible: false,
+    };
+  },
+  async created() {
+    this.people = await PeopleService.fetch();
+    this.filteredPeople = this.people;
+  },
+  methods: {
+    async deletePerson(id) {
+      this.people = await PeopleService.delete(id);
+    },
+    async addPerson(person) {
+      this.dialogVisible = false;
+      this.people = await PeopleService.create(person).then(
+        PeopleService.fetch
+      );
+    },
+    filterPeople(searchFilter) {
+      const filter = filter => person =>
+        person.firstname.toLowerCase().includes(filter.toLowerCase()) ||
+        person.lastname.toLowerCase().includes(filter.toLowerCase());
+
+      this.filteredPeople = this.people.filter(filter(searchFilter));
+    },
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+    },
+    randomize() {
+      this.shuffleArray(this.people);
+    }
+  },
+});
+</script>
+
+<style scoped>
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fab-bottom {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+}
+
+.fab-bottom-left {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.list-leave-active {
+  position: absolute;
+}
+</style>

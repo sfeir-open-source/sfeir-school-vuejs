@@ -9,7 +9,6 @@
     - Importez le CSS d'Element Plus
     - Indiquez à Vue que vous utilisez Element Plus<br><br>
 - Dans le fichier <b>index.html</b>
-    - Supprimez l'import de vue
     - Affichez notre composant dans un composant el-card
 
 Notes:

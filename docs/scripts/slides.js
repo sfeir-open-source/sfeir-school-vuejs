@@ -106,6 +106,7 @@ function transitionAnimateSlides() {
   return [
     'transition-animation/transition_slide.md',
     'transition-animation/transition.md',
+    'transition-animation/exercice.md'
   ];
 };
 
@@ -205,8 +206,8 @@ function formation() {
     ...classStyleSlides(),
     ...communicationComponentSlides(),
     ...serverCommunicationSlides(),
-    ...transitionAnimateSlides(),
     ...formsSlides(),
+    ...transitionAnimateSlides(),
     ...componentReusabilitySlides(),
     ...fragmentsSlides(),
     ...teleportSlides(),

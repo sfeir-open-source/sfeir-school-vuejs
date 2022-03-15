@@ -41,3 +41,24 @@
 - les animations peuvent être coûteuses 
     - favoriser les animations qui n'affecte pas la mise en page du document (__transform__ ,__opacity__)
     - __CSS-Triggers (https://csstriggers.com/)__ aide à savoir si un propriété déclenche la mise en page
+
+##==##
+
+<!-- .slide -->
+# Transitions de groupe
+
+- à utiliser dans les animations dans un groupe d'éléments (listes)
+- couvrent les cas d'ajout/suppression et de changement d'ordre
+- l'attribut key dans le v-for est obligatoire
+
+![h-500](assets/images/school/transition-animation/transition-group-html.png)
+![h-700](assets/images/school/transition-animation/transition-group-css.png)
+
+##==##
+
+<!-- .slide -->
+# Transitions de route
+
+- il faut utiliser un slot nommé et une astuce pour contourner le problème de scope des slots
+
+![h-500](assets/images/school/transition-animation/transition-route.png)
