@@ -22,11 +22,28 @@
 ##--##
 <br><br><br>
 
-- Définit en tant que fonction retournant le composant
+- Vue fournit une méthode utilitaire **defineAsyncComponent**
+- Découpera le bundle final en "chunks"
+- Appel réseau pour récupérer l'élément manquant
 ##--##
 <br><br>
 
 ![h-600 center](assets/images/school/lazy-loading/async_component.png)
+
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+# Async component - Full
+##--##
+<br><br><br>
+
+- On peut passer plus d'options
+- 
+##--##
+<br><br>
+
+![h-600 center](assets/images/school/lazy-loading/async_component_full.png)
 
 
 ##==##
