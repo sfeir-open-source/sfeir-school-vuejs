@@ -8,7 +8,11 @@
   </div>
 </template>
 <script lang="ts">
-export default {};
+import {defineComponent} from 'vue';
+
+export default defineComponent({
+  // à vous de compléter
+});
 </script>
 <style scoped>
 form {
