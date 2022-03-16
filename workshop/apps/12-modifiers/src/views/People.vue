@@ -40,7 +40,7 @@ export default defineComponent({
   components: {CardPanel, Form, Plus, SearchBar},
   data() {
     return {
-      people: {},
+      people: [],
       dialogVisible: false,
     };
   },

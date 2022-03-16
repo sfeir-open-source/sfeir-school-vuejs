@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <card-panel 
+    <card-panel
       v-for="person in people"
-      :key="person.id" 
+      :key="person.id"
       :person="person"
       @person-delete="deletePerson($event)"
     />
@@ -19,7 +19,7 @@ export default defineComponent({
   components: {CardPanel},
   data() {
     return {
-      people: {},
+      people: [],
     };
   },
   created() {

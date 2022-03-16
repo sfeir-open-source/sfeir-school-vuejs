@@ -1,17 +1,17 @@
 <template>
   <section class="container">
-    <card-panel 
+    <card-panel
       v-for="person in people"
-      :key="person.id" 
+      :key="person.id"
       :person="person"
       @person-delete="deletePerson($event)"
     />
   </section>
-  <el-button 
+  <el-button
     class="fab-bottom"
-    type="primary" 
-    size="large" 
-    circle 
+    type="primary"
+    size="large"
+    circle
     @click="dialogVisible = true"
   >
     <el-icon><Plus /></el-icon>
@@ -35,7 +35,7 @@ export default defineComponent({
   components: {CardPanel, Form, Plus},
   data() {
     return {
-      people: {},
+      people: [],
       dialogVisible: false,
     };
   },

@@ -48,7 +48,7 @@ export default defineComponent({
   components: {Refresh, CardPanel, Form, Plus, SearchBar},
   data() {
     return {
-      people: {},
+      people: [],
       filteredPeople: [],
       dialogVisible: false,
     };

@@ -59,7 +59,7 @@ export default defineComponent({
   components: {Delete, EditPen, Message, PhoneFilled},
   data() {
     return {
-      people: {},
+      people: [],
     };
   },
   created() {

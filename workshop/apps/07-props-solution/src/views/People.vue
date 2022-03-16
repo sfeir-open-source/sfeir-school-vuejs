@@ -14,7 +14,7 @@ export default defineComponent({
   components: {CardPanel},
   data() {
     return {
-      people: {},
+      people: [],
     };
   },
   created() {
