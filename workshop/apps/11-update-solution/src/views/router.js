@@ -11,7 +11,7 @@ const APP_ROUTES = [
     path: '/people/:id',
     component: Update,
     name: 'people-details',
-    strict: true
+    strict: debug
   },
 ];
 

@@ -6,7 +6,7 @@
 - <b>Name</b>: le nom de la route<br><br>
 - <b>Component</b>: le composant associé à la route<br><br>
 - <b>Redirect</b>: path ou name de la page vers laquelle rediriger<br><br>
-- <b>alias</b>: redirection sans changement d'url
+- <b>alias</b>: redirection sans changement d'url pour l'utilisateur
 
 ##==##
 

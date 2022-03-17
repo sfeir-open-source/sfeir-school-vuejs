@@ -4,8 +4,8 @@
 
 - Récupération du routeur configuré => import router from 'router.js'<br><br>
 - __Push :__
-    - router.push('home') (nom de la route)
-    - router.push({ path: 'home' }) (path de la route)
+    - router.push('/home') (directement un path)
+    - router.push({ path: '/home' }) (path via un objet)
     - router.push({ name: 'home', params:{ id: '1234' }}) (router avec paramètres)
     - router.push({ path: 'home', query:{ id: '1234' }}) (route avec query paramètres)<br><br>
 - __Replace__ : remplace l'url courante, ne change pas de vue, historique inchangé<br><br>

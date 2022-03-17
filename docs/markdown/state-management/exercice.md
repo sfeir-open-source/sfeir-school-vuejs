@@ -7,7 +7,7 @@ Mettre en place une architecture Vuex dans le composant People.vue
 <br><br>
 
 - Récupérez la liste des utilisateurs : une action + une mutation pour setter les peoples<br><br>
-- Setter l'interation user-recherche dans le state : une mutation<br><br>
+- Setter l'interaction user-recherche dans le state : une mutation<br><br>
 - Filtrer les peoples : un getter
 
 ##==##

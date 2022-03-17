@@ -13,6 +13,8 @@ Ce qui peut poser problème quand on veut des éléments "qui se baladent" (popu
 ##--##
 Solution pour "déplacer" un composant dans le DOM : le `teleport`
 
+Cible du *to* : sélecteur CSS
+
 Attention à ne pas en abuser ! (difficile à lire)
 
 ##--##

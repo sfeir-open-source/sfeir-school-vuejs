@@ -43,8 +43,8 @@ export default defineComponent({
       dialogVisible: false,
     };
   },
-  async created() {
-    await this.$store.dispatch('getPeople');
+  created() {
+    this.$store.dispatch('getPeople');
   },
   computed: {
     ...mapGetters({

@@ -5,6 +5,7 @@
 - Cet object se trouve dans la propriété mutations du store
 - Mutation déclenchée grâce au mot clé <b>commit</b>
 - Action toujours <b>synchrone</b>
+- Récupère le __state__ en 1er argument et éventuellement le __payload__ en 2nd argument
 <br><br>
 
 ![h-400](assets/images/school/state-management/mutation.png)

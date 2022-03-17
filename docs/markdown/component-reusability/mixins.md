@@ -4,12 +4,14 @@
 <br><br>
 
 - permet de créer des fonctionalités réutilisables
-- peut contenir toutes les options valides pour un composant
+- peut contenir toutes les options valides pour un composant<br><br>
+
+- Conseillé d'utiliser la Composition API pour partager des méthodes communes
 
 ##--##
 <br>
 
-![h-900](assets/images/school/component-reusability/mixin-presentation.png)
+![h-700](assets/images/school/component-reusability/mixin-presentation.png)
 <!-- .element: class="align-image" -->
 
 ##==##

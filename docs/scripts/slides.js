@@ -168,6 +168,7 @@ function stateManagementSlides() {
     'state-management/action.md',
     'state-management/helpers.md',
     'state-management/modules.md',
+    'state-management/form_handling.md',
     'state-management/exercice.md',
   ]
 }

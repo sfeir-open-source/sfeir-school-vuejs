@@ -10,26 +10,7 @@ Notes:
  Pour ce faire, il existe deux grandes solutions
   - mise en place d'un bus de communication (service, instance de Vue, observables)
   - mise en place d'une architecture flux (provenant du monde React => problème de notifications)
-
-##==##
-
-<!-- .slide -->
-# Créer sa propre communication
-<br>
-
-- Créer une instance de Vue dédiée pour la communication
-- Importer cette instance dans différents composants
-- Utiliser les méthodes $emit et $on
-<br><br>
-
-![](assets/images/school/state-management/bus_instance.png)
-![](assets/images/school/state-management/bus_implementation.png)
-
-Notes:
- - https://alligator.io/vuejs/global-event-bus/ permet de voir une implémentation complète
- - Il est judicieux de placer nos listener dans un hook Vue js (mounted est particulièrement indiqué)
- - $off permet de désouscrire à un event
-
+  
 ##==##
 
 <!-- .slide -->
