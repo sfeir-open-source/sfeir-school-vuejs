@@ -8,12 +8,7 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "vuejs: chrome",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}/exercices/steps/apps/19-state-management-module-solution/src",
-      "sourceMapPathOverrides": {
-        "webpack:///src/*.vue": "${webRoot}/*.vue",
-        "webpack:///./src/*.js": "${webRoot}/*.js",
-      }
+      "url": "http://localhost:5173",
     },
   ]
 }

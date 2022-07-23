@@ -21,7 +21,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/01-bootstraping-solution",
-        "command": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+        "command": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
       }
     }
   }

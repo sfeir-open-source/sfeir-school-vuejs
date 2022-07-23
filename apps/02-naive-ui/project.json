@@ -21,7 +21,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/02-naive-ui",
-        "command": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+        "command": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
       }
     }
   }
