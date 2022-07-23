@@ -2,10 +2,12 @@
   "cSpell.words": [
     "bootstraping",
     "esnext",
+    "hoverable",
     "nrwl",
     "Parens",
     "rushstack",
-    "sfeir"
+    "sfeir",
+    "vfonts"
   ],
   "eslint.workingDirectories": [
     "."

@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "01-bootstraping": "apps/01-bootstraping",
-    "01-bootstraping-solution": "apps/01-bootstraping-solution"
+    "01-bootstraping-solution": "apps/01-bootstraping-solution",
+    "02-naive-ui": "apps/02-naive-ui",
+    "02-naive-ui-solution": "apps/02-naive-ui-solution"
   }
 }
