@@ -5,6 +5,8 @@
     "01-bootstraping": "apps/01-bootstraping",
     "01-bootstraping-solution": "apps/01-bootstraping-solution",
     "02-naive-ui": "apps/02-naive-ui",
-    "02-naive-ui-solution": "apps/02-naive-ui-solution"
+    "02-naive-ui-solution": "apps/02-naive-ui-solution",
+    "03-sfc": "apps/03-sfc",
+    "03-sfc-solution": "apps/03-sfc-solution"
   }
 }
