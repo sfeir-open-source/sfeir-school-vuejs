@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "01-bootstraping": "apps/01-bootstraping",
+    "01-bootstraping-solution": "apps/01-bootstraping-solution"
+  }
+}
