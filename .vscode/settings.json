@@ -1,13 +1,19 @@
 {
   "cSpell.words": [
+    "antd",
     "bootstraping",
     "esnext",
+    "firstname",
     "hoverable",
+    "lastname",
+    "linkedin",
     "nrwl",
     "Parens",
     "rushstack",
     "sfeir",
-    "vfonts"
+    "Twotone",
+    "vfonts",
+    "vicons"
   ],
   "eslint.workingDirectories": [
     "."
