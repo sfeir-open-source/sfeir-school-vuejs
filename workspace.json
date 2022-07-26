@@ -11,6 +11,8 @@
     "04-bindings": "apps/04-bindings",
     "04-bindings-solution": "apps/04-bindings-solution",
     "05-events": "apps/05-events",
-    "05-events-solution": "apps/05-events-solution"
+    "05-events-solution": "apps/05-events-solution",
+    "06-composable": "apps/06-composable",
+    "06-composable-solution": "apps/06-composable-solution"
   }
 }
