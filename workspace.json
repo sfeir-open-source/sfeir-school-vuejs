@@ -9,6 +9,8 @@
     "03-sfc": "apps/03-sfc",
     "03-sfc-solution": "apps/03-sfc-solution",
     "04-bindings": "apps/04-bindings",
-    "04-bindings-solution": "apps/04-bindings-solution"
+    "04-bindings-solution": "apps/04-bindings-solution",
+    "05-events": "apps/05-events",
+    "05-events-solution": "apps/05-events-solution"
   }
 }

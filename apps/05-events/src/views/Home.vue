@@ -38,12 +38,26 @@
         </n-button>
       </template>
     </n-card>
+    <n-button class="random-button" circle color="#ff69b4" size="large">
+      <template #icon>
+        <n-icon :component="ReloadOutlined"></n-icon>
+      </template>
+    </n-button>
   </section>
 </template>
 <script lang="ts" setup>
 import type { Person } from '@/models/person.model';
 import { PEOPLE } from '@/_static/people';
-import { BankTwotone, CompassTwotone, DeleteTwotone, EditTwotone, MailTwotone, MobileTwotone, TeamOutlined } from '@vicons/antd';
+import {
+  BankTwotone,
+  CompassTwotone,
+  DeleteTwotone,
+  EditTwotone,
+  MailTwotone,
+  MobileTwotone,
+  ReloadOutlined,
+  TeamOutlined
+} from '@vicons/antd';
 import { ref } from 'vue';
 
 const [firstPerson] = PEOPLE;
@@ -106,5 +120,11 @@ const person = ref<Person>(firstPerson);
   font-size: 0.7rem;
   padding-left: 0.5rem;
   color: #e0e0e0;
+}
+
+.random-button {
+  position: absolute;
+  bottom: 6rem;
+  right: 3rem;
 }
 </style>
