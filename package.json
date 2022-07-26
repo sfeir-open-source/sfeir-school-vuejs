@@ -5,16 +5,23 @@
   "scripts": {
     "start": "nx dev",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "server": "nx serve server-express --no-inspect"
   },
   "private": true,
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "underscore": "^1.13.4",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@nrwl/cli": "14.4.3",
+    "@nrwl/express": "^14.4.3",
     "@nrwl/workspace": "14.4.3",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@types/express": "^4.17.13",
     "@types/node": "^16.11.45",
     "@vicons/antd": "^0.12.0",
     "@vitejs/plugin-vue": "^3.0.1",
