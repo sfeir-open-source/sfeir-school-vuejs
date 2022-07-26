@@ -16,6 +16,8 @@
     "06-composable-solution": "apps/06-composable-solution",
     "07-http": "apps/07-http",
     "07-http-solution": "apps/07-http-solution",
+    "08-routing": "apps/08-routing",
+    "08-routing-solution": "apps/08-routing-solution",
     "server-express": "apps/server-express"
   }
 }
