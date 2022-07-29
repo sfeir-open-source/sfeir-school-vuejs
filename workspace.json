@@ -20,6 +20,8 @@
     "08-routing-solution": "apps/08-routing-solution",
     "09-loop": "apps/09-loop",
     "09-loop-solution": "apps/09-loop-solution",
+    "10-props": "apps/10-props",
+    "10-props-solution": "apps/10-props-solution",
     "server-express": "apps/server-express"
   }
 }
