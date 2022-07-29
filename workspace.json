@@ -26,6 +26,8 @@
     "11-output-solution": "apps/11-output-solution",
     "12-forms": "apps/12-forms",
     "12-forms-solution": "apps/12-forms-solution",
+    "13-update": "apps/13-update",
+    "13-update-solution": "apps/13-update-solution",
     "server-express": "apps/server-express"
   }
 }
