@@ -22,6 +22,8 @@
     "09-loop-solution": "apps/09-loop-solution",
     "10-props": "apps/10-props",
     "10-props-solution": "apps/10-props-solution",
+    "11-output": "apps/11-output",
+    "11-output-solution": "apps/11-output-solution",
     "server-express": "apps/server-express"
   }
 }
