@@ -1,0 +1,21 @@
+.two-column-section {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.image-section {
+  margin-right: 1rem;
+}
+
+.image-section img {
+  border-radius: 50%;
+}
+
+.form-section {
+  flex: 2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}

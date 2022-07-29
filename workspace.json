@@ -24,6 +24,8 @@
     "10-props-solution": "apps/10-props-solution",
     "11-output": "apps/11-output",
     "11-output-solution": "apps/11-output-solution",
+    "12-forms": "apps/12-forms",
+    "12-forms-solution": "apps/12-forms-solution",
     "server-express": "apps/server-express"
   }
 }
