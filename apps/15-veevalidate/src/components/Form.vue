@@ -6,10 +6,18 @@
       </div>
       <form class="form-section">
         <n-space vertical>
-          <n-input v-model:value="personForm.lastname" round size="large" placeholder="Lastname of the person" />
-          <n-input v-model:value="personForm.firstname" round size="large" placeholder="Firstname of the person" />
-          <n-input v-model:value="personForm.email" round size="large" placeholder="Email of the person" />
-          <n-input v-model:value="personForm.phone" round size="large" placeholder="Phone number of the person" />
+          <div class="container-field">
+            <n-input v-model:value="personForm.lastname" round size="large" placeholder="Lastname of the person" />
+          </div>
+          <div class="container-field">
+            <n-input v-model:value="personForm.firstname" round size="large" placeholder="Firstname of the person" />
+          </div>
+          <div class="container-field">
+            <n-input v-model:value="personForm.email" round size="large" placeholder="Email of the person" />
+          </div>
+          <div class="container-field">
+            <n-input v-model:value="personForm.phone" round size="large" placeholder="Phone number of the person" />
+          </div>
         </n-space>
       </form>
     </section>
@@ -57,6 +65,11 @@ function cancel(): void {
 
 .form-section {
   flex: 2;
+}
+
+.error-message {
+  color: #e57373;
+  padding-left: 1rem;
 }
 
 .button-container {

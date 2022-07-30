@@ -30,6 +30,8 @@
     "13-update-solution": "apps/13-update-solution",
     "14-composable-form": "apps/14-composable-form",
     "14-composable-form-solution": "apps/14-composable-form-solution",
+    "15-veevalidate": "apps/15-veevalidate",
+    "15-veevalidate-solution": "apps/15-veevalidate-solution",
     "server-express": "apps/server-express"
   }
 }

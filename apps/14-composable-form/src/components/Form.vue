@@ -4,14 +4,14 @@
       <div class="image-section">
         <img height="100" width="100" alt="photo of the person" :src="personForm.photo" />
       </div>
-      <div class="form-section">
+      <form class="form-section">
         <n-space vertical>
           <n-input v-model:value="personForm.lastname" round size="large" placeholder="Lastname of the person" />
           <n-input v-model:value="personForm.firstname" round size="large" placeholder="Firstname of the person" />
           <n-input v-model:value="personForm.email" round size="large" placeholder="Email of the person" />
           <n-input v-model:value="personForm.phone" round size="large" placeholder="Phone number of the person" />
         </n-space>
-      </div>
+      </form>
     </section>
     <div class="button-container">
       <n-button strong round secondary type="error" @click="cancel">Cancel</n-button>
