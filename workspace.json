@@ -28,6 +28,8 @@
     "12-forms-solution": "apps/12-forms-solution",
     "13-update": "apps/13-update",
     "13-update-solution": "apps/13-update-solution",
+    "14-composable-form": "apps/14-composable-form",
+    "14-composable-form-solution": "apps/14-composable-form-solution",
     "server-express": "apps/server-express"
   }
 }
