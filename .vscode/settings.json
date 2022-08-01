@@ -15,7 +15,8 @@
     "sfeir",
     "Twotone",
     "vfonts",
-    "vicons"
+    "vicons",
+    "vuelidate"
   ],
   "eslint.workingDirectories": [
     "."

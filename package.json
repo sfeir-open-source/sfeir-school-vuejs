@@ -12,6 +12,8 @@
   "dependencies": {
     "@vee-validate/i18n": "^4.6.2",
     "@vee-validate/rules": "^4.6.2",
+    "@vuelidate/core": "^2.0.0-alpha.43",
+    "@vuelidate/validators": "^2.0.0-alpha.31",
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
