@@ -18,6 +18,7 @@
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "pinia": "^2.0.17",
     "underscore": "^1.13.4",
     "vee-validate": "^4.6.2",
     "vue": "^3.2.37",
