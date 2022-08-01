@@ -36,6 +36,8 @@
     "16-vuelidate-solution": "apps/16-vuelidate-solution",
     "17-filter": "apps/17-filter",
     "17-filter-solution": "apps/17-filter-solution",
+    "18-directive": "apps/18-directive",
+    "18-directive-solution": "apps/18-directive-solution",
     "server-express": "apps/server-express"
   }
 }
