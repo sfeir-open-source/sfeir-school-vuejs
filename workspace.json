@@ -34,6 +34,8 @@
     "15-veevalidate-solution": "apps/15-veevalidate-solution",
     "16-vuelidate": "apps/16-vuelidate",
     "16-vuelidate-solution": "apps/16-vuelidate-solution",
+    "17-filter": "apps/17-filter",
+    "17-filter-solution": "apps/17-filter-solution",
     "server-express": "apps/server-express"
   }
 }
