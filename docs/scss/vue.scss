@@ -11,10 +11,7 @@
   top: 800px;
 }
 
-.reveal
-  .slides
-  section[data-background].speaker-slide
-  img[alt*='second-badge'] {
+.reveal .slides section[data-background].speaker-slide img[alt*='second-badge'] {
   padding-top: 40px;
 }
 

@@ -1,27 +1,13 @@
 function schoolSlides() {
-  return [
-    'presentation/welcome_school.md',
-    'speaker/nicolas_frizzarin.md',
-    'speaker/justin_wilmet.md',
-    'presentation/flow_school.md',
-  ];
+  return ['presentation/welcome_school.md', 'speaker/nicolas_frizzarin.md', 'presentation/flow_school.md'];
 }
 
 function basicsSlides() {
-  return [
-    'basics/transition_slide.md',
-    'basics/hello_compositions.md',
-    'basics/hello_composition_exercice.md',
-  ];
+  return ['basics/transition_slide.md', 'basics/hello_compositions.md', 'basics/hello_composition_exercice.md'];
 }
 
 function toolingSlides() {
-  return [
-    'tooling/transition_slide.md',
-    'tooling/official_stack.md',
-    'tooling/configuration.md',
-    'tooling/exercice.md',
-  ];
+  return ['tooling/transition_slide.md', 'tooling/official_stack.md', 'tooling/configuration.md', 'tooling/exercice.md'];
 }
 
 function instanceSlides() {
@@ -29,11 +15,7 @@ function instanceSlides() {
 }
 
 function componentsSlides() {
-  return [
-    'components/transition_slide.md',
-    'components/components.md',
-    'components/exercice.md',
-  ];
+  return ['components/transition_slide.md', 'components/components.md', 'components/exercice.md'];
 }
 
 function dataBindingSlides() {
@@ -42,24 +24,16 @@ function dataBindingSlides() {
     'data-binding-template/plain_js.md',
     'data-binding-template/jquery.md',
     'data-binding-template/vue.md',
-    'data-binding-template/exercice.md',
+    'data-binding-template/exercice.md'
   ];
 }
 
 function domEventGestionSlides() {
-  return [
-    'dom-event-gestion/transition_slide.md',
-    'dom-event-gestion/event_definition.md',
-    'dom-event-gestion/exercice.md',
-  ];
+  return ['dom-event-gestion/transition_slide.md', 'dom-event-gestion/event_definition.md', 'dom-event-gestion/exercice.md'];
 }
 
 function serverCommunicationSlides() {
-  return [
-    'server-communication/transition_slide.md',
-    'server-communication/axios_lib.md',
-    'server-communication/exercice.md',
-  ];
+  return ['server-communication/transition_slide.md', 'server-communication/axios_lib.md', 'server-communication/exercice.md'];
 }
 
 function navigationSlides() {
@@ -68,23 +42,19 @@ function navigationSlides() {
     'navigation/tp_navigation.md',
     'navigation/configuration.md',
     'navigation/implementation.md',
-    'navigation/exercice.md',
+    'navigation/exercice.md'
   ];
 }
 
 function iteratorSlides() {
-  return [
-    'iterator/transition_slide.md',
-    'iterator/directive_v_for.md',
-    'iterator/exercice.md',
-  ];
+  return ['iterator/transition_slide.md', 'iterator/directive_v_for.md', 'iterator/exercice.md'];
 }
 
 function communicationComponentSlides() {
   return [
     'communication-components/transition_slide.md',
     'communication-components/event_props.md',
-    'communication-components/exercice.md',
+    'communication-components/exercice.md'
   ];
 }
 
@@ -95,33 +65,20 @@ function formsSlides() {
     'forms/validation.md',
     'forms/vee_validate.md',
     'forms/vuelidate.md',
-    'forms/vuelidate_v2.md',
+    'forms/vuelidate_v2.md'
   ];
 }
 
 function filterSlides() {
-  return [
-    'filters/transition_slide.md',
-    'filters/filters_concept.md',
-    'filters/exercice.md',
-  ];
+  return ['filters/transition_slide.md', 'filters/filters_concept.md', 'filters/exercice.md'];
 }
 
 function modifiersSlides() {
-  return [
-    'modifier/transition_slide.md',
-    'modifier/modifier.md',
-    'modifier/exercice.md',
-  ];
+  return ['modifier/transition_slide.md', 'modifier/modifier.md', 'modifier/exercice.md'];
 }
 
 function directiveSlides() {
-  return [
-    'directive/transition_slide.md',
-    'directive/native_directive.md',
-    'directive/custom_directive.md',
-    'directive/exercice.md',
-  ];
+  return ['directive/transition_slide.md', 'directive/native_directive.md', 'directive/custom_directive.md', 'directive/exercice.md'];
 }
 
 function stateManagementSlides() {
@@ -138,16 +95,12 @@ function stateManagementSlides() {
     'state-management/pinia-introduction.md',
     'state-management/pinia-use-vue2.md',
     'state-management/pinia-use-vue3.md',
-    'state-management/pinia-exercice.md',
+    'state-management/pinia-exercice.md'
   ];
 }
 
 function lazyLoadingSlides() {
-  return [
-    'lazy-loading/transition_slide.md',
-    'lazy-loading/concept_lazy_loading.md',
-    'lazy-loading/exercice.md',
-  ];
+  return ['lazy-loading/transition_slide.md', 'lazy-loading/concept_lazy_loading.md', 'lazy-loading/exercice.md'];
 }
 
 function formation() {
@@ -168,7 +121,7 @@ function formation() {
     ...modifiersSlides(),
     ...directiveSlides(),
     ...stateManagementSlides(),
-    ...lazyLoadingSlides(),
+    ...lazyLoadingSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });

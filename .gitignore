@@ -281,3 +281,4 @@ testem.log
 .DS_Store
 Thumbs.db
 .DS_Store
+docs/.DS_Store

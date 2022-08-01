@@ -42,6 +42,7 @@
     "19-state-management-solution": "apps/19-state-management-solution",
     "20-lazyloading": "apps/20-lazyloading",
     "20-lazyloading-solution": "apps/20-lazyloading-solution",
+    "training": "docs",
     "server-express": "apps/server-express"
   }
 }

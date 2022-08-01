@@ -6,7 +6,8 @@
     "start": "nx dev",
     "build": "nx build",
     "test": "nx test",
-    "server": "nx serve server-express --no-inspect"
+    "server": "nx serve server-express --no-inspect",
+    "start-training": "nx start training"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,16 @@
     "underscore": "^1.13.4",
     "vee-validate": "^4.6.2",
     "vue": "^3.2.37",
-    "vue-router": "^4.1.2"
+    "vue-router": "^4.1.2",
+    "chokidar-cli": "^1.2.2",
+    "cpx": "^1.5.0",
+    "highlight.js": "^9.15.6",
+    "lit-html": "^1.1.2",
+    "live-server": "^1.2.1",
+    "parallelshell": "3.0.1",
+    "reveal.js": "^3.9.2",
+    "snowpack": "^2.16.1",
+    "sass": "1.48.0"
   },
   "devDependencies": {
     "@nrwl/cli": "14.4.3",

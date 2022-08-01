@@ -1,10 +1,8 @@
 import { createApp } from 'vue';
 
 createApp({
-  el: '#app',
-  data() {
-    return {
-      name: 'SFEIR'
-    };
+  setup() {
+    const name = 'SFEIR';
+    return { name };
   }
 }).mount('#app');
