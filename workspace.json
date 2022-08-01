@@ -40,6 +40,8 @@
     "18-directive-solution": "apps/18-directive-solution",
     "19-state-management": "apps/19-state-management",
     "19-state-management-solution": "apps/19-state-management-solution",
+    "20-lazyloading": "apps/20-lazyloading",
+    "20-lazyloading-solution": "apps/20-lazyloading-solution",
     "server-express": "apps/server-express"
   }
 }
