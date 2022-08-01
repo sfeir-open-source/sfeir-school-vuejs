@@ -9,6 +9,10 @@ defineRule('required', required);
 defineRule('min', min);
 defineRule('max', max);
 defineRule('regex', regex);
+defineRule('sfeirEmail', (value: string) => {
+  const sfeirEmailRegex = /^\w+.\w@sfeir.com$/;
+  return sfeirEmailRegex.test(value);
+});
 
 configure({
   validateOnBlur: true,
@@ -17,32 +21,51 @@ configure({
       required: 'The {field} is required',
       min: 'The {field} must be 0:{min} characters minimum',
       max: 'The {field} must be less than 0:{max} characters maximum',
-      regex: 'The {field} must have ten numbers'
+      regex: 'The {field} must have ten numbers',
+      sfeirEmail: 'The {field} is not a valid sfeir email'
     }
   })
 });
 
 export function usePersonForm(person: Person = { photo: 'https://randomuser.me/api/portraits/lego/6.jpg' } as Person) {
   const { errors: personFormErrors, handleSubmit } = useForm<PersonForm>({ initialValues: person });
-  const { value: lastname, errorMessage: firstErrorLastname } = useField<string>(
-    'lastname',
-    { required: true, min: 2 },
-    { validateOnMount: true }
-  );
-  const { value: firstname, errorMessage: firstErrorFirstname } = useField<string>(
+
+  const {
+    value: lastname,
+    errorMessage: lastnameError,
+    meta: lastnameMeta,
+    handleBlur: lastnameHandleBlur
+  } = useField<string>('lastname', { required: true, min: 2 }, { validateOnMount: true });
+
+  const {
+    value: firstname,
+    errorMessage: firstnameError,
+    meta: firstnameMeta,
+    handleBlur: firstnameHandleBlur
+  } = useField<string>(
     'firstname',
     { required: true, min: 2 },
     {
       validateOnMount: true
     }
   );
-  const { value: email, errorMessage: firstErrorEmail } = useField<string>('email', { required: true }, { validateOnMount: true });
-  const { value: phone, errorMessage: firstErrorPhone } = useField<string>(
-    'phone',
-    { required: true, regex: /^[0-9]{10}/ },
-    { validateOnMount: true }
-  );
+
+  const {
+    value: email,
+    errorMessage: emailError,
+    meta: emailMeta,
+    handleBlur: emailHandleBlur
+  } = useField<string>('email', { required: true, sfeirEmail: true }, { validateOnMount: true });
+
+  const {
+    value: phone,
+    errorMessage: phoneError,
+    meta: phoneMeta,
+    handleBlur: phoneHandleBlur
+  } = useField<string>('phone', { required: true, regex: /^[0-9]{10}/ }, { validateOnMount: true });
+
   const { value: photo } = useField<string>('photo');
+
   const personFormValidity = computed(() => Object.keys(personFormErrors.value).length > 0);
 
   const savePerson: (person: PersonForm) => Promise<void> = async (person: PersonForm) => {
@@ -56,13 +79,21 @@ export function usePersonForm(person: Person = { photo: 'https://randomuser.me/a
   return {
     personFormValidity,
     lastname,
-    firstErrorLastname,
+    lastnameError,
+    lastnameMeta,
+    lastnameHandleBlur,
     firstname,
-    firstErrorFirstname,
+    firstnameError,
+    firstnameMeta,
+    firstnameHandleBlur,
     email,
-    firstErrorEmail,
+    emailError,
+    emailMeta,
+    emailHandleBlur,
     phone,
-    firstErrorPhone,
+    phoneError,
+    phoneMeta,
+    phoneHandleBlur,
     photo,
     handleSubmit,
     savePerson,

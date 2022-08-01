@@ -12,9 +12,10 @@
               round
               size="large"
               placeholder="Lastname of the person"
-              :status="firstErrorLastname ? 'error' : 'success'"
+              @blur="lastnameHandleBlur"
+              :status="lastnameMeta.touched && lastnameError ? 'error' : 'success'"
             />
-            <span class="error-message" v-if="firstErrorLastname">{{ firstErrorLastname }}</span>
+            <span class="error-message" v-if="lastnameMeta.touched && lastnameError">{{ lastnameError }}</span>
           </div>
           <div class="container-field">
             <n-input
@@ -22,9 +23,10 @@
               round
               size="large"
               placeholder="Firstname of the person"
-              :status="firstErrorFirstname ? 'error' : 'success'"
+              @blur="firstnameHandleBlur"
+              :status="firstnameError && firstnameMeta.touched ? 'error' : 'success'"
             />
-            <span class="error-message" v-if="firstErrorFirstname">{{ firstErrorFirstname }}</span>
+            <span class="error-message" v-if="firstnameMeta.touched && firstnameError">{{ firstnameError }}</span>
           </div>
           <div class="container-field">
             <n-input
@@ -32,9 +34,10 @@
               round
               size="large"
               placeholder="Email of the person"
-              :status="firstErrorEmail ? 'error' : 'success'"
+              @blur="emailHandleBlur"
+              :status="emailMeta.touched && emailError ? 'error' : 'success'"
             />
-            <span class="error-message" v-if="firstErrorEmail">{{ firstErrorEmail }}</span>
+            <span class="error-message" v-if="emailMeta.touched && emailError">{{ emailError }}</span>
           </div>
           <div class="container-field">
             <n-input
@@ -42,9 +45,10 @@
               round
               size="large"
               placeholder="Phone number of the person"
-              :status="firstErrorPhone ? 'error' : 'success'"
+              @blur="phoneHandleBlur"
+              :status="phoneMeta.touched && phoneError ? 'error' : 'success'"
             />
-            <span class="error-message" v-if="firstErrorPhone">{{ firstErrorPhone }}</span>
+            <span class="error-message" v-if="phoneMeta.touched && phoneError">{{ phoneError }}</span>
           </div>
         </n-space>
       </div>
@@ -67,14 +71,22 @@ const {
   handleSubmit,
   personFormValidity,
   lastname,
-  firstErrorLastname,
+  lastnameError,
+  lastnameMeta,
+  lastnameHandleBlur,
   firstname,
-  firstErrorFirstname,
+  firstnameError,
+  firstnameMeta,
+  firstnameHandleBlur,
   email,
-  firstErrorEmail,
-  photo,
+  emailError,
+  emailMeta,
+  emailHandleBlur,
   phone,
-  firstErrorPhone
+  phoneError,
+  phoneMeta,
+  phoneHandleBlur,
+  photo
 } = usePersonForm(toRaw(props.person));
 
 const save = handleSubmit(personForm => {
