@@ -1,71 +1,33 @@
-<!-- .slide: class="with-code inconsolata" -->
-# La stack "officielle"
-__Vue Cli (https://cli.vuejs.org)__
-<!-- .element: class="center" -->
+# Qu'apporte de plus Vue 3
+<br/><br/>
 
-```sh
-npm i -g @vue/cli
-vue create <project-name>
-```
-<!-- .element class="medium-code" -->
+- composition API <br/><br/>
+- option API <br/></br>
 
-![center h-700](assets/images/school/tool/vue_cli.png)
+**Attention toute cette formation est réalisé avec la composition API**
+<!-- .element: class="warning center"-->
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
-<br>
+<!-- .slide: class="sfeir-basic-slide"-->
+# La stack officielle
 
-- vue <br><br>
-- vue-cli-service<br><br>
-- vue ui
-##--##
-![h-800](assets/images/school/tool/vue_ui.png)
+<br/> <br/>
+
+- Vue 3 couplé avec Typescript (de préférence) <br/> <br/>
+- Vite <br/><br/>
+- Vscode accompagné du plugin Volar
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Créer un project Vue
 
 ```bash
-vue create <project-name>
+npm init vue@latest
 ```
-<!-- .element: class="medium-code" -->
+<!-- .element: class="big-code"-->
 
-<br><br>
-- plugins <br><br>
-- preset
-##--##
-<br><br>
+<br/><br/>
 
-![h-400](assets/images/school/tool/vue_create.png)
-
-
-##==##
-
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
-
-<br><br>
-
-```sh
-vue-cli-service
-```
-<!-- .element: class="medium-code" -->
-<br>
-
-- serve<br><br>
-- build<br><br>
-- inspect<br><br>
-
-##--##
-
-<br><br>
-
-![h-400](assets/images/school/tool/vue_service.png)
-
+![center h-400](assets/images/school/tool/vite-project.png)

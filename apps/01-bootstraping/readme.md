@@ -31,7 +31,7 @@ createApp({
 ## Etape 2
 <br/>
 
-Dans le fichier index.html, à l'intérieur du container #app, affichez la chaîne de caractère suivante: ''Hello and welcome {{ name }}'
+Dans le fichier index.html, à l'intérieur du container #app, affichez la chaîne de caractère suivante: 'Hello and welcome {{ name }}'
 
 
 Les doubles accolades ouvrantes et fermantes permettent d'interpoler une variable que nous retourne la fonction setup.
