@@ -3,7 +3,7 @@
 ## Exercice
 <br>
 
-Un readme est disponible dans le dossier
+**Un readme est disponible dans le dossier**
 <!-- .element: class="full-center"-->
 
 ##==##
@@ -11,6 +11,6 @@ Un readme est disponible dans le dossier
 <!-- .slide: class="exercice" -->
 # Exercice : 02-naive-ui-solution
 ## Solution
-**02-vue-material-bootstraping-solution**
+**02-naive-ui-solution**
 <!-- .element: class="full-center" -->
 

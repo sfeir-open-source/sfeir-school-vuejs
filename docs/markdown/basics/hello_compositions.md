@@ -1,3 +1,40 @@
+<!-- .slide: class="sfeir-basic-slide"-->
+# Qu'est ce que Vue JS ?
+<br/><br/>
+
+- Libraire Web permettant de réaliser des applications rapidement <br/><br/>
+- Deux modes de fonctionnement:
+    - option API
+    - composition API
+    - Possibilité de mixer les deux
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide"-->
+# Pourquoi utiliser l'option API ?
+
+- Rétrocompatible avec Vue 2 <br/><br/>
+- Pour de petite à moyenne application <br/><br/>
+- Pour des composant stateless (sans état)
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide"-->
+# Pourquoi utiliser la composition API ?
+
+- Full compatible avec la version 2.7 de Vue <br/><br/>
+- Pour des grandes applications <br/><br/>
+- Pour des composant statefull (avec état) <br/><br/>
+- Pour combler des lacunes de réutilisation de code
+
+<br/><br/>
+
+Cette formation porte exclusivement sur la composition API 
+<!-- .element: class="center bold important"-->
+
+
+
+##==##
 <!-- .slide  -->
 # Composition d'un simple Hello World
 <br>

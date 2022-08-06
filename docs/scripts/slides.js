@@ -14,6 +14,10 @@ function instanceSlides() {
   return ['vue-instance/transition_slide.md', 'vue-instance/instance.md'];
 }
 
+function reactivitySlides() {
+  return ['reactivity/transition_slide.md', 'reactivity/basics-reactivity.md'];
+}
+
 function componentsSlides() {
   return ['components/transition_slide.md', 'components/components.md', 'components/exercice.md'];
 }
@@ -109,6 +113,7 @@ function formation() {
     ...basicsSlides(),
     ...toolingSlides(),
     ...instanceSlides(),
+    ...reactivitySlides(),
     ...componentsSlides(),
     ...dataBindingSlides(),
     ...domEventGestionSlides(),

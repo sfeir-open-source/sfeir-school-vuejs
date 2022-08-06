@@ -2,6 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": [
     "env.d.ts",
+    "components.d.ts",
     "src/**/*",
     "src/**/*.vue"
   ],
@@ -11,10 +12,7 @@
       "@/*": [
         "./src/*"
       ]
-    },
-    "types": [
-      "naive-ui/volar"
-    ]
+    }
   },
   "references": [
     {

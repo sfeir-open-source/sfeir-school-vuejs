@@ -32,6 +32,18 @@ La fonction use permet d'enregistrer un plugin vue dans votre instance Vue. Ce p
 <br/>
 
 ## Etape 3
+<br/>
+
+Dans le fichier index.html, dans la div possédant l'id "app", affichez le message de bienvenue dans une card
+
+Le code pour afficher une card est le suivant
+
+```html
+<n-card hoverable></n-card>
+```
+<br/>
+
+## Etape 4
 
 Vérifiez votre travail en lançant la commande suivante:
 
