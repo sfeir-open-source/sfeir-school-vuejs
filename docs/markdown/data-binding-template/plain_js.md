@@ -2,11 +2,31 @@
 # Data Binding in Pure JS
 
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![](assets/images/school/data-binding-template/template_pure_js.png)
+```html
+<html>
+  Bonjour <span id="name"></span>
+  <input type="text" />
+</html>
+```
+<!-- .element: class="big-code"-->
 
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![h-700](assets/images/school/data-binding-template/pure_js.png)
+```javascript
+window.onLoad = function() {
+  var span = document.querySelector('#name');
+  var input = document.getElementsByTagName('input')[0];
+
+  input.onkeyup = function() {
+    if(span.textContent || span.textContent === '') {
+      span.textContent = input.value;
+    }
+  }
+}
+```
+<!-- .element: class="big-code"-->
+
+

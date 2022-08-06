@@ -1,10 +1,27 @@
 <!-- .slide: class="two-column-layout" -->
 # Data Binding with jQuery
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![](assets/images/school/data-binding-template/template_pure_js.png)
+```html
+<html>
+  Bonjour <span id="name"></span>
+  <input type="text" />
+</html>
+```
+<!-- .element: class="big-code"-->
+
 ##--##
-<br><br>
+<!--- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![h-700](assets/images/school/data-binding-template/jquery.png)
+```javascript
+$(document).ready(function() {
+  var $input = $('input');
+  var $span= $('#name');
+
+  $input.keyup(function(event) {
+    $span.text(event.target.value);
+  });
+});
+```
+<!-- .element: class="big-code"-->

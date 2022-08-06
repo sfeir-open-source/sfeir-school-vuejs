@@ -8,7 +8,7 @@ L'objectif de ce workshop est de:
 
 <br/>
 
-Les sources nécessaire à créer le template et le style  de ce single file component se trouve dans le dossier src/_static
+Les sources nécessaires à créer le template et le style  de ce single file component se trouve dans le dossier src/_static
 
 <br/>
 
