@@ -82,4 +82,4 @@ export default defineComponent({
 <!-- .slide: class="sfeir-basic-slide"-->
 # Exemple
 
-![center](assets/images/school/components/setup-data.png)
+![h-900 center](assets/images/school/components/setup-data.png)

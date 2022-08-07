@@ -1,19 +1,14 @@
 <!-- .slide: class="exercice" -->
-# 05-event
+# 05-events
 ## Exercice
-<br>
 
-- Un bouton random a été ajouté
-- Un bouton "cached" a été ajouté à Home.vue<br><br>
-
-- Créez une action "random" sur le clic du bouton
-- Exploitez le tableau du fichier people.js
-- Bonus : utilisez la fonction random de Math
+**Un readme est disponible dans le dossier**
+<!-- .element: class="full-center"-->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 05-event
+# Exercice 05-events
 ## Solution
-**05-event-solution**
+**05-events-solution**
 <!-- .element: class="full-center" -->

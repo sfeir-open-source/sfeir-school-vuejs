@@ -7,23 +7,17 @@
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 04-binding
+# Exercice 04-bindings
 ## Exercice
-<br>
 
-- Mappez: 
-    - src/_static/home.html avec le template
-    - src/_static/home.css avec le style (le scoper)
-- Importez people.js dans Home.vue
-- Importez Home.vue dans App.vue
-- Chargez le premier people dans une propriété du composant Home.vue (méthode "created")
-- Remplacer les données statiques du composant par les informations du people
+**Un readme est disponible dans le dossier**
+<!-- .element: class="full-center"-->
 
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 04-binding
+# Exercice 04-bindings 
 ## Solution
-**04-binding-solution**
+**04-bindings-solution**
 <!-- .element: class="full-center" -->
