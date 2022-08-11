@@ -47,6 +47,7 @@
 </template>
 <script lang="ts" setup>
 import { usePeople } from '@/composable/people.composable';
+import type { Person } from '@/models/person.model';
 import {
   BankTwotone,
   CompassTwotone,
@@ -59,11 +60,15 @@ import {
 } from '@vicons/antd';
 import { ref } from 'vue';
 
-const { people } = usePeople();
-const person = ref(people.value[0]);
+const { people, getPeople, getRandomPeople } = usePeople();
+const person = ref<Person>({} as Person);
+
+getPeople();
+
+person.value = people.value[0];
 
 function randomPerson() {
-  person.value = people.value[Math.floor(Math.random() * people.value.length)];
+  person.value = getRandomPeople();
 }
 </script>
 <style lang="css">

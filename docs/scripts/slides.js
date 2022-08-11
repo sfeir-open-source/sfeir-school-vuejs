@@ -36,6 +36,10 @@ function domEventGestionSlides() {
   return ['dom-event-gestion/transition_slide.md', 'dom-event-gestion/event_definition.md', 'dom-event-gestion/exercice.md'];
 }
 
+function compositionPatternSlides() {
+  return ['composition/transition_slide.md', 'composition/definition.md', 'composition/exercice.md'];
+}
+
 function serverCommunicationSlides() {
   return ['server-communication/transition_slide.md', 'server-communication/axios_lib.md', 'server-communication/exercice.md'];
 }
@@ -117,6 +121,7 @@ function formation() {
     ...componentsSlides(),
     ...dataBindingSlides(),
     ...domEventGestionSlides(),
+    ...compositionPatternSlides(),
     ...serverCommunicationSlides(),
     ...navigationSlides(),
     ...iteratorSlides(),
