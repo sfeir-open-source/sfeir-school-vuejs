@@ -41,7 +41,11 @@ function compositionPatternSlides() {
 }
 
 function serverCommunicationSlides() {
-  return ['server-communication/transition_slide.md', 'server-communication/axios_lib.md', 'server-communication/exercice.md'];
+  return ['server-communication/transition_slide.md', 'server-communication/axios_lib.md'];
+}
+
+function suspenseApiSlides() {
+  return ['suspense-api/transition_slide.md', 'suspense-api/introduction.md', 'suspense-api/exercice.md'];
 }
 
 function navigationSlides() {
@@ -123,6 +127,7 @@ function formation() {
     ...domEventGestionSlides(),
     ...compositionPatternSlides(),
     ...serverCommunicationSlides(),
+    ...suspenseApiSlides(),
     ...navigationSlides(),
     ...iteratorSlides(),
     ...communicationComponentSlides(),

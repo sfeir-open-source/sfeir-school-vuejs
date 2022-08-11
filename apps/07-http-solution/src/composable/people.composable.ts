@@ -6,9 +6,7 @@ const people: Ref<Array<Person>> = ref([]);
 
 export function usePeople() {
   const getPeople: () => Promise<void> = async () => {
-    if (people.value.length === 0) {
-      people.value = (await axios.get<Array<Person>>(`${import.meta.env.VITE_BASE_API}/peoples`)).data;
-    }
+    people.value = (await axios.get<Array<Person>>(`${import.meta.env.VITE_BASE_API}/peoples`)).data;
   };
 
   const getRandomPeople: () => Promise<Person> = async () => {
