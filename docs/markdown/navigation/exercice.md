@@ -2,7 +2,7 @@
 # Exercice 08-routing
 ## Exercice
 
-Un readme se trouve dans le dossier
+Un readme est disponible dans le dossier
 <!-- .element: class="bold full-center"-->
 
 
