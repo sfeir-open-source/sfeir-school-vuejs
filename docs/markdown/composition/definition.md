@@ -3,7 +3,7 @@
 
 La composition pattern , est un pattern d'assemblage de fonctions <br/><br/>
 
-Il permet de:
+Il permet de: <br/><br/>
 - centraliser la logique sur une entité (user, people, etc) <br/><br/>
 - réduire la duplication de code <br/><br/>
 - assemblez les fonctions pour construire une fonctionnalité
@@ -13,7 +13,7 @@ Il permet de:
 
 # Comment réaliser une fonction de composition
 
-- ficher qui exporte une fonction  qui retourne une API <br/><br/>
+- fichier qui exporte une fonction  qui retourne une API <br/><br/>
 - la logique sur cette entité se trouve dans cette fonction <br/><br/>
 - préfixer le nom de sa fonction par use: ex usePeople
 

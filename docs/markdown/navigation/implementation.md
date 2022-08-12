@@ -1,65 +1,144 @@
-<!-- .slide" -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Implémentation du ficher router.js
-![h-900 center](assets/images/school/navigation/router_js.png)
+
+```typescript
+import { createRouter, createWebHashHistory} from 'vue-router';
+import Home from '@/pages/home.vue';
+import People from '@/pages/people.vue';
+const APP_ROUTES = [
+  { path: '/', redirect: '/home' }
+  { path: '/home', component: Home, name: 'home' },
+]
+return createRouter({ history: createWebHashHistory(), routes: APP_ROUTES });
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide" -->
-# Importation Vue Router dans l'instance Vue
-![h-900 center](assets/images/school/navigation/router_in_instance.png)
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
+# Enregistrer son routing dans une instance Vue
+```typescript
+import APP_ROUTING from '@/pages/router.ts';
+import App from './App.vue';
+import { createApp } from 'vue';
+
+createApp(APP).use(APP_ROUTING).mount('#app');
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Balise obligatoire
 <br>
 La navigation se fait à l'aide de la balise router-view
-<br><br><br>
+<br/><br/><br/>
 
-![center](assets/images/school/navigation/router_view.png)
+```html
+<router-view></router-view>
+```
+<!-- .element: class="big-code"-->
 
-
-##==##
-
-<!-- .slide -->
-# Navigation programmatique (routing static)
-<br>
-
-- Récupération du routeur configuré => import router from 'router.js'<br><br>
-- __Push :__
-    - router.push('home') (nom de la route)
-    - router.push({ path: 'home' }) (path de la route)
-    - router.push({ name: 'home', params:{ id: '1234' }}) (router avec paramètres)
-    - router.push({ path: 'home', query:{ id: '1234' }}) (route avec query paramètres)<br><br>
-- __Replace__ : remplace l'url courante, ne change pas de vue, historique inchangé<br><br>
-- __Go(n)__ : navigue dans l'historique
-Notes:
- - Dans une instance Vue, vous pouvez accéder à l'instance du routeur via $router. Vous pouvez donc appeler this.$router.push.
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# Navigation programmatique (router dynamique)
-##--##
-<br><br>
-- Référence dans le template par $route.params<br><br>
-- guard<br><br>
-- props au composant:
-    - __Réutilisable__
-    - __Testable__
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
+# Récupérer le routing avec la composition API
 
-##--##
+Deux compositions: <br/><br/>
+- **useRoute()**: permet de récupérer les informations sur la route (params, queryParams etc) <br/><br/>
+- **useRouter()**: permet de récupérer le router pour naviguer de manière programmatique <br/><br/>
 
-![h-300](assets/images/school/navigation/template_params.png)
-![h-300](assets/images/school/navigation/guards.png)
-![h-300](assets/images/school/navigation/props_router.png)
-![h-300](assets/images/school/navigation/props_component.png)
+```html
+<script lang="ts" setup>
+import { useRoute, useRouter } from 'vue-router';
+const route = useRoute();
+const router = useRouter();
+</script>
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide -->
-# Navigation dans le template
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Récupérer un paramètre de votre route
 
-![center](assets/images/school/navigation/router_templating.png)
+Le composable useRoute, vous permet de récupérer les paramètre de votre route <br/><br/>
 
+```html
+<script lang="ts" setup>
+import { useRoute } from 'vue-router';
+const route = useRoute();
+const isUser = route.params.id;
+</script>
+```
+<!-- .element: class="big-code"-->
+
+<br/><br/>
+
+Attention params est une propriété réactive, pensez à toRefs si vous voulez destructurer.
+<!-- .element: class="important"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Naviguer de manière programmatique
+
+Le composable useRouter, vous permet de naviguer <br/><br/>
+
+```html
+<script lang="ts" setup>
+import { useRouter } from 'vue-router';
+const router = useRouter();
+router.push({ name: 'people-details', params: { id: 12 }});
+</script>
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide"-->
+# API de useRouter
+
+useRouter expose plusieurs façon de naviguer;<br/><br/>
+- push(): ajoute une entrée dans l'historique de navigation <br/><br/>
+- go(): permet de se déplacer backward/forward dans l'historique de navigation <br/><br/>
+- replace(): remplace l'entrée courant dans l'historique
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Naviguer par le template
+
+Vue router offre un component global nommé RouterLink qui permet la navigation via le template <br/><br/>
+
+```html
+<template>
+  <RouterLink :to={ name: 'people-details', params: { id: people.id }}>
+    <a href="#">Details de la personne</a>
+  </RouterLink>
+</template>
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code"-->
+# Utiliser le routing avec la Suspense API
+
+Il y a de forte chance que vos composants de vue soit asynchrone.
+
+Il est donc judicieux de coupler le routing avec la Suspense API. <br/><br/>
+
+```html
+<template>
+  <router-view v-slot="{ Component }">
+    <Suspense>
+      <main v-if="Component">
+        <Component :is="Component" />
+      </main>
+    </Suspense>
+  </router-view>
+</template>
+```
+<!-- .element: class="big-code"-->
