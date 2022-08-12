@@ -1,43 +1,32 @@
 <!-- .slide: class="exercice" -->
-# Exercice 09-props
+# Exercice 10-props
 ## Exercice
-<br>
+Un readme est disponible dans le dossier
+<!-- .element: class="bold full-center"-->
 
-- Dans un dossier composant, créez un monoficher CardPanel.vue qui prend en propriété "person"<br><br>
-- Copier le html et css dupliqué dans Home.vue et People.vue<br><br>
-- Utilisez card panel dans Home.vue et People.vue en lui passant une personne
-Notes:
- - pour people utilisez la directive v-for sur le composant pour le répéter ;)
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 09-props
+# Exercice 10-props
 ## Solution
-**09-props-solution**
-<!-- .element: class="full-center" -->
+**10-props-solution**
+<!-- .element: class="bold full-center" -->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 10-events
+# Exercice 11-output
 ## Exercice
 <br>
 
-- Implémentez la méthode delete dans PeopleService.js<br><br>
-- Sur l'icône trash du composant CardPanel, créez un event click<br><br>
-- Au click, propagez un event qui s'appelle person-delete<br><br>
-- A l'écoute de cet évènement, le composant People doit supprimer une personne<br><br>
-- A l'écoute de cet évènement, le composant Home doit changer de personne
-
-Notes:
-- Route de l'api à appeler pour le delete: http://localhost:9000/api/peoples/:id
-- Le delete de l'api renvoie la liste des personnes à jour
+Un readme est disponible dans le dossier
+<!-- .element: class="bold full-center"-->
 
  ##==##
 
  <!-- .slide: class="exercice" -->
- # Exercice 10-events-solution
+ # Exercice 11-output-solution
  ## Solution
-**10=events-solution**
+**11-output-solution**
 <!-- .element: class="full-center" -->

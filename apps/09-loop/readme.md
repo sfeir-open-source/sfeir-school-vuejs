@@ -61,5 +61,5 @@ En cliquant sur le lien vous devriez être redirigé vars le page People, où to
 Vérifiez votre travail en lançant la commande suivante:
 
 ```bash
-npm start -- 08-routing
+npm start -- 09-loop
 ```
