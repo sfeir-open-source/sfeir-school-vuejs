@@ -42,6 +42,7 @@ Sur un composant le compilateur du template va comprendre le template de la mani
 
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 # Zoom sur le composant CustomInput
+<br/><br/>
 
 ```html
 <template>
@@ -61,15 +62,19 @@ function updateInputValue(event: HTMLInputElement): void {
 ##==##
 
 <!-- .slide: class="two-column-layout"-->
-# Vision Global d'un custom component avec v-model
+# Vision Globale d'un custom component avec v-model
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
 ```html
 <CustomInput v-model="searchText" />
 ```
 <!-- .element: class="big-code"-->
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
 ```html
 <template>
   <input :value="inputValue" @input="updateInputValue" />

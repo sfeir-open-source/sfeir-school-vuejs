@@ -118,3 +118,19 @@ Un readme est disponible dans le dossier
  ## Solution
  **13-update-solution**
  <!-- .element: class="full-center" -->
+
+##==##
+
+<!-- .slide: class="exercice"-->
+# Exercice 14-composable-form
+## Exercice
+Un readme est disponible dans le dossier
+<!-- .element: class="full-center bold"-->
+
+##==##
+
+ <!-- .slide: class="exercice" -->
+ # Exercice 14-composable-form
+ ## Solution
+ **14-composable-form-solution**
+ <!-- .element: class="full-center" -->
