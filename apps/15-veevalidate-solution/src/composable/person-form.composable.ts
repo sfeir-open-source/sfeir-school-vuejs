@@ -1,8 +1,8 @@
 import { localize } from '@vee-validate/i18n';
 import { max, min, regex, required } from '@vee-validate/rules';
 import axios from 'axios';
-import { configure, defineRule, useField, useForm } from 'vee-validate';
-import { computed } from 'vue';
+import { configure, defineRule } from 'vee-validate';
+import { reactive } from 'vue';
 import type { Person, PersonForm } from '../models/person.model';
 
 defineRule('required', required);
@@ -20,53 +20,20 @@ configure({
     messages: {
       required: 'The {field} is required',
       min: 'The {field} must be 0:{min} characters minimum',
-      max: 'The {field} must be less than 0:{max} characters maximum',
-      regex: 'The {field} must have ten numbers',
-      sfeirEmail: 'The {field} is not a valid sfeir email'
+      max: 'The {field} must be less than 0:{max} characters maximum'
     }
   })
 });
 
 export function usePersonForm(person: Person = { photo: 'https://randomuser.me/api/portraits/lego/6.jpg' } as Person) {
-  const { errors: personFormErrors, handleSubmit } = useForm<PersonForm>({ initialValues: person });
-
-  const {
-    value: lastname,
-    errorMessage: lastnameError,
-    meta: lastnameMeta,
-    handleBlur: lastnameHandleBlur
-  } = useField<string>('lastname', { required: true, min: 2 }, { validateOnMount: true });
-
-  const {
-    value: firstname,
-    errorMessage: firstnameError,
-    meta: firstnameMeta,
-    handleBlur: firstnameHandleBlur
-  } = useField<string>(
-    'firstname',
-    { required: true, min: 2 },
-    {
-      validateOnMount: true
-    }
-  );
-
-  const {
-    value: email,
-    errorMessage: emailError,
-    meta: emailMeta,
-    handleBlur: emailHandleBlur
-  } = useField<string>('email', { required: true, sfeirEmail: true }, { validateOnMount: true });
-
-  const {
-    value: phone,
-    errorMessage: phoneError,
-    meta: phoneMeta,
-    handleBlur: phoneHandleBlur
-  } = useField<string>('phone', { required: true, regex: /^[0-9]{10}/ }, { validateOnMount: true });
-
-  const { value: photo } = useField<string>('photo');
-
-  const personFormValidity = computed(() => Object.keys(personFormErrors.value).length > 0);
+  const personForm = reactive<PersonForm>({
+    id: person.id,
+    photo: person.photo,
+    email: person.email,
+    firstname: person.firstname,
+    lastname: person.lastname,
+    phone: person.phone
+  });
 
   const savePerson: (person: PersonForm) => Promise<void> = async (person: PersonForm) => {
     await axios.post<Person>(`${import.meta.env.VITE_BASE_API}/peoples`, person);
@@ -77,25 +44,7 @@ export function usePersonForm(person: Person = { photo: 'https://randomuser.me/a
   };
 
   return {
-    personFormValidity,
-    lastname,
-    lastnameError,
-    lastnameMeta,
-    lastnameHandleBlur,
-    firstname,
-    firstnameError,
-    firstnameMeta,
-    firstnameHandleBlur,
-    email,
-    emailError,
-    emailMeta,
-    emailHandleBlur,
-    phone,
-    phoneError,
-    phoneMeta,
-    phoneHandleBlur,
-    photo,
-    handleSubmit,
+    personForm,
     savePerson,
     updatePersonById
   };
