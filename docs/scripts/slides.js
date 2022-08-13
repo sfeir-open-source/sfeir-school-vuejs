@@ -74,6 +74,7 @@ function formsSlides() {
   return [
     'forms/sfeir_school_day_2.md',
     'forms/concepts_bases.md',
+    'forms/concepts_advanced.md',
     'forms/validation.md',
     'forms/vee_validate.md',
     'forms/vuelidate.md',
