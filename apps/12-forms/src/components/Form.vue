@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { type PersonForm } from '@/models/person.model';
+import type { PersonForm } from '@/models/person.model';
 
 const emit = defineEmits<{ (e: 'savePerson', person: PersonForm): void; (e: 'cancel'): void }>();
 

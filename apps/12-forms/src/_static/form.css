@@ -1,3 +1,7 @@
+.container-form {
+  width: 100%;
+}
+
 .two-column-section {
   display: flex;
   margin-bottom: 2rem;

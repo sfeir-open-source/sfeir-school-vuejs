@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+/// <reference types="naive-ui/client" />
 
 interface ImportMetaEnv {
   readonly VITE_BASE_API: string;
