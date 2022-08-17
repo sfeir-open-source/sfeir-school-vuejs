@@ -77,8 +77,7 @@ function formsSlides() {
     'forms/concepts_advanced.md',
     'forms/validation.md',
     'forms/vee_validate.md',
-    'forms/vuelidate.md',
-    'forms/vuelidate_v2.md'
+    'forms/vuelidate.md'
   ];
 }
 

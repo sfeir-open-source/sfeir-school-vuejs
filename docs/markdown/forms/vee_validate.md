@@ -1,97 +1,193 @@
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Template driven form avec Vee-Validate
 
 - Ajoutez la dépendance => <b> npm install vee-validate --save</b>
-- Ajoutez vee-validate au projet (instance principale de vue)
+- Ajoutez vee-validate au projet (à la demande)
 <br><br>
 
-![center](assets/images/school/forms/vee_validate_import.png)
-Notes:
- - VeeValidate est en version 3 actuellement, à partir de cette version, les règles de validations, les validations, la validation sur plusieurs champs ont été séparés en plusieurs bundles.
- Afin de faciliter la compréhension de tous l'import de ces packages permet de récupérer la validations et les règles de validation en un seul import
- - ValidationProvider permet de faire un block contenant input + error
- - ValidationObserver permet de faire un block contenant plusieurs ValidationProvider et réaliser une validation sur tous les ValidationProviders formant ce block
+```html
+<template>
+  <Form>
+    <Field name="surname" />
+  </Form>
+</template>
+<script lang="ts" setup>
+import { Form, Field } from 'vee-validate';
+</script>
+```
+<!-- .element: class="big-code"-->
+
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Configuration
 
-La configuration __n'est pas nécessaire__ pour lancer la validation ou le bon fonctionnement du plugin<br>
+La configuration __n'est pas nécessaire__ pour lancer la validation ou le bon fonctionnement du plugin<br/><br/>
 
-![center](assets/images/school/forms/vee_validate_config.png)
+```typescript
+configure({
+  validateOnBlur: true,
+  generateMessage: localize('en', {
+    messages: {
+      required: 'The {field} is required',
+      min: 'The {field} must be 0:{min} characters minimum',
+      max: 'The {field} must be less than 0:{max} characters maximum'
+    }
+  })
+});
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide" -->
-# Les Validateurs (ValidationProvider)
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
+# La validation "high level"
 
+- Possibilité de valider avec Yup ou par champs avec les règles de validations prédéfinies <br/><br/>
+- rules : règles de validation <br/><br/>
+- v-slot : passe des propriétés au template transclude <br/><br/>
+<br/>
 
-- Composant wrapper : __ValidationProvider__
-- rules : règles de validation
-- v-slot : passe des propriétés au template transclude
-<br><br>
-
-![center h-500](assets/images/school/forms/vee_validate_validation.png)
+```html
+<template>
+  <Form>
+    <Field v-model="surname" name="surname" rules="required|min:2" v-slot="{field, value, meta}">
+      <input v-bind="field" type="text" />
+    </Field>
+  </Form>
+</template>
+```
+<!-- .element: class="medium-code"-->
 
 Notes:
  - les règles peuvent être un template string comme de l'exemple ou un objet => :rules="{required: true, min:{ length: 3 }}"
 
 ##==##
 
-<!-- .slide -->
-# La gestion des erreurs
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Installer les règles prédéfinies de veevalidate
 
-- Pour avoir l'erreur courante errors[0]
-- Pour avoir toutes les erreurs, composez avec v-for et la props :bails
-<br><br>
+- Package séparé (@vee-validate/rules) <br/><br/><br/>
 
-![center](assets/images/school/forms/vee_validate_error_display.png)
+```bash
+npm install --save @vee-validate/rules
+```
+<!-- .element: class="big-code"-->
 
 ##==##
+
+<!-- .slide: class="two-column-layout"-->
+# Définir ses règles de validation
+##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
+```typescript
+// file: veevalidate configuration
+import { required, min } from '@veevalidate/rules';
+import { defineRule } from 'vee-validate'
+defineRule('required', required);
+defineRule('min', min);
+```
+<!-- .element: class="big-code"-->
+##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
+```typescript
+// file: main.ts
+import './veevalidate.config';
+import APP from './App.vue';
+import { createApp } from 'vue';
+createApp(APP).mount('#app');
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Définir une règle de validation custom
+
+- Une règle est une simple **fonction**
+<br/><br/><br/>
+
+```typescript
+defineRule('mustBeSfeirName', value => value === 'SFEIR' || 'Name must be SFEIR' )
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# La gestion des erreurs
+
+- Un composant unique
+<br/><br/>
+
+```html
+<template>
+  <Form>
+    <Field name="surname" v-slot="{ field }" :rules="{ required: true }">
+      <input v-bind="field" type="text" />
+      <ErrorMessage name="surname" />
+    </Field>
+  </Form>
+</template>
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
 <!-- .slide: class="sfeir-basic-slide" -->
 # Les règles de validations classiques
 
-- Vee Validate fournit plusieurs règles de validation, pour les plus classiques:
+- VeeValidate procure un ensemble de build-in validators <br/><br/>
+- Build-in Validators disponible avec le package **@veevalidate/rules** <br/><br/>
+- Liste non-exhaustive:
     - required
-    - email
-    - regex
     - min
-    - max<br><br>
+    - max
+    - length
 
-- Pour plus d'informations sur ces règles de bases => https://logaretm.github.io/vee-validate/api/rules.html
-Notes:
- - il est possible de créer ses propres règles de validation avec extends
+##==##
 
- ##==##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Intégration avec Naive Ui
 
- <!-- .slide -->
-# Valider l'ensemble d'un formulaire: ValidationObserver
-<br>
+L'Intégration avec Naive Ui n'est pas encore réalisée <br/><br/>
+<!-- .element: class="important bold"-->
 
-![full-center](assets/images/school/forms/vee_validate_validation_observer.png)
+```html
+<template>
+  <Form>
+    <Field name="surname" v-model="surname" v-slot="{ value, meta, handleChange, handleBlur }">
+      <n-input :value="(value as string)" @update:value="handleChange" @blur="handleBlur" type="text" />
+      <ErrorMessage name="surname" />
+    </Field>
+  </Form>
+</template>
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 13-vee-validate
+# Exercice : 15-veevalidate
 ## Exercice
 <br>
 
-- Validez les champs suivants:
-    - firstname : requis, taille minimum de 2 lettres
-    - lastname : requis, taille minimum de 2 lettres
-    - email : requis et de type email
-    - phone : requis et 10 chiffres, utiliser la rules regex
-- Affichez les erreurs 1 à 1
-- Utilisez la classe md-input-invalid sur la balise md-input-container lors d'une erreur
-- Désactivez le bouton de validation si le formulaire est invalide (wrappez la balise md-content avec ValidationObserver)
+Un readme est disponible dans le dossier
+<!-- .element: class="full-center bold"-->
+
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 13-vee-validate
+# Exercice: 15-vee-validate
 ## Solution
-**13-vee-validate-solution**
+<b>15-veevalidate-solution</b>
 <!-- .element: class="full-center" -->
+
+
 
