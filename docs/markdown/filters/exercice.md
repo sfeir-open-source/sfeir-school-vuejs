@@ -1,16 +1,14 @@
 <!-- .slide: class="exercice" -->
-# Exercice 16-pipe
-## Excercie
-<br>
+# 17-filter
+## Exercice
 
-- Créez un filtre naFilter dans l'objet filter du composant CardPanel.vue <br><br>
-- Affichez "N/A" si la personne n'a pas de manager dans le composant CardPanel.vue<br><br>
-- Bonus : affichez "N/A" si vous ne passez pas de messages personnels (params passés au pipe)
+**Un readme est disponible dans le dossier**
+<!-- .element: class="full-center"-->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 16-pipe
+# Exercice 17-filter
 ## Solution
-**16-pipe-solution**
+**17-filter-solution**
 <!-- .element: class="full-center" -->
