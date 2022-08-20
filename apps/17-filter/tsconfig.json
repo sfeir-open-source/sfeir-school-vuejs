@@ -12,10 +12,7 @@
       "@/*": [
         "./src/*"
       ]
-    },
-    "types": [
-      "naive-ui/volar"
-    ]
+    }
   },
   "references": [
     {

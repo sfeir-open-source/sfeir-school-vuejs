@@ -1,10 +1,9 @@
 import { localize } from '@vee-validate/i18n';
-import { max, min, regex, required } from '@vee-validate/rules';
+import { min, regex, required } from '@vee-validate/rules';
 import { configure, defineRule } from 'vee-validate';
 
 defineRule('required', required);
 defineRule('min', min);
-defineRule('max', max);
 defineRule('regex', regex);
 defineRule('sfeirEmail', (value: string) => {
   const sfeirEmailRegex = /^\w+.\w@sfeir.com$/;

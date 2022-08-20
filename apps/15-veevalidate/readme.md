@@ -33,6 +33,11 @@ Pour la règles sfeirEmail, c'est à vous de faire votre propre logique
 
 Dans le composant Form, faites les transformation nécessaire pour utiliser le formulaire avec veevalidate.
 
+- prénom: required et min 2 lettres
+- nom: required et min 2 lettres
+- email: required et doit respecter le pattern sfeirEmail
+- phone: required et doit respecter le pattern 10 chiffres /[0-9]{10}$/
+
 Astuces:
 
 ```html

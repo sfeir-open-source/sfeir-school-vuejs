@@ -23,5 +23,5 @@ Votre composable doit pouvoir exporter v$ vue dans les slides :)
 Vérifiez votre travail en lançant la commande suivante:
 
 ```bash
-npm start -- 15-veevalidate
+npm start -- 16-vuelidate
 ```
