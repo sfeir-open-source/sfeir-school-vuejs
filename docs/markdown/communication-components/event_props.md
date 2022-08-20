@@ -53,7 +53,7 @@ const props = defineProps({
 });
 </script>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -61,6 +61,8 @@ const props = defineProps({
 # Passer une props à un composant
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
 ```html
 <template>
  <Card :person="person" />
@@ -69,6 +71,7 @@ const props = defineProps({
 <!-- .element: class="big-code"-->
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 ```html
 <script lang="ts" setup>
 import type { Person } from '@/models/person.model'
@@ -94,7 +97,7 @@ function sayHi(): void {
 }
 </script>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 

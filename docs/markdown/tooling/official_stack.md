@@ -5,7 +5,7 @@
 
 - Vue 3 couplé avec Typescript (de préférence) <br/> <br/>
 - Vite <br/><br/>
-- Vscode accompagné du plugin Volar
+- VsCode accompagné du plugin Volar
 
 ##==##
 

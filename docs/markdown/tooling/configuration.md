@@ -18,11 +18,11 @@
 <br><br>
 
 - les commandes <br/><br/>
-    - npm run dev <br/><br/>
-    - npm run build <br/><br/>
+    - npm run dev
+    - npm run build
     - npm run lint<br><br>
 - Configuration<br/><br>
-    - dev, prod, int ...<br/><br/>
+    - dev, prod, int ...
     - fichier env avec l'extension .env
 
 ##==##

@@ -64,7 +64,7 @@ const choice = ref<string>('');
 const answer = ref<string>('');
 </script>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->

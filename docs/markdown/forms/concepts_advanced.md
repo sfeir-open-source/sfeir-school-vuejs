@@ -57,7 +57,7 @@ function updateInputValue(event: HTMLInputElement): void {
 }
 </script>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -70,7 +70,7 @@ function updateInputValue(event: HTMLInputElement): void {
 ```html
 <CustomInput v-model="searchText" />
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 <br/><br/>
@@ -88,7 +88,7 @@ function updateInputValue(event: HTMLInputElement): void {
 }
 </script>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 

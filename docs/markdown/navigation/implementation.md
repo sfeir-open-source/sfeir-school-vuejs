@@ -1,5 +1,6 @@
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Implémentation du ficher router.js
+<br/>
 
 ```typescript
 import { createRouter, createWebHashHistory} from 'vue-router';
@@ -17,6 +18,8 @@ return createRouter({ history: createWebHashHistory(), routes: APP_ROUTES });
 
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Enregistrer son routing dans une instance Vue
+<br/>
+
 ```typescript
 import APP_ROUTING from '@/pages/router.ts';
 import App from './App.vue';
@@ -141,4 +144,4 @@ Il est donc judicieux de coupler le routing avec la Suspense API. <br/><br/>
   </router-view>
 </template>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->

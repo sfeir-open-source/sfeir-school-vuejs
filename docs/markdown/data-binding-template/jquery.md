@@ -2,6 +2,7 @@
 # Data Binding with jQuery
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
 ```html
 <html>
@@ -9,10 +10,11 @@
   <input type="text" />
 </html>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##--##
 <!--- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
 ```javascript
 $(document).ready(function() {
@@ -24,4 +26,4 @@ $(document).ready(function() {
   });
 });
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->

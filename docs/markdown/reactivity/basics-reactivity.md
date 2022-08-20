@@ -65,13 +65,13 @@ console.log(company) // { name: 'SFEIR', location: 'LUXEMBOURG'}
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code"-->
-# Deep Div dans les fonctions ref et reactive
+# Deep Dive dans les fonctions ref et reactive
 
 - les fonctions ref et reactive retourne des proxys. <br/><br/><br/>
 
 ```typescript
 function ref(value) {
-  const refObject = {
+  return {
     get value() {
       track(refObject, 'value')
       return value
@@ -81,7 +81,6 @@ function ref(value) {
       trigger(refObject, 'value')
     }
   }
-  return refObject
 }
 ```
 <!-- .element: class="medium-code"-->

@@ -85,7 +85,7 @@ createApp({
   }
 })
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -117,7 +117,7 @@ createApp({
   }
 })
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -146,7 +146,7 @@ createApp({
   }
 })
 ```
-<!-- .element: class="big-code" -->
+<!-- .element: class="medium-code" -->
 
 ##==##
 
@@ -178,7 +178,7 @@ createApp({
   }
 })
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 

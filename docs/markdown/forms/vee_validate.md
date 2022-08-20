@@ -37,7 +37,7 @@ configure({
   })
 });
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##==##
 

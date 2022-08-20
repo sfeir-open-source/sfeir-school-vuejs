@@ -3,6 +3,7 @@
 
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
 ```html
 <html>
@@ -10,10 +11,11 @@
   <input type="text" />
 </html>
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
 ```javascript
 window.onLoad = function() {
@@ -27,6 +29,6 @@ window.onLoad = function() {
   }
 }
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 

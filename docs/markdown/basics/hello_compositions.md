@@ -95,7 +95,7 @@ createApp({
 
 - **createApp**: permet de créer une nouvelle instance de Vue <br/><br/>
 - **setup**: hooks permettant d'initialiser un composant avec la composition API <br/><br/>
-- **mount**: permet d'insérer de monter l'instance de Vue dans un container
+- **mount**: permet de monter l'instance de Vue dans un container
 
 
 

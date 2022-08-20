@@ -22,7 +22,7 @@ export default defineComponent({
   template: '<TodoItem/>'
 });
 ```
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 
 ##==##
@@ -48,8 +48,25 @@ export default defineComponent({
 - Vite assure la compatibilité et le check des erreurs<br/><br/><br/>
 
 ##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
-![h-900](assets/images/school/components/component-setup.png)
+```html
+<template>
+  <TodoItem />
+</template>
+<script lang="ts">
+import TodoItem from '@/components/TodoItem.vue';
+export default defineComponent({
+  components: {
+    TodoItem
+  },
+  setup() {}
+});
+</script>
+```
+<!-- .element: class="medium-code"-->
+
 
 ##==##
 
@@ -57,14 +74,38 @@ export default defineComponent({
 # Script setup: simplifions la syntax
 
 ##--##
+<!-- .slide: class="sfeir-basic-slide with-code"-->
 <br/>
 
-![h-900](assets/images/school/components/component-setup.png)
+```html
+<template>
+  <TodoItem />
+</template>
+<script lang="ts">
+import TodoItem from '@/components/TodoItem.vue';
+export default defineComponent({
+  components: {
+    TodoItem
+  },
+  setup() {}
+});
+</script>
+```
+<!-- .element: class="medium-code"-->
 
 ##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 <br/>
 
-![h-900](assets/images/school/components/script-setup.png)
+```html
+<template>
+  <TodoItem />
+</template>
+<script lang="ts" setup>
+import TodoItem from '@/components/TodoItem.vue';
+</script>
+```
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -79,7 +120,18 @@ export default defineComponent({
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide"-->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 # Exemple
+<br/><br/>
 
-![h-900 center](assets/images/school/components/setup-data.png)
+```html
+<template>
+  {{ title }}
+  <TodoItem />
+</template>
+<script lang="ts" setup>
+import TodoItem from '@/components/TodoItem.vue';
+const title = ref<string>('Details of Todo');
+</script>
+```
+<!-- .element: class="big-code"-->

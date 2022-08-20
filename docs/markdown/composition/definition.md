@@ -12,6 +12,7 @@ Il permet de: <br/><br/>
 ##==##
 
 # Comment réaliser une fonction de composition
+<br/><br/>
 
 - fichier qui exporte une fonction  qui retourne une API <br/><br/>
 - la logique sur cette entité se trouve dans cette fonction <br/><br/>
@@ -21,6 +22,7 @@ Il permet de: <br/><br/>
 
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 # Un exemple de fonction de composition
+<br/><br/>
 
 ```typescript
 const people  = ref<People[]>=([]);
@@ -37,11 +39,35 @@ export function usePeople() {
 <!-- .slide: class="two-column-layout"-->
 # La composition dans son ensemble
 ##--##
-<!-- .slide: class="sfeir-basic-slide"-->
-![](assets/images/school/composable/composable.png)
-<!-- .element: class="big-code"-->
+<!-- .slide: class="sfeir-basic-slide with-code"-->
+<br/><br/>
+
+```typescript
+const user = reactive({
+  name: 'John',
+  age: 29
+});
+export function useUser() {
+  return {
+    user
+  }
+};
+```
+<!-- .element: class="medium-code"-->
 ##--##
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
-![](assets/images/school/composable/use-composable.png)
+<br/><br/>
+
+```html
+<template>
+  <h1>{{ user.name }} {{ user.age }}</h1>
+</template>
+<script lang="ts" setup>
+import { useUser } from '@/composable/user.composable';
+const { user } = useUser();
+</script>
+```
+<!-- .element: class="medium-code"-->
+
 
 
