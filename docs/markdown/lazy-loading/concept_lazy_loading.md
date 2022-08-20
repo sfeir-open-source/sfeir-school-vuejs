@@ -1,4 +1,4 @@
-<!-- .slide" -->
+<!-- .slide: class="sfeir-basic-slide" -->
 # A quoi sert le lazy-loading
 <br><br>
 
@@ -8,7 +8,7 @@
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide" -->
 # Comment le mettre en place
 <br><br>
 
@@ -20,29 +20,43 @@
 <!-- .slide: class="two-column-layout" -->
 # Async component
 ##--##
-<br><br><br>
+<br/><br/><br/>
 
 - Définit en tant que fonction retournant le composant
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/><br/>
 
-![h-600 center](assets/images/school/lazy-loading/async_component.png)
+```typescript
+const home = () => Promise.resolve({ });
+```
+<!-- .element: class="big-code"-->
 
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Import dynamique
-<br>
+<br/><br/><br/>
 
-![h-600 center](assets/images/school/lazy-loading/dynamic_import.png)
+```typescript
+const home = () => import('@/views/Home.vue');
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Router vs Router avec lazy-loading
-<br>
+<br/><br/>
 
-![h-600](assets/images/school/lazy-loading/router_js.png)
-![h-600](assets/images/school/lazy-loading/router_lazy_import.png)
-![h-600](assets/images/school/lazy-loading/router_lazy_loading.png)
+```typescript
+const routes: RouteRecordRaw[] = [
+  { path: '/', redirect: '/home' },
+  { path: '/home', component: () => import('./Home.vue'), name: 'home' },
+  { path: '/people', component: () => import('./People.vue'), name: 'people' },
+];
+```
+<!-- .element: class="big-code"-->
+
+
