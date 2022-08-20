@@ -1,31 +1,29 @@
 <template>
-  <section class="container-form">
+  <form class="container-form">
     <section class="two-column-section">
       <div class="image-section">
         <img height="100" width="100" alt="photo of the person" :src="personForm.photo" />
       </div>
-      <form class="form-section">
-        <n-space vertical>
-          <div class="container-field">
-            <n-input v-model:value="personForm.lastname" round size="large" placeholder="Lastname of the person" />
-          </div>
-          <div class="container-field">
-            <n-input v-model:value="personForm.firstname" round size="large" placeholder="Firstname of the person" />
-          </div>
-          <div class="container-field">
-            <n-input v-model:value="personForm.email" round size="large" placeholder="Email of the person" />
-          </div>
-          <div class="container-field">
-            <n-input v-model:value="personForm.phone" round size="large" placeholder="Phone number of the person" />
-          </div>
-        </n-space>
-      </form>
+      <n-space vertical class="form-section">
+        <div class="container-field">
+          <n-input v-model:value="personForm.lastname" round size="large" placeholder="Lastname of the person" />
+        </div>
+        <div class="container-field">
+          <n-input v-model:value="personForm.firstname" round size="large" placeholder="Firstname of the person" />
+        </div>
+        <div class="container-field">
+          <n-input v-model:value="personForm.email" round size="large" placeholder="Email of the person" />
+        </div>
+        <div class="container-field">
+          <n-input v-model:value="personForm.phone" round size="large" placeholder="Phone number of the person" />
+        </div>
+      </n-space>
     </section>
     <div class="button-container">
       <n-button strong round secondary type="error" @click="cancel">Cancel</n-button>
       <n-button strong round secondary type="primary" @click="save">Save</n-button>
     </div>
-  </section>
+  </form>
 </template>
 
 <script setup lang="ts">
