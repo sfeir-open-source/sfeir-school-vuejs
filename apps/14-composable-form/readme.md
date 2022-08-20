@@ -2,7 +2,7 @@
 
 <br/>
 
-L'objectif de workshop est de:
+L'objectif de ce workshop est de:
 - appliquer le concept de composition
 - mettre en place une architecture propre et scalable
 - structurer son code pour alléger son composant

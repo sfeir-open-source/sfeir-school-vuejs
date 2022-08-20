@@ -1,19 +1,6 @@
-import { localize } from '@vee-validate/i18n';
 import axios from 'axios';
-import { configure } from 'vee-validate';
 import { reactive } from 'vue';
 import type { Person, PersonForm } from '../models/person.model';
-
-configure({
-  validateOnBlur: true,
-  generateMessage: localize('en', {
-    messages: {
-      required: 'The {field} is required',
-      min: 'The {field} must be 0:{min} characters minimum',
-      max: 'The {field} must be less than 0:{max} characters maximum'
-    }
-  })
-});
 
 export function usePersonForm(person: Person = { photo: 'https://randomuser.me/api/portraits/lego/6.jpg' } as Person) {
   const personForm = reactive<PersonForm>({
