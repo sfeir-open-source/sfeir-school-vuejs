@@ -97,17 +97,9 @@ function stateManagementSlides() {
   return [
     'state-management/transition_slide.md',
     'state-management/concepts.md',
-    'state-management/store.md',
-    'state-management/state.md',
-    'state-management/getters.md',
-    'state-management/mutation.md',
-    'state-management/action.md',
-    'state-management/helpers.md',
-    'state-management/exercice.md',
     'state-management/pinia-introduction.md',
-    'state-management/pinia-use-vue2.md',
     'state-management/pinia-use-vue3.md',
-    'state-management/pinia-exercice.md'
+    'state-management/exercice.md'
   ];
 }
 
