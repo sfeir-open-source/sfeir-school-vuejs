@@ -86,7 +86,7 @@ function filterSlides() {
 }
 
 function modifiersSlides() {
-  return ['modifier/transition_slide.md', 'modifier/modifier.md', 'modifier/exercice.md'];
+  return ['modifier/transition_slide.md', 'modifier/modifier.md'];
 }
 
 function directiveSlides() {
