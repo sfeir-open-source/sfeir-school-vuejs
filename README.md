@@ -1,50 +1,11 @@
-# SFEIR School VUE JS
+## ☁ Nx Cloud
 
-<p align="center">
- <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="SFEIR School logo">
-</p>
+### Distributed Computation Caching & Distributed Task Execution
 
-<br/>
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
 
-[Discover the SFEIR Schools](https://www.sfeir.com/fr/contenus-dexperts/sfeir-school)
+Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
 
-# Slides
+Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-vuejs/.).
-
-## Develop
-
-To run docs locally, go in directory `docs` and run `npx serve` of if you don't have node, you can use docker `docker-compose up`, and open slides on http://localhost:5000/.
-
-## Workshop
-
-Workshops are in directory `exercice/steps` :
-
-- two directories per workshop :
-  - one with a README.md with workshop steps and source file to complete
-  - a second directory suffixed with `-solution` which contains source file with solutions.
-
-To launch your code, use script
-
-```bash
-npm run start -- <step-dir>
-```
-
-in the exercice/steps directory
-
-## Contributing
-
-### Contributing Guidelines
-
-Read through our [contributing guidelines][contributing] to learn about our submission process, coding rules and more.
-
-### Want to Help?
-
-Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our guidelines for [contributing][contributing] and then check out one of our issues labeled as <kbd>help wanted</kbd> or <kbd>good first issue</kbd>.
-
-### Code of Conduct
-
-Help us keep Angular open and inclusive. Please read and follow our [Code of Conduct][codeofconduct].
-
-[contributing]: CONTRIBUTING.md
-[codeofconduct]: https://github.com/sfeir-open-source/code-of-conduct/blob/master/CODE_OF_CONDUCT.md
+Visit [Nx Cloud](https://nx.app/) to learn more.

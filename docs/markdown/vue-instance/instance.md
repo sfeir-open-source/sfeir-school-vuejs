@@ -1,70 +1,91 @@
 <!-- .slide: class="two-column-layout" -->
 # L'instance
-Une instance est composée de 3 grandes composantes
-<!-- .element: class="center" -->
-
 ##--##
 <br><br><br><br>
 
-- Un Constructeur
-- Une Api
-- Etendable
+Une instance Vue est une fonction prenant un objet de configuration: <br/><br/>
+- un composant Vue <br/><br/>
+- un objet de configuration Vue (option API ou Composition API) <br/><br/>
 
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
 
-![h-400](assets/images/school/vue-instance/constructor.png)
-<!-- .element: class="align-image" -->
+```typescript
+createApp(APP)
+```
+<!-- .element: class="big-code"-->
 
-![h-400](assets/images/school/vue-instance/extend.png)
-<!-- .element: class="align-image" -->
+<br/><br/>
 
-Notes:
-Le constructor peut prendre plusieurs options :
- - des sélecteurs
- - propriétés
- - method
- - computed
+```typescript
+createApp({ setup( return { name: 'SFEIR'})})
+```
+<!-- .element: class="big-code"-->
+
+<br/><br/>
+
+```typescript
+createApp({ data() { return { name: 'SFEIR'}}})
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# Les lifecycles
+# Les cycle de vie
 
 ##--##
 <br><br><br>
 
 - Différentes méthodes de cycle de vie
-    - created
-    - mounted
-    - beforeCreated<br><br>
-- S'implémente directement dans les options de l'instance de vue
+    - setup
+    - omMounted
+    - onUnMounted<br><br>
+- Fonction prenant une fonction de callback s'implémentant directement dans la fonction de setup
 
 ##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 <br><br><br>
 
-![h-500](assets/images/school/vue-instance/lifecycle.png)
-<!-- .element: class="align-image" -->
+```typescript
+createApp({
+  setup() {
+    onMounted(() => {
+      console.log('Here on mounted hook lifecycle');
+    })
+  }
+})
+```
+<!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# Les propriétés
+# Les propriétés reactive
 
 ##--##
 <br><br><br>
-- Exposées dans l'objet data
-- Réactives
-- Propriétés d'instance: 
-    - $el
-    - $data
+- Seul variable que Vue track pour rendre la vue <br/><br/>
+- ref / reactive (peuvent être utilisé en dehors d'une instance de vue)<br/><br/>
+- variables qui sont des proxys en Javascript
 
 ##--##
-![](assets/images/school/vue-instance/properties.png)
-<!-- .element: class="align-image" -->
+<!-- .slide: class="sfeir-basic-slide with-code"-->
+<br/><br/>
 
-![](assets/images/school/vue-instance/access_properties.png)
-<!-- .element: class="align-image" -->
+```typescript
+createApp({
+  setup() {
+    const name = ref('SFEIR');
+    const user = reactive({ 
+      name: 'SFEIR',
+      country: 'LUXEMBOURG'
+    });
+  }
+})
+```
+<!-- .element: class="medium-code"-->
 
 ##==##
 
@@ -72,50 +93,60 @@ Le constructor peut prendre plusieurs options :
 # Les computed properties
 <br>
 
-__Qu'est ce que c'est?__
-<!-- .element: class="center" -->
-
 ##--##
-<br><br><br><br>
+<br/><br/><br/><br/>
 
-- Exposées dans l'objet computed
-- Masque la logique de traitement (filtre)
-- Utilisable dans le template
-- Mise à jour quand les propriétés changent
+- Fonction __computed__ prenant une fonction de callback <br/><br/>
+- Masque la logique de traitement (filtre) <br/><br/>
+- Utilisable dans le template <br/><br/>
+- Réévalué lorsqu'une propriété réactive change <br/><br/>
 - Logique Getter/Setter
 
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![](assets/images/school/vue-instance/computed.png)
-<!-- .element: class="align-image" -->
-Notes:
-Exemple de Getter / Setter sur une computed : https://vuejs.org/v2/guide/computed.html#Computed-Setter
+<br/><br/><br/><br/>
+
+```typescript
+createApp({
+  setup() {
+    const name = ref('SFEIR');
+    const country = ref('LUXEMBOURG');
+    const company  = computed(() => `${name.value} ${country.value}`);
+    return { company }
+  }
+})
+```
+<!-- .element: class="medium-code"-->
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
 # Les méthodes
-<br>
-
-__Qu'est ce que c'est ?__
-<!-- .element: class="center" -->
 
 ##--##
 <br><br><br><br>
 
-- Exposées dans l'object "methods"
+- __fonctions__ appartenant à la fonction setup (doivent être retournée) <br/><br/>
 - Utilisables dans le template
-- Méthodes d'instances
-    - render (creation v-node + createElement parameter)
-    - $on
-    - $emit
 
 ##--##
-<br><br>
+<br/><br/><br/>
 
-![h-800](assets/images/school/vue-instance/methods.png)
-<!-- .element: class="align-image" -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+```typescript
+createApp({
+  setup() {
+    function showAlert(): void {
+      alert('You will leave the page');
+    }
+    return {
+      showAlert
+    }
+  }
+})
+```
+<!-- .element: class="medium-code" -->
 
 ##==##
 
@@ -123,21 +154,31 @@ __Qu'est ce que c'est ?__
 # Les watchers
 <br>
 
-__Qu'est ce que c'est ?__
-<!-- .element: class="center" -->
-
 ##--##
 <br><br><br><br>
 
-- S'implémente sur l'instance / dans une méthode
-- Opérations Asynchrone
+- S'implémente directement dans la fonction setup <br/><br/>
+- Opérations Asynchrone <br/><br/>
 - Privilégier une computed properties
 
 ##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
-![h-700](assets/images/school/vue-instance/watchers.png)
-<!-- .element: class="align-image" -->
+<br/><br/>
+
+```typescript
+createApp({
+  setup() {
+    const id = ref(1234);
+    watch(id, () => {
+      fetch('http://random-user/com/user')
+        .then(response => response.json())
+        .then(console.log)
+    })
+  }
+})
+```
+<!-- .element: class="medium-code"-->
 
 ##==##
 

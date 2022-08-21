@@ -1,3 +1,40 @@
+<!-- .slide: class="sfeir-basic-slide"-->
+# Qu'est ce que Vue JS ?
+<br/><br/>
+
+- Libraire Web permettant de réaliser des applications rapidement <br/><br/>
+- Deux modes de fonctionnement:
+    - option API
+    - composition API
+    - Possibilité de mixer les deux
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide"-->
+# Pourquoi utiliser l'option API ?
+
+- Rétrocompatible avec Vue 2 <br/><br/>
+- Pour de petite à moyenne application <br/><br/>
+- Pour des composant stateless (sans état)
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide"-->
+# Pourquoi utiliser la composition API ?
+
+- Full compatible avec la version 2.7 de Vue <br/><br/>
+- Pour des grandes applications <br/><br/>
+- Pour des composant statefull (avec état) <br/><br/>
+- Pour combler des lacunes de réutilisation de code
+
+<br/><br/>
+
+Cette formation porte exclusivement sur la composition API 
+<!-- .element: class="center bold important"-->
+
+
+
+##==##
 <!-- .slide  -->
 # Composition d'un simple Hello World
 <br>
@@ -13,51 +50,52 @@ Notes:
 
 ##==##
 
-<!-- .slide -->
-# Les sources
-![center](assets/images/school/basics/source_exemple.png)
+<!-- .slide: class="two-column-layout" -->
+# Setup Minimal
+##--##
+<!-- .slide: class="with-code inconsolata"-->
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+```
+<!-- .element: class="big-code"-->
+
+##--##
+<!-- .slide: class="with-code inconsolata"-->
+```typescript
+import { createApp } from 'vue';
+
+createApp({
+  setup() {
+    const name = 'SFEIR';
+    return { name };
+  }
+}).mount('#app');
+```
+<!-- .element: class="big-code"-->
+
+<br />
+
+```html
+<span>Hello {{ name }}</span>
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
-<!-- .slide -->
-# Le script
-Permet d'instancier une vue avec différentes options : <br><br>
-- __el__ pour cible l'élément où doit être placé la "vue"
-- __data__ pour exposer des datas
-<br><br>
+<!-- .slide: class="sfeir-sfeir-basic-slide"-->
+## Que se passe t'il exactement ?
 
-![center](assets/images/school/basics/script_exemple.png)
+<br/><br/>
 
-
-##==##
-
-<!-- .slide -->
-# Le template
-Le template Vue va se placer directement dans la page HTML :
-<br><br>
-
-![center h-700](assets/images/school/basics/template_exemple.png)
-
-##==##
-
-<!-- .slide -->
-# Le template
-Le template Vue peut se passer en option à l'instance de vue:
-<br><br>
-
-![center](assets/images/school/basics/template_option_instance_exemple.png)
-
-##==##
-
-<!-- .slide  -->
-# Le template
-
-Le template peut se passer en utilisant une balise script de type __x-template__<br><br>
-
-![h-600](assets/images/school/basics/x-template_script_exemple.png)
-![h-600](assets/images/school/basics/x-template_html_exemple.png)
+- **createApp**: permet de créer une nouvelle instance de Vue <br/><br/>
+- **setup**: hooks permettant d'initialiser un composant avec la composition API <br/><br/>
+- **mount**: permet de monter l'instance de Vue dans un container
 
 
-Notes:
-Correction de l'exemple :<br>
-Insérer la balse script x-template dans le body, à l'intérieur de la balise <div id="app"></div>
+

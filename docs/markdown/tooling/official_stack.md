@@ -1,71 +1,47 @@
-<!-- .slide: class="with-code inconsolata" -->
-# La stack "officielle"
-__Vue Cli (https://cli.vuejs.org)__
-<!-- .element: class="center" -->
+<!-- .slide: class="sfeir-basic-slide"-->
+# La stack officielle
 
-```sh
-npm i -g @vue/cli
-vue create <project-name>
-```
-<!-- .element class="medium-code" -->
+<br/> <br/>
 
-![center h-700](assets/images/school/tool/vue_cli.png)
+- Vue 3 couplé avec Typescript (de préférence) <br/> <br/>
+- Vite <br/><br/>
+- VsCode accompagné du plugin Volar
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
-<br>
-
-- vue <br><br>
-- vue-cli-service<br><br>
-- vue ui
-##--##
-![h-800](assets/images/school/tool/vue_ui.png)
-
-##==##
-
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
-<br><br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Créer un project Vue
 
 ```bash
-vue create <project-name>
+npm init vue@latest
 ```
-<!-- .element: class="medium-code" -->
+<!-- .element: class="big-code"-->
 
-<br><br>
-- plugins <br><br>
-- preset
-##--##
-<br><br>
+<br/><br/>
 
-![h-400](assets/images/school/tool/vue_create.png)
-
+![center h-400](assets/images/school/tool/vite-project.png)
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# La stack "officielle"
-##--##
+<!-- .slide: class="sfeir-basic-slide"-->
+# Configurer son environnement avec VSCode
 
-<br><br>
+- VSCode est un éditeur de code gratuit et Open Source <br/><br/>
+- L'installation de plugin permettent d'en faire un IDE puissant <br/><br/><br/>
 
-```sh
-vue-cli-service
-```
-<!-- .element: class="medium-code" -->
-<br>
+![h-300 margin-right-image](assets/images/school/tool/vscode.svg)
+![h-300](assets/images/school/tool/editor_config.png)
+![h-300](assets/images/school/tool/volar.png)
 
-- serve<br><br>
-- build<br><br>
-- inspect<br><br>
+##==##
 
-##--##
+<!-- .slide: class="sfeir-basic-slide"-->
+# Configurer son environnement avec WebStorm
 
-<br><br>
+- Webstorm IDE de JetBrains et payant <br/><br/>
+- L'installation de plugins permet une compatibilité avec Vue <br/><br/><br/>
 
-![h-400](assets/images/school/tool/vue_service.png)
 
+
+![h-300](assets/images/school/tool/WebStorm_logo.png)
+<!-- .element: class="center"-->

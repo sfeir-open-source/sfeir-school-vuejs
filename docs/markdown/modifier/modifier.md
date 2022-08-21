@@ -1,11 +1,18 @@
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Les modifiers : concepts et généralités
-- Permet de customiser une directive
-- Peuvent être chaînés
+- Permet de customiser une directive <br/><br/>
+- Peuvent être chaînés <br/><br/>
 - Se place directement après un .
-<br><br>
+<br/><br/>
 
-![center](assets/images/school/modifiers/modifiers_exemple.png)
+```html
+<template>
+  <form @submit.prevent="submitForm">
+    <input v-model.trim="surname" />
+  </form>
+</template>
+```
+<!-- .element: class="big-code"-->
 
 ##==##
 
@@ -19,20 +26,28 @@
     - .left, .right
     - .middle<br><br>
 
-- Vous trouverez la liste complète des possibilités sur cette page : __https://vuejs.org/v2/guide/events.html#Event-Modifiers__
+- Vous trouverez la liste complète des possibilités sur cette page: https://vuejs.org/guide/essentials/event-handling.html#event-modifiers
 
 
 ##==##
 
-<!-- .slide -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Les modifiers sur le clavier
 <br>
 
 - S'implemente de la manière suivante : __.(keyCode | keyAlias)__
 - On peut définir des alias avec la syntax suivante : __Vue.config.keyCodes.f1 = 112__
-<br><br>
+<br/><br/>
 
-![center](assets/images/school/modifiers/modifiers_clavier.png)
+```html
+<template>
+  <input type="text" v-on:keyup.13="submit" />
+  <input type="text" v-on:keyup.enter="submit" />
+  <input type="text" @keyup.center="submit" />
+</template>
+```
+<!-- .element: class="big-code"-->
+
 
 Notes:
  - keyAlias peuvent être nombreux: .enter, .tab, .delete, .space, .up ....

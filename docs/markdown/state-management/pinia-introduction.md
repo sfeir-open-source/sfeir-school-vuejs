@@ -24,30 +24,18 @@ npm install --save pinia
 
 <br>
 
-Importer pinia dans votre projet dépend de la version de vue <br>
+Importer pinia dans votre projet <br/>
 
-__Pour Vue 3__
+
 
 ```typescript
 import { createPinia } from 'pinia'
 app.use(createPinia())
 ```
+<!-- .element: class="big-code"-->
 
 <br>
 
-__Pour Vue 2__
-
-```typescript
-import { createPinia, PiniaVuePlugin } from 'pinia'
-
-Vue.use(PiniaVuePlugin)
-const pinia = createPinia()
-
-new Vue({
-  el: '#app',
-  pinia,
-})
-```
 
 ##==##
 
@@ -92,5 +80,23 @@ export const useUserStore = defineStore('user', {
 })
 ```
 
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+## Définir un store avec une fonction de setup
+
+**Pinia** nous permet de créer une fonction de setup pour définir un Store <br/><br/>
+
+```typescript
+export const useUser = defineStore('user', () => {
+  const user = reactive({ name: 'John', age: 29 });
+  const updateUserName = (name: string) => (user.name = name );
+  return {
+    user,
+    updateUserName
+  }
+});
+```
+<!-- .element: class="big-code"-->
 
 

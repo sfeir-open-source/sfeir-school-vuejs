@@ -17,8 +17,7 @@
 - <b>components</b>: objet avec le nom de l’emplacement dans lequel le composant doit s’afficher<br><br>
 - <b>meta</b>: données associées à la route<br><br>
 - <b>children</b>: un tableau de définitions des sous-routes
-Notes:
- - https://router.vuejs.org/guide/essentials/named-views.html#nested-named-views
+
 
  ##==##
 
@@ -29,7 +28,7 @@ Notes:
 - Intervenir avant ou après un changement de route<br><br>
 - Global sur le router (beforeEach / afterEach)<br><br>
 - Au niveau d'une route  (beforeEnter)<br><br>
-- Au niveau d'un composant (beforeRouteEnter, beforeRouteUpdate, beforeRouteLeave)<br><br>
+- Au niveau d'un composant (onBeforeRouteUpdate, onBeforeRouteLeave)<br><br>
 - Prend 3 arguments
  - to (route cible)
  - from (route précédente)

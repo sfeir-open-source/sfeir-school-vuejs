@@ -1,10 +1,8 @@
 <!-- .slide: class="exercice" -->
 # Exercice 20-lazyloading
 ## Exercice
-<br>
-
-- Créez pour le composant People une fonction de Lazy-loading <br><br>
-- Créez pour le composant Update un import lazy-loading
+Un readme est disponible dans le dossier
+<!-- .element: class="full-center bold"-->
 
 ##==##
 

@@ -1,8 +1,14 @@
-<!-- .slide: class="" -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Data Binding with Vue
 <br>
 
-![h-700 full-center](assets/images/school/data-binding-template/vue.png)
+```html
+<div>
+  Bonjour <span>{{ myName }}</span>
+  <input type="text" name="name" v-model="myName" />
+</div>
+```
+<!-- .element: class="big-code"-->
 
 
 ##==##
@@ -45,23 +51,34 @@ __Syntaxe de l'event__<br>
 
 ##==##
 
-<!-- .slide" -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 # Properties binding
 <br>
 
-![center](assets/images/school/data-binding-template/properties_binding.png)
+```html
+<img v-bind:src="dynamicUrl" alt="person-photo" with="100" height="100" />
+<TodoItem v-bind:todo="todo" />
+<TodoItem :todo="todo" />
+<TodoItem v-bind="{ todo: todo }" />
+```
+<!-- .element: class="big-code"-->
+
 Notes:
  - Le binding s'effectue sur une propriété
  - La cible du properties binding s'effectue sur l'attribut d'un élément ou attribut d'un composant
 
 ##==##
 
-<!-- .slide" -->
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Event Binding
 <br>
 
-![center](assets/images/school/data-binding-template/event_binding.png)
+```html
+<button v-on:click="showAlert" type="button">Click me</button>
+<TodoItem v-on:delete="removeTodoItem($event)" />
+<TodoItem @delete="removeTodoItem" />
+```
+<!-- .element: class="big-code"-->
+
 Notes:
  - De préférence utiliser la convention kebab case pour créer nos events custom
- - $event permet de récupérer les datas emises par le mot clé $emit
- - On peut utiliser les events natives grâce au .native => @focus.native

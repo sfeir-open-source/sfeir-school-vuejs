@@ -1,16 +1,14 @@
 <!-- .slide: class="exercice" -->
-# Exercice : 03-first-components
+# Exercice : 03-sfc
 ## Exercice
-<br>
 
- - Créez un composant monofichier App<br><br>
- - Importez ce composant dans le fichier main.js<br><br>
- - Créez une instance de Vue en utilisant la méthode render (render: (h) => h(App))
+**Un readme est disponible dans le dossier**
+<!-- .element: class="full-center"-->
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice : 03-first-components
+# Exercice : 03-sfc
 ## Solution
-**03-first-components-solution**
+**03-sfc-solution**
 <!-- .element: class="full-center" -->

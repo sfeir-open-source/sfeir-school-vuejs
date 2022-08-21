@@ -8,7 +8,7 @@
 <br><br>
 
 - Template driven form (la validation est pilotée par le template): __vee-validate__<br><br>
-- Model driven form (la validation est pilotée par le controlleur): __vuelidate__<br><br>
+- Model driven form (la validation est pilotée par le controlleur): __vuelidate__  / __vee-validate__<br><br>
 - __Attention__ ces solutions ne sont officiellement pas supportées par la core Team Vue JS
 Notes:
  - documentation officiel de vee-validate: https://baianat.github.io/vee-validate/

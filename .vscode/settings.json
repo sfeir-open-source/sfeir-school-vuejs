@@ -1,23 +1,44 @@
 {
-  "eslint.workingDirectories": [
-    "workshop",
-  ],
-  "prettier.configPath": "workshop/.prettierrc",
-  "prettier.prettierPath": "workshop/node_modules/prettier",
-  "prettier.ignorePath": "workshop/.prettierignore",
   "cSpell.words": [
-    "destructurer",
+    "antd",
+    "boilerplating",
+    "bootstraping",
+    "bootstrapper",
+    "databinding",
+    "esnext",
     "firstname",
-    "Firstname",
+    "frizzarin",
+    "Frizzarin",
+    "hoverable",
     "inconsolata",
+    "keyup",
     "lastname",
-    "Lastname",
+    "lazyloader",
     "lazyloading",
-    "Okeyyy",
+    "linkedin",
+    "monofichier",
+    "nicolas",
+    "nrwl",
+    "Oopps",
+    "Oopss",
+    "Parens",
     "pinia",
+    "prez",
+    "rushstack",
+    "scoper",
     "sfeir",
-    "vuelidate",
-    "vuex",
-    "Vuex"
-  ]
+    "statefull",
+    "tagname",
+    "Twotone",
+    "veevalidate",
+    "vfonts",
+    "vicons",
+    "vuelidate"
+  ],
+  "eslint.workingDirectories": [
+    "."
+  ],
+  "prettier.configPath": ".prettierrc",
+  "prettier.ignorePath": ".prettierignore",
+  "prettier.prettierPath": "./node_modules/prettier"
 }

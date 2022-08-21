@@ -1,0 +1,40 @@
+<section class="container">
+  <n-card :hoverable="true">
+    <template #header>
+      <img :src="person.photo" height="100" width="100" alt="photo of the person" />
+      <span>Castaneda Salinas</span>
+    </template>
+    <div class="contact-summary">
+      <div class="contact-summary__info">
+        <n-icon size="25" :component="BankTwotone" color="#e0e0e0"></n-icon>
+        <span class="contact-summary__info__label"> METROZ</span>
+      </div>
+      <div class="contact-summary__info">
+        <n-icon size="25" :component="CompassTwotone" color="#e0e0e0"></n-icon>
+        <span class="contact-summary__info__label"> Ambroise Paré Paris</span>
+      </div>
+      <div class="contact-summary__info">
+        <n-icon size="25" :component="TeamOutlined" color="#e0e0e0"></n-icon>
+        <span class="contact-summary__info__label"> Didier Gérard</span>
+      </div>
+    </div>
+    <div class="contact-summary">
+      <div class="contact-summary__info">
+        <n-icon size="25" :component="MailTwotone" color="#e0e0e0"></n-icon>
+        <span class="contact-summary__info__label"> castenadas.f@gmail.com</span>
+      </div>
+      <div class="contact-summary__info">
+        <n-icon size="25" :component="MobileTwotone" color="#e0e0e0"></n-icon>
+        <span class="contact-summary__info__label"> 0767879954</span>
+      </div>
+    </div>
+    <template #action>
+      <n-button quaternary type="primary" shape>
+        <n-icon size="25" :component="EditTwotone"></n-icon>
+      </n-button>
+      <n-button quaternary type="error">
+        <n-icon size="25" :component="DeleteTwotone"></n-icon>
+      </n-button>
+    </template>
+  </n-card>
+</section>

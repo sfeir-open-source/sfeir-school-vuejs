@@ -6,51 +6,143 @@
 
 ##==##
 
-<!--.slide -->
+<!--.slide: class="sfeir-basic-slide with-code inconsolata" -->
 # Les props (basique)
 <br>
 
-- Passées dans la propriété props
-- Tableau de chaînes de propriétés
+- méthode **defineProps** <br/><br/>
+- fonction global d'une instance de vue <br /><br/>
+- utilisable uniquement dans le composants <br/><br/>
 
-<br><br>
+```html
+<script lang="ts" setup>
+const props = defineProps<{ name: string, age?: number}>();
+</script>
+```
+<!-- .element: class="big-code"-->
 
-![](assets/images/school/communication-components/template_child_props.png)
-![](assets/images/school/communication-components/template_parent_props.png)
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+## Valeur par défaut avec defineProps
+<br/><br/>
+
+```html
+<script lang="ts" setup>
+const props = witDefaults(defineProps<{ name: string }>(), { name: 'SFEIR '})
+</script>
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+## Validation Custom  sur les props 
+<br/><br>
+
+```html
+<script lang="ts" setup>
+const props = defineProps({ 
+  name: {
+    type: String,
+    required: true,
+    validator(value) {
+      return value === 'SFEIR'
+    }
+  }
+});
+</script>
+```
+<!-- .element: class="medium-code"-->
+
+##==##
+
+<!-- .slide: class="two-column-layout"-->
+# Passer une props à un composant
+##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+
+```html
+<template>
+ <Card :person="person" />
+</template>
+```
+<!-- .element: class="big-code"-->
+##--##
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+<br/><br/>
+```html
+<script lang="ts" setup>
+import type { Person } from '@/models/person.model'
+const props = defineProps<{ person: Person }>();
+</script>
+```
+<!-- .element: class="big-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Comment utiliser sa props
+<br/>
+
+```html
+<template>
+  <h1 @click="sayHi">{{ name }} </h1>
+</template>
+<script lang="ts" setup>
+const props = definesProps<{ name: string }>();
+function sayHi(): void {
+  alert(props.name)
+}
+</script>
+```
+<!-- .element: class="medium-code"-->
+
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+# Events
+
+- méthode **defineEmits** <br/><br/>
+- fonction global d'une instance de vue <br /><br/>
+- uniquement utilisable dans l'instance d'un composant <br/><br/>
+
+```html
+<script lang="ts" setup>
+const emit = defineEmits<{ (e: 'deletePeople', id: string): void}>();
+function removePeople(id: string): void {
+  emit('deletePeople', id);
+}
+</script>
+```
+<!-- .element: class="big-code"-->
 
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-# Les props (complète)
+<!-- .slide: class="two-column-layout"-->
+# Catcher un event
 ##--##
-<br><br>
-
-- Props peut également être un objet pour plus de contrôle<br><br>
-- Définition :
-    - Nom de la prop
-    - Objet avec comme propriétés:
-        - type
-        - required
-        - validator (custom function)
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+```html
+<template>
+  <Card @delete-people="removeTodoItem" />
+</template>
+```
+<!-- .element: class="big-code"-->
 ##--##
-<br>
+<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
+```html
+<script lang="ts" setup>
+const emit = defineEmits<{
+(e: 'deletePeople', id: string): void
+}>();
+function removePeople(id: string): void {
+  emit('deletePeople', id);
+}
+</script>
+```
+<!-- .element: class="big-code"-->
 
-![h-750](assets/images/school/communication-components/complete_props.png)
-<!-- .element: class="align-image" -->
 
-##==##
-
-<!-- .slide" -->
-# Les events
-<br>
-
-- Le composant enfant envoie un event pour notifier le parent : this.$emit()
-- Le composant parent écoute l'event grâce à __v-on__ ou __@__
-
-<br><br>
-
-![h-500](assets/images/school/communication-components/child_event.png)
-![h-500](assets/images/school/communication-components/parent_event.png)
-Notes:
- - par convention il est préférable d'utiliser la syntax kebab case pour décrire son évènement

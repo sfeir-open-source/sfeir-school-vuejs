@@ -1,16 +1,15 @@
 <!-- .slide: class="exercice" -->
-# Exercice 07-routing
+# Exercice 08-routing
 ## Exercice
-<br>
 
-- Complétez le fichier router.js (src/view/router.js)<br><br>
-- Importez ce fichier dans votre instance Vue<br><br>
-- Importez les balises obligatoires dans le fichier App.vue
+Un readme est disponible dans le dossier
+<!-- .element: class="bold full-center"-->
+
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 07-routing
+# Exercice 08-routing
 ## Solution
-**07-routing-solution**
+**08-routing-solution**
 <!-- .element: class="full-center" -->

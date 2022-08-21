@@ -10,7 +10,7 @@
     "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts,scss/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
     "copy-highlight": "cpx \"node_modules/highlight.js/styles/**/*\" \"web_modules/highlight.js/styles\" ",
-    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\""
+    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" "
   },
   "repository": {
     "type": "git",
@@ -28,17 +28,6 @@
     "url": "https://github.com/jefBinomed/SfeirSchoolTheme/issues"
   },
   "homepage": "https://github.com/jefBinomed/SfeirSchoolTheme#readme",
-  "dependencies": {
-    "chokidar-cli": "^1.2.2",
-    "cpx": "^1.5.0",
-    "highlight.js": "^9.15.6",
-    "lit-html": "^1.1.2",
-    "live-server": "^1.2.1",
-    "parallelshell": "3.0.1",
-    "reveal.js": "^3.9.2",
-    "snowpack": "^2.16.1",
-    "sass": "1.48.0"
-  },
   "snowpack": {
     "install": [
       "sfeir-school-theme/dist/**/*",
