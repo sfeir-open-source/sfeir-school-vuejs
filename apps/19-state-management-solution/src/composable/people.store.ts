@@ -8,7 +8,10 @@ const peopleState = reactive<{ people: Array<Person>; search: string }>({ people
 export const usePeopleStore = defineStore('people', () => {
   const people: ComputedRef<Array<Person>> = computed(() => {
     return peopleState.people.filter(person => {
-      return person.lastname.toLowerCase().includes(peopleState.search) || person.firstname.toLowerCase().includes(peopleState.search);
+      return (
+        person.lastname.toLowerCase().includes(peopleState.search.toLowerCase()) ||
+        person.firstname.toLowerCase().includes(peopleState.search.toLowerCase())
+      );
     });
   });
 
