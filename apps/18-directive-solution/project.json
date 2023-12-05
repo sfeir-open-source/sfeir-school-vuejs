@@ -1,4 +1,5 @@
 {
+  "name": "18-directive-solution",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/18-directive-solution/src",

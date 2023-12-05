@@ -1,4 +1,5 @@
 {
+  "name": "04-bindings-solution",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/04-bindings-solution/src",
