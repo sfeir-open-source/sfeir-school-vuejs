@@ -1,4 +1,5 @@
 {
+  "name": "01-bootstraping",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/01-bootstraping/src",

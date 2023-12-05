@@ -1,4 +1,5 @@
 {
+  "name": "15-veevalidate",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/15-veevalidate/src",
