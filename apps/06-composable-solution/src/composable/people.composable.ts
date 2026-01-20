@@ -1,21 +1,15 @@
-import type { Person } from '@/models/person.model';
-import { PEOPLE } from '@/_static/people';
-import { ref, type Ref } from 'vue';
+import { ref, toRef } from 'vue';
+import { PEOPLE } from '../data/people';
+import type { Person } from '../model/person';
 
-const people: Ref<Array<Person>> = ref([]);
-
+const people = ref<Person[]>([]);
 export function usePeople() {
-  const getPeople: () => void = () => {
-    people.value = PEOPLE;
-  };
-
-  const getRandomPeople: () => Person = () => {
-    return people.value[Math.floor(Math.random() * people.value.length)];
-  };
+  const getPeople = () => (people.value = PEOPLE);
+  const getRandomPerson = () => people.value[Math.floor(Math.random() * people.value.length)];
 
   return {
-    people,
     getPeople,
-    getRandomPeople
+    getRandomPerson,
+    people: toRef(people),
   };
 }

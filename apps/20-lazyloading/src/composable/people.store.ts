@@ -1,41 +1,54 @@
-import type { Person } from '@/models/person.model';
-import axios from 'axios';
 import { defineStore } from 'pinia';
-import { computed, reactive, type ComputedRef } from 'vue';
+import { computed, reactive, toRef } from 'vue';
+import type { Person, PersonForm } from '../model/person';
+import { PeopleService } from '../services/people';
 
-const peopleState = reactive<{ people: Array<Person>; search: string }>({ people: [], search: '' });
+const PEOPLE_SERVICE = new PeopleService();
 
-export const usePeopleStore = defineStore('people', () => {
-  const people: ComputedRef<Array<Person>> = computed(() => {
-    return peopleState.people.filter(person => {
-      return person.lastname.toLowerCase().includes(peopleState.search) || person.firstname.toLowerCase().includes(peopleState.search);
-    });
-  });
+export const usePeopleStore = defineStore('PEOPLE', () => {
+  const state = reactive<{ people: Person[]; search: string }>({ people: [], search: '' });
+  const filteredPeople = computed(() =>
+    state.people.filter(
+      person =>
+        person.lastname.toLowerCase().includes(state.search.toLowerCase()) || person.firstname.toLowerCase().includes(state.search.toLowerCase()),
+    ),
+  );
 
-  const getPeople: () => Promise<void> = async () => {
-    peopleState.people = (await axios.get<Array<Person>>(`${import.meta.env.VITE_BASE_API}/peoples`)).data;
+  const getPeople = async () => {
+    const response = await PEOPLE_SERVICE.getPeople();
+    state.people = response.data;
   };
 
-  const getRandomPeople: () => Promise<Person> = async () => {
-    const { data } = await axios.get<Person>(`${import.meta.env.VITE_BASE_API}/peoples/random`);
-    return data;
+  const getRandomPerson = async () => {
+    const response = await PEOPLE_SERVICE.getRandomPerson();
+    return response.data;
   };
 
-  const deletePerson: (id: string) => Promise<void> = async (idPerson: string) => {
-    peopleState.people = (await axios.delete<Array<Person>>(`${import.meta.env.VITE_BASE_API}/peoples/${idPerson}`)).data;
+  const deletePerson = async (id: string) => {
+    const response = await PEOPLE_SERVICE.deletePerson(id);
+    state.people = response.data;
   };
 
-  const getPersonById: (id: string) => Promise<Person> = async (idPerson: string) => {
-    const { data } = await axios.get<Person>(`${import.meta.env.VITE_BASE_API}/peoples/${idPerson} `);
-    return data;
+  const createPerson = async (person: PersonForm) => {
+    await PEOPLE_SERVICE.postPerson(person).then(getPeople);
   };
 
+  const getPersonDetails = async (id: string) => {
+    const response = await PEOPLE_SERVICE.getPersonById(id);
+    return response.data;
+  };
+
+  const updatePerson = async (person: PersonForm) => {
+    await PEOPLE_SERVICE.putPerson(person).then(getPeople);
+  };
   return {
-    people,
-    peopleState,
+    filteredPeople: toRef(filteredPeople),
+    search: toRef(state, 'search'),
     getPeople,
-    getRandomPeople,
+    getRandomPerson,
     deletePerson,
-    getPersonById
+    createPerson,
+    getPersonDetails,
+    updatePerson,
   };
 });

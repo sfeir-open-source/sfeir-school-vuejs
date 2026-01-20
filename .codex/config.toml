@@ -1,0 +1,9 @@
+[mcp_servers."nx-mcp"]
+type = "stdio"
+command = "npx"
+args = ["nx", "mcp"]
+
+[mcp_servers."ESLint"]
+type = "stdio"
+command = "npx"
+args = ["@eslint/mcp@latest"]

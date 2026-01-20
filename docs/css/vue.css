@@ -5,11 +5,11 @@
 /**
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/
-.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
+.reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
   top: 800px;
 }
 
-.reveal .slides section[data-background].speaker-slide img[alt*=second-badge] {
+.reveal .slides section[data-background].speaker-slide img[alt*='second-badge'] {
   padding-top: 40px;
 }
 
@@ -63,19 +63,21 @@
 .reveal .slides section.sfeir-basic-slide h1.center-big {
   font-size: 3em;
 }
-.reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
+.reveal .slides section.with-code pre.big-code:not(.literal),
+.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
   position: relative;
   top: 0;
 }
-.reveal .slides section.with-code code, .reveal .slides section.with-code-dark code {
+.reveal .slides section.with-code code,
+.reveal .slides section.with-code-dark code {
   max-height: 900px;
 }
-.reveal .slides section img[alt*=full-width-screen] {
+.reveal .slides section img[alt*='full-width-screen'] {
   width: 100%;
   max-width: 100%;
   max-height: 100%;
 }
-.reveal .slides section img[alt*=bottom] {
+.reveal .slides section img[alt*='bottom'] {
   position: absolute;
   bottom: 0;
   left: 0;

@@ -1,8 +1,8 @@
-import naive from 'naive-ui';
 import { createApp } from 'vue';
 import App from './App.vue';
-import './assets/main.css';
+import { APP_ROUTING } from './router';
+import './styles.css';
 import './vee-validate.config';
-import { ROUTER } from './views/router';
 
-createApp(App).use(naive).use(ROUTER).mount('#app');
+const app = createApp(App);
+app.use(APP_ROUTING).mount('#root');

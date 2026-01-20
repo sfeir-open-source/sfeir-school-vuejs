@@ -1,8 +1,10 @@
-import naive from 'naive-ui';
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import App from './App.vue';
-import './assets/main.css';
-import { ROUTER } from './views/router';
+import { APP_ROUTING } from './router';
+import './styles.css';
 
-createApp(App).use(naive).use(ROUTER).use(createPinia()).mount('#app');
+const pinia = createPinia();
+const app = createApp(App);
+
+app.use(APP_ROUTING).use(pinia).mount('#root');

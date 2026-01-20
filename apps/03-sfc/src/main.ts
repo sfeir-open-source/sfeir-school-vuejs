@@ -1,14 +1,16 @@
-import naive from 'naive-ui';
+import AntDesignVue from 'ant-design-vue';
+import 'ant-design-vue/dist/reset.css';
 import { createApp } from 'vue';
-import './assets/main.css';
+import './styles.css';
 
-createApp({
-  el: 'app',
-  data() {
+const app = createApp({
+  setup() {
     return {
-      name: 'SFEIR'
+      name: 'SFEIR',
     };
-  }
-})
-  .use(naive)
-  .mount('#app');
+  },
+  template: `<a-card title="Hello and Welcome">
+      <p>{{ name }}</p>
+    </a-card>`,
+});
+app.use(AntDesignVue).mount('#root');

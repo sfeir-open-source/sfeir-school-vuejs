@@ -1,36 +1,45 @@
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+</script>
+
 <template>
   <header>
-    <n-page-header>
-      <RouterLink :to="{ name: 'home' }">
-        <img height="60" width="150" src="./assets/images/logo-people.svg" alt="sfeir-people-logo" />
-      </RouterLink>
-    </n-page-header>
+    <a-page-header :back-icon="false">
+      <img height="60" width="150" src="/images/logo-people.svg" alt="sfeir-people-logo" />
+      <div class="header-container-links">
+        <span>HOME</span>
+        <span>PEOPLE</span>
+      </div>
+    </a-page-header>
   </header>
-  <RouterView v-slot="{ Component }">
-    <Suspense>
-      <main>
-        <component :is="Component" />
-      </main>
-    </Suspense>
-  </RouterView>
+  <main class="main-application">
+    <RouterView />
+  </main>
 </template>
-<script lang="ts" setup></script>
-<style scoped lang="css">
-header {
+
+<style scoped lang="scss">
+.ant-page-header {
+  background-color: var(--header-bg-color);
   height: 5rem;
 }
-header .n-page-header-wrapper {
+
+:deep(.ant-page-header-content) {
   display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background-color: #0168ab;
-  background-image: url('./assets/images/bg_right.png');
 }
 
-main {
+.header-container-links {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.main-application {
   height: calc(100% - 5rem);
+  padding-top: 1rem;
   width: 100%;
 }
 </style>

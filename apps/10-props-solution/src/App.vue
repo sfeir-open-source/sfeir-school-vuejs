@@ -1,56 +1,56 @@
+<script setup lang="ts"></script>
+
 <template>
   <header>
-    <n-page-header>
-      <div class="header-content">
-        <RouterLink :to="{ name: 'home' }">
-          <img height="60" width="150" src="./assets/images/logo-people.svg" alt="sfeir-people-logo" />
+    <a-page-header :back-icon="false">
+      <img height="60" width="150" src="/images/logo-people.svg" alt="sfeir-people-logo" />
+      <div class="header-container-links">
+        <RouterLink v-slot="{ href }" custom to="/home">
+          <a-button type="link" custom :href="href"> HOME </a-button>
         </RouterLink>
-        <RouterLink :to="{ name: 'people' }">
-          <a class="link" href="/people">List</a>
+        <RouterLink v-slot="{ href }" to="/people">
+          <a-button type="link" :href="href"> PEOPLE </a-button>
         </RouterLink>
       </div>
-    </n-page-header>
+    </a-page-header>
   </header>
-  <RouterView v-slot="{ Component }">
-    <Suspense>
-      <main>
-        <component :is="Component" />
-      </main>
-    </Suspense>
-  </RouterView>
+  <main class="main-application">
+    <RouterView />
+  </main>
 </template>
-<script lang="ts" setup></script>
-<style scoped lang="css">
-header {
+
+<style scoped lang="scss">
+.ant-page-header {
+  background-color: var(--header-bg-color);
   height: 5rem;
 }
-header .n-page-header-wrapper {
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background-color: #0168ab;
-  background-image: url('./assets/images/bg_right.png');
-}
 
-header .n-page-header-wrapper .header-content {
+:deep(.ant-page-header-content) {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-.header-content a.link {
-  display: flex;
-  align-items: center;
-  all: unset;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-main {
-  height: calc(100% - 5rem);
   width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container-links {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.main-application {
+  height: calc(100% - 5rem);
+  padding-top: 1rem;
+  width: 100%;
+  overflow: auto;
+}
+
+:deep(.ant-btn-link) {
+  color: white;
+}
+
+:deep(.ant-btn-link:hover) {
+  color: white;
 }
 </style>

@@ -12,11 +12,14 @@ defineRule('sfeirEmail', (value: string) => {
 
 configure({
   validateOnBlur: true,
+  validateOnInput: true,
+  validateOnModelUpdate: true,
+  validateOnChange: true,
   generateMessage: localize('en', {
     messages: {
       required: 'The {field} is required',
       min: 'The {field} must be 0:{min} characters minimum',
-      max: 'The {field} must be less than 0:{max} characters maximum'
-    }
-  })
+      max: 'The {field} must be less than 0:{max} characters maximum',
+    },
+  }),
 });

@@ -1,0 +1,17 @@
+{
+  "name": "18-directive-solution",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "dev": {
+        "dependsOn": [
+          {
+            "projects": "server-express",
+            "target": "serve"
+          }
+        ]
+      }
+    }
+  }
+}

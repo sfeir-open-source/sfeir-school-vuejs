@@ -1,0 +1,27 @@
+<div class="container-card">
+  <a-card style="width: 33%" hoverable>
+    <template #actions>
+      <a-button type="text" :icon="h(EditOutlined)" />
+      <a-button type="text" :icon="h(DeleteOutlined)" />
+    </template>
+    <a-card-meta title="SFEIR ACADEMY" :description="PARIS">
+      <template #avatar>
+        <a-avatar src="https://sfeir.com/logo.png" />
+      </template>
+    </a-card-meta>
+    <div class="content-card">
+      <div class="content-card__info-line">
+        <BankOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+        <span>Avenue de la Liberté, luxembourg - Luxembourg</span>
+      </div>
+      <div class="content-card__info-line">
+        <MailOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+        <span>sfeir.s@sfeir.com</span>
+      </div>
+      <div class="content-card__info-line">
+        <PhoneOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+        <span>0948893456</span>
+      </div>
+    </div>
+  </a-card>
+</div>
