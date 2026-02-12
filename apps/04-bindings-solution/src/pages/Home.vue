@@ -1,0 +1,56 @@
+<script setup lang="ts">
+import { BankOutlined, DeleteOutlined, EditOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons-vue';
+import { h, ref } from 'vue';
+import { PEOPLE } from '../data/people';
+import { Person } from '../model/person';
+
+const person = ref<Person>(PEOPLE[0]);
+</script>
+<template>
+  <div class="container-card">
+    <a-card style="width: 33%" hoverable>
+      <template #actions>
+        <a-button type="text" :icon="h(EditOutlined)" />
+        <a-button type="text" :icon="h(DeleteOutlined)" />
+      </template>
+      <a-card-meta :title="person.firstname + ' ' + person.lastname" :description="person.entity">
+        <template #avatar>
+          <a-avatar :src="person.photo" :size="100" />
+        </template>
+      </a-card-meta>
+      <div class="content-card">
+        <div class="content-card__info-line">
+          <BankOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+          <span>{{ person.address.street }}, {{ person.address.postalCode }} - {{ person.address.city }}</span>
+        </div>
+        <div class="content-card__info-line">
+          <MailOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+          <span>{{ person.email }}</span>
+        </div>
+        <div class="content-card__info-line">
+          <PhoneOutlined style="font-size: 1.5rem; margin-right: 1rem" />
+          <span>{{ person.phone }}</span>
+        </div>
+      </div>
+    </a-card>
+  </div>
+</template>
+
+<style scoped lang="css">
+.container-card {
+  display: flex;
+  justify-content: center;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 0.5rem;
+}
+
+.content-card__info-line {
+  display: flex;
+  align-items: center;
+}
+</style>

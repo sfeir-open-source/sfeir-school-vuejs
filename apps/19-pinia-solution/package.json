@@ -1,0 +1,17 @@
+{
+  "name": "19-pinia-solution",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "dev": {
+        "dependsOn": [
+          {
+            "projects": "server-express",
+            "target": "serve"
+          }
+        ]
+      }
+    }
+  }
+}

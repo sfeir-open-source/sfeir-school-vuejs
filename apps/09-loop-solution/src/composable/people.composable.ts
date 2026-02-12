@@ -1,24 +1,23 @@
-import type { Person } from '@/models/person.model';
-import axios from 'axios';
-import { ref, type Ref } from 'vue';
+import { ref, toRef } from 'vue';
+import type { Person } from '../model/person';
+import { PeopleService } from '../services/people';
 
-const people: Ref<Array<Person>> = ref([]);
+const people = ref<Person[]>([]);
+const PEOPLE_SERVICE = new PeopleService();
 
 export function usePeople() {
-  const getPeople: () => Promise<void> = async () => {
-    if (people.value.length === 0) {
-      people.value = (await axios.get<Array<Person>>(`${import.meta.env.VITE_BASE_API}/peoples`)).data;
-    }
+  const getPeople = async () => {
+    const response = await PEOPLE_SERVICE.getPeople();
+    people.value = response.data;
   };
-
-  const getRandomPeople: () => Promise<Person> = async () => {
-    const { data } = await axios.get<Person>(`${import.meta.env.VITE_BASE_API}/peoples/random`);
-    return data;
+  const getRandomPerson = async () => {
+    const response = await PEOPLE_SERVICE.getRandomPerson();
+    return response.data;
   };
 
   return {
-    people,
     getPeople,
-    getRandomPeople
+    getRandomPerson,
+    people: toRef(people),
   };
 }

@@ -1,44 +1,16 @@
 {
   "cSpell.words": [
-    "antd",
-    "boilerplating",
-    "bootstraping",
-    "bootstrapper",
-    "databinding",
-    "esnext",
     "firstname",
-    "frizzarin",
-    "Frizzarin",
+    "FRIZZARIN",
     "hoverable",
     "inconsolata",
-    "keyup",
     "lastname",
-    "lazyloader",
     "lazyloading",
-    "linkedin",
-    "monofichier",
-    "nicolas",
-    "nrwl",
-    "Oopps",
-    "Oopss",
-    "Parens",
-    "pinia",
-    "prez",
-    "rushstack",
-    "scoper",
     "sfeir",
-    "statefull",
-    "tagname",
-    "Twotone",
+    "testid",
     "veevalidate",
-    "vfonts",
-    "vicons",
-    "vuelidate"
-  ],
-  "eslint.workingDirectories": [
-    "."
-  ],
-  "prettier.configPath": ".prettierrc",
-  "prettier.ignorePath": ".prettierignore",
-  "prettier.prettierPath": "./node_modules/prettier"
+    "VEEVALIDATE",
+    "vuelidate",
+    "VUELIDATE"
+  ]
 }

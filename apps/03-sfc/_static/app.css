@@ -1,12 +1,18 @@
-header {
+.ant-page-header {
+  background-color: #c2b280;
   height: 5rem;
 }
-header .n-page-header-wrapper {
+
+:deep(.ant-page-header-content) {
   display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  background-color: #0168ab;
-  background-image: url('./assets/images/bg_right.png');
+}
+
+.header-container-links {
+  display: flex;
+  gap: 1rem;
+  color: white;
 }

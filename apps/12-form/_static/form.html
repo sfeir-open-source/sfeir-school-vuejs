@@ -1,0 +1,23 @@
+<section class="form">
+  <div class="form-container-image">
+    <a-avatar :src="personForm.photo" :size="100" />
+  </div>
+  <a-form :model="personForm" :label-col="{ span: 5 }" label-align="left">
+    <a-form-item label="Firstname">
+      <a-input v-model:value="personForm.firstname" placeholder="Enter your firstname" name="firstname" />
+    </a-form-item>
+    <a-form-item label="Lastname">
+      <a-input v-model:value="personForm.lastname" placeholder="Enter your lastname" name="lastname" />
+    </a-form-item>
+    <a-form-item label="Email">
+      <a-input v-model:value="personForm.email" placeholder="Enter your email" name="email" />
+    </a-form-item>
+    <a-form-item label="Phone">
+      <a-input v-model:value="personForm.phone" placeholder="Enter your phone" name="phone" />
+    </a-form-item>
+  </a-form>
+  <section class="form-actions">
+    <a-button danger>Cancel</a-button>
+    <a-button type="primary">Save</a-button>
+  </section>
+</section>
