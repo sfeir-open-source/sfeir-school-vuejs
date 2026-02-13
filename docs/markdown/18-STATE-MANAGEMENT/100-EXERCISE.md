@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercise 19-state-management
+# Exercise 19-pinia
 
 ## Exercise
 
@@ -12,10 +12,10 @@ A README is available in the folder
 
 <!-- .slide: class="exercice" -->
 
-# Exercise 19-state-management
+# Exercise 19-pinia-solution
 
 ## Solution
 
-**19-state-management-solution**
+**19-pinia-solution**
 
 <!-- .element: class="full-center" -->

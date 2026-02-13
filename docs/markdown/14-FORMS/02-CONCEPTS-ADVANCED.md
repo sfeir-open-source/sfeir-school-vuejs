@@ -83,7 +83,7 @@ function updateInputValue(event: HTMLInputElement): void {
 <CustomInput v-model="searchText" />
 ```
 
-<!-- .element: class="big-code"-->
+<!-- .element: class="medium-code"-->
 
 ##++##
 
@@ -115,7 +115,7 @@ function updateInputValue(event: HTMLInputElement): void {
 
 # Is it possible to change the name of the `modelValue` prop?
 
-**OUI** <br/><br/>
+**YES** <br/><br/>
 
 ```html
 <CustomInput v-model:search="search" />

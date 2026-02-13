@@ -4,17 +4,18 @@
 
 # Vite
 
-##++##
-##++##
-
 <br><br>
 
 - JavaScript bundling<br><br>
 - Hot reload <br/><br/>
 - no code <br/><br/>
 - configuration with rollup plugins
-  ##++##
-  ##++##
+
+##++##
+
+##++##
+
+<br/><br/>
 
 ![](assets/images/school/tool/logo-with-shadow.png 'h-700')
 ##++##

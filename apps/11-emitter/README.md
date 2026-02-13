@@ -1,4 +1,4 @@
-# 11 - Event
+# 11 - Emitter
 
 ## Goal
 
@@ -15,25 +15,25 @@ Add custom events to the Card component so parent pages can react to user action
 1. Run the exercise app:
 
 ```bash
-npm start -- 11-event
+npm start -- 11-emitter
 ```
 
 2. Emit a delete event from the Card component.
 
-- In `apps/11-event/src/components/Card/Card.vue`, declare `defineEmits` with an `onDeletePerson` event that carries the `Person`.
+- In `apps/11-emitter/src/components/Card/Card.vue`, declare `defineEmits` with an `onDeletePerson` event that carries the `Person`.
 - When the delete button is clicked, emit the event with the current `person`.
 
 3. React to the delete event on Home.
 
-- In `apps/11-event/src/pages/Home/Home.vue`, get `getRandomPerson` from `usePeople`.
+- In `apps/11-emitter/src/pages/Home/Home.vue`, get `getRandomPerson` from `usePeople`.
 - Add a handler that awaits `getRandomPerson` and assigns the result to `person`.
 - Listen to the Card event using `@on-delete-person` and call the handler.
 
 4. Add deletion support to the People flow.
 
-- In `apps/11-event/src/services/people.ts`, add a `deletePerson(id: string)` method that calls `DELETE /peoples/:id`.
-- In `apps/11-event/src/composable/people.composable.ts`, expose a `deletePerson` function that updates `people` from the service response.
-- In `apps/11-event/src/pages/People/People.vue`, listen to `@on-delete-person` and call `deletePerson` with the person id.
+- In `apps/11-emitter/src/services/people.ts`, add a `deletePerson(id: string)` method that calls `DELETE /peoples/:id`.
+- In `apps/11-emitter/src/composable/people.composable.ts`, expose a `deletePerson` function that updates `people` from the service response.
+- In `apps/11-emitter/src/pages/People/People.vue`, listen to `@on-delete-person` and call `deletePerson` with the person id.
 
 ## Expected result
 
@@ -45,7 +45,7 @@ npm start -- 11-event
 Run the solution app to compare your work:
 
 ```bash
-npm start -- 11-event-solution
+npm start -- 11-emitter-solution
 ```
 
-You can also inspect the reference code in `apps/11-event-solution`.
+You can also inspect the reference code in `apps/11-emitter-solution`.

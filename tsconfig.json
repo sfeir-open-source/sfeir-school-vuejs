@@ -70,10 +70,10 @@
       "path": "./apps/10-props-solution"
     },
     {
-      "path": "./apps/11-event"
+      "path": "./apps/11-emitter"
     },
     {
-      "path": "./apps/11-event-solution"
+      "path": "./apps/11-emitter-solution"
     },
     {
       "path": "./apps/12-form"

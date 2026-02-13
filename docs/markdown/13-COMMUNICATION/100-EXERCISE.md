@@ -24,7 +24,7 @@ A README is available in the folder
 
 <!-- .slide: class="exercice" -->
 
-# Exercise 11-output
+# Exercise 11-emitter
 
 ## Exercise
 
@@ -38,10 +38,10 @@ A README is available in the folder
 
  <!-- .slide: class="exercice" -->
 
-# Exercise 11-output-solution
+# Exercise 11-emitter-solution
 
 ## Solution
 
-**11-output-solution**
+**11-emitter-solution**
 
 <!-- .element: class="full-center" -->

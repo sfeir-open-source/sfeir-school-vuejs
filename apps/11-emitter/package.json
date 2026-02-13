@@ -1,5 +1,5 @@
 {
-  "name": "11-event-solution",
+  "name": "11-emitter",
   "version": "0.0.1",
   "private": true,
   "nx": {

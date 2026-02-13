@@ -15,7 +15,7 @@ vi.mock('vue', async () => {
   };
 });
 
-describe('12-form-solution main', () => {
+describe('17-filter-solution main', () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="root"></div>';
   });

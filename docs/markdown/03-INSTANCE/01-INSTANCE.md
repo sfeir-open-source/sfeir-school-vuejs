@@ -10,7 +10,8 @@ A Vue app instance is created by calling a function with a configuration object:
 
 - a Vue component <br/><br/>
 - a Vue configuration object (Options API or Composition API) <br/><br/>
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 
@@ -59,11 +60,12 @@ createApp({
   - onMounted
   - onUnmounted<br><br>
 - Functions that take a callback and are used directly inside `setup`
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 
-<br><br><br>
+<br><br><br><br/><br/>
 
 ```typescript
 createApp({
@@ -92,7 +94,8 @@ createApp({
 - The variables Vue tracks to render the view <br/><br/>
 - `ref` / `reactive` (can also be used outside of a Vue instance)<br/><br/>
 - Variables are JavaScript proxies
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 
@@ -129,11 +132,12 @@ createApp({
 - Usable in the template <br/><br/>
 - Re-evaluated when a reactive dependency changes <br/><br/>
 - Getter/Setter logic
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 ```typescript
 createApp({
@@ -162,11 +166,12 @@ createApp({
 
 - **functions** defined in `setup` (must be returned) <br/><br/>
 - Usable in the template
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ```typescript
 createApp({
@@ -198,7 +203,8 @@ createApp({
 - Implemented directly in `setup` <br/><br/>
 - Async operations <br/><br/>
 - Prefer computed properties when possible
-  ##++##
+
+##++##
 
 ##++## class="with-code inconsolata"
 

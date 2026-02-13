@@ -4,8 +4,6 @@
 
 # The role of a form
 
-##++##
-
 <br><br><br>
 
 - Collect user data<br><br>
@@ -158,7 +156,7 @@ A README is available in the folder
 
 <!-- .slide: class="exercice"-->
 
-# Exercise 14-composable-form
+# Exercise 14-form-composable
 
 ## Exercise
 
@@ -170,10 +168,10 @@ A README is available in the folder
 
  <!-- .slide: class="exercice" -->
 
-# Exercise 14-composable-form
+# Exercise 14-form-composable-solution
 
 ## Solution
 
-**14-composable-form-solution**
+**14-form-composable-solution**
 
  <!-- .element: class="full-center" -->
