@@ -35,6 +35,18 @@ function lazyLoadingSlides() {
   return ['19-LAZY-LOADING/00-TRANSITION.md', '19-LAZY-LOADING/01-CONCEPTS.md', '19-LAZY-LOADING/100-EXERCISE.md'];
 }
 
+function injectionSlides() {
+  return ['20-INJECTION/00-TRANSITION.md', '20-INJECTION/01-CONCEPTS.md', '20-INJECTION/100-EXERCISE.md'];
+}
+
 export function dayTwoSlides() {
-  return [...formsSlides(), ...filterSlides(), ...modifiersSlides(), ...directiveSlides(), ...stateManagementSlides(), ...lazyLoadingSlides()];
+  return [
+    ...formsSlides(),
+    ...filterSlides(),
+    ...modifiersSlides(),
+    ...directiveSlides(),
+    ...stateManagementSlides(),
+    ...lazyLoadingSlides(),
+    ...injectionSlides(),
+  ];
 }

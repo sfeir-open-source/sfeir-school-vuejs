@@ -12,5 +12,6 @@
     "VEEVALIDATE",
     "vuelidate",
     "VUELIDATE"
-  ]
+  ],
+  "vitest.disableWorkspaceWarning": true
 }
