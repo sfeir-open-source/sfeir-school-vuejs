@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => ({
   root: import.meta.dirname,
-  cacheDir: '../../node_modules/.vite/apps/event-solution',
+  cacheDir: '../../node_modules/.vite/apps/emitter-solution',
   server: {
     port: 4200,
     host: 'localhost',
@@ -31,7 +31,7 @@ export default defineConfig(() => ({
   //  plugins: [],
   // },
   build: {
-    outDir: '../../dist/11-event-solution',
+    outDir: '../../dist/11-emitter-solution',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
@@ -39,7 +39,7 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: '11-event-solution',
+    name: '11-emitter-solution',
     watch: false,
     globals: true,
     environment: 'jsdom',

@@ -174,29 +174,6 @@ defineRule('mustBeSfeirName', value => value === 'SFEIR' || 'Name must be SFEIR'
 
 ##==##
 
-<!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
-
-# Integration with Naive UI
-
-Integration with Naive UI is not done yet <br/><br/>
-
-<!-- .element: class="important bold"-->
-
-```html
-<template>
-  <form>
-    <Field name="surname" v-model="surname" v-slot="{ value, meta, handleChange, handleBlur }">
-      <n-input :value="(value as string)" @update:value="handleChange" @blur="handleBlur" type="text" />
-      <ErrorMessage name="surname" />
-    </Field>
-  </form>
-</template>
-```
-
-<!-- .element: class="big-code"-->
-
-##==##
-
 <!-- .slide: class="exercice" -->
 
 # Exercise: 15-veevalidate
@@ -213,7 +190,7 @@ A README is available in the folder
 
 <!-- .slide: class="exercice" -->
 
-# Exercise: 15-vee-validate
+# Exercise: 15-veevalidate
 
 ## Solution
 

@@ -2,6 +2,8 @@
 
 # The `setup` function
 
+<br/><br/>
+
 - Setup function of a Vue component <br/></br>
 - Called before any lifecycle hook <br></br>
 - Takes two parameters:
@@ -13,6 +15,8 @@
 <!-- .slide: class="sfeir-basic-slide with-code inconsolata"-->
 
 # Declare reactive variables with `ref`
+
+<br/>
 
 - **ref** --> creates a simple reactive value <br/><br/>
 - Access the ref value via the **value** property <br/></br>

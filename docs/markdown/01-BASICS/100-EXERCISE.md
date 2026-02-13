@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercise: 01-bootstraping
+# Exercise: 01-bootstrapping
 
 ## Exercise
 
@@ -14,10 +14,10 @@ A README is available in the folder
 
 <!-- .slide: class="exercice" -->
 
-# Exercise: 01-bootstraping
+# Exercise: 01-bootstrapping
 
 ## Solution
 
-<b>01-bootstraping-solution</b>
+<b>01-bootstrapping-solution</b>
 
 <!-- .element: class="full-center" -->

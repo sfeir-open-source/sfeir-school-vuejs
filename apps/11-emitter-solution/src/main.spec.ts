@@ -15,7 +15,7 @@ vi.mock('vue', async () => {
   };
 });
 
-describe('11-event-solution main', () => {
+describe('11-emitter-solution main', () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="root"></div>';
   });
